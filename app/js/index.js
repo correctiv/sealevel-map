@@ -1,6 +1,5 @@
 import { mount } from 'riot'
 
-const hallo = (name) => `Hallo ${name} was geht!`
+import './components/map.tag'
 
-
-export { hallo }
+export { mount }
