@@ -1,9 +1,0 @@
-{
-  "parser": "babel-eslint",
-  "extends": "standard",
-  "plugins": ["riot"],
-  "globals": {
-    "riot": true,
-    "opts": true
-  }
-}
