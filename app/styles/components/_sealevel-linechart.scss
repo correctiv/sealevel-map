@@ -1,0 +1,28 @@
+//styles for the line chart
+
+.sealevel__linechart__axis-x path {
+      display: none;
+}
+
+.sealevel__linechart__line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.sealevel__linechart__overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.sealevel__linechart__circle {
+    fill: white;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.sealevel__linechart__focusline {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 0.5px;
+}

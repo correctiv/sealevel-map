@@ -43,12 +43,12 @@
             var g = svg.append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
 
             g.append("g")
-                    .attr("class", "axis axis--x")
+                    .attr("class", "sealevel__linechart__axis sealevel__linechart__axis-x")
                     .attr("transform", "translate(0," + height + ")")
                     .call(d3.axisBottom(xScale))
 
             g.append("g")
-                    .attr("class", "axis axis--y")
+                    .attr("class", "sealevel__linechart__axis sealevel__linechart__axis-y")
                     .call(d3.axisLeft(yScale))
                     .append("text")
                     .attr("fill", "#000")
@@ -60,7 +60,7 @@
 
             g.append("path")
                     .datum(data)
-                    .attr("class", "line")
+                    .attr("class", "sealevel__linechart__line")
                     .attr("d", line)
 
             // focus tracking
@@ -68,24 +68,24 @@
             var focus = g.append('g').style('display', 'none')
 
             focus.append('circle')
-                    .attr('id', 'focusCircle')
+                    .attr('id', 'sealevel__linechart__focuscircle')
                     .attr('r', 4.5)
-                    .attr('class', 'circle focusCircle')
+                    .attr('class', 'sealevel__linechart__circle')
 
             focus.append("text")
                     .attr("x", 9)
                     .attr("dy", ".35em")
 
             focus.append('line')
-                    .attr('id', 'focusLineX')
-                    .attr('class', 'focusLine')
+                    .attr('id', 'sealevel__linechart__focusLineX')
+                    .attr('class', 'sealevel__linechart__focusline')
 
             focus.append('line')
-                    .attr('id', 'focusLineY')
-                    .attr('class', 'focusLine')
+                    .attr('id', 'sealevel__linechart__focusLineY')
+                    .attr('class', 'sealevel__linechart__focusline')
 
             g.append("rect")
-                    .attr("class", "overlay")
+                    .attr("class", "sealevel__linechart__overlay")
                     .attr("width", width)
                     .attr("height", height)
                     .on("mouseover", function() { focus.style("display", null) })
@@ -109,14 +109,14 @@
                         .attr("transform", "translate(" + x + "," + y + ")")
                         .text(formatValue(d.tide))
 
-                focus.select('#focusCircle')
+                focus.select('#sealevel__linechart__focuscircle')
                         .attr('cx', x)
                         .attr('cy', y)
 
-                focus.select('#focusLineX')
+                focus.select('#sealevel__linechart__focusLineX')
                         .attr('x1', xScale(d.date)).attr('y1', yScale(yDomain[0]))
                         .attr('x2', xScale(d.date)).attr('y2', yScale(yDomain[1]))
-                focus.select('#focusLineY')
+                focus.select('#sealevel__linechart__focusLineY')
                         .attr('x1', xScale(xDomain[0])).attr('y1', yScale(d.tide))
                         .attr('x2', xScale(xDomain[1])).attr('y2', yScale(d.tide))
 

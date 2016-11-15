@@ -1,0 +1,30 @@
+//stylings for the map
+
+.sealevel__map {
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    display:block !important;
+    z-index:2;
+}
+
+.sealevel__map {
+    &__marker {
+      border-radius: 50%;
+      border: solid 1px #000;
+      &--strong-decrease {
+        background: #5e3c99;
+      }
+      &--decrease {
+        background: #b2abd2;
+      }
+      &--increase {
+        background: #fdb863;
+      }
+      &--strong-increase {
+        background: #e66101;
+      }
+    }
+
+}

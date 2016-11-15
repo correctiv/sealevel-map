@@ -1,17 +1,16 @@
 <sealevel-details>
 
-    <div class="st-menu st-effect-1">
-        <div class="close" onclick="{ opts.oncloseclick }">&#10006;</div>
-        <h1>{ opts.station.Location } ({ opts.station.Country })</h1>
-        <h2>First Measurement</h2>
-        <p>Year: { this.year }<br/>
-            Tide: { opts.station.tideData[0].tide }</p>
-        <h2>Trend</h2>
-        <p>Trend seit Messbeginn: 5 mm pro Jahr</p>
-        <p>Trend seit 1960: 2 mm</p>
-        <h2>C02-Emissionen von { opts.station.Country }</h2>
+    <div class="sealevel__details">
+        <div class="sealevel__details__close" onclick="{ opts.oncloseclick }">&#10006;</div>
+        <h1 class="sealevel__details__titel">{ opts.station.Location }</h1>
+        <p>Country: { opts.station.Country }</p>
+        <h3>Trend</h3>
+        <p>{ opts.station.trend } mm per year</p>
 
         <sealevel-linechart chartdata="{ this.opts.station.tideData }"></sealevel-linechart>
+
+        <h3>CO2 emissions of { opts.station.Country }</h3>
+        <p> metric tons per capita</h3></p>
 
     </div>
 

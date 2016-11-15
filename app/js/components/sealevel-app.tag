@@ -1,4 +1,4 @@
-<sealevel-app class="st-container st-effect-1 {st-menu-open: currentStation}">
+<sealevel-app>
 
     <script type="text/babel">
 
