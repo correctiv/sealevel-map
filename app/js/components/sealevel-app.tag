@@ -16,14 +16,9 @@
         }
 
         this.updateStations = (station) => {
-            station.Location = transformText(station.Location)
             this.update({
                 currentStation: station
             })
-        }
-
-        function transformText(s) {
-            return s.charAt(0) + s.slice(1).toLowerCase()
         }
 
         function findStation (data, idToLookFor) {

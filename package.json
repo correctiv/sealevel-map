@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.14.0",
+    "babel-eslint": "7.1.0",
     "babel-preset-es2015-riot": "^1.1.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",

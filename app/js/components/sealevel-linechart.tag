@@ -1,5 +1,4 @@
 <sealevel-linechart>
-    <p>Chart Data: { opts.chartdata[0].timestamp }</p>
 
     <script type="text/babel">
 
@@ -23,12 +22,12 @@
 
             var svg = d3.select("sealevel-linechart").append("svg")
                     .attr("width", containerWidth)
-                    .attr("height", containerHeight);
+                    .attr("height", containerHeight)
 
-            var margin = { top: 50, left: 50, right: 50, bottom: 50 };
+            var margin = { top: 40, left: 40, right: 40, bottom: 40 }
 
-            var height = containerHeight - margin.top - margin.bottom;
-            var width = containerWidth - margin.left - margin.right;
+            var height = containerHeight - margin.top - margin.bottom
+            var width = containerWidth - margin.left - margin.right
 
             var xDomain = d3.extent(data, function(d) { return d.date })
             var yDomain = d3.extent(data, function(d) { return d.tide; })
@@ -41,12 +40,12 @@
                     .x(function(d) { return xScale(d.date) })
                     .y(function(d) { return yScale(d.tide) })
 
-            var g = svg.append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
+            var g = svg.append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
 
             g.append("g")
                     .attr("class", "axis axis--x")
                     .attr("transform", "translate(0," + height + ")")
-                    .call(d3.axisBottom(xScale));
+                    .call(d3.axisBottom(xScale))
 
             g.append("g")
                     .attr("class", "axis axis--y")
@@ -106,9 +105,9 @@
                 var x = xScale(d.date)
                 var y = yScale(d.tide)
 
-                //focus.attr("transform", "translate(" + x + "," + y + ")");
-
-                //focus.select("text").text(formatValue(d.tide));
+                focus.select("text")
+                        .attr("transform", "translate(" + x + "," + y + ")")
+                        .text(formatValue(d.tide))
 
                 focus.select('#focusCircle')
                         .attr('cx', x)
