@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const connect = require('gulp-connect')
+const ghPages = require('gulp-gh-pages')
 const source = require('vinyl-source-stream')
 const browserify = require('browserify')
 const watchify = require('watchify')
@@ -166,3 +167,8 @@ gulp.task('rebuild', ['css', 'javascript', 'html'])
 gulp.task('deploy', ['rebuild'])
 
 gulp.task('default', ['connect', 'rebuild', 'watch'])
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages())
+})
