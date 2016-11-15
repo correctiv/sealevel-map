@@ -32,9 +32,9 @@
     </script>
 
     <!-- content push wrapper -->
-    <div class="st-pusher">
+    <div>
 
-        <sealevel-map class="st-content" onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }"></sealevel-map>
+        <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }"></sealevel-map>
 
         <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
 
