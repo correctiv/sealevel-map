@@ -10,7 +10,7 @@
         <sealevel-linechart chartdata="{ this.opts.station.tideData }"></sealevel-linechart>
 
         <h3>CO2 emissions of { opts.station.Country }</h3>
-        <p> metric tons per capita</h3></p>
+        <p>{ parseFloat(opts.station.emission).toFixed(2) } metric tons per capita</h3></p>
 
     </div>
 
