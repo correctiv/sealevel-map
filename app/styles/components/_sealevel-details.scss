@@ -9,6 +9,9 @@
   height: 100%;
   background: white;
   padding: 10px;
+  @include MQ(S) {
+    width:100%
+  }
 }
 
 .sealevel__details__titel {

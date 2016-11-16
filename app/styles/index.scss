@@ -1,11 +1,15 @@
+
+
+@import 'variables';
+@import 'layout';
+@import 'components/sealevel-map';
+@import 'components/sealevel-details';
+@import 'components/sealevel-linechart';
+
+
 html,
 body {
   height: 100%;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
-
-
-@import 'components/sealevel-map';
-@import 'components/sealevel-details';
-@import 'components/sealevel-linechart';
