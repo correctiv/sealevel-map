@@ -5,6 +5,7 @@
     "Latitude": 48.38285,
     "Location": "Brest",
     "Longitude": -4.494838,
+    "emission": 5.0504829943,
     "tideData": [
       {
         "tide": 6970.3333333333,
@@ -851,6 +852,7 @@
     "Latitude": 53.916667,
     "Location": "Swinoujscie",
     "Longitude": 14.233333,
+    "emission": 7.9477284765,
     "tideData": [
       {
         "tide": 6821.9166666667,
@@ -1617,6 +1619,7 @@
     "Latitude": 53.866667,
     "Location": "Cuxhaven 2",
     "Longitude": 8.716667,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 6831.75,
@@ -2299,6 +2302,7 @@
     "Latitude": 53.898889,
     "Location": "Wismar 2",
     "Longitude": 11.458056,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 6949.1666666667,
@@ -2977,6 +2981,7 @@
     "Latitude": 51.9175,
     "Location": "Maassluis",
     "Longitude": 4.249722,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6672.0833333333,
@@ -3659,6 +3664,7 @@
     "Latitude": 37.806667,
     "Location": "San Francisco",
     "Longitude": -122.465,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6949.8333333333,
@@ -4317,6 +4323,7 @@
     "Latitude": 54.169722,
     "Location": "Warnemunde 2",
     "Longitude": 12.103333,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 6924.1111111111,
@@ -4971,6 +4978,7 @@
     "Latitude": 40.7,
     "Location": "New York ( The Battery)",
     "Longitude": -74.013333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6697.5,
@@ -5621,6 +5629,7 @@
     "Latitude": 53.958056,
     "Location": "Travemunde",
     "Longitude": 10.872222,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 6824.0,
@@ -6267,6 +6276,7 @@
     "Latitude": 60.153633,
     "Location": "Helsinki",
     "Longitude": 24.956217,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7252.0,
@@ -6821,6 +6831,7 @@
     "Latitude": 51.442222,
     "Location": "Vlissingen",
     "Longitude": 3.596111,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6786.6666666667,
@@ -7447,6 +7458,7 @@
     "Latitude": 51.9775,
     "Location": "Hoek Van Holland",
     "Longitude": 4.12,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6542.5,
@@ -8065,6 +8077,7 @@
     "Latitude": 52.964444,
     "Location": "Den Helder",
     "Longitude": 4.745,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6665.25,
@@ -8679,6 +8692,7 @@
     "Latitude": 53.326389,
     "Location": "Delfzijl",
     "Longitude": 6.933056,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6651.6666666667,
@@ -9293,6 +9307,7 @@
     "Latitude": 53.175556,
     "Location": "Harlingen",
     "Longitude": 5.409444,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6664.9166666667,
@@ -9907,6 +9922,7 @@
     "Latitude": 52.462222,
     "Location": "Ijmuiden",
     "Longitude": 4.554722,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6863.625,
@@ -10497,6 +10513,7 @@
     "Latitude": 59.678073,
     "Location": "Oscarsborg",
     "Longitude": 10.604861,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7205.0,
@@ -11083,6 +11100,7 @@
     "Latitude": 42.166667,
     "Location": "Poti",
     "Longitude": 41.683333,
+    "emission": 1.9888813559,
     "tideData": [
       {
         "tide": 5999.0,
@@ -11661,6 +11679,7 @@
     "Latitude": 68.212639,
     "Location": "Kabelvag",
     "Longitude": 14.482149,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 6947.75,
@@ -11943,6 +11962,7 @@
     "Latitude": 58.974339,
     "Location": "Stavanger",
     "Longitude": 5.730121,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 6890.3333333333,
@@ -12341,6 +12361,7 @@
     "Latitude": 63.081533,
     "Location": "Vaasa / Vasa",
     "Longitude": 21.571183,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7768.0,
@@ -12879,6 +12900,7 @@
     "Latitude": 60.398046,
     "Location": "Bergen",
     "Longitude": 5.320487,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 6878.1111111111,
@@ -13293,6 +13315,7 @@
     "Latitude": 43.278801,
     "Location": "Marseille",
     "Longitude": 5.35386,
+    "emission": 5.0504829943,
     "tideData": [
       {
         "tide": 6850.9090909091,
@@ -13827,6 +13850,7 @@
     "Latitude": 59.908559,
     "Location": "Oslo",
     "Longitude": 10.73451,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7350.6666666667,
@@ -14361,6 +14385,7 @@
     "Latitude": 54.4,
     "Location": "Gdansk/Nowy Port",
     "Longitude": 18.683333,
+    "emission": 7.9477284765,
     "tideData": [
       {
         "tide": 6786.8333333333,
@@ -14567,6 +14592,7 @@
     "Latitude": 58.742222,
     "Location": "Landsort",
     "Longitude": 17.865278,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7239.8333333333,
@@ -15053,6 +15079,7 @@
     "Latitude": 57.366111,
     "Location": "Olands Norra Udde",
     "Longitude": 17.097222,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7053.5,
@@ -15579,6 +15606,7 @@
     "Latitude": 56.105278,
     "Location": "Kungsholmsfort",
     "Longitude": 15.589444,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7036.1666666667,
@@ -16105,6 +16133,7 @@
     "Latitude": 59.822867,
     "Location": "Hanko / Hango",
     "Longitude": 22.976583,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7349.5,
@@ -16627,6 +16656,7 @@
     "Latitude": 56.147222,
     "Location": "Aarhus",
     "Longitude": 10.223889,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 7022.5,
@@ -17137,6 +17167,7 @@
     "Latitude": 59.324167,
     "Location": "Stockholm",
     "Longitude": 18.081667,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7223.1666666667,
@@ -17655,6 +17686,7 @@
     "Latitude": 65.040317,
     "Location": "Oulu / Uleaborg",
     "Longitude": 25.418233,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7561.6666666667,
@@ -18169,6 +18201,7 @@
     "Latitude": 55.460833,
     "Location": "Esbjerg",
     "Longitude": 8.441111,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6911.4166666667,
@@ -18675,6 +18708,7 @@
     "Latitude": 55.560833,
     "Location": "Fredericia",
     "Longitude": 9.754444,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6978.2,
@@ -19181,6 +19215,7 @@
     "Latitude": 55.705,
     "Location": "Kobenhavn",
     "Longitude": 12.6,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6939.3333333333,
@@ -19687,6 +19722,7 @@
     "Latitude": 63.986111,
     "Location": "Ratan",
     "Longitude": 20.895,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7465.3333333333,
@@ -20193,6 +20229,7 @@
     "Latitude": 57.595556,
     "Location": "Hirtshals",
     "Longitude": 9.963889,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 7049.9166666667,
@@ -20687,6 +20724,7 @@
     "Latitude": 57.436389,
     "Location": "Frederikshavn",
     "Longitude": 10.548889,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6962.1666666667,
@@ -21173,6 +21211,7 @@
     "Latitude": 55.007444,
     "Location": "North Shields",
     "Longitude": -1.439778,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 6793.5,
@@ -21667,6 +21706,7 @@
     "Latitude": 44.666667,
     "Location": "Halifax",
     "Longitude": -63.583333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6689.0,
@@ -22153,6 +22193,7 @@
     "Latitude": 55.288333,
     "Location": "Slipshavn",
     "Longitude": 10.827778,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6932.9166666667,
@@ -22631,6 +22672,7 @@
     "Latitude": -32.065556,
     "Location": "Fremantle",
     "Longitude": 115.748139,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6568.5833333333,
@@ -23117,6 +23159,7 @@
     "Latitude": 30.671667,
     "Location": "Fernandina Beach",
     "Longitude": -81.465,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7121.4285714286,
@@ -23603,6 +23646,7 @@
     "Latitude": 55.332222,
     "Location": "Korsor",
     "Longitude": 11.142222,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6957.0,
@@ -24077,6 +24121,7 @@
     "Latitude": 55.7,
     "Location": "Klaipeda",
     "Longitude": 21.133333,
+    "emission": 4.2736572371,
     "tideData": [
       {
         "tide": 6503.5,
@@ -24543,6 +24588,7 @@
     "Latitude": 56.091111,
     "Location": "Hornbaek",
     "Longitude": 12.458333,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6982.3333333333,
@@ -25041,6 +25087,7 @@
     "Latitude": 54.572778,
     "Location": "Gedser",
     "Longitude": 11.925556,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 6866.8333333333,
@@ -25535,6 +25582,7 @@
     "Latitude": 46.333333,
     "Location": "Trois-Rivieres",
     "Longitude": -72.55,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6849.0,
@@ -26013,6 +26061,7 @@
     "Latitude": 47.601667,
     "Location": "Seattle",
     "Longitude": -122.338333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6937.8333333333,
@@ -26491,6 +26540,7 @@
     "Latitude": 35.160278,
     "Location": "Aburatsubo",
     "Longitude": 139.615278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6835.5833333333,
@@ -26845,6 +26895,7 @@
     "Latitude": 38.296667,
     "Location": "Ayukawa",
     "Longitude": 141.505278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6965.7777777778,
@@ -27087,6 +27138,7 @@
     "Latitude": 37.405833,
     "Location": "Wajima",
     "Longitude": 136.900278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7137.1666666667,
@@ -27441,6 +27493,7 @@
     "Latitude": 32.428611,
     "Location": "Hosojima",
     "Longitude": 131.669444,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6915.75,
@@ -27795,6 +27848,7 @@
     "Latitude": 33.475833,
     "Location": "Kushimoto",
     "Longitude": 135.773333,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7034.0,
@@ -28041,6 +28095,7 @@
     "Latitude": 39.933333,
     "Location": "Philadelphia (Pier 9N)",
     "Longitude": -75.141667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6661.3333333333,
@@ -28515,6 +28570,7 @@
     "Latitude": 46.5,
     "Location": "Batiscan",
     "Longitude": -72.25,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6525.7142857143,
@@ -28985,6 +29041,7 @@
     "Latitude": 39.266667,
     "Location": "Baltimore",
     "Longitude": -76.578333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6922.8333333333,
@@ -29451,6 +29508,7 @@
     "Latitude": -36.84307,
     "Location": "Auckland Ii",
     "Longitude": 174.76946,
+    "emission": 7.6450523401,
     "tideData": [
       {
         "tide": 6923.0,
@@ -29853,6 +29911,7 @@
     "Latitude": 45.647361,
     "Location": "Trieste",
     "Longitude": 13.758472,
+    "emission": 5.723809985,
     "tideData": [
       {
         "tide": 6806.5833333333,
@@ -30427,6 +30486,7 @@
     "Latitude": 21.306667,
     "Location": "Honolulu",
     "Longitude": -157.866667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6915.1666666667,
@@ -30881,6 +30941,7 @@
     "Latitude": 32.713333,
     "Location": "San Diego (Quarantine Station)",
     "Longitude": -117.173333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6919.25,
@@ -31331,6 +31392,7 @@
     "Latitude": 29.31,
     "Location": "Galveston Ii, Pier 21, Tx",
     "Longitude": -94.793333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6846.125,
@@ -31773,6 +31835,7 @@
     "Latitude": 8.966667,
     "Location": "Balboa",
     "Longitude": -79.566667,
+    "emission": 2.7230176554,
     "tideData": [
       {
         "tide": 6942.9166666667,
@@ -32215,6 +32278,7 @@
     "Latitude": 49.15,
     "Location": "Tofino",
     "Longitude": -125.916667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7254.0,
@@ -32653,6 +32717,7 @@
     "Latitude": 48.416667,
     "Location": "Victoria",
     "Longitude": -123.366667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6921.0,
@@ -33091,6 +33156,7 @@
     "Latitude": 54.316667,
     "Location": "Prince Rupert",
     "Longitude": -130.333333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6886.0,
@@ -33529,6 +33595,7 @@
     "Latitude": 45.433333,
     "Location": "Venezia (Punta Della Salute)",
     "Longitude": 12.333333,
+    "emission": 5.723809985,
     "tideData": [
       {
         "tide": 6903.75,
@@ -33907,6 +33974,7 @@
     "Latitude": 61.594383,
     "Location": "Mantyluoto",
     "Longitude": 21.463433,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7302.0,
@@ -34337,6 +34405,7 @@
     "Latitude": 46.833333,
     "Location": "Quebec (Lauzon)",
     "Longitude": -71.166667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6979.8,
@@ -34759,6 +34828,7 @@
     "Latitude": 11.8,
     "Location": "Ko Lak",
     "Longitude": 99.816667,
+    "emission": 4.4938694843,
     "tideData": [
       {
         "tide": 6932.75,
@@ -35069,6 +35139,7 @@
     "Latitude": 58.353611,
     "Location": "Smogen",
     "Longitude": 11.217778,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7184.25,
@@ -35499,6 +35570,7 @@
     "Latitude": 39.355,
     "Location": "Atlantic City",
     "Longitude": -74.418333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6814.75,
@@ -35929,6 +36001,7 @@
     "Latitude": 43.656667,
     "Location": "Portland  (Maine)",
     "Longitude": -70.246667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6980.8333333333,
@@ -36355,6 +36428,7 @@
     "Latitude": 24.555,
     "Location": "Key West",
     "Longitude": -81.806667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7023.0,
@@ -36777,6 +36851,7 @@
     "Latitude": -20.317583,
     "Location": "Port Hedland",
     "Longitude": 118.574417,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 7134.0,
@@ -36987,6 +37062,7 @@
     "Latitude": 46.7,
     "Location": "Neuville",
     "Longitude": -71.566667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6868.0,
@@ -37405,6 +37481,7 @@
     "Latitude": 49.333333,
     "Location": "Point Atkinson",
     "Longitude": -123.25,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7047.75,
@@ -37823,6 +37900,7 @@
     "Latitude": 63.708567,
     "Location": "Pietarsaari  /  Jakobstad",
     "Longitude": 22.689583,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7368.8571428571,
@@ -38237,6 +38315,7 @@
     "Latitude": -33.854667,
     "Location": "Sydney, Fort Denison 2",
     "Longitude": 151.225778,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6949.7142857143,
@@ -38655,6 +38734,7 @@
     "Latitude": 46.566667,
     "Location": "Deschaillons",
     "Longitude": -72.1,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6694.1428571429,
@@ -39069,6 +39149,7 @@
     "Latitude": 50.103,
     "Location": "Newlyn",
     "Longitude": -5.542833,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 6996.375,
@@ -39483,6 +39564,7 @@
     "Latitude": 64.915833,
     "Location": "Furuogrund",
     "Longitude": 21.230556,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7411.8333333333,
@@ -39893,6 +39975,7 @@
     "Latitude": 44.1,
     "Location": "Tuapse",
     "Longitude": 39.066667,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7024.0,
@@ -40295,6 +40378,7 @@
     "Latitude": -33.177644,
     "Location": "Port Pirie",
     "Longitude": 138.01165,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6782.75,
@@ -40605,6 +40689,7 @@
     "Latitude": -41.28434,
     "Location": "Wellington Harbour",
     "Longitude": 174.7798,
+    "emission": 7.6450523401,
     "tideData": [
       {
         "tide": 6910.0,
@@ -40903,6 +40988,7 @@
     "Latitude": 38.781667,
     "Location": "Lewes (Breakwater Harbor)",
     "Longitude": -75.12,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6894.1818181818,
@@ -41301,6 +41387,7 @@
     "Latitude": 55.331667,
     "Location": "Ketchikan",
     "Longitude": -131.625,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7081.8333333333,
@@ -41699,6 +41786,7 @@
     "Latitude": 65.673367,
     "Location": "Kemi",
     "Longitude": 24.51525,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7322.4166666667,
@@ -42089,6 +42177,7 @@
     "Latitude": -34.715903,
     "Location": "Port Lincoln",
     "Longitude": 135.870011,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6896.125,
@@ -42303,6 +42392,7 @@
     "Latitude": 32.781667,
     "Location": "Charleston I",
     "Longitude": -79.925,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6955.0,
@@ -42693,6 +42783,7 @@
     "Latitude": 42.353333,
     "Location": "Boston",
     "Longitude": -71.053333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6954.8333333333,
@@ -43083,6 +43174,7 @@
     "Latitude": 53.363056,
     "Location": "West-Terschelling",
     "Longitude": 5.22,
+    "emission": 10.1147592492,
     "tideData": [
       {
         "tide": 6836.8333333333,
@@ -43473,6 +43565,7 @@
     "Latitude": 60.428283,
     "Location": "Turku / Abo",
     "Longitude": 22.100533,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7200.8333333333,
@@ -43855,6 +43948,7 @@
     "Latitude": 64.666333,
     "Location": "Raahe / Brahestad",
     "Longitude": 24.40705,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7365.8333333333,
@@ -44237,6 +44331,7 @@
     "Latitude": 33.72,
     "Location": "Los Angeles",
     "Longitude": -118.271667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7060.0,
@@ -44619,6 +44714,7 @@
     "Latitude": 30.403333,
     "Location": "Pensacola",
     "Longitude": -87.21,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6994.5,
@@ -44996,389 +45092,12 @@
     "trend": 2.209
   },
   {
-    "Country": "\u00c5land Islands",
-    "ID": 249,
-    "Latitude": 60.031883,
-    "Location": "Foglo / Degerby",
-    "Longitude": 20.384817,
-    "tideData": [
-      {
-        "tide": 7263.0,
-        "timestamp": "1923-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7149.1666666667,
-        "timestamp": "1924-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7229.3333333333,
-        "timestamp": "1925-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7141.8333333333,
-        "timestamp": "1926-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7196.3333333333,
-        "timestamp": "1927-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7158.25,
-        "timestamp": "1928-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7141.5,
-        "timestamp": "1929-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7116.4166666667,
-        "timestamp": "1930-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7123.8333333333,
-        "timestamp": "1931-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7174.5,
-        "timestamp": "1932-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7058.9166666667,
-        "timestamp": "1933-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7132.0,
-        "timestamp": "1934-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7150.4166666667,
-        "timestamp": "1935-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7077.1666666667,
-        "timestamp": "1936-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7018.1666666667,
-        "timestamp": "1937-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7190.5833333333,
-        "timestamp": "1938-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6993.5,
-        "timestamp": "1939-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7043.4166666667,
-        "timestamp": "1940-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6954.1666666667,
-        "timestamp": "1941-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7036.4166666667,
-        "timestamp": "1942-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7171.8333333333,
-        "timestamp": "1943-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7112.25,
-        "timestamp": "1944-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7107.25,
-        "timestamp": "1945-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7060.1666666667,
-        "timestamp": "1946-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6940.5833333333,
-        "timestamp": "1947-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7116.5,
-        "timestamp": "1948-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7145.4166666667,
-        "timestamp": "1949-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7092.8333333333,
-        "timestamp": "1950-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6960.5,
-        "timestamp": "1951-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7089.6666666667,
-        "timestamp": "1952-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7056.1666666667,
-        "timestamp": "1953-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7012.6666666667,
-        "timestamp": "1954-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7059.0833333333,
-        "timestamp": "1955-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7046.8333333333,
-        "timestamp": "1956-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7065.4166666667,
-        "timestamp": "1957-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7004.1666666667,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6950.3333333333,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6898.3333333333,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7099.5833333333,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7060.5833333333,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6924.8181818182,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7001.75,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6975.5833333333,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6959.5454545455,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7093.6666666667,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6950.6363636364,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7103.0,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6915.5,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7020.9166666667,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6946.5454545455,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6968.3333333333,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6877.5,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6910.3333333333,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6965.75,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6912.5,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6876.2222222222,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6999.0909090909,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6899.5,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7042.1,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6889.1666666667,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6902.9090909091,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6909.0,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6864.5833333333,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6940.5,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7035.8333333333,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7025.4166666667,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6873.1666666667,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6928.6666666667,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6855.25,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6879.9166666667,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6928.6666666667,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6713.5,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6864.0833333333,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6913.0,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6880.5833333333,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6902.5,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6849.8333333333,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6830.9166666667,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6815.5,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6887.25,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6861.5,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6823.9166666667,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6966.4166666667,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6907.9166666667,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6783.9166666667,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6745.3333333333,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6868.6666666667,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6884.6666666667,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6759.8333333333,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6730.6666666667,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": -3.616
-  },
-  {
     "Country": "United States",
     "ID": 256,
     "Latitude": 32.866667,
     "Location": "La Jolla (Scripps Pier)",
     "Longitude": -117.256667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6892.5,
@@ -45757,6 +45476,7 @@
     "Latitude": 46.206667,
     "Location": "Astoria (Tongue Point)",
     "Longitude": -123.768333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6963.6363636364,
@@ -46131,6 +45851,7 @@
     "Latitude": 60.12,
     "Location": "Seward",
     "Longitude": -149.426667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7191.5833333333,
@@ -46349,6 +46070,7 @@
     "Latitude": 62.34395,
     "Location": "Kaskinen / Kasko",
     "Longitude": 21.214833,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7388.0,
@@ -46715,6 +46437,7 @@
     "Latitude": 53.630222,
     "Location": "Immingham",
     "Longitude": -0.187417,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 7006.6666666667,
@@ -46949,6 +46672,7 @@
     "Latitude": 36.946667,
     "Location": "Sewells Point, Hampton Roads",
     "Longitude": -76.33,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6935.0,
@@ -47315,6 +47039,7 @@
     "Latitude": 19.73,
     "Location": "Hilo,  Hawaii Island",
     "Longitude": -155.055,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6887.8333333333,
@@ -47681,6 +47406,7 @@
     "Latitude": 58.006377,
     "Location": "Tregde",
     "Longitude": 7.554759,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7041.3333333333,
@@ -48047,6 +47773,7 @@
     "Latitude": 38.983333,
     "Location": "Annapolis (Naval Academy)",
     "Longitude": -76.48,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6768.0,
@@ -48409,6 +48136,7 @@
     "Latitude": 68.428286,
     "Location": "Narvik",
     "Longitude": 17.425759,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7008.0,
@@ -48771,6 +48499,7 @@
     "Latitude": 63.425224,
     "Location": "Heimsjo",
     "Longitude": 9.101504,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7103.0,
@@ -49133,6 +48862,7 @@
     "Latitude": 60.562767,
     "Location": "Hamina",
     "Longitude": 27.1792,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7206.3333333333,
@@ -49491,6 +49221,7 @@
     "Latitude": 30.393333,
     "Location": "Mayport",
     "Longitude": -81.431667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7004.875,
@@ -49793,6 +49524,7 @@
     "Latitude": 55.522222,
     "Location": "Klagshamn",
     "Longitude": 12.893611,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7090.0,
@@ -50151,6 +49883,7 @@
     "Latitude": 44.903333,
     "Location": "Eastport",
     "Longitude": -66.981667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6867.0,
@@ -50509,6 +50242,7 @@
     "Latitude": 41.505,
     "Location": "Newport",
     "Longitude": -71.326667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6925.3333333333,
@@ -50863,6 +50597,7 @@
     "Latitude": 43.5067,
     "Location": "Split - Gradska Luka",
     "Longitude": 16.4417,
+    "emission": 4.1618666214,
     "tideData": [
       {
         "tide": 7058.0,
@@ -51117,6 +50852,7 @@
     "Latitude": 45.3,
     "Location": "Bakar",
     "Longitude": 14.533333,
+    "emission": 4.1618666214,
     "tideData": [
       {
         "tide": 7018.25,
@@ -51463,6 +51199,7 @@
     "Latitude": 38.873333,
     "Location": "Washington Dc",
     "Longitude": -77.021667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6756.4166666667,
@@ -51813,6 +51550,7 @@
     "Latitude": 57.144056,
     "Location": "Aberdeen I",
     "Longitude": -2.077361,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 7013.2857142857,
@@ -52163,6 +51901,7 @@
     "Latitude": 40.793333,
     "Location": "Willets Point",
     "Longitude": -73.781667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6949.6,
@@ -52453,6 +52192,7 @@
     "Latitude": 40.466667,
     "Location": "Sandy Hook",
     "Longitude": -74.008333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6892.5,
@@ -52799,6 +52539,7 @@
     "Latitude": 41.523333,
     "Location": "Woods Hole (Ocean. Inst.)",
     "Longitude": -70.671667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6904.6,
@@ -53145,6 +52886,7 @@
     "Latitude": 32.373333,
     "Location": "St. Georges / Esso Pier (Bermuda)",
     "Longitude": -64.703333,
+    "emission": 5.5850371533,
     "tideData": [
       {
         "tide": 6920.0,
@@ -53491,6 +53233,7 @@
     "Latitude": 61.133533,
     "Location": "Rauma / Raumo",
     "Longitude": 21.425817,
+    "emission": 8.5125538429,
     "tideData": [
       {
         "tide": 7048.5833333333,
@@ -53829,6 +53572,7 @@
     "Latitude": 34.008333,
     "Location": "Santa Monica (Municipal Pier)",
     "Longitude": -118.5,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6848.1666666667,
@@ -54171,6 +53915,7 @@
     "Latitude": 41.745,
     "Location": "Crescent City",
     "Longitude": -124.181667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7057.75,
@@ -54513,6 +54258,7 @@
     "Latitude": 48.546667,
     "Location": "Friday Harbor (Ocean. Labs.)",
     "Longitude": -123.01,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7005.3333333333,
@@ -54851,6 +54597,7 @@
     "Latitude": 48.366667,
     "Location": "Neah Bay",
     "Longitude": -124.611667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7124.6,
@@ -55189,6 +54936,7 @@
     "Latitude": 47.566667,
     "Location": "Port Aux Basques",
     "Longitude": -59.133333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6872.1666666667,
@@ -55427,6 +55175,7 @@
     "Latitude": 47.566667,
     "Location": "St. John'S, Nfld.",
     "Longitude": -52.716667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6882.0,
@@ -55761,6 +55510,7 @@
     "Latitude": 10.3,
     "Location": "Cebu",
     "Longitude": 123.916667,
+    "emission": 1.0068386034,
     "tideData": [
       {
         "tide": 6981.5,
@@ -56091,6 +55841,7 @@
     "Latitude": 32.033333,
     "Location": "Fort Pulaski",
     "Longitude": -80.901667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6973.25,
@@ -56425,6 +56176,7 @@
     "Latitude": 34.226667,
     "Location": "Wilmington",
     "Longitude": -77.953333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6985.0,
@@ -56759,6 +56511,7 @@
     "Latitude": 54.510833,
     "Location": "Sassnitz",
     "Longitude": 13.643056,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 7040.0,
@@ -57093,6 +56846,7 @@
     "Latitude": 58.298333,
     "Location": "Juneau",
     "Longitude": -134.411667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7364.9166666667,
@@ -57423,6 +57177,7 @@
     "Latitude": 35.017222,
     "Location": "Uchiura",
     "Longitude": 138.890278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6965.6666666667,
@@ -57721,6 +57476,7 @@
     "Latitude": 38.316667,
     "Location": "Solomon'S Island (Biol. Lab.)",
     "Longitude": -76.451667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6881.0,
@@ -58047,6 +57803,7 @@
     "Latitude": 51.233333,
     "Location": "Oostende",
     "Longitude": 2.916667,
+    "emission": 8.3716392748,
     "tideData": [
       {
         "tide": 6982.9166666667,
@@ -58373,6 +58130,7 @@
     "Latitude": 57.051667,
     "Location": "Sitka",
     "Longitude": -135.341667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7085.75,
@@ -58695,6 +58453,7 @@
     "Latitude": 46.233333,
     "Location": "Charlottetown",
     "Longitude": -63.116667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6771.6666666667,
@@ -59125,6 +58884,7 @@
     "Latitude": 29.135,
     "Location": "Cedar Key Ii",
     "Longitude": -83.031667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6908.6666666667,
@@ -59447,6 +59207,7 @@
     "Latitude": 41.36,
     "Location": "New London",
     "Longitude": -72.09,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6931.0,
@@ -59769,6 +59530,7 @@
     "Latitude": 41.806667,
     "Location": "Providence (State Pier)",
     "Longitude": -71.4,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6964.25,
@@ -60091,6 +59853,7 @@
     "Latitude": 53.35,
     "Location": "Dublin",
     "Longitude": -6.216667,
+    "emission": 7.6038733061,
     "tideData": [
       {
         "tide": 6910.1666666667,
@@ -60389,6 +60152,7 @@
     "Latitude": 37.771667,
     "Location": "Alameda (Naval Air Station)",
     "Longitude": -122.298333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7002.5555555556,
@@ -60707,6 +60471,7 @@
     "Latitude": 9.966667,
     "Location": "Cochin (Willingdon Is.)",
     "Longitude": 76.266667,
+    "emission": 1.590272829,
     "tideData": [
       {
         "tide": 6931.75,
@@ -61013,6 +60778,7 @@
     "Latitude": 59.548333,
     "Location": "Yakutat",
     "Longitude": -139.733333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7133.1666666667,
@@ -61327,6 +61093,7 @@
     "Latitude": 7.833333,
     "Location": "Ko Taphao Noi",
     "Longitude": 98.433333,
+    "emission": 4.4938694843,
     "tideData": [
       {
         "tide": 7199.0,
@@ -61629,6 +61396,7 @@
     "Latitude": 58.766667,
     "Location": "Churchill",
     "Longitude": -94.183333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7438.3333333333,
@@ -61943,6 +61711,7 @@
     "Latitude": -34.779761,
     "Location": "Port Adelaide (Outer Harbor)",
     "Longitude": 138.480728,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6741.0,
@@ -62257,6 +62026,7 @@
     "Latitude": 13.15,
     "Location": "Ko Sichang",
     "Longitude": 100.816667,
+    "emission": 4.4938694843,
     "tideData": [
       {
         "tide": 6892.5,
@@ -62519,6 +62289,7 @@
     "Latitude": 49.4819,
     "Location": "Le Havre",
     "Longitude": 0.106,
+    "emission": 5.0504829943,
     "tideData": [
       {
         "tide": 6986.5,
@@ -62841,6 +62612,7 @@
     "Latitude": 49.651299,
     "Location": "Cherbourg",
     "Longitude": -1.63563,
+    "emission": 5.0504829943,
     "tideData": [
       {
         "tide": 7094.6666666667,
@@ -63019,6 +62791,7 @@
     "Latitude": 51.35,
     "Location": "Zeebrugge",
     "Longitude": 3.2,
+    "emission": 8.3716392748,
     "tideData": [
       {
         "tide": 6986.8,
@@ -63325,6 +63098,7 @@
     "Latitude": 42.238,
     "Location": "Vigo",
     "Longitude": -8.731,
+    "emission": 5.0829825239,
     "tideData": [
       {
         "tide": 6723.9,
@@ -63627,6 +63401,7 @@
     "Latitude": 43.3686,
     "Location": "La Coruna I",
     "Longitude": -8.39775,
+    "emission": 5.0829825239,
     "tideData": [
       {
         "tide": 6896.4,
@@ -63929,6 +63704,7 @@
     "Latitude": 43.4613,
     "Location": "Santander I",
     "Longitude": -3.7908,
+    "emission": 5.0829825239,
     "tideData": [
       {
         "tide": 6877.5,
@@ -64231,6 +64007,7 @@
     "Latitude": 61.933776,
     "Location": "Maloy",
     "Longitude": 5.11331,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7020.5,
@@ -64533,6 +64310,7 @@
     "Latitude": 36.0086,
     "Location": "Tarifa",
     "Longitude": -5.6026,
+    "emission": 5.0829825239,
     "tideData": [
       {
         "tide": 6773.25,
@@ -64835,6 +64613,7 @@
     "Latitude": 51.15,
     "Location": "Nieuwpoort",
     "Longitude": 2.733333,
+    "emission": 8.3716392748,
     "tideData": [
       {
         "tide": 7025.9166666667,
@@ -65137,6 +64916,7 @@
     "Latitude": 59.45,
     "Location": "Skagway",
     "Longitude": -135.326667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7573.5,
@@ -65435,6 +65215,7 @@
     "Latitude": 36.7127,
     "Location": "Malaga",
     "Longitude": -4.41546,
+    "emission": 5.0829825239,
     "tideData": [
       {
         "tide": 6941.8333333333,
@@ -65725,6 +65506,7 @@
     "Latitude": 26.06,
     "Location": "Port Isabel",
     "Longitude": -97.215,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6983.5555555556,
@@ -66023,6 +65805,7 @@
     "Latitude": 35.8924,
     "Location": "Ceuta",
     "Longitude": -5.31589,
+    "emission": 5.0829825239,
     "tideData": [
       {
         "tide": 6931.2,
@@ -66321,6 +66104,7 @@
     "Latitude": 31.216667,
     "Location": "Alexandria",
     "Longitude": 29.916667,
+    "emission": 2.4312619472,
     "tideData": [
       {
         "tide": 6982.75,
@@ -66583,6 +66367,7 @@
     "Latitude": 35.176667,
     "Location": "Port San Luis",
     "Longitude": -120.76,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7018.6666666667,
@@ -66877,6 +66662,7 @@
     "Latitude": 62.469414,
     "Location": "Alesund",
     "Longitude": 6.151946,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 6946.9090909091,
@@ -67171,6 +66957,7 @@
     "Latitude": -23.653056,
     "Location": "Antofagasta 2",
     "Longitude": -70.404444,
+    "emission": 4.7321357116,
     "tideData": [
       {
         "tide": 7052.0,
@@ -67461,6 +67248,7 @@
     "Latitude": 8.731667,
     "Location": "Kwajalein",
     "Longitude": 167.735,
+    "emission": 1.9451369681,
     "tideData": [
       {
         "tide": 6947.8571428571,
@@ -67751,6 +67539,7 @@
     "Latitude": 42.975556,
     "Location": "Kushiro",
     "Longitude": 144.371389,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6738.3333333333,
@@ -68037,6 +67826,7 @@
     "Latitude": 41.048333,
     "Location": "Montauk",
     "Longitude": -71.96,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6981.6666666667,
@@ -68323,6 +68113,7 @@
     "Latitude": 27.76,
     "Location": "St. Petersburg",
     "Longitude": -82.626667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7034.0,
@@ -68609,6 +68400,7 @@
     "Latitude": 20.895,
     "Location": "Kahului Harbor, Maui Island",
     "Longitude": -156.476667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6886.875,
@@ -68895,6 +68687,7 @@
     "Latitude": 13.15,
     "Location": "Legaspi, Albay",
     "Longitude": 123.75,
+    "emission": 1.0068386034,
     "tideData": [
       {
         "tide": 7029.25,
@@ -69172,297 +68965,12 @@
     "trend": 6.832
   },
   {
-    "Country": "United States Minor Outlying Islands",
-    "ID": 523,
-    "Latitude": 28.211667,
-    "Location": "Midway Island",
-    "Longitude": -177.36,
-    "tideData": [
-      {
-        "tide": 6931.9166666667,
-        "timestamp": "1947-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6937.5,
-        "timestamp": "1948-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6972.75,
-        "timestamp": "1949-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6990.6666666667,
-        "timestamp": "1950-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7011.1666666667,
-        "timestamp": "1951-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6998.4166666667,
-        "timestamp": "1952-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7008.0,
-        "timestamp": "1953-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6963.25,
-        "timestamp": "1954-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6957.8333333333,
-        "timestamp": "1955-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6941.6666666667,
-        "timestamp": "1956-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6929.0,
-        "timestamp": "1957-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6962.0,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6915.0833333333,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6969.4166666667,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6961.4166666667,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6915.5833333333,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6977.75,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7022.4166666667,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6991.5,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6945.0,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6960.8333333333,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6986.0,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6903.5833333333,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6959.4166666667,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6979.25,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6907.0833333333,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6978.625,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6886.0833333333,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7026.1428571429,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6967.4,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6904.3333333333,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6931.1428571429,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6911.1,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6904.3,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6928.0,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6922.0,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6994.25,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6944.3333333333,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6982.5833333333,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6973.5,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6942.0,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6957.8333333333,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6969.5,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6990.1818181818,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6982.5,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6933.1666666667,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6977.4166666667,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7003.75,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6974.25,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6904.75,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7018.5,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6999.0833333333,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7045.1666666667,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7028.25,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7043.1666666667,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7034.4166666667,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7036.25,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6976.9,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7011.75,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7004.4166666667,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7054.1818181818,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7065.1666666667,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7057.4166666667,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6982.9166666667,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7104.0833333333,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7064.5833333333,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7076.4166666667,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7031.6666666667,
-        "timestamp": "2015-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": 1.639
-  },
-  {
     "Country": "United States",
     "ID": 525,
     "Latitude": 44.391667,
     "Location": "Bar Harbor, Frenchman Bay, Me",
     "Longitude": -68.205,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7010.0,
@@ -69749,6 +69257,7 @@
     "Latitude": 29.263333,
     "Location": "Grand Isle",
     "Longitude": -89.956667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6750.5,
@@ -70035,6 +69544,7 @@
     "Latitude": 28.021667,
     "Location": "Rockport",
     "Longitude": -97.046667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6887.6666666667,
@@ -70312,853 +69822,12 @@
     "trend": 6.504
   },
   {
-    "Country": "American Samoa",
-    "ID": 539,
-    "Latitude": -14.28,
-    "Location": "Pago Pago",
-    "Longitude": -170.69,
-    "tideData": [
-      {
-        "tide": 6827.3333333333,
-        "timestamp": "1948-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6898.9166666667,
-        "timestamp": "1949-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6950.3333333333,
-        "timestamp": "1950-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6940.6666666667,
-        "timestamp": "1951-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6921.9166666667,
-        "timestamp": "1952-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6873.6666666667,
-        "timestamp": "1953-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6940.9166666667,
-        "timestamp": "1954-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7002.0833333333,
-        "timestamp": "1955-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6992.0,
-        "timestamp": "1956-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6951.8333333333,
-        "timestamp": "1957-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6884.4166666667,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6934.1666666667,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7000.6666666667,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6969.75,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6968.5,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6962.25,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6959.6666666667,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6969.5833333333,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6898.5833333333,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6972.6666666667,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6964.4166666667,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6944.3333333333,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6958.25,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7030.8333333333,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6969.1666666667,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6918.0833333333,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7026.0833333333,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6976.1666666667,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7001.7,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6934.25,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6992.0,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6980.8571428571,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7019.8333333333,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6846.0833333333,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6984.9166666667,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7038.1666666667,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7025.25,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6938.0,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6961.5,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6990.8333333333,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7000.8333333333,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7027.4166666667,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6968.5833333333,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7033.6666666667,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7098.5833333333,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7017.1666666667,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7073.8333333333,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7022.0,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6819.0833333333,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7061.0833333333,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7048.75,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7065.3636363636,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7049.9166666667,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7060.0,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7090.75,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7047.8181818182,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7097.5,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7075.1666666667,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7067.8333333333,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7071.25,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7098.0,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7215.0833333333,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7193.8333333333,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7177.4166666667,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7192.1666666667,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7232.5,
-        "timestamp": "2015-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": 3.018
-  },
-  {
-    "Country": "Guam",
-    "ID": 540,
-    "Latitude": 13.438333,
-    "Location": "Apra Harbour,  Guam",
-    "Longitude": 144.653333,
-    "tideData": [
-      {
-        "tide": 7055.75,
-        "timestamp": "1948-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7055.25,
-        "timestamp": "1949-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7067.4166666667,
-        "timestamp": "1950-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7021.0,
-        "timestamp": "1951-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7040.3333333333,
-        "timestamp": "1952-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7111.4166666667,
-        "timestamp": "1953-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7090.75,
-        "timestamp": "1954-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7058.4166666667,
-        "timestamp": "1955-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7004.1666666667,
-        "timestamp": "1956-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7060.1666666667,
-        "timestamp": "1957-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6972.4166666667,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7004.25,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7034.9166666667,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7059.0,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7065.0,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7006.5,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7013.5,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7031.5,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7016.5833333333,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6948.75,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6963.6666666667,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6988.8333333333,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7111.5833333333,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7127.6666666667,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6897.8333333333,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7023.75,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7010.3333333333,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7081.75,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7053.0,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7053.25,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7035.8333333333,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7006.25,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7033.1666666667,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7076.0,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6974.3333333333,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6931.5,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7129.1666666667,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7062.0,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7008.125,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6957.0,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7073.7272727273,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7050.0,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6945.8333333333,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6951.1666666667,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6952.75,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7057.1,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7073.0,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7038.25,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7127.5,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6955.4545454545,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7193.0,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7172.5833333333,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7145.5,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7085.25,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7090.1666666667,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7090.875,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7126.3333333333,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7182.8333333333,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7161.5833333333,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7249.8333333333,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7175.6666666667,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7151.1666666667,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7168.7142857143,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7221.1666666667,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7221.75,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7132.8333333333,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7021.5833333333,
-        "timestamp": "2015-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": 2.951
-  },
-  {
-    "Country": "Svalbard And Jan Mayen",
-    "ID": 541,
-    "Latitude": 78.066667,
-    "Location": "Barentsburg",
-    "Longitude": 14.25,
-    "tideData": [
-      {
-        "tide": 7093.8571428571,
-        "timestamp": "1948-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7060.1666666667,
-        "timestamp": "1949-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7076.0,
-        "timestamp": "1950-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7120.1666666667,
-        "timestamp": "1951-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7093.5,
-        "timestamp": "1952-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7115.1666666667,
-        "timestamp": "1953-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7087.6666666667,
-        "timestamp": "1954-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7051.8333333333,
-        "timestamp": "1955-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7023.5,
-        "timestamp": "1956-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7049.3333333333,
-        "timestamp": "1957-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7012.6666666667,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7079.3333333333,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7020.1666666667,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7097.6666666667,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7033.5,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7020.1666666667,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7083.5,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7001.0,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6982.6666666667,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7099.3333333333,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7063.5,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7057.6666666667,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7013.5,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7050.1666666667,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7054.3333333333,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7036.8333333333,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7043.5,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7070.1666666667,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7061.8333333333,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7010.1666666667,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6902.6666666667,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6995.1666666667,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7011.0,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7013.5,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7037.6666666667,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7046.8333333333,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7023.5,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6959.3333333333,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6966.0,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6928.0,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6968.5,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7041.0,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7041.0,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7012.6666666667,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7050.0,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6978.0,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7004.3333333333,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6914.3333333333,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6816.4545454545,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6843.7272727273,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6908.7777777778,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6871.0,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6806.8333333333,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7001.0,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6956.0,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6966.0,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6965.5454545455,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6937.0,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6951.8333333333,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6945.1666666667,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6916.8333333333,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6954.6363636364,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6917.8333333333,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6971.0,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6907.25,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6923.75,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6899.0,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": -3.048
-  },
-  {
     "Country": "India",
     "ID": 543,
     "Latitude": 22.2,
     "Location": "Diamond Harbour",
     "Longitude": 88.166667,
+    "emission": 1.590272829,
     "tideData": [
       {
         "tide": 6959.0,
@@ -71429,6 +70098,7 @@
     "Latitude": -2.2,
     "Location": "La Libertad Ii",
     "Longitude": -80.916667,
+    "emission": 2.7792875846,
     "tideData": [
       {
         "tide": 6968.0,
@@ -71663,6 +70333,7 @@
     "Latitude": 67.28829,
     "Location": "Bodo",
     "Longitude": 14.390813,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7212.75,
@@ -71941,6 +70612,7 @@
     "Latitude": 21.108333,
     "Location": "Gibara",
     "Longitude": -76.125,
+    "emission": 3.4622273874,
     "tideData": [
       {
         "tide": 7007.8571428571,
@@ -72115,6 +70787,7 @@
     "Latitude": -21.1,
     "Location": "Mackay",
     "Longitude": 149.233333,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6845.6666666667,
@@ -72349,6 +71022,7 @@
     "Latitude": 60.558333,
     "Location": "Cordova",
     "Longitude": -145.751667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6923.75,
@@ -72567,6 +71241,7 @@
     "Latitude": 71.583333,
     "Location": "Tiksi (Tiksi Bukhta)",
     "Longitude": 128.916667,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7062.5,
@@ -72825,6 +71500,7 @@
     "Latitude": 19.29,
     "Location": "Wake Island",
     "Longitude": 166.616667,
+    "emission": 1.9451369681,
     "tideData": [
       {
         "tide": 6975.4285714286,
@@ -73099,6 +71775,7 @@
     "Latitude": 37.246667,
     "Location": "Gloucester Point",
     "Longitude": -76.5,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6917.8571428571,
@@ -73320,237 +71997,12 @@
     "trend": 3.943
   },
   {
-    "Country": "United States Minor Outlying Islands",
-    "ID": 598,
-    "Latitude": 16.738333,
-    "Location": "Johnston Island",
-    "Longitude": -169.53,
-    "tideData": [
-      {
-        "tide": 6917.0833333333,
-        "timestamp": "1950-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6904.0833333333,
-        "timestamp": "1951-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7045.8333333333,
-        "timestamp": "1952-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6995.0,
-        "timestamp": "1953-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6982.0833333333,
-        "timestamp": "1954-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6934.8333333333,
-        "timestamp": "1955-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6953.5833333333,
-        "timestamp": "1956-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6983.5,
-        "timestamp": "1957-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6944.5,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6988.5833333333,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6965.25,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7028.1666666667,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6989.375,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6948.4166666667,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7000.75,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6928.5833333333,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6993.75,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6941.5,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6932.75,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6984.5833333333,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7021.0,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6971.6666666667,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6914.8333333333,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6947.6666666667,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6962.3333333333,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6980.5,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6911.4166666667,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6968.3333333333,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6945.75,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6921.6666666667,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7015.1111111111,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7052.5,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6930.25,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6978.3333333333,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7029.9166666667,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6937.75,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6930.75,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6965.1666666667,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7033.0833333333,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6939.6666666667,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6943.0,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6934.5833333333,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7014.5833333333,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6975.25,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6984.8333333333,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6984.25,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7027.1666666667,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6979.3333333333,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6989.8333333333,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7045.75,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7003.0,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7020.0,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6980.6666666667,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7153.0,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": 0.665
-  },
-  {
     "Country": "Russian Federation",
     "ID": 599,
     "Latitude": 69.75,
     "Location": "Amderma",
     "Longitude": 61.7,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6974.1666666667,
@@ -73817,6 +72269,7 @@
     "Latitude": 69.25,
     "Location": "Ust Kara",
     "Longitude": 64.516667,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6996.6666666667,
@@ -74083,6 +72536,7 @@
     "Latitude": 77.716667,
     "Location": "Fedorova (Cheluskin Mys)",
     "Longitude": 104.3,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6929.1666666667,
@@ -74345,6 +72799,7 @@
     "Latitude": 74.666667,
     "Location": "Sannikova (Sannikova Proliv)",
     "Longitude": 138.9,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7038.3333333333,
@@ -74611,6 +73066,7 @@
     "Latitude": 73.183333,
     "Location": "Shalaurova (Shalaurova Mys)",
     "Longitude": 143.233333,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7014.1666666667,
@@ -74829,6 +73285,7 @@
     "Latitude": 69.7,
     "Location": "Pevek",
     "Longitude": 170.25,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6989.1666666667,
@@ -75095,6 +73552,7 @@
     "Latitude": 67.833333,
     "Location": "Vankarem",
     "Longitude": -175.833333,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6997.5,
@@ -75337,6 +73795,7 @@
     "Latitude": 70.983333,
     "Location": "Vrangelia (Vrangelia Ostrov)",
     "Longitude": -178.483333,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7012.5,
@@ -75551,6 +74010,7 @@
     "Latitude": 75.416667,
     "Location": "Sterlegova (Sterlegova Mys)",
     "Longitude": 88.9,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6988.3333333333,
@@ -75813,6 +74273,7 @@
     "Latitude": 37.165,
     "Location": "Kiptopeke Beach",
     "Longitude": -75.988333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6900.0,
@@ -76083,6 +74544,7 @@
     "Latitude": -19.25,
     "Location": "Townsville I",
     "Longitude": 146.833333,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6865.75,
@@ -76321,6 +74783,7 @@
     "Latitude": 64.150583,
     "Location": "Reykjavik",
     "Longitude": -21.939889,
+    "emission": 6.082143166,
     "tideData": [
       {
         "tide": 6941.25,
@@ -76571,6 +75034,7 @@
     "Latitude": 73.933333,
     "Location": "Dunai (Dunai Ostrov)",
     "Longitude": 124.5,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7014.1666666667,
@@ -76825,6 +75289,7 @@
     "Latitude": 76.0,
     "Location": "Kotelnyi (Kotelnyi Ostrov)",
     "Longitude": 137.866667,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6845.0,
@@ -77087,6 +75552,7 @@
     "Latitude": 73.333333,
     "Location": "Kigiliah",
     "Longitude": 139.866667,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7056.6666666667,
@@ -77349,6 +75815,7 @@
     "Latitude": 54.183333,
     "Location": "Kolobrzeg",
     "Longitude": 15.55,
+    "emission": 7.9477284765,
     "tideData": [
       {
         "tide": 6971.0,
@@ -77555,6 +76022,7 @@
     "Latitude": 54.583333,
     "Location": "Ustka",
     "Longitude": 16.866667,
+    "emission": 7.9477284765,
     "tideData": [
       {
         "tide": 6858.0,
@@ -77761,6 +76229,7 @@
     "Latitude": 54.8,
     "Location": "Wladyslawowo",
     "Longitude": 18.416667,
+    "emission": 7.9477284765,
     "tideData": [
       {
         "tide": 6818.5,
@@ -77967,6 +76436,7 @@
     "Latitude": 69.647424,
     "Location": "Tromso",
     "Longitude": 18.961323,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 6969.375,
@@ -78233,6 +76703,7 @@
     "Latitude": 68.801261,
     "Location": "Harstad",
     "Longitude": 16.548236,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7035.6,
@@ -78499,6 +76970,7 @@
     "Latitude": 63.113859,
     "Location": "Kristiansund",
     "Longitude": 7.734352,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7077.625,
@@ -78765,6 +77237,7 @@
     "Latitude": 68.966667,
     "Location": "Murmansk",
     "Longitude": 33.05,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7003.8333333333,
@@ -79027,6 +77500,7 @@
     "Latitude": 43.508333,
     "Location": "Split Rt Marjana",
     "Longitude": 16.391667,
+    "emission": 4.1618666214,
     "tideData": [
       {
         "tide": 7000.625,
@@ -79277,6 +77751,7 @@
     "Latitude": 34.144167,
     "Location": "Kainan",
     "Longitude": 135.191389,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7036.0909090909,
@@ -79539,6 +78014,7 @@
     "Latitude": 57.118889,
     "Location": "Hanstholm",
     "Longitude": 8.595556,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 7057.3333333333,
@@ -79789,6 +78265,7 @@
     "Latitude": 79.5,
     "Location": "Vise (Vise Ostrov)",
     "Longitude": 76.983333,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7023.3333333333,
@@ -80043,6 +78520,7 @@
     "Latitude": 40.8975,
     "Location": "Asamushi",
     "Longitude": 140.859167,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7006.7142857143,
@@ -80301,6 +78779,7 @@
     "Latitude": 35.288056,
     "Location": "Yokosuka",
     "Longitude": 139.651389,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7017.0,
@@ -80559,6 +79038,7 @@
     "Latitude": 38.866667,
     "Location": "Dalian",
     "Longitude": 121.683333,
+    "emission": 7.5509164847,
     "tideData": [
       {
         "tide": 7076.9166666667,
@@ -80817,6 +79297,7 @@
     "Latitude": 1.466667,
     "Location": "Sembawang",
     "Longitude": 103.833333,
+    "emission": 9.3638473897,
     "tideData": [
       {
         "tide": 6982.4166666667,
@@ -81075,6 +79556,7 @@
     "Latitude": 28.948333,
     "Location": "Freeport",
     "Longitude": -95.308333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6588.125,
@@ -81305,6 +79787,7 @@
     "Latitude": 24.45,
     "Location": "Xiamen",
     "Longitude": 118.066667,
+    "emission": 7.5509164847,
     "tideData": [
       {
         "tide": 7009.1666666667,
@@ -81519,6 +80002,7 @@
     "Latitude": 75.95,
     "Location": "Izvestia Tsik (Izvestia Tsik Ostrova)",
     "Longitude": 82.95,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7089.1666666667,
@@ -81769,6 +80253,7 @@
     "Latitude": 79.55,
     "Location": "Golomianyi (Golomianyi Ostrov)",
     "Longitude": 90.616667,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6991.6666666667,
@@ -82015,6 +80500,7 @@
     "Latitude": 69.933333,
     "Location": "Aion",
     "Longitude": 167.983333,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 7120.8333333333,
@@ -82241,6 +80727,7 @@
     "Latitude": 37.356667,
     "Location": "Kashiwazaki",
     "Longitude": 138.508333,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7034.5714285714,
@@ -82495,6 +80982,7 @@
     "Latitude": 52.473111,
     "Location": "Lowestoft",
     "Longitude": 1.750111,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 7016.0,
@@ -82749,6 +81237,7 @@
     "Latitude": 21.953333,
     "Location": "Nawiliwili Bay, Kauai Island",
     "Longitude": -159.355,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6889.1666666667,
@@ -83003,6 +81492,7 @@
     "Latitude": 53.88,
     "Location": "Unalaska",
     "Longitude": -166.536667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7033.6,
@@ -83257,6 +81747,7 @@
     "Latitude": 70.664641,
     "Location": "Hammerfest",
     "Longitude": 23.683227,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 6960.0833333333,
@@ -83498,265 +81989,12 @@
     "trend": 0.988
   },
   {
-    "Country": "Puerto Rico",
-    "ID": 759,
-    "Latitude": 17.97,
-    "Location": "Magueyes Island",
-    "Longitude": -67.045,
-    "tideData": [
-      {
-        "tide": 6958.3333333333,
-        "timestamp": "1955-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6979.1666666667,
-        "timestamp": "1956-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7013.4166666667,
-        "timestamp": "1957-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6980.75,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6975.25,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7022.5,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7004.1666666667,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7010.0,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7033.0,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6966.0,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7003.5,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7003.5833333333,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6963.5,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7026.5,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7007.75,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7034.6666666667,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7041.0833333333,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7050.0,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7014.1666666667,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7009.5,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7006.9166666667,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7020.25,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7027.6666666667,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7027.375,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7024.5,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7024.25,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7094.1428571429,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7051.25,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7025.0833333333,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7054.25,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7047.25,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7023.5,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7014.25,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7003.3333333333,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7012.5,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7047.75,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7039.75,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7037.1666666667,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7072.8333333333,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7020.0833333333,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7018.9166666667,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7041.0,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7072.5,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7016.5,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7020.8333333333,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7076.6666666667,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7048.0,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7078.6666666667,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7042.8333333333,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7054.9166666667,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7066.1666666667,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7095.0,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7081.4166666667,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7032.4166666667,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7085.75,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7070.5,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7117.1666666667,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7087.0,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7122.3333333333,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7139.0833333333,
-        "timestamp": "2015-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": 1.306
-  },
-  {
     "Country": "Croatia",
     "ID": 760,
     "Latitude": 42.6583,
     "Location": "Dubrovnik",
     "Longitude": 18.0633,
+    "emission": 4.1618666214,
     "tideData": [
       {
         "tide": 7054.5,
@@ -84003,6 +82241,7 @@
     "Latitude": 45.0833,
     "Location": "Rovinj",
     "Longitude": 13.6283,
+    "emission": 4.1618666214,
     "tideData": [
       {
         "tide": 7079.7142857143,
@@ -84253,6 +82492,7 @@
     "Latitude": 54.655833,
     "Location": "Rodbyhavn",
     "Longitude": 11.348611,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 7046.5833333333,
@@ -84495,6 +82735,7 @@
     "Latitude": 54.372222,
     "Location": "Kiel-Holtenau",
     "Longitude": 10.156944,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 6992.5,
@@ -84741,6 +82982,7 @@
     "Latitude": 35.011667,
     "Location": "Shimizu-Minato",
     "Longitude": 138.5175,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7242.8333333333,
@@ -84987,6 +83229,7 @@
     "Latitude": 34.009167,
     "Location": "Komatsushima",
     "Longitude": 134.587778,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6968.8333333333,
@@ -85229,6 +83472,7 @@
     "Latitude": 32.623056,
     "Location": "Misumi",
     "Longitude": 130.451389,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6992.3333333333,
@@ -85463,6 +83707,7 @@
     "Latitude": 35.547778,
     "Location": "Sakai",
     "Longitude": 133.243056,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7138.3333333333,
@@ -85709,6 +83954,7 @@
     "Latitude": 34.488611,
     "Location": "Uno",
     "Longitude": 133.949444,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7068.6666666667,
@@ -85955,6 +84201,7 @@
     "Latitude": 41.781667,
     "Location": "Hakodate I",
     "Longitude": 140.724722,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6918.2727272727,
@@ -86185,6 +84432,7 @@
     "Latitude": 31.576944,
     "Location": "Aburatsu",
     "Longitude": 131.409444,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6950.25,
@@ -86419,6 +84667,7 @@
     "Latitude": 32.779167,
     "Location": "Tosa Shimizu",
     "Longitude": 132.958889,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7028.8333333333,
@@ -86665,6 +84914,7 @@
     "Latitude": 34.221667,
     "Location": "Wakayama",
     "Longitude": 135.145556,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7077.6666666667,
@@ -86911,6 +85161,7 @@
     "Latitude": 34.338889,
     "Location": "Tan-Nowa",
     "Longitude": 135.178056,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7065.0,
@@ -87157,6 +85408,7 @@
     "Latitude": -38.033333,
     "Location": "Mar Del Plata (Naval Base)",
     "Longitude": -57.516667,
+    "emission": 4.4622979797,
     "tideData": [
       {
         "tide": 6984.0,
@@ -87399,6 +85651,7 @@
     "Latitude": -27.366667,
     "Location": "Brisbane (West Inner Bar)",
     "Longitude": 153.166667,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 7292.2727272727,
@@ -87609,6 +85862,7 @@
     "Latitude": 21.431667,
     "Location": "Mokuoloe Island",
     "Longitude": -157.79,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6883.375,
@@ -87855,6 +86109,7 @@
     "Latitude": 52.983333,
     "Location": "Petropavlovsk-Kamchatsky",
     "Longitude": 158.65,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6977.6666666667,
@@ -88097,6 +86352,7 @@
     "Latitude": 29.285,
     "Location": "Galveston I, Pleasure Pier, Tx",
     "Longitude": -94.788333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6901.0,
@@ -88327,6 +86583,7 @@
     "Latitude": 53.25,
     "Location": "Queen Charlotte City",
     "Longitude": -132.066667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7043.8571428571,
@@ -88573,6 +86830,7 @@
     "Latitude": 60.154028,
     "Location": "Lerwick",
     "Longitude": -1.140306,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 7014.9166666667,
@@ -88819,6 +87077,7 @@
     "Latitude": -34.566667,
     "Location": "Palermo",
     "Longitude": -58.4,
+    "emission": 4.4622979797,
     "tideData": [
       {
         "tide": 6948.1666666667,
@@ -89061,6 +87320,7 @@
     "Latitude": -33.323444,
     "Location": "Bunbury",
     "Longitude": 115.659972,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6734.6666666667,
@@ -89307,6 +87567,7 @@
     "Latitude": -32.924,
     "Location": "Newcastle V",
     "Longitude": 151.788583,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 7067.0,
@@ -89553,6 +87814,7 @@
     "Latitude": 20.666667,
     "Location": "Hondau",
     "Longitude": 106.8,
+    "emission": 1.7003682841,
     "tideData": [
       {
         "tide": 6919.5,
@@ -89791,6 +88053,7 @@
     "Latitude": 33.95,
     "Location": "Mozi",
     "Longitude": 130.966667,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6951.5,
@@ -90000,249 +88263,12 @@
     "trend": 2.193
   },
   {
-    "Country": "Antarctica",
-    "ID": 913,
-    "Latitude": -65.246233,
-    "Location": "Argentine Islands",
-    "Longitude": -64.257417,
-    "tideData": [
-      {
-        "tide": 6861.8333333333,
-        "timestamp": "1958-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6872.5714285714,
-        "timestamp": "1959-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6884.4166666667,
-        "timestamp": "1960-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6903.5,
-        "timestamp": "1961-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6929.3333333333,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6911.5,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6949.3333333333,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6981.9166666667,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6921.75,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6944.5833333333,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6979.8333333333,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6949.1666666667,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6954.8333333333,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6964.0,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6942.5,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6936.5833333333,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6914.5,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6908.6666666667,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6870.5,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6890.3333333333,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6891.3333333333,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6901.8333333333,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6910.8333333333,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6917.25,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6903.25,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6932.0,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6926.9166666667,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6958.4166666667,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6968.6666666667,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6966.4166666667,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6976.0,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6985.6666666667,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7013.75,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6960.0,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6941.1818181818,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6970.6666666667,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6972.75,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6980.75,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7028.4166666667,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6954.1666666667,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7000.0833333333,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7008.4166666667,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6976.25,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7007.5,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6933.5833333333,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6973.75,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6952.4166666667,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6988.5833333333,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6983.5833333333,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6947.5,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6948.75,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6946.1818181818,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6964.6666666667,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6976.3333333333,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7016.0,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6976.8333333333,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6973.0,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": 1.162
-  },
-  {
     "Country": "Ireland",
     "ID": 916,
     "Latitude": 55.366667,
     "Location": "Malin Head",
     "Longitude": -7.333333,
+    "emission": 7.6038733061,
     "tideData": [
       {
         "tide": 7087.0,
@@ -90433,6 +88459,7 @@
     "Latitude": 71.866667,
     "Location": "Sopochnaia Karga",
     "Longitude": 82.7,
+    "emission": 12.4668162845,
     "tideData": [
       {
         "tide": 6890.8333333333,
@@ -90667,6 +88694,7 @@
     "Latitude": 21.583333,
     "Location": "Zhapo",
     "Longitude": 111.816667,
+    "emission": 7.5509164847,
     "tideData": [
       {
         "tide": 6984.1666666667,
@@ -90905,6 +88933,7 @@
     "Latitude": 28.083333,
     "Location": "Kanmen",
     "Longitude": 121.283333,
+    "emission": 7.5509164847,
     "tideData": [
       {
         "tide": 6946.4166666667,
@@ -91143,6 +89172,7 @@
     "Latitude": 46.683333,
     "Location": "Portneuf",
     "Longitude": -71.883333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6386.0,
@@ -91377,6 +89407,7 @@
     "Latitude": 35.633333,
     "Location": "Sibaura",
     "Longitude": 139.75,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6965.0,
@@ -91583,6 +89614,7 @@
     "Latitude": 34.779722,
     "Location": "Mokpo",
     "Longitude": 126.375556,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 6987.5833333333,
@@ -91817,6 +89849,7 @@
     "Latitude": 35.096111,
     "Location": "Busan",
     "Longitude": 129.035556,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 7079.1428571429,
@@ -92051,6 +90084,7 @@
     "Latitude": 37.451944,
     "Location": "Incheon",
     "Longitude": 126.592222,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 7011.0833333333,
@@ -92285,6 +90319,7 @@
     "Latitude": 52.166667,
     "Location": "Bella Bella",
     "Longitude": -128.133333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 6956.0,
@@ -92515,6 +90550,7 @@
     "Latitude": 36.5401,
     "Location": "Cadiz Iii",
     "Longitude": -6.2862,
+    "emission": 5.0829825239,
     "tideData": [
       {
         "tide": 6770.1666666667,
@@ -92745,6 +90781,7 @@
     "Latitude": 35.501944,
     "Location": "Ulsan",
     "Longitude": 129.387222,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 7028.3333333333,
@@ -92971,6 +91008,7 @@
     "Latitude": 47.0,
     "Location": "St-Francois",
     "Longitude": -70.816667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7044.0,
@@ -93192,237 +91230,12 @@
     "trend": 0.402
   },
   {
-    "Country": "Puerto Rico",
-    "ID": 1001,
-    "Latitude": 18.458333,
-    "Location": "San Juan",
-    "Longitude": -66.115,
-    "tideData": [
-      {
-        "tide": 7021.0,
-        "timestamp": "1962-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7037.5,
-        "timestamp": "1963-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7070.75,
-        "timestamp": "1964-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7011.5833333333,
-        "timestamp": "1965-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7043.75,
-        "timestamp": "1966-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7042.3333333333,
-        "timestamp": "1967-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6977.25,
-        "timestamp": "1968-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7044.8333333333,
-        "timestamp": "1969-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7017.0,
-        "timestamp": "1970-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7050.5833333333,
-        "timestamp": "1971-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7066.5,
-        "timestamp": "1972-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7079.3333333333,
-        "timestamp": "1973-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7044.8333333333,
-        "timestamp": "1974-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1975-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1976-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": null,
-        "timestamp": "1977-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7055.0833333333,
-        "timestamp": "1978-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7032.75,
-        "timestamp": "1979-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7054.5,
-        "timestamp": "1980-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7042.8571428571,
-        "timestamp": "1981-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7090.5,
-        "timestamp": "1982-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7098.0833333333,
-        "timestamp": "1983-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7058.0,
-        "timestamp": "1984-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7084.75,
-        "timestamp": "1985-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7072.6666666667,
-        "timestamp": "1986-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7066.4166666667,
-        "timestamp": "1987-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 6991.2,
-        "timestamp": "1988-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7026.8571428571,
-        "timestamp": "1989-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7041.8333333333,
-        "timestamp": "1990-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7093.25,
-        "timestamp": "1991-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7094.25,
-        "timestamp": "1992-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7073.4166666667,
-        "timestamp": "1993-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7113.0,
-        "timestamp": "1994-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7063.0,
-        "timestamp": "1995-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7060.5833333333,
-        "timestamp": "1996-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7084.1666666667,
-        "timestamp": "1997-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7116.9166666667,
-        "timestamp": "1998-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7055.0,
-        "timestamp": "1999-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7058.6666666667,
-        "timestamp": "2000-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7118.4166666667,
-        "timestamp": "2001-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7084.75,
-        "timestamp": "2002-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7129.4166666667,
-        "timestamp": "2003-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7085.5,
-        "timestamp": "2004-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7096.9166666667,
-        "timestamp": "2005-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7109.75,
-        "timestamp": "2006-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7121.8333333333,
-        "timestamp": "2007-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7120.8333333333,
-        "timestamp": "2008-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7075.5,
-        "timestamp": "2009-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7129.1666666667,
-        "timestamp": "2010-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7103.9090909091,
-        "timestamp": "2011-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7165.0909090909,
-        "timestamp": "2012-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7121.5833333333,
-        "timestamp": "2013-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7161.0,
-        "timestamp": "2014-12-31T00:00:00.000Z"
-      },
-      {
-        "tide": 7193.0,
-        "timestamp": "2015-12-31T00:00:00.000Z"
-      }
-    ],
-    "trend": 1.658
-  },
-  {
     "Country": "Viet Nam",
     "ID": 1003,
     "Latitude": 18.8,
     "Location": "Honngu",
     "Longitude": 105.766667,
+    "emission": 1.7003682841,
     "tideData": [
       {
         "tide": 7168.0,
@@ -93641,6 +91454,7 @@
     "Latitude": 43.209444,
     "Location": "Oshoro Ii",
     "Longitude": 140.858056,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7052.75,
@@ -93863,6 +91677,7 @@
     "Latitude": 34.353056,
     "Location": "Hirosima",
     "Longitude": 132.464722,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6931.0,
@@ -94085,6 +91900,7 @@
     "Latitude": -22.896667,
     "Location": "Ilha Fiscal",
     "Longitude": -43.166667,
+    "emission": 2.4658702352,
     "tideData": [
       {
         "tide": 6779.4,
@@ -94299,6 +92115,7 @@
     "Latitude": 22.4425,
     "Location": "Tai Po Kau, Tolo Harbour",
     "Longitude": 114.183889,
+    "emission": 6.2600473043,
     "tideData": [
       {
         "tide": 6780.4166666667,
@@ -94521,6 +92338,7 @@
     "Latitude": 54.616667,
     "Location": "Amrum (Wittduen)",
     "Longitude": 8.383333,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 6904.6666666667,
@@ -94723,6 +92541,7 @@
     "Latitude": 53.583333,
     "Location": "Borkum (Fischerbalje)",
     "Longitude": 6.666667,
+    "emission": 9.2205908038,
     "tideData": [
       {
         "tide": 6881.0,
@@ -94925,6 +92744,7 @@
     "Latitude": 33.858889,
     "Location": "Matsuyama Ii",
     "Longitude": 132.712222,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6938.5833333333,
@@ -95143,6 +92963,7 @@
     "Latitude": 34.616667,
     "Location": "Minami Izu",
     "Longitude": 138.883333,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6936.3333333333,
@@ -95333,6 +93154,7 @@
     "Latitude": 33.5275,
     "Location": "Jeju",
     "Longitude": 126.543056,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 6924.9166666667,
@@ -95551,6 +93373,7 @@
     "Latitude": 41.173333,
     "Location": "Bridgeport",
     "Longitude": -73.181667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6917.5,
@@ -95769,6 +93592,7 @@
     "Latitude": -35.562481,
     "Location": "Victor Harbour",
     "Longitude": 138.635403,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6859.375,
@@ -95983,6 +93807,7 @@
     "Latitude": 59.44,
     "Location": "Seldovia",
     "Longitude": -151.72,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7210.0,
@@ -96189,6 +94014,7 @@
     "Latitude": 50.716667,
     "Location": "Port Hardy",
     "Longitude": -127.483333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7061.1428571429,
@@ -96407,6 +94233,7 @@
     "Latitude": 33.558333,
     "Location": "Uragami",
     "Longitude": 135.896389,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6983.4166666667,
@@ -96621,6 +94448,7 @@
     "Latitude": 34.789444,
     "Location": "Okada",
     "Longitude": 139.391389,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6897.5833333333,
@@ -96835,6 +94663,7 @@
     "Latitude": 38.467778,
     "Location": "Awa Sima",
     "Longitude": 139.255,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6988.1666666667,
@@ -97049,6 +94878,7 @@
     "Latitude": 33.618889,
     "Location": "Hakata",
     "Longitude": 130.407778,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6978.0,
@@ -97263,6 +95093,7 @@
     "Latitude": 36.201389,
     "Location": "Saigo",
     "Longitude": 133.331111,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6966.6666666667,
@@ -97477,6 +95308,7 @@
     "Latitude": 30.735,
     "Location": "Nisinoomote",
     "Longitude": 130.992222,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7018.0,
@@ -97691,6 +95523,7 @@
     "Latitude": 31.023611,
     "Location": "Odomari",
     "Longitude": 130.689167,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6984.1428571429,
@@ -97905,6 +95738,7 @@
     "Latitude": 34.340556,
     "Location": "Sumoto",
     "Longitude": 134.906667,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6934.1666666667,
@@ -98119,6 +95953,7 @@
     "Latitude": 32.735,
     "Location": "Nagasaki",
     "Longitude": 129.866111,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6949.0909090909,
@@ -98333,6 +96168,7 @@
     "Latitude": 32.696111,
     "Location": "Fukue",
     "Longitude": 128.849444,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7005.5833333333,
@@ -98547,6 +96383,7 @@
     "Latitude": 32.976667,
     "Location": "Oura",
     "Longitude": 130.220556,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6968.4166666667,
@@ -98761,6 +96598,7 @@
     "Latitude": 45.407778,
     "Location": "Wakkanai",
     "Longitude": 141.685278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6987.3636363636,
@@ -98935,6 +96773,7 @@
     "Latitude": 44.019444,
     "Location": "Abashiri",
     "Longitude": 144.285833,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7087.1818181818,
@@ -99149,6 +96988,7 @@
     "Latitude": 26.646667,
     "Location": "Fort Myers",
     "Longitude": -81.87,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6933.2222222222,
@@ -99363,6 +97203,7 @@
     "Latitude": 26.131667,
     "Location": "Naples",
     "Longitude": -81.806667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6943.6,
@@ -99577,6 +97418,7 @@
     "Latitude": 37.550278,
     "Location": "Mukho",
     "Longitude": 129.116389,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 7097.2727272727,
@@ -99791,6 +97633,7 @@
     "Latitude": 58.440972,
     "Location": "Wick",
     "Longitude": -3.086306,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 6902.0833333333,
@@ -100005,6 +97848,7 @@
     "Latitude": 41.285,
     "Location": "Nantucket Island",
     "Longitude": -70.096667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6979.9166666667,
@@ -100219,6 +98063,7 @@
     "Latitude": 34.076389,
     "Location": "Owase",
     "Longitude": 136.207222,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6863.5,
@@ -100429,6 +98274,7 @@
     "Latitude": 33.158056,
     "Location": "Sasebo Ii",
     "Longitude": 129.723889,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7072.1111111111,
@@ -100639,6 +98485,7 @@
     "Latitude": 35.593611,
     "Location": "Tajiri",
     "Longitude": 134.315833,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6964.0833333333,
@@ -100849,6 +98696,7 @@
     "Latitude": 39.643056,
     "Location": "Miyako Ii",
     "Longitude": 141.975278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6958.3,
@@ -101059,6 +98907,7 @@
     "Latitude": 33.683611,
     "Location": "Shirahama",
     "Longitude": 135.375278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7034.8333333333,
@@ -101269,6 +99118,7 @@
     "Latitude": 26.213333,
     "Location": "Naha",
     "Longitude": 127.665278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7057.6,
@@ -101479,6 +99329,7 @@
     "Latitude": 38.968333,
     "Location": "Cape May",
     "Longitude": -74.96,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7026.0833333333,
@@ -101689,6 +99540,7 @@
     "Latitude": -24.766667,
     "Location": "Bundaberg, Burnett Heads",
     "Longitude": 152.383333,
+    "emission": 16.3473020462,
     "tideData": [
       {
         "tide": 6668.2727272727,
@@ -101899,6 +99751,7 @@
     "Latitude": 34.747222,
     "Location": "Yeosu",
     "Longitude": 127.765556,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 6965.3333333333,
@@ -102109,6 +99962,7 @@
     "Latitude": 36.254722,
     "Location": "Mikuni",
     "Longitude": 136.148889,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7000.0,
@@ -102315,6 +100169,7 @@
     "Latitude": 35.129444,
     "Location": "Katsuura",
     "Longitude": 140.249444,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7104.0,
@@ -102521,6 +100376,7 @@
     "Latitude": 29.726667,
     "Location": "Apalachicola",
     "Longitude": -84.981667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6908.375,
@@ -102727,6 +100583,7 @@
     "Latitude": 42.35,
     "Location": "Muroran",
     "Longitude": 140.95,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7001.0,
@@ -102905,6 +100762,7 @@
     "Latitude": 44.625,
     "Location": "South Beach",
     "Longitude": -124.041667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6998.0,
@@ -103107,6 +100965,7 @@
     "Latitude": 54.995,
     "Location": "Fynshav",
     "Longitude": 9.986944,
+    "emission": 6.7796238672,
     "tideData": [
       {
         "tide": 7096.1666666667,
@@ -103301,6 +101160,7 @@
     "Latitude": 34.240556,
     "Location": "Kure Iv",
     "Longitude": 132.550278,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6894.8333333333,
@@ -103503,6 +101363,7 @@
     "Latitude": 34.040833,
     "Location": "Tokuyama Ii",
     "Longitude": 131.802778,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6913.9166666667,
@@ -103705,6 +101566,7 @@
     "Latitude": 62.363333,
     "Location": "Spikarna",
     "Longitude": 17.531111,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7063.3333333333,
@@ -103907,6 +101769,7 @@
     "Latitude": 33.227222,
     "Location": "Uwajima Ii",
     "Longitude": 132.551111,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7073.2,
@@ -104109,6 +101972,7 @@
     "Latitude": 54.842556,
     "Location": "Portpatrick",
     "Longitude": -5.120028,
+    "emission": 7.1337217094,
     "tideData": [
       {
         "tide": 7006.0833333333,
@@ -104295,6 +102159,7 @@
     "Latitude": 35.487453,
     "Location": "Soudhas",
     "Longitude": 24.082481,
+    "emission": 6.3068510948,
     "tideData": [
       {
         "tide": 7185.3333333333,
@@ -104477,6 +102342,7 @@
     "Latitude": 57.684722,
     "Location": "Goteborg - Torshamnen",
     "Longitude": 11.790556,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7007.9166666667,
@@ -104675,6 +102541,7 @@
     "Latitude": 64.859456,
     "Location": "Rorvik",
     "Longitude": 11.230107,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7091.5,
@@ -104873,6 +102740,7 @@
     "Latitude": 48.85,
     "Location": "Bamfield",
     "Longitude": -125.133333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7041.0,
@@ -105071,6 +102939,7 @@
     "Latitude": 49.2,
     "Location": "New  Westminster",
     "Longitude": -122.916667,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7242.2857142857,
@@ -105269,6 +103138,7 @@
     "Latitude": 7.333333,
     "Location": "Malakal-B",
     "Longitude": 134.466667,
+    "emission": 10.6930063579,
     "tideData": [
       {
         "tide": 6891.2,
@@ -105463,6 +103333,7 @@
     "Latitude": -23.122268,
     "Location": "Rikitea",
     "Longitude": -134.966749,
+    "emission": 2.9678790025,
     "tideData": [
       {
         "tide": 6987.0,
@@ -105657,6 +103528,7 @@
     "Latitude": 34.608333,
     "Location": "Omaezaki Ii",
     "Longitude": 138.222222,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6928.25,
@@ -105851,6 +103723,7 @@
     "Latitude": 39.942222,
     "Location": "Oga",
     "Longitude": 139.705833,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6917.0,
@@ -106045,6 +103918,7 @@
     "Latitude": 32.0175,
     "Location": "Akune",
     "Longitude": 130.190833,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7119.0,
@@ -106239,6 +104113,7 @@
     "Latitude": 40.531667,
     "Location": "Hachinohe Ii",
     "Longitude": 141.527778,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7072.4,
@@ -106417,6 +104292,7 @@
     "Latitude": 70.980318,
     "Location": "Honningsvag",
     "Longitude": 25.972697,
+    "emission": 11.7403242327,
     "tideData": [
       {
         "tide": 7047.8571428571,
@@ -106611,6 +104487,7 @@
     "Latitude": 22.033333,
     "Location": "Haldia",
     "Longitude": 88.1,
+    "emission": 1.590272829,
     "tideData": [
       {
         "tide": 7122.0,
@@ -106793,6 +104670,7 @@
     "Latitude": 33.266111,
     "Location": "Oita Ii",
     "Longitude": 131.686667,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6982.1111111111,
@@ -106983,6 +104861,7 @@
     "Latitude": 48.359402,
     "Location": "Le Conquet",
     "Longitude": -4.78083,
+    "emission": 5.0504829943,
     "tideData": [
       {
         "tide": 7009.0,
@@ -107173,6 +105052,7 @@
     "Latitude": 38.573333,
     "Location": "Cambridge Ii",
     "Longitude": -76.068333,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 7018.0,
@@ -107363,6 +105243,7 @@
     "Latitude": 46.216667,
     "Location": "North Sydney",
     "Longitude": -60.25,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7019.0,
@@ -107557,6 +105438,7 @@
     "Latitude": 33.473056,
     "Location": "Kariya",
     "Longitude": 129.849167,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7007.8181818182,
@@ -107743,6 +105625,7 @@
     "Latitude": 33.333611,
     "Location": "Kure I",
     "Longitude": 133.243333,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7028.7142857143,
@@ -107929,6 +105812,7 @@
     "Latitude": 50.016667,
     "Location": "Campbell River",
     "Longitude": -125.233333,
+    "emission": 13.5322948481,
     "tideData": [
       {
         "tide": 7059.0,
@@ -108143,6 +106027,7 @@
     "Latitude": 36.047222,
     "Location": "Pohang",
     "Longitude": 129.383889,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 7036.5833333333,
@@ -108329,6 +106214,7 @@
     "Latitude": 48.111667,
     "Location": "Port Townsend",
     "Longitude": -122.756667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6991.8333333333,
@@ -108515,6 +106401,7 @@
     "Latitude": 37.814722,
     "Location": "Ogi",
     "Longitude": 138.281111,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7138.8,
@@ -108697,6 +106584,7 @@
     "Latitude": 36.605,
     "Location": "Monterey",
     "Longitude": -121.886667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6951.0,
@@ -108879,6 +106767,7 @@
     "Latitude": 61.125,
     "Location": "Valdez",
     "Longitude": -146.361667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6943.25,
@@ -109061,6 +106950,7 @@
     "Latitude": 39.019722,
     "Location": "Ofunato Ii",
     "Longitude": 141.753333,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7003.3333333333,
@@ -109239,6 +107129,7 @@
     "Latitude": 38.207222,
     "Location": "Sokcho",
     "Longitude": 128.594167,
+    "emission": 11.7981500834,
     "tideData": [
       {
         "tide": 7067.3333333333,
@@ -109417,6 +107308,7 @@
     "Latitude": 35.476667,
     "Location": "Maizuru Ii",
     "Longitude": 135.386944,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6968.75,
@@ -109591,6 +107483,7 @@
     "Latitude": 36.762222,
     "Location": "Toyama",
     "Longitude": 137.224722,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6997.1666666667,
@@ -109765,6 +107658,7 @@
     "Latitude": 33.266389,
     "Location": "Murotomisaki",
     "Longitude": 134.164444,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 7049.4,
@@ -109939,6 +107833,7 @@
     "Latitude": 27.083333,
     "Location": "Chichijima",
     "Longitude": 142.183333,
+    "emission": 9.7643931451,
     "tideData": [
       {
         "tide": 6882.6666666667,
@@ -110113,6 +108008,7 @@
     "Latitude": 37.995,
     "Location": "Point Reyes",
     "Longitude": -122.976667,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6982.9166666667,
@@ -110287,6 +108183,7 @@
     "Latitude": -17.533081,
     "Location": "Papeete-B, Fare Ute Point, Soc.Is.",
     "Longitude": -149.572724,
+    "emission": 2.9678790025,
     "tideData": [
       {
         "tide": 6993.125,
@@ -110481,6 +108378,7 @@
     "Latitude": 65.696944,
     "Location": "Kalix",
     "Longitude": 23.096111,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7213.6,
@@ -110659,6 +108557,7 @@
     "Latitude": 60.408611,
     "Location": "Forsmark",
     "Longitude": 18.210833,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7121.2,
@@ -110833,6 +108732,7 @@
     "Latitude": 58.553611,
     "Location": "Marviken",
     "Longitude": 16.837222,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7272.5,
@@ -111051,6 +108951,7 @@
     "Latitude": 57.639167,
     "Location": "Visby",
     "Longitude": 18.284444,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7086.25,
@@ -111461,6 +109362,7 @@
     "Latitude": 57.275,
     "Location": "Oskarshamn",
     "Longitude": 16.478056,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7028.25,
@@ -111695,6 +109597,7 @@
     "Latitude": 57.249722,
     "Location": "Ringhals",
     "Longitude": 12.1125,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7155.0,
@@ -111901,6 +109804,7 @@
     "Latitude": 58.093333,
     "Location": "Stenungsund",
     "Longitude": 11.8325,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7070.8,
@@ -112127,6 +110031,7 @@
     "Latitude": 58.996667,
     "Location": "Kungsvik",
     "Longitude": 11.127222,
+    "emission": 4.6171818842,
     "tideData": [
       {
         "tide": 7126.6,
@@ -112309,6 +110214,7 @@
     "Latitude": 48.125,
     "Location": "Port Angeles, Washington",
     "Longitude": -123.44,
+    "emission": 16.3897579949,
     "tideData": [
       {
         "tide": 6968.0,
