@@ -1,9 +1,3 @@
-html,
-body {
-  height: 100%;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px; }
-
 .sealevel__map {
   top: 0;
   left: 0;
@@ -24,6 +18,9 @@ body {
   .sealevel__map__marker--strong-increase {
     background: #e66101; }
 
+.leaflet-popup-close-button {
+  display: none; }
+
 .sealevel__details {
   position: absolute;
   top: 0;
@@ -33,6 +30,9 @@ body {
   height: 100%;
   background: white;
   padding: 10px; }
+  @media only screen and (max-width: 480px) {
+    .sealevel__details {
+      width: 100%; } }
 
 .sealevel__details__titel {
   margin-top: -30px; }
@@ -64,3 +64,9 @@ body {
   fill: none;
   stroke: steelblue;
   stroke-width: 0.5px; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px; }
