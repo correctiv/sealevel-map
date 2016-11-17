@@ -17,7 +17,7 @@
 
         <p>Population: <b>{ (opts.station.pop).toLocaleString('en-US', { maximumSignificantDigits: 3 }) }</b></p>
 
-        <p>Population living in areas where elevation is below 5 meters: <b>{ opts.station.pop_sealevel.toFixed(1) } % of population</b></p>
+        <p>People living in coastal areas: <b>{ opts.station.pop_sealevel.toFixed(1) } % of population</b></p>
 
 
     </div>
