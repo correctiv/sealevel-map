@@ -5,6 +5,7 @@
 
     import L from 'leaflet'
 
+
     this.on('mount', () => {
         const map = renderMap(opts.options)
         renderItems(map, opts.options)
@@ -26,17 +27,24 @@
         items.forEach(item => {
 
             const icon = new Icon( {className: 'sealevel__map__marker '+ getIconClass(item)} )
-            const lat = item.Latitude
-            const long = item.Longitude
-            const marker = L.marker([lat, long], {item, icon} )
+            const coordinates = [item.Latitude, item.Longitude]
+            const marker = L.marker(coordinates, {item, icon} )
             marker.addTo(map)
 
-            /*marker.on("click", event => {
-                handleMarkerClick(item.ID)
-            })*/
+            marker.bindPopup(item.Location)
+            marker.on('mouseover', function (e) {
+                this.openPopup()
+            })
+            marker.on('mouseout', function (e) {
+                this.closePopup()
+            })
 
             marker.on("click", event => {
                 opts.onmarkerclick(item.ID)
+                map.setZoomAround(coordinates, 5)
+                //document.body.classList.remove('selected')
+                //marker._icon.classList.add('selected')
+                //marker._icon.className += ' selected'
             })
         })
     }

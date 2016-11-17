@@ -34,7 +34,7 @@
     <!-- content push wrapper -->
     <div>
 
-        <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }"></sealevel-map>
+        <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
 
         <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
 
