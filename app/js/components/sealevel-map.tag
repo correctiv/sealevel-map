@@ -22,13 +22,33 @@
     }
 
     function renderItems (map, { items, icons, iconOptions } ) {
+
         const Icon = L.DivIcon.extend({ options: iconOptions })
 
         items.forEach(item => {
 
-            const icon = new Icon( {className: 'sealevel__map__marker '+ getIconClass(item)} )
+            const triangleUp = '50 0 100 234 0 234'
+            const triangleDown = '50 0 100 234 0 234'
+            //const triangleDown = '0 0 100 0 50 234'
+
+            const svgPoints = item.trend < 0 ? triangleDown : triangleUp
+
+            let svgIcon = `
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                <svg height="100%" viewBox="0 0 100 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon fill="#D8D8D8" points="${ svgPoints }"></polygon>
+                    </g>
+                </svg>`
+
+            const icon = new Icon( {className: 'sealevel__map__marker '+ getIconClass(item), html: svgIcon})
+
+            //icon.options.iconSize = [getIconHeight(item), getIconHeight(item)]
+
             const coordinates = [item.Latitude, item.Longitude]
+
             const marker = L.marker(coordinates, {item, icon} )
+
             marker.addTo(map)
 
             marker.bindPopup(item.Location)
@@ -66,5 +86,29 @@
         return iconclass
 
     }
+
+    /*function getIconHeight(item) {
+        var height
+        if (item.trend < -8) {
+            height = 40
+        }
+        else if (item.trend >= -8 && item.trend < -4) {
+            height = 30
+        }
+        else if (item.trend >= -4 && item.trend < 0) {
+            height = 20
+        }
+        else if (item.trend >= 0 && item.trend <= 4) {
+            height = 20
+        }
+        else if (item.trend > 4 && item.trend <= 8) {
+            height = 30
+        }
+        else if (item.trend > 8) {
+            height = 40
+        }
+        return height
+
+    }*/
     </script>
 </sealevel-map>

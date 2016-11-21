@@ -1,4 +1,7 @@
 <sealevel-app>
+    <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
+
+    <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
 
     <script type="text/babel">
 
@@ -30,15 +33,6 @@
         }
 
     </script>
-
-    <!-- content push wrapper -->
-    <div>
-
-        <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
-
-        <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
-
-    </div>
 
 
 </sealevel-app>

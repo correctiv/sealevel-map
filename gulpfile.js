@@ -164,11 +164,11 @@ gulp.task('watch', function () {
 
 gulp.task('rebuild', ['css', 'javascript', 'html'])
 
-gulp.task('deploy', ['rebuild'])
-
 gulp.task('default', ['connect', 'rebuild', 'watch'])
 
-gulp.task('deploy', function() {
+gulp.task('github-deploy', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages())
 })
+
+gulp.task('deploy', ['rebuild', 'github-deploy'])

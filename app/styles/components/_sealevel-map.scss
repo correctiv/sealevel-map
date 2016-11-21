@@ -1,33 +1,67 @@
 //stylings for the map
+@import 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.css';
 
 .sealevel__map {
-    top:0;
-    left:0;
-    height: 100%;
-    width:100%;
-    display:block !important;
-    z-index:2;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+  display:block !important;
+  z-index:2;
+  position: fixed;
 }
 
 .sealevel__map {
-    &__marker {
-      border-radius: 50%;
-      border: solid 1px #000;
-      &--strong-decrease {
-        background: #5e3c99;
-      }
-      &--decrease {
-        background: #b2abd2;
-      }
-      &--increase {
-        background: #fdb863;
-      }
-      &--strong-increase {
-        background: #e66101;
-      }
+  &__marker {
+    opacity: 0.7;
+    height: 200px;
+    &--strong-decrease polygon {
+      fill: #C49A6C;
     }
 
+    &--strong-decrease svg {
+      animation: growingTides 3s forwards;
+      transform-origin: 50% 100%;
+      height: 20px;
+    }
+
+    &--decrease polygon {
+      fill: #C49A6C;
+    }
+
+    &--decrease svg {
+      animation: growingTides 3s forwards;
+      transform-origin: 50% 100%;
+      height: 10px;
+    }
+
+    &--increase polygon {
+      fill: #00AEEF;
+    }
+
+      &--increase svg {
+        animation: growingTides 3s forwards;
+        transform-origin: 50% 100%;
+        height: 10px;
+      }
+
+      &--strong-increase polygon {
+        fill: #00AEEF;
+      }
+
+      &--strong-increase svg {
+        animation: growingTides 3s forwards;
+        transform-origin: 50% 100%;
+        height: 20px;
+      }
+  }
 }
+
+@keyframes growingTides {
+   from { transform: scale3d(1, 0, 1) }
+   to { transform: scale3d(1, 2, 1) }
+
+ }
 
 .leaflet-popup-close-button {
   display: none;

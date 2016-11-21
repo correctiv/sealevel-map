@@ -1,5 +1,7 @@
 <sealevel-linechart>
 
+    <svg id="linechart-container"></svg>
+
     <script type="text/babel">
 
         import * as d3 from 'd3'
@@ -18,11 +20,10 @@
                 d.date = parseTime(d.timestamp)
             })
 
-            d3.select("svg").remove();
-
-            var svg = d3.select("sealevel-linechart").append("svg")
-                    .attr("width", containerWidth)
-                    .attr("height", containerHeight)
+            var svg = d3.select("#linechart-container")
+            svg.selectAll("*").remove()
+            svg.attr("width", containerWidth)
+            svg.attr("height", containerHeight)
 
             var margin = { top: 40, left: 40, right: 40, bottom: 40 }
 
@@ -39,21 +40,22 @@
                     .defined(function(d) { return d.tide!=null })
                     .x(function(d) { return xScale(d.date) })
                     .y(function(d) { return yScale(d.tide) })
+                    .curve(d3.curveNatural)
 
             var g = svg.append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
 
             g.append("g")
                     .attr("class", "sealevel__linechart__axis sealevel__linechart__axis-x")
                     .attr("transform", "translate(0," + height + ")")
-                    .call(d3.axisBottom(xScale))
+                    .call(d3.axisBottom(xScale).ticks(5))
 
             g.append("g")
                     .attr("class", "sealevel__linechart__axis sealevel__linechart__axis-y")
-                    .call(d3.axisLeft(yScale))
+                    .call(d3.axisLeft(yScale).ticks(5))
                     .append("text")
                     .attr("fill", "#000")
-                    .attr("transform", "rotate(-90)")
-                    .attr("y", 6)
+                    .attr("y", -15)
+                    .attr("x", 5)
                     .attr("dy", "0.71em")
                     .style("text-anchor", "end")
                     .text("Sea Level")
@@ -72,7 +74,7 @@
                     .attr('r', 4.5)
                     .attr('class', 'sealevel__linechart__circle')
 
-            focus.append("text")
+            focus.append('text')
                     .attr("x", 9)
                     .attr("dy", ".35em")
 
@@ -106,7 +108,7 @@
                 var y = yScale(d.tide)
 
                 focus.select("text")
-                        .attr("transform", "translate(" + x + "," + y + ")")
+                        .attr("transform", "translate(" + x + ")")
                         .text(formatValue(d.tide))
 
                 focus.select('#sealevel__linechart__focuscircle')
@@ -116,9 +118,9 @@
                 focus.select('#sealevel__linechart__focusLineX')
                         .attr('x1', xScale(d.date)).attr('y1', yScale(yDomain[0]))
                         .attr('x2', xScale(d.date)).attr('y2', yScale(yDomain[1]))
-                focus.select('#sealevel__linechart__focusLineY')
+                /*focus.select('#sealevel__linechart__focusLineY')
                         .attr('x1', xScale(xDomain[0])).attr('y1', yScale(d.tide))
-                        .attr('x2', xScale(xDomain[1])).attr('y2', yScale(d.tide))
+                        .attr('x2', xScale(xDomain[1])).attr('y2', yScale(d.tide))*/
 
             }
 
