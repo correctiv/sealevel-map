@@ -1,5 +1,8 @@
 //stylings for the map
 
+@import 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.css';
+
+
 .sealevel__map {
   top:0;
   left:0;
@@ -7,6 +10,7 @@
   width:100%;
   display:block !important;
   z-index:2;
+  position: fixed;
 }
 
 .sealevel__map {
