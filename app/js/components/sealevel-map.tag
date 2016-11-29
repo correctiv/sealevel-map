@@ -1,114 +1,167 @@
 <sealevel-map>
     <div id="sealevel__map" class="sealevel__map"></div>
 
+
     <script type="text/babel">
 
-    import L from 'leaflet'
+        import * as d3 from 'd3'
+        import L from 'leaflet'
+
+        /* global variables */
+        const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ');
+        var counter = 1;
+        var refreshID
+
+        this.on('mount', () => {
+
+            /* render map */
+            const map = renderMap(opts.options)
+
+            /* set domain and scale */
+            const maxHeight = opts.options.overlayOptions.maxHeight;
+            const domainValues = getDomainValues(opts.options.items)
+            const yDomain = domainValues
+            const scale = d3.scaleLinear().rangeRound([maxHeight, 0]).domain(yDomain);
+
+            /* render stations on map */
+            renderItems(map, scale, opts.options)
+
+            /* redraw bars for torque effect  */
+            var refreshID = setInterval(function() {
+            redraw(opts.options.items, scale, refreshID)
+             }, 500)
 
 
-    this.on('mount', () => {
-        const map = renderMap(opts.options)
-        renderItems(map, opts.options)
-    })
-
-    function renderMap ( { center, zoom, tiles, attribution } ) {
-        const map = L.map('sealevel__map', { center, zoom })
-        const tileLayer = L.tileLayer(tiles, { attribution })
-
-        map.addLayer(tileLayer)
-        map.zoomControl.setPosition('topleft')
-        map.scrollWheelZoom.disable()
-        return map
-    }
-
-    function renderItems (map, { items, icons, iconOptions } ) {
-
-        const Icon = L.DivIcon.extend({ options: iconOptions })
-
-        items.forEach(item => {
-
-            const triangleUp = '50 0 100 234 0 234'
-            const triangleDown = '50 0 100 234 0 234'
-            //const triangleDown = '0 0 100 0 50 234'
-
-            const svgPoints = item.trend < 0 ? triangleDown : triangleUp
-
-            let svgIcon = `
-                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-                <svg height="100%" viewBox="0 0 100 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <polygon fill="#D8D8D8" points="${ svgPoints }"></polygon>
-                    </g>
-                </svg>`
-
-            const icon = new Icon( {className: 'sealevel__map__marker '+ getIconClass(item), html: svgIcon})
-
-            //icon.options.iconSize = [getIconHeight(item), getIconHeight(item)]
-
-            const coordinates = [item.Latitude, item.Longitude]
-
-            const marker = L.marker(coordinates, {item, icon} )
-
-            marker.addTo(map)
-
-            marker.bindPopup(item.Location)
-            marker.on('mouseover', function (e) {
-                this.openPopup()
-            })
-            marker.on('mouseout', function (e) {
-                this.closePopup()
-            })
-
-            marker.on("click", event => {
-                opts.onmarkerclick(item.ID)
-                map.setZoomAround(coordinates, 5)
-                //document.body.classList.remove('selected')
-                //marker._icon.classList.add('selected')
-                //marker._icon.className += ' selected'
-            })
         })
-    }
 
-    function getIconClass(item) {
-        var iconclass = "sealevel__map__marker--"
-        if (item.trend < -4) {
-            iconclass += 'strong-decrease'
-        }
-        else if (item.trend >= -4 && item.trend < 0) {
-            iconclass += 'decrease'
-        }
-        else if (item.trend >= 0 && item.trend <= 4) {
-            iconclass += 'increase'
-        }
-        else if (item.trend > 4) {
-            iconclass += 'strong-increase'
-        }
-        return iconclass
+        function renderMap ( { center, zoom, tiles, attribution } ) {
+            const map = L.map('sealevel__map', { center, zoom })
+            const tileLayer = L.tileLayer(tiles, { attribution })
 
-    }
+            map.addLayer(tileLayer)
+            map.zoomControl.setPosition('topleft')
+            map.scrollWheelZoom.disable()
 
-    /*function getIconHeight(item) {
-        var height
-        if (item.trend < -8) {
-            height = 40
-        }
-        else if (item.trend >= -8 && item.trend < -4) {
-            height = 30
-        }
-        else if (item.trend >= -4 && item.trend < 0) {
-            height = 20
-        }
-        else if (item.trend >= 0 && item.trend <= 4) {
-            height = 20
-        }
-        else if (item.trend > 4 && item.trend <= 8) {
-            height = 30
-        }
-        else if (item.trend > 8) {
-            height = 40
-        }
-        return height
+            /* Initialize the SVG layer */
+            L.svg().addTo(map)
 
-    }*/
+            return map
+        }
+
+        function getDomainValues (items) {
+            let yDomain
+
+            let yMin = d3.min(items, function (station) {
+                return d3.min(station.tideData, function (d) {
+                    return d.tide;
+                })
+            })
+
+            let yMax = d3.max(items, function (station) {
+                return d3.max(station.tideData, function (d) {
+                    return d.tide;
+                })
+            })
+            return yDomain = [yMin, yMax]
+        }
+
+        function renderItems (map, scale, { items, overlayOptions }) {
+
+            let yScale = scale
+            let barWidth = overlayOptions.barWidth;
+            let mapOverlay = d3.select('#sealevel__map').select('svg g')
+
+            /* parse data to get lat-long-coordinates and reformat timestamp */
+            items.forEach(function (station) {
+                station.LatLng = new L.LatLng(station.Latitude, station.Longitude)
+                /*station.tideData.forEach(function (d) {
+                    d.timestamp = parseTime(d.timestamp)
+                    d.timestamp = d.timestamp.getFullYear()
+                })*/
+            })
+
+            /* draw bars of first data point in time */
+            const feature = mapOverlay.selectAll('rect')
+                    .data(items)
+                    .enter().append('rect')
+                    .attr('class', 'sealevel__map__bar')
+                    .attr('y', function (station) {
+                        return yScale(Math.max(0, station.tideData[0].tide))
+                    })
+                    .attr('height', function (station) {
+                        return Math.abs(yScale(station.tideData[0].tide) - yScale(0))
+                    })
+                    .attr('width', barWidth)
+                    .on('click', function(station) {
+                        opts.onmarkerclick(station.ID)
+                    })
+                    .on('mouseover', function (d) {
+                        L.popup().setLatLng(d.LatLng)
+                                .setContent(d.Location)
+                                .openOn(map);
+                    })
+                    .on('mouseout', function (d) {
+                        map.closePopup()
+                    })
+
+            map.on('zoom', function () {
+                update();
+            });
+
+            update();
+
+            function update() {
+                feature.attr('transform',
+                        function(d) {
+                            let y = map.latLngToLayerPoint(d.LatLng).y - yScale(0);
+                            let x = map.latLngToLayerPoint(d.LatLng).x;
+                            return "translate("+ x +","+ y +")";
+                        }
+                )
+            }
+        }
+
+        function redraw(data, scale, refreshID) {
+
+            let yScale = scale
+            let mapOverlay = d3.select('#sealevel__map').select('svg g')
+
+            if(counter < 53) {
+                counter++;
+
+                mapOverlay.selectAll('rect')
+                        .data(data)
+                        .transition()
+                        .duration(250)
+                        .attr('y', function (d) {
+                            if (d.tideData[counter] != undefined) {
+                                return yScale(Math.max(0, d.tideData[counter].tide))
+                            } else {
+                                var lastObject = d.tideData.pop();
+                                return yScale(Math.max(0, lastObject.tide))
+                            }
+                        })
+                        .attr('height', function (d) {
+                            if(d.tideData[counter] != undefined) {
+                                return Math.abs(yScale(d.tideData[counter].tide) - yScale(0))
+                            } else {
+                                var lastObject = d.tideData.pop();
+                                return Math.abs(yScale(lastObject.tide) - yScale(0))
+                            }
+                        })
+                        .attr('class', function (d) {
+                            if(d.tideData[counter] != undefined) {
+                                return d.tideData[counter].tide < 0 ? "sealevel__map__bar--negative" : "sealevel__map__bar--positive"
+                            } else {
+                                var lastObject = d.tideData.pop()
+                                return lastObject.tide < 0 ? "sealevel__map__bar--negative" : "sealevel__map__bar--positive"
+                            }
+                        })
+
+
+            } else {
+                clearInterval(refreshID)
+            }
+        }
     </script>
 </sealevel-map>
