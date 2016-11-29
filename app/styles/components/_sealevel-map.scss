@@ -1,7 +1,5 @@
 //stylings for the map
-
 @import 'https://unpkg.com/leaflet@1.0.1/dist/leaflet.css';
-
 
 .sealevel__map {
   top:0;
@@ -13,26 +11,25 @@
   position: fixed;
 }
 
-.sealevel__map {
-  &__marker {
-    border-radius: 50%;
-    border: solid 1px #000;
-    &--strong-decrease {
-      background: #5e3c99;
-    }
-    &--decrease {
-      background: #b2abd2;
-    }
-    &--increase {
-      background: #fdb863;
-    }
-    &--strong-increase {
-      background: #e66101;
-    }
-  }
+.sealevel__map__bar {
+  cursor: pointer;
+}
 
+.sealevel__map__bar--negative {
+  fill: blue;
+  cursor: pointer;
+
+}
+
+.sealevel__map__bar--positive {
+  fill: red;
+  cursor: pointer;
 }
 
 .leaflet-popup-close-button {
   display: none;
+}
+
+#sealevel__map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-overlay-pane > svg {
+  pointer-events: all;
 }
