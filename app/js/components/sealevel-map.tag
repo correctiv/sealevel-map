@@ -26,7 +26,7 @@
             /* render stations on map */
             renderItems(map, scale, opts.options)
 
-            /* redraw bars for torque effect  */
+           /* redraw bars for torque effect  */
             var refreshID = setInterval(function() {
             redraw(opts.options.items, scale, refreshID)
              }, 500)
@@ -36,7 +36,7 @@
 
         function renderMap ( { center, zoom, tiles, attribution } ) {
             const map = L.map('sealevel__map', { center, zoom })
-            const tileLayer = L.tileLayer(tiles, { attribution })
+            const tileLayer = L.tileLayer(tiles, { attribution } )
 
             map.addLayer(tileLayer)
             map.zoomControl.setPosition('topleft')
@@ -64,6 +64,7 @@
             })
             return yDomain = [yMin, yMax]
         }
+        var countStation = 0;
 
         function renderItems (map, scale, { items, overlayOptions }) {
 
@@ -74,13 +75,16 @@
             /* parse data to get lat-long-coordinates and reformat timestamp */
             items.forEach(function (station) {
                 station.LatLng = new L.LatLng(station.Latitude, station.Longitude)
+
+                countStation++
+                console.log(countStation)
                 /*station.tideData.forEach(function (d) {
                     d.timestamp = parseTime(d.timestamp)
                     d.timestamp = d.timestamp.getFullYear()
                 })*/
             })
 
-            /* draw bars of first data point in time */
+
             const feature = mapOverlay.selectAll('rect')
                     .data(items)
                     .enter().append('rect')
