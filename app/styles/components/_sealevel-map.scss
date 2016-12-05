@@ -16,14 +16,15 @@
 }
 
 .sealevel__map__bar--negative {
-  fill: blue;
-  cursor: pointer;
+  fill: #EFBC48;
+  opacity: .7;
 
 }
 
 .sealevel__map__bar--positive {
-  fill: red;
-  cursor: pointer;
+  fill: #A33A39;
+  opacity: .7;
+
 }
 
 .leaflet-popup-close-button {
@@ -32,4 +33,10 @@
 
 #sealevel__map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-overlay-pane > svg {
   pointer-events: all;
+}
+
+.sealevel__map__circle {
+  fill: black;
+  opacity: .5;
+  cursor: pointer;
 }
