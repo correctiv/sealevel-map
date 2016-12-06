@@ -1,5 +1,9 @@
 <sealevel-map>
     <div id="sealevel__map" class="sealevel__map"></div>
+    <sealevel-map-slider value={ this.year } oninput={ this.onSliderInput } class="overlay"></sealevel-map-slider>
+    <p class="overlay">{ year }</p>
+
+    <p class="overlay">{ value }</p>
 
     <script type="text/babel">
 
@@ -8,8 +12,8 @@
 
         /* global variables */
         const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ')
-        var counter = 1
-        var year = 1807
+        const that = this
+        that.year = 1807
         var refreshID
 
         this.on('mount', () => {
@@ -39,7 +43,7 @@
             renderItems(map, scale, opts.options, colorScalePos)
 
             /* redraw bars for torque effect  */
-            var refreshID = setInterval(function() {
+          var refreshID = setInterval(function() {
                 redraw(opts.options.items, scale, refreshID, colorScalePos, colorScaleNeg, scaleCircle, scaleOpacity)
             }, 500)
 
@@ -87,14 +91,14 @@
          }*/
 
         function findYear(tideObject) {
-            if (tideObject.year === year) {
+            if (tideObject.year === that.year) {
                 return tideObject
             }
         }
 
         function findTide(station) {
             if (station.tideData.find(findYear)) {
-                let tideObject = station.tideData.find(findYear)
+                let tideObject = station.tideData.find(tide => findYear(tide))
                 return tideObject.tide
             }
         }
@@ -117,21 +121,21 @@
             const circleMarker = mapOverlay.selectAll('circle')
                     .data(items)
                     .enter().append('circle')
-                    .attr("r",  function (station) {
+                    .attr("r",  station => {
                         if (findYear(station)) {
                             return 5
                         }
                     })
                     //.attr("class", "sealevel__map__circle" )
-                    .on('click', function(station) {
+                    .on('click', station => {
                         opts.onmarkerclick(station.ID)
                     })
-                    .on('mouseover', function (d) {
-                        L.popup().setLatLng(d.LatLng)
-                                .setContent(d.Location)
+                    .on('mouseover', station => {
+                        L.popup().setLatLng(station.LatLng)
+                                .setContent(station.Location)
                                 .openOn(map);
                     })
-                    .on('mouseout', function (d) {
+                    .on('mouseout', station => {
                         map.closePopup()
                     })
 
@@ -178,8 +182,9 @@
             let yScale = scale
             let mapOverlay = d3.select('#sealevel__map').select('svg g')
 
-            if(year < 2010) {
-                year++
+            if(that.year < 2010) {
+
+                that.update({ year: ++that.year })
 
                 mapOverlay.selectAll('circle')
                         .data(data)
@@ -190,7 +195,7 @@
                          return 5
                          }
                          })*/
-                        .attr("r",  function (station) {
+                        .attr("r", station => {
                             if (findTide(station)) {
                                 let tide = Math.abs(findTide(station))
                                 return scaleCircle(tide)
@@ -238,12 +243,15 @@
                  }
                  })
                  */
-                console.log(year)
 
 
             } else {
                 clearInterval(refreshID)
             }
+        }
+
+        this.onSliderInput = (year) => {
+            this.update({year})
         }
     </script>
 </sealevel-map>
