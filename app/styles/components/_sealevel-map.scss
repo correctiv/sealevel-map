@@ -33,3 +33,13 @@
 #sealevel__map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-overlay-pane > svg {
   pointer-events: all;
 }
+
+.negative {
+  fill: blue;
+  fill-opacity: 0.7;
+}
+
+.positive {
+  fill: red;
+  fill-opacity: 0.7;
+}
