@@ -8,8 +8,9 @@
         import L from 'leaflet'
 
         /* global variables */
-        const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ');
-        var counter = 1;
+        const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ')
+        var counter = 1
+        var year = 1807
         var refreshID
 
         this.on('mount', () => {
@@ -48,6 +49,30 @@
             return map
         }
 
+        /*function findYear(tideObject) {
+         for (var i = year - 5; i <= year; i++) {
+         if (tideObject.year === i) {
+         return tideObject
+         } else {
+         continue
+         }
+         }
+         }*/
+
+        function findYear(tideObject) {
+            if (tideObject.year === year) {
+                return tideObject
+            }
+        }
+
+        function findTide(station) {
+            if (station.tideData.find(findYear)) {
+                let tideObject = station.tideData.find(findYear)
+                return tideObject.tide
+            }
+        }
+
+
         function getDomainValues (items) {
             let yDomain
 
@@ -76,16 +101,26 @@
             items.forEach(function (station) {
                 station.LatLng = new L.LatLng(station.Latitude, station.Longitude)
 
-                countStation++
-                console.log(countStation)
-                /*station.tideData.forEach(function (d) {
-                    d.timestamp = parseTime(d.timestamp)
-                    d.timestamp = d.timestamp.getFullYear()
-                })*/
+                station.tideData.forEach(function (d) {
+                    d.year = parseTime(d.timestamp)
+                    d.year = d.year.getFullYear()
+                })
             })
 
+            const circleMarker = mapOverlay.selectAll('circle')
+                    .data(items)
+                    .enter().append('circle')
+                    .attr("r",  function (station) {
+                        if (findYear(station)) {
+                            return 5
+                        }
+                    })
+                    //.attr("class", "sealevel__map__circle" )
+                    .on('click', function(station) {
+                        opts.onmarkerclick(station.ID)
+                    })
 
-            const feature = mapOverlay.selectAll('rect')
+            const bar = mapOverlay.selectAll('rect')
                     .data(items)
                     .enter().append('rect')
                     .attr('class', 'sealevel__map__bar')
@@ -96,17 +131,7 @@
                         return Math.abs(yScale(station.tideData[0].tide) - yScale(0))
                     })
                     .attr('width', barWidth)
-                    .on('click', function(station) {
-                        opts.onmarkerclick(station.ID)
-                    })
-                    .on('mouseover', function (d) {
-                        L.popup().setLatLng(d.LatLng)
-                                .setContent(d.Location)
-                                .openOn(map);
-                    })
-                    .on('mouseout', function (d) {
-                        map.closePopup()
-                    })
+
 
             map.on('zoom', function () {
                 update();
@@ -115,13 +140,23 @@
             update();
 
             function update() {
-                feature.attr('transform',
+
+                bar.attr('transform',
                         function(d) {
                             let y = map.latLngToLayerPoint(d.LatLng).y - yScale(0);
+                            let x = map.latLngToLayerPoint(d.LatLng).x - (barWidth / 2);
+                            return "translate("+ x +","+ y +")";
+                        }
+                )
+
+                circleMarker.attr('transform',
+                        function(d) {
+                            let y = map.latLngToLayerPoint(d.LatLng).y;
                             let x = map.latLngToLayerPoint(d.LatLng).x;
                             return "translate("+ x +","+ y +")";
                         }
                 )
+
             }
         }
 
@@ -130,35 +165,40 @@
             let yScale = scale
             let mapOverlay = d3.select('#sealevel__map').select('svg g')
 
-            if(counter < 53) {
-                counter++;
+            if(year < 2010) {
+                year++
+
+                mapOverlay.selectAll('circle')
+                        .data(data)
+                        .transition()
+                        .duration(250)
+                        .attr("r",  function (station) {
+                            if (station.tideData[0].year <= year) {
+                                return 5
+                            }
+                        })
 
                 mapOverlay.selectAll('rect')
                         .data(data)
                         .transition()
                         .duration(250)
-                        .attr('y', function (d) {
-                            if (d.tideData[counter] != undefined) {
-                                return yScale(Math.max(0, d.tideData[counter].tide))
+                        .attr('y', function (station) {
+                            if (findTide(station)) {
+                                return yScale(Math.max(0, findTide(station)))
                             } else {
-                                var lastObject = d.tideData.pop();
-                                return yScale(Math.max(0, lastObject.tide))
+                                return yScale(Math.max(0, station.tideData[0].tide))
                             }
                         })
-                        .attr('height', function (d) {
-                            if(d.tideData[counter] != undefined) {
-                                return Math.abs(yScale(d.tideData[counter].tide) - yScale(0))
+                        .attr('height', function (station) {
+                            if (findTide(station)) {
+                                return Math.abs(yScale(findTide(station)) - yScale(0))
                             } else {
-                                var lastObject = d.tideData.pop();
-                                return Math.abs(yScale(lastObject.tide) - yScale(0))
+                                return Math.abs(yScale(station.tideData[0].tide) - yScale(0))
                             }
                         })
-                        .attr('class', function (d) {
-                            if(d.tideData[counter] != undefined) {
-                                return d.tideData[counter].tide < 0 ? "sealevel__map__bar--negative" : "sealevel__map__bar--positive"
-                            } else {
-                                var lastObject = d.tideData.pop()
-                                return lastObject.tide < 0 ? "sealevel__map__bar--negative" : "sealevel__map__bar--positive"
+                        .attr('class', function (station) {
+                            if (findTide(station)) {
+                                return findTide(station) < 0 ? "sealevel__map__bar--negative" : "sealevel__map__bar--positive"
                             }
                         })
 
