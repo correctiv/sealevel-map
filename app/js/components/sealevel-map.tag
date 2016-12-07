@@ -1,9 +1,7 @@
 <sealevel-map>
     <div id="sealevel__map" class="sealevel__map"></div>
-    <sealevel-map-slider value={ this.year } oninput={ this.onSliderInput } class="overlay"></sealevel-map-slider>
+    <sealevel-map-slider value="{ this.year }" oninput="{ this.onSliderInput }" class="overlay"></sealevel-map-slider>
     <p class="overlay">{ year }</p>
-
-    <p class="overlay">{ value }</p>
 
     <script type="text/babel">
 
@@ -97,7 +95,7 @@
         }
 
         function findTide(station) {
-            if (station.tideData.find(findYear)) {
+            if (station.tideData.find(findYear).bind(this)) {
                 let tideObject = station.tideData.find(tide => findYear(tide))
                 return tideObject.tide
             }
