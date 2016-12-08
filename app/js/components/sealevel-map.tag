@@ -1,8 +1,8 @@
 <sealevel-map>
-    <div id="sealevel__map" class="sealevel__map"></div>
-    <sealevel-map-slider value="{ this.year }" oninput="{ this.onSliderInput }" class="overlay"></sealevel-map-slider>
-    <p class="overlay">{ year }</p>
 
+    <sealevel-map-slider value="{ this.year }" oninput="{ this.onSliderInput }" class="slider"></sealevel-map-slider>
+
+    <div id="sealevel__map" class="sealevel__map"></div><p class="overlay">{ year }</p>
     <script type="text/babel">
 
         import * as d3 from 'd3'
@@ -44,6 +44,11 @@
           var refreshID = setInterval(function() {
                 redraw(opts.options.items, scale, refreshID, colorScalePos, colorScaleNeg, scaleCircle, scaleOpacity)
             }, 500)
+
+            this.onSliderInput = (year) => {
+                this.update({year})
+                redraw(opts.options.items, scale, refreshID, colorScalePos, colorScaleNeg, scaleCircle, scaleOpacity)
+            }
 
         })
 
@@ -95,7 +100,7 @@
         }
 
         function findTide(station) {
-            if (station.tideData.find(findYear).bind(this)) {
+            if (station.tideData.find(findYear)) {
                 let tideObject = station.tideData.find(tide => findYear(tide))
                 return tideObject.tide
             }
@@ -246,10 +251,6 @@
             } else {
                 clearInterval(refreshID)
             }
-        }
-
-        this.onSliderInput = (year) => {
-            this.update({year})
         }
     </script>
 </sealevel-map>

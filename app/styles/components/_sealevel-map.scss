@@ -41,12 +41,29 @@
   cursor: pointer;
 }
 
-.overlay {
+.slider {
   z-index: 5;
   text-align: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   color: lightgrey;
   font-weight: bold;
-  font-size: 67px;
+  font-size: 24px;
+  bottom: 0;
+  background: white;
+}
+
+.overlay {
+  z-index: 5;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 56px;
+  top: 0;
+}
+
+#sealevel-range-input {
+  width: 75%;
 }
