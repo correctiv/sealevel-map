@@ -28,7 +28,7 @@
 
             const scale = d3.scaleSqrt().rangeRound([maxHeight, 0]).domain(yDomain)
 
-            const scaleCircle = d3.scaleLinear().range([3, 9]).domain([0, yMin])
+            const scaleCircle = d3.scaleLinear().range([20, 30]).domain([0, yMin])
             const scaleOpacity = d3.scaleSqrt().range([0.3, 0.9]).domain(yDomain)
 
             const colorScalePos = d3.scaleSqrt()
@@ -163,20 +163,21 @@
 
             function update() {
 
-                bar.attr('transform',
+                bar
+                        .attr('transform',
                         function(d) {
                             let y = map.latLngToLayerPoint(d.LatLng).y - yScale(0);
                             let x = map.latLngToLayerPoint(d.LatLng).x - (barWidth / 2);
                             return "translate("+ x +","+ y +")";
-                        }
-                )
-                circleMarker.attr('transform',
+                        })
+                circleMarker
+
+                        .attr('transform',
                         function(d) {
                             let y = map.latLngToLayerPoint(d.LatLng).y;
                             let x = map.latLngToLayerPoint(d.LatLng).x;
                             return "translate("+ x +","+ y +")";
-                        }
-                )
+                        })
             }
         }
 
