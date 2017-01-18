@@ -1,11 +1,14 @@
 <sealevel-map>
     <div id="sealevel__map" class="sealevel__map"></div>
 
-
     <script type="text/babel">
+        import 'leaflet_css'
+        import 'leaflet_marker'
+        import 'leaflet_marker_2x'
+        import 'leaflet_marker_shadow'
+        import L from 'leaflet'
 
         import * as d3 from 'd3'
-        import L from 'leaflet'
 
         /* global variables */
         const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ');
