@@ -20,6 +20,6 @@ mount('sealevel-app', {
     barWidth: 2,
     maxHeight: 300
   },
-  tiles: 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}@2x.png',
+  tiles: 'https://api.mapbox.com/styles/v1/felixmichel/ciy1l1oag00dx2sl5tbia4zr1/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ',
   attribution: 'CartoDB <a href="https://cartodb.com/attributions">attribution</a>'
 })
