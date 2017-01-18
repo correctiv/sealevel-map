@@ -1,38 +1,35 @@
 <sealevel-app>
-    <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
+  <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
 
-    <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
+  <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
 
-    <script type="text/babel">
+  <script type="text/babel">
+    this.currentStation = null
 
-        this.currentStation = null
+    this.handleMarkerClick = (id) => {
+      const station = findStation(opts.items, id)
+      this.updateStations(station)
+    }
 
-        this.handleMarkerClick = (id) => {
-            var station = findStation(opts.items, id)
-            this.updateStations(station)
+    this.handleCloseClick = () => {
+      this.update({
+        currentStation: null
+      })
+    }
+
+    this.updateStations = (station) => {
+      this.update({
+        currentStation: station
+      })
+    }
+
+    function findStation (data, idToLookFor) {
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].ID === idToLookFor) {
+          return (data[i])
         }
-
-        this.handleCloseClick = () => {
-            this.update({
-                currentStation: null
-            })
-        }
-
-        this.updateStations = (station) => {
-            this.update({
-                currentStation: station
-            })
-        }
-
-        function findStation (data, idToLookFor) {
-            for (var i = 0; i < data.length; i++) {
-                if (data[i].ID == idToLookFor) {
-                    return (data[i])
-                }
-            }
-        }
-
-    </script>
-
+      }
+    }
+  </script>
 
 </sealevel-app>
