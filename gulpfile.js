@@ -54,17 +54,17 @@ if (options.development) {
 
 gulp.task('javascript', () => {
   const appBundler = browserify({
-    entries: [options.js.src], // Only need initial file, browserify finds the rest
-    transform: [babelify, [riotify, {'type': 'babel'}]],
-    debug: options.development, // Gives us sourcemapping
-    standalone: 'correctiv', // Exports the package as window.correctiv
-    cache: {},
-    packageCache: {},
-    fullPaths: options.development // Requirement of watchify
-  })
+      entries: [options.js.src], // Only need initial file, browserify finds the rest
+      transform: [babelify, [riotify, {'type': 'babel'}]],
+      debug: options.development, // Gives us sourcemapping
+      standalone: 'correctiv', // Exports the package as window.correctiv
+      cache: {},
+      packageCache: {},
+      fullPaths: options.development // Requirement of watchify
+    })
 
 // We set our dependencies as externals on our app bundler when developing
-;(options.development ? dependencies : []).forEach(dep => appBundler.external(dep))
+    ;(options.development ? dependencies : []).forEach(dep => appBundler.external(dep))
 
 // The rebundle process
   const rebundle = () => {
@@ -98,7 +98,7 @@ gulp.task('javascript', () => {
       require: dependencies
     })
 
-  // Run the vendor bundle
+    // Run the vendor bundle
     const start = new Date()
     console.log('Building VENDOR bundle')
     vendorsBundler.bundle()
@@ -123,25 +123,25 @@ gulp.task('css', () => {
       const start = Date.now()
       console.log('Building CSS bundle')
       return gulp.src(options.css.src)
-            .pipe(concat('index.scss'))
-            .pipe(sass(sassOpts))
-            .pipe(rename('bundle.css'))
-            .pipe(gulp.dest(options.css.dest))
-            .pipe(gulpif(options.development, connect.reload()))
-            .pipe(notify(() => {
-              console.log(`CSS bundle built in ${Date.now() - start}ms`)
-            }))
+        .pipe(concat('index.scss'))
+        .pipe(sass(sassOpts))
+        .pipe(rename('bundle.css'))
+        .pipe(gulp.dest(options.css.dest))
+        .pipe(gulpif(options.development, connect.reload()))
+        .pipe(notify(() => {
+          console.log(`CSS bundle built in ${Date.now() - start}ms`)
+        }))
     }
 
     gulp.watch(options.css.watch, run)
     return run()
   } else {
     return gulp.src(options.css.src)
-        .pipe(concat('index.scss'))
-        .pipe(sass(sassOpts))
-        .pipe(rename('bundle.css'))
-        .pipe(cssmin())
-        .pipe(gulp.dest(options.css.dest))
+      .pipe(concat('index.scss'))
+      .pipe(sass(sassOpts))
+      .pipe(rename('bundle.css'))
+      .pipe(cssmin())
+      .pipe(gulp.dest(options.css.dest))
   }
 })
 
@@ -166,7 +166,7 @@ gulp.task('rebuild', ['css', 'javascript', 'html'])
 
 gulp.task('default', ['connect', 'rebuild', 'watch'])
 
-gulp.task('github-deploy', function() {
+gulp.task('github-deploy', function () {
   return gulp.src('./dist/**/*')
     .pipe(ghPages())
 })

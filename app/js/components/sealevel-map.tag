@@ -1,4 +1,20 @@
 <sealevel-map>
+
+    <sealevel-navigation class="sealevel__navigation"></sealevel-navigation>
+
+    <sealevel-map-slider if="{ this.next }" value="{ this.year }" oninput="{ this.onSliderInput }" class="slider"></sealevel-map-slider>
+
+    <div class="sealevel__map__infobox">
+        For decades human beings measured sea level in areas around important harbors.
+        Tide gauge readings tell us that over the past century,
+        the Global Mean Sea Level has risen in most regions.
+        This map is made using data measured from 1807 to 2015.
+        The height of the triangles reflects the sea level relative to the surface.
+        The colors represent the trend in the sea level – red for the rise and blue for the decline.
+        <br /><br />
+        <a href="#" onclick={go}>Tell me more!</a>
+    </div>
+
     <div id="sealevel__map" class="sealevel__map"></div>
 
 
@@ -7,13 +23,24 @@
         import * as d3 from 'd3'
         import L from 'leaflet'
 
+        this.next = true
+
         /* global variables */
         const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ')
-        var counter = 1
-        var year = 1900
+        const that = this
+        that.year = 1807
         var refreshID
 
+        this.go = function (e) {
+            opts.onnextclick(1)
+            this.update({
+                next: false
+            })
+        }
+
         this.on('mount', () => {
+
+
 
             /* render map */
             const map = renderMap(opts.options)
@@ -30,7 +57,12 @@
             /* redraw bars for torque effect  */
             var refreshID = setInterval(function() {
                 redraw(opts.options.items, scale, refreshID, map)
-            }, 500)
+            }, 300)
+
+            this.onSliderInput = (year) => {
+                this.update({year})
+                redraw(opts.options.items, scale, refreshID, map)
+            }
 
 
         })
@@ -60,7 +92,7 @@
          }*/
 
         function findYear(tideObject) {
-            if (tideObject.year === year) {
+            if (tideObject.year === that.year) {
                 return tideObject
             }
         }
@@ -136,20 +168,26 @@
                         }
                     })
                     .attr("transform", function (station) {
-                        let triangleHeight = Math.abs(yScale(findTide(station)) - yScale(0));
-                        let yPos = map.latLngToLayerPoint(station.LatLng).y - triangleHeight;
-                        let yNeg = map.latLngToLayerPoint(station.LatLng).y;
                         let x = map.latLngToLayerPoint(station.LatLng).x - 3;
+                        let yNeg = map.latLngToLayerPoint(station.LatLng).y;
 
                         if (findTide(station)) {
+                            let triangleHeight = Math.abs(yScale(findTide(station)) - yScale(0));
+                            let yPos = map.latLngToLayerPoint(station.LatLng).y - triangleHeight;
+
                             if (findTide(station) >= 0) {
                                 return "translate(" + x + "," + yPos + ")"
                             } else {
                                 return "translate(" + x + "," + yNeg + ")"
                             }
                         } else {
+
                             return "translate(" + x + "," + yNeg + ")"
                         }
+                    })
+                    .on('click', function(station) {
+                        opts.onmarkerclick(station.ID)
+                        console.log('click')
                     })
                     .attr("class", function (station) {
                         return findTide(station) < 0 ? "negative" : "positive"
@@ -164,15 +202,21 @@
 
             function update() {
 
-                triangle.attr("transform", function (d) {
-                    let triangleHeight = Math.abs(yScale(d.tideData[counter].tide) - yScale(0));
-                    let yPos = map.latLngToLayerPoint(d.LatLng).y - triangleHeight;
-                    let yNeg = map.latLngToLayerPoint(d.LatLng).y;
-                    let x = map.latLngToLayerPoint(d.LatLng).x - 3;
-                    if (d.tideData[counter].tide >= 0) {
-                        return "translate("+ x +","+ yPos +")"
+                triangle.attr("transform", function (station) {
+                    let x = map.latLngToLayerPoint(station.LatLng).x - 3;
+                    let yNeg = map.latLngToLayerPoint(station.LatLng).y;
+
+                    if (findTide(station)) {
+                        let triangleHeight = Math.abs(yScale(findTide(station)) - yScale(0));
+                        let yPos = map.latLngToLayerPoint(station.LatLng).y - triangleHeight;
+
+                        if (findTide(station) >= 0) {
+                            return "translate(" + x + "," + yPos + ")"
+                        } else {
+                            return "translate(" + x + "," + yNeg + ")"
+                        }
                     } else {
-                        return "translate("+ x +","+ yNeg +")"
+                        return "translate(" + x + "," + yNeg + ")"
                     }
                 })
 
@@ -192,8 +236,9 @@
             let yScale = scale
             let mapOverlay = d3.select('#sealevel__map').select('svg g')
 
-            if(year < 2010) {
-                year++
+            if(that.year < 2010) {
+
+                that.update({ year: ++that.year })
 
                /* mapOverlay.selectAll('circle')
                         .data(data)
@@ -208,7 +253,7 @@
                 mapOverlay.selectAll('path')
                         .data(data)
                         .transition()
-                        .duration(250)
+                        .duration(150)
                         .attr("d", function (station) {
                             let triangleHeight
                             if (findTide(station)) {
@@ -224,12 +269,12 @@
                         })
                         .attr("transform", function (station) {
 
-                            let triangleHeight = Math.abs(yScale(findTide(station)) - yScale(0));
-                            let yPos = map.latLngToLayerPoint(station.LatLng).y - triangleHeight;
                             let yNeg = map.latLngToLayerPoint(station.LatLng).y;
                             let x = map.latLngToLayerPoint(station.LatLng).x - 3;
 
                             if (findTide(station)) {
+                                let triangleHeight = Math.abs(yScale(findTide(station)) - yScale(0));
+                                let yPos = map.latLngToLayerPoint(station.LatLng).y - triangleHeight;
                                 if (findTide(station) >= 0) {
                                     return "translate(" + x + "," + yPos + ")"
                                 } else {

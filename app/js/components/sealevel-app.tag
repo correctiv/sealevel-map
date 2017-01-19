@@ -1,5 +1,5 @@
 <sealevel-app>
-    <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
+    <sealevel-map onmarkerclick="{ this.handleMarkerClick }" onnextclick="{ this.showNext }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
 
     <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
 
@@ -21,6 +21,12 @@
         this.updateStations = (station) => {
             this.update({
                 currentStation: station
+            })
+        }
+
+        this.showNext = (id) => {
+            this.update({
+                currentStation: id
             })
         }
 
