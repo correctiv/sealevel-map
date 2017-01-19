@@ -5,5 +5,8 @@
   "globals": {
     "riot": true,
     "opts": true
+  },
+  "env": {
+    "browser": 1
   }
 }
