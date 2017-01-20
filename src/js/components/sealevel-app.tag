@@ -1,7 +1,7 @@
 <sealevel-app>
-  <sealevel-map onmarkerclick="{ this.handleMarkerClick }" options="{ this.opts }" center="{ this.center }"></sealevel-map>
+  <sealevel-map onmarkerclick="{ handleMarkerClick }" onnextclick="{ showNext }" options="{ opts }" center="{ center }"></sealevel-map>
 
-  <sealevel-details if="{ this.currentStation }" oncloseclick="{ this.handleCloseClick}" station="{ this.currentStation }"></sealevel-details>
+  <sealevel-details if="{ currentStation }" oncloseclick="{ handleCloseClick }" station="{ currentStation }"></sealevel-details>
 
   <script type="text/babel">
     this.currentStation = null
@@ -23,13 +23,12 @@
       })
     }
 
+    this.showNext = (id) => {
+      this.handleMarkerClick(id)
+    }
+
     function findStation (data, idToLookFor) {
-      for (let i = 0; i < data.length; i++) {
-        if (data[i].ID === idToLookFor) {
-          return (data[i])
-        }
-      }
+      return data.filter(station => station.ID === idToLookFor)[0]
     }
   </script>
-
 </sealevel-app>

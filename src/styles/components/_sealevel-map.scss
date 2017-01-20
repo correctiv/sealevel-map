@@ -30,3 +30,64 @@
 #sealevel__map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-overlay-pane > svg {
   pointer-events: all;
 }
+
+.negative {
+  fill: blue;
+  fill-opacity: 0.4;
+}
+
+.positive {
+  fill: red;
+  fill-opacity: 0.4;
+}
+
+
+.slider {
+  z-index: 5;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 24px;
+  bottom: 0;
+  background: white;
+}
+
+.overlay {
+  z-index: 5;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  color: lightgrey;
+  font-weight: bold;
+  font-size: 56px;
+  top: 0;
+}
+
+#sealevel-range-input {
+  width: 75%;
+}
+
+.sealevel__map__infobox {
+  z-index: 5;
+  position: absolute;
+  background: white;
+  width: 200px;
+  top: 50;
+  right: 20;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.sealevel__navigation {
+  z-index: 5;
+  position: absolute;
+  background: white;
+  top: 0;
+  right: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
