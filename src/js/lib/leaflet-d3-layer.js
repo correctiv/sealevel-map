@@ -1,7 +1,10 @@
 // /**
 //  * D3 layer for Leaflet
 //  *
-//  * Based on Leaflet.D3SvgOverlay:
+//  * Based on Leaflet.D3SvgOverlay
+//  * - updated for use with D3 4.0 and NPM with ES6 modules
+//  * - removed backwards compatibility with Leaflet 0.7 for readability and simplicity
+//  *
 //  * https://github.com/teralytics/Leaflet.D3SvgOverlay
 //  * Copyright (c) 2014 Teralytics AG, MIT licensed:
 //  * https://github.com/teralytics/Leaflet.D3SvgOverlay/blob/master/LICENSE
