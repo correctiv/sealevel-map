@@ -38,23 +38,8 @@
     }
 
     this.on('mount', () => {
-      /* render map */
       const map = renderMap(opts.options)
-      const tideData = opts.options.items
-      let year = MIN_YEAR
-
-      tideOverTimeLayer.addTo(map, tideData)
-
-      /* redraw bars for torque effect  */
-      let animationLoop = setInterval(() => {
-        tideOverTimeLayer.redraw(year++)
-        if (year > MAX_YEAR) clearInterval(animationLoop)
-      }, 300)
-
-      this.onSliderInput = (year) => {
-        this.update({year})
-        redraw(opts.options.items, scale, refreshID, map)
-      }
+      renderTideOverTimeLayer(map)
     })
 
     function renderMap ({ center, zoom, tiles, attribution }) {
@@ -65,6 +50,19 @@
       map.zoomControl.setPosition('topleft')
 
       return map
+    }
+
+    function renderTideOverTimeLayer (map) {
+      const tideData = opts.options.items
+      let year = MIN_YEAR
+
+      tideOverTimeLayer.addTo(map, tideData)
+
+      /* redraw bars for torque effect  */
+      const animationLoop = setInterval(() => {
+        tideOverTimeLayer.redraw(year++)
+        if (year > MAX_YEAR) clearInterval(animationLoop)
+      }, 300)
     }
   </script>
 </sealevel-map>
