@@ -7,10 +7,11 @@ if (module.hot) {
 import { mount } from 'riot'
 import stations from '../data/subset.json'
 import '../styles/index.scss'
-import './components/sealevel-map.tag'
 import './components/sealevel-app.tag'
+import './components/sealevel-map.tag'
 import './components/sealevel-details.tag'
 import './components/sealevel-linechart.tag'
+import './components/sealevel-navigation.tag'
 
 mount('sealevel-app', {
   items: stations,

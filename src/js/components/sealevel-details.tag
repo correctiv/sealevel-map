@@ -27,6 +27,8 @@
     </div>
 
     <script type="text/babel">
+      import './sealevel-linechart.tag'
+
       this.on('update', () => {
         if (this.opts.station) {
           const getYear = new Date(this.opts.station.tideData[0].timestamp)

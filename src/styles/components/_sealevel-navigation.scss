@@ -1,0 +1,49 @@
+$bullet-size: 15px;
+
+sealevel-navigation {
+  z-index: 5;
+  position: absolute;
+  top: 10px;
+  left: 240px;
+
+  .bullet-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bullet-list__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .link {
+    display: inline-block;
+    overflow: hidden;
+    width: $bullet-size;
+    height: $bullet-size;
+    color: black;
+  }
+
+  .link:hover {
+    width: auto;
+  }
+
+  .link:before {
+    content: "";
+    display: inline-block;
+    width: $bullet-size;
+    height: $bullet-size;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: black;
+  }
+
+  .link:hover:before,
+  .link:focus:before,
+  .link:active:before,
+  .link--active:before {
+    background: red;
+  }
+}
+

@@ -1,18 +1,30 @@
 <sealevel-map>
 
-  <sealevel-navigation class="sealevel__navigation"></sealevel-navigation>
-
   <sealevel-map-slider if="{ this.next }" value="{ this.year }" oninput="{ this.onSliderInput }" class="slider"></sealevel-map-slider>
 
-  <div class="sealevel__map__infobox">
-    For decades human beings measured sea level in areas around important harbors.
-    Tide gauge readings tell us that over the past century,
-    the Global Mean Sea Level has risen in most regions.
-    This map is made using data measured from 1807 to 2015.
-    The height of the triangles reflects the sea level relative to the surface.
-    The colors represent the trend in the sea level – red for the rise and blue for the decline.
-    <br /><br />
-    <a href="#" onclick={go}>Tell me more!</a>
+  <div if="{ this.opts.active === 0 }" class="sealevel__map__infobox">
+    <p>FOO</p>
+    <a href="#{this.opts.steps[1]}">Tell me more!</a>
+  </div>
+
+  <div if="{ this.opts.active === 1 }" class="sealevel__map__infobox">
+    <p>BAR</p>
+    <a href="#{this.opts.steps[2]}">Tell me more!</a>
+  </div>
+
+  <div if="{ this.opts.active === 2 }" class="sealevel__map__infobox">
+    <p>BAZ</p>
+    <a href="#{this.opts.steps[3]}">Tell me more!</a>
+  </div>
+
+  <div if="{ this.opts.active === 3 }" class="sealevel__map__infobox">
+    <p>LOREM IPSUM</p>
+    <a href="#{this.opts.steps[4]}">Tell me more!</a>
+  </div>
+
+  <div if="{ this.opts.active === 4 }" class="sealevel__map__infobox">
+    <p>DOLOR SIT AMET</p>
+    <a href="#{this.opts.steps[0]}">Tell me more!</a>
   </div>
 
   <div id="sealevel__map" class="sealevel__map"></div>
@@ -36,6 +48,35 @@
         next: false
       })
     }
+
+    // cleanup resources after tag is no longer part of DOM
+    this.on('update', () => {
+      switch (this.opts.active) {
+        case 0:
+          console.log('Do something on the first step!')
+          break
+
+        case 1:
+          console.log('Do something on the second step!')
+          break
+
+        case 2:
+          console.log('Do something on the third step!')
+          break
+
+        case 3:
+          console.log('Do something on the fourth step!')
+          break
+
+        case 4:
+          console.log('Do something on the fifth step!')
+          break
+
+        case 5:
+          console.log('Do something on the sixth step!')
+          break
+      }
+    })
 
     this.on('mount', () => {
       const map = renderMap(opts.options)
