@@ -1,13 +1,11 @@
 <sealevel-app>
-  <sealevel-map onmarkerclick="{ handleMarkerClick }" onnextclick="{ showNext }"
-    active="{ activeStep }" options="{ opts }" steps="{ steps }"
-    canter="{ center }"></sealevel-map>
+  <sealevel-map onmarkerclick="{ handleMarkerClick }" center="{ center }"
+    active="{ activeStep }" options="{ opts }" steps="{ steps }"></sealevel-map>
 
   <sealevel-details if="{ currentStation }" oncloseclick="{ handleCloseClick }"
     station="{ currentStation }"></sealevel-details>
 
-  <sealevel-navigation steps="{ steps }" active="{ activeStep }"
-    onselect="{ showStep }"></sealevel-navigation>
+  <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
 
   <script type="text/babel">
     import route from 'riot-route'
@@ -25,34 +23,17 @@
     ]
 
     this.handleMarkerClick = (id) => {
-      const station = findStation(opts.items, id)
-      this.updateStations(station)
+      const currentStation = findStation(opts.items, id)
+      this.update({ currentStation })
     }
 
     this.handleCloseClick = () => {
-      this.update({
-        currentStation: null
-      })
-    }
-
-    this.updateStations = (station) => {
-      this.update({
-        currentStation: station
-      })
-    }
-
-    this.showNext = (id) => {
-      this.handleMarkerClick(id)
-    }
-
-    this.showStep = (stepID) => {
-      this.activeStep = stepID
+      this.update({ currentStation: null })
     }
 
     route(slug => {
-      this.update({
-        activeStep: this.steps.indexOf(slug)
-      })
+      const activeStep = this.steps.indexOf(slug)
+      this.update({ activeStep })
     })
 
     route.start(true)
