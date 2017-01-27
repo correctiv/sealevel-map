@@ -55,7 +55,7 @@
       })
     })
 
-    route.start()
+    route.start(true)
 
     function findStation (data, idToLookFor) {
       return data.filter(station => station.ID === idToLookFor)[0]
