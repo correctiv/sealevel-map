@@ -4,13 +4,9 @@ import LeafletD3Layer from '../lib/leaflet-d3-layer.js'
 const MAX_HEIGHT = 200
 
 var _stations, _selection, _projection
-const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ')
 
 function findTide ({ tideData }, year) {
-  let tideItem = tideData.find(item => {
-    return parseTime(item.timestamp).getFullYear() === year
-  })
-
+  let tideItem = tideData.find(item => item.year === year)
   return tideItem && tideItem.tide
 }
 
@@ -59,7 +55,7 @@ function redraw (year) {
       }
     })
     .attr('transform', function (station) {
-      let latLng = [station.Latitude, station.Longitude]
+      let latLng = [station.latitude, station.longitude]
       let point = _projection.latLngToLayerPoint(latLng)
       let x = point.x - 3
       let yNeg = point.y
