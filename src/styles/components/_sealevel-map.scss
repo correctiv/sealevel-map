@@ -6,6 +6,10 @@
   display:block !important;
   z-index:2;
   position: fixed;
+
+  .tide-circle-marker {
+    transition: fill 1s, stroke 1s;
+  }
 }
 
 .sealevel__map__bar {

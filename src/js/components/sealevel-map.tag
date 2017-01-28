@@ -36,9 +36,10 @@
     import 'leaflet_marker_2x'
     import 'leaflet_marker_shadow'
     import tideOverTimeLayer from './tide-over-time-layer.js'
+    import circleMarkerLayer from './circle-marker-layer.js'
 
-    const MIN_YEAR = 1807
-    const MAX_YEAR = 2010
+    const MIN_YEAR = 1985
+    const MAX_YEAR = 2014
 
     this.next = true
 
@@ -50,14 +51,14 @@
     }
 
     // cleanup resources after tag is no longer part of DOM
-    this.on('update', () => {
+    this.on('updated', () => {
       switch (this.opts.active) {
         case 0:
-          console.log('Do something on the first step!')
+          renderCircleMarkerLayer(this.map)
           break
 
         case 1:
-          console.log('Do something on the second step!')
+          renderTideOverTimeLayer(this.map)
           break
 
         case 2:
@@ -79,8 +80,7 @@
     })
 
     this.on('mount', () => {
-      const map = renderMap(opts.options)
-      renderTideOverTimeLayer(map)
+      this.map = renderMap(opts.options)
     })
 
     function renderMap ({ center, zoom, tiles, attribution }) {
@@ -93,6 +93,11 @@
       return map
     }
 
+    function renderCircleMarkerLayer (map) {
+      const tideData = opts.options.items
+      circleMarkerLayer.addTo(map, tideData, opts.onmarkerclick)
+    }
+
     function renderTideOverTimeLayer (map) {
       const tideData = opts.options.items
       let year = MIN_YEAR
@@ -103,7 +108,7 @@
       const animationLoop = setInterval(() => {
         tideOverTimeLayer.redraw(year++)
         if (year > MAX_YEAR) clearInterval(animationLoop)
-      }, 300)
+      }, 1000)
     }
   </script>
 </sealevel-map>
