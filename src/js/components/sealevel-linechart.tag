@@ -40,11 +40,11 @@
       g.append('g')
         .attr('class', 'sealevel__linechart__axis sealevel__linechart__axis-x')
         .attr('transform', 'translate(0,' + height + ')')
-        .call(d3.axisBottom(xScale).ticks(5))
+        .call(d3.axisBottom(xScale).ticks(5).tickFormat(d3.format('d')))
 
       g.append('g')
         .attr('class', 'sealevel__linechart__axis sealevel__linechart__axis-y')
-        .call(d3.axisLeft(yScale).tickFormat(d3.format('.0s')))
+        .call(d3.axisLeft(yScale).ticks(5))
         .append('text')
         .attr('fill', '#000')
         .attr('y', -15)
