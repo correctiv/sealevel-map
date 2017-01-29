@@ -40,12 +40,12 @@ function findTide ({ tideData }, year) {
   return tideItem && tideItem.tide
 }
 
-function initialize (stations) {
+function initialize (stations, clickCallback) {
   _stations = stations
   _domain = getDomainValues(stations)
   _colorScale = d3.scaleSqrt().domain(_domain).range(COLORS)
 
-  let circleMarkers = initializeMarkers()
+  let circleMarkers = initializeMarkers(clickCallback)
   initializeAnimation(circleMarkers)
 
   return L.layerGroup(circleMarkers)
@@ -61,11 +61,11 @@ function initializeAnimation (circleMarkers) {
   }, 1000)
 }
 
-function initializeMarkers () {
+function initializeMarkers (clickCallback) {
   return _stations.map(station => {
     const latLng = [station.latitude, station.longitude]
     const marker = L.circleMarker(latLng, MARKER_OPTIONS)
-    marker.bindPopup(station.location)
+    marker.on('click', event => clickCallback(station.ID))
     return marker
   })
 }
@@ -83,8 +83,8 @@ function redraw (circleMarkers, year) {
 }
 
 export default {
-  addTo: (map, stations) => {
-    const markerLayer = initialize(stations)
+  addTo: (map, stations, clickCallback) => {
+    const markerLayer = initialize(stations, clickCallback)
     markerLayer.addTo(map)
   },
   redraw: redraw

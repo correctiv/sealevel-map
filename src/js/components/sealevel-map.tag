@@ -42,15 +42,6 @@
     const MIN_YEAR = 1985
     const MAX_YEAR = 2014
 
-    this.next = true
-
-    this.go = function (e) {
-      opts.onnextclick(1)
-      this.update({
-        next: false
-      })
-    }
-
     // cleanup resources after tag is no longer part of DOM
     this.on('updated', () => {
       switch (this.opts.active) {
@@ -95,7 +86,7 @@
     }
 
     function renderCircleMarkerLayer (map) {
-      circleMarkerLayer.addTo(map, tideData, opts.onmarkerclick)
+      circleMarkerLayer.addTo(map, animationData, opts.onmarkerclick)
     }
 
     function renderTideOverTimeLayer (map) {
