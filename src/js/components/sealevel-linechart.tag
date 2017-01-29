@@ -10,15 +10,9 @@
       if (data) createChart(data, 200, 400)
     })
 
-    const parseTime = d3.utcParse('%Y-%m-%dT%H:%M:%S.%LZ')
-    const bisectDate = d3.bisector(d => d.date).left
-    const formatValue = d3.format(',.2f')
+    const bisectDate = d3.bisector(d => d.year).left
 
     function createChart (data, containerHeight, containerWidth) {
-      data.forEach(function (d) {
-        d.date = parseTime(d.timestamp)
-      })
-
       const svg = d3.select('#linechart-container')
       svg.selectAll('*').remove()
       svg.attr('width', containerWidth)
@@ -29,15 +23,15 @@
       const height = containerHeight - margin.top - margin.bottom
       const width = containerWidth - margin.left - margin.right
 
-      const xDomain = d3.extent(data, d => d.date)
+      const xDomain = d3.extent(data, d => d.year)
       const yDomain = d3.extent(data, d => d.tide)
 
-      const xScale = d3.scaleTime().rangeRound([0, width]).domain(xDomain)
+      const xScale = d3.scaleLinear().rangeRound([0, width]).domain(xDomain)
       const yScale = d3.scaleLinear().rangeRound([height, 0]).domain(yDomain)
 
       const line = d3.line()
         .defined(d => d.tide !== null)
-        .x(d => xScale(d.date))
+        .x(d => xScale(d.year))
         .y(d => yScale(d.tide))
         .curve(d3.curveNatural)
 
@@ -50,7 +44,7 @@
 
       g.append('g')
         .attr('class', 'sealevel__linechart__axis sealevel__linechart__axis-y')
-        .call(d3.axisLeft(yScale).ticks(5))
+        .call(d3.axisLeft(yScale).tickFormat(d3.format('.0s')))
         .append('text')
         .attr('fill', '#000')
         .attr('y', -15)
@@ -103,20 +97,20 @@
         // work out which date value is closest to the mouse
         const d = mouseDate - d0[0] > d1[0] - mouseDate ? d1 : d0
 
-        const x = xScale(d.date)
+        const x = xScale(d.year)
         const y = yScale(d.tide)
 
         focus.select('text')
           .attr('transform', 'translate(' + x + ')')
-          .text(formatValue(d.tide))
+          .text(d.tide)
 
         focus.select('#sealevel__linechart__focuscircle')
           .attr('cx', x)
           .attr('cy', y)
 
         focus.select('#sealevel__linechart__focusLineX')
-          .attr('x1', xScale(d.date)).attr('y1', yScale(yDomain[0]))
-          .attr('x2', xScale(d.date)).attr('y2', yScale(yDomain[1]))
+          .attr('x1', xScale(d.year)).attr('y1', yScale(yDomain[0]))
+          .attr('x2', xScale(d.year)).attr('y2', yScale(yDomain[1]))
 
         // focus.select('#sealevel__linechart__focusLineY')
         //   .attr('x1', xScale(xDomain[0])).attr('y1', yScale(d.tide))

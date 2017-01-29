@@ -5,7 +5,7 @@ if (module.hot) {
 }
 
 import { mount } from 'riot'
-import stations from '../data/subset.json'
+import explorerData from '../data/dataexplorer.json'
 import '../styles/index.scss'
 import './components/sealevel-app.tag'
 import './components/sealevel-map.tag'
@@ -14,7 +14,7 @@ import './components/sealevel-linechart.tag'
 import './components/sealevel-navigation.tag'
 
 mount('sealevel-app', {
-  items: stations,
+  explorerData: explorerData,
   center: [41.890251, 12.492373],
   zoom: 2,
   overlayOptions: {

@@ -37,6 +37,7 @@
     import 'leaflet_marker_shadow'
     import tideOverTimeLayer from './tide-over-time-layer.js'
     import circleMarkerLayer from './circle-marker-layer.js'
+    import animationData from '../../data/mapanimation.json'
 
     const MIN_YEAR = 1985
     const MAX_YEAR = 2014
@@ -94,12 +95,11 @@
     }
 
     function renderCircleMarkerLayer (map) {
-      const tideData = opts.options.items
       circleMarkerLayer.addTo(map, tideData, opts.onmarkerclick)
     }
 
     function renderTideOverTimeLayer (map) {
-      const tideData = opts.options.items
+      const tideData = animationData
       let year = MIN_YEAR
 
       tideOverTimeLayer.addTo(map, tideData)
