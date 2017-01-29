@@ -1,8 +1,8 @@
 <sealevel-app>
-  <sealevel-map onmarkerclick="{ handleMarkerClick }" center="{ center }"
+  <sealevel-map onmarkerclick="{ routeToStationDetails }" center="{ center }"
     active="{ activeStep }" options="{ opts }" steps="{ steps }"></sealevel-map>
 
-  <sealevel-details if="{ currentStation }" oncloseclick="{ handleCloseClick }"
+  <sealevel-details if="{ currentStation }" oncloseclick="{ routeToStationOverview }"
     station="{ currentStation }"></sealevel-details>
 
   <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
@@ -22,13 +22,25 @@
       'dolor-sit-amet'
     ]
 
-    this.handleMarkerClick = (id) => {
-      const currentStation = findStation(opts.items, id)
+    this.findStation = (data, id) => {
+      return data.find(({ID}) => ID.toString() === id.toString())
+    }
+
+    this.showDetailsForStation = (id) => {
+      const currentStation = this.findStation(opts.explorerData, id)
       this.update({ currentStation })
     }
 
-    this.handleCloseClick = () => {
+    this.hideDetails = () => {
       this.update({ currentStation: null })
+    }
+
+    this.routeToStationDetails = (id) => {
+      route(`stations/${id}`)
+    }
+
+    this.routeToStationOverview = () => {
+      route('stations')
     }
 
     route(slug => {
@@ -36,10 +48,14 @@
       this.update({ activeStep })
     })
 
-    route.start(true)
+    route('stations', () => {
+      this.hideDetails()
+    })
 
-    function findStation (data, idToLookFor) {
-      return data.filter(station => station.ID === idToLookFor)[0]
-    }
+    route('stations/*', id => {
+      this.showDetailsForStation(id)
+    })
+
+    route.start(true)
   </script>
 </sealevel-app>
