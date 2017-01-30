@@ -36,7 +36,7 @@
     import 'leaflet_marker_2x'
     import 'leaflet_marker_shadow'
     import tideOverTimeLayer from './tide-over-time-layer.js'
-    import explorerLayer from './circle-marker-layer.js'
+    import explorerLayer from './explorer-layer.js'
     import animationData from '../../data/mapanimation.json'
 
     const MIN_YEAR = 1985
