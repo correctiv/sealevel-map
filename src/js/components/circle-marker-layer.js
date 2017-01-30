@@ -19,11 +19,7 @@ const MARKER_OPTIONS = {
   className: 'tide-circle-marker'
 }
 
-let _stations
-let _domain
-let _colorScale
-
-function getDomainValues (stations) {
+const calculateDomain = (stations) => {
   let min = d3.min(stations, (station) => {
     return d3.min(station.tideData, (d) => d.tide)
   })
@@ -35,34 +31,13 @@ function getDomainValues (stations) {
   return [min, 0, max]
 }
 
-function findTide ({ tideData }, year) {
+const findTide = ({ tideData }, year) => {
   let tideItem = tideData.find(item => item.year === year)
   return tideItem && tideItem.tide
 }
 
-function initialize (stations, clickCallback) {
-  _stations = stations
-  _domain = getDomainValues(stations)
-  _colorScale = d3.scaleSqrt().domain(_domain).range(COLORS)
-
-  let circleMarkers = initializeMarkers(clickCallback)
-  initializeAnimation(circleMarkers)
-
-  return L.layerGroup(circleMarkers)
-}
-
-function initializeAnimation (circleMarkers) {
-  /* animate circle color over time  */
-  let year = MIN_YEAR
-  const animationLoop = setInterval(() => {
-    console.log(year)
-    redraw(circleMarkers, year++)
-    if (year > MAX_YEAR) clearInterval(animationLoop)
-  }, 1000)
-}
-
-function initializeMarkers (clickCallback) {
-  return _stations.map(station => {
+const createMarkers = (stations, clickCallback) => {
+  return stations.map(station => {
     const latLng = [station.latitude, station.longitude]
     const marker = L.circleMarker(latLng, MARKER_OPTIONS)
     marker.on('click', event => clickCallback(station.ID))
@@ -70,22 +45,47 @@ function initializeMarkers (clickCallback) {
   })
 }
 
-function redraw (circleMarkers, year) {
-  circleMarkers.forEach((marker, i) => {
-    const tide = findTide(_stations[i], year)
-    const color = _colorScale(tide)
+const ExplorerLayer = L.LayerGroup.extend({
 
-    marker.setStyle({
-      color: d3.rgb(color).darker(0.2),
-      fillColor: color
-    })
-  })
-}
+  initialize: function (stations, clickCallback) {
+    let domain = calculateDomain(stations)
+    let colorScale = d3.scaleSqrt().domain(domain).range(COLORS)
 
-export default {
-  addTo: (map, stations, clickCallback) => {
-    const markerLayer = initialize(stations, clickCallback)
-    markerLayer.addTo(map)
+    this._stations = stations
+    this._circleMarkers = createMarkers(stations, clickCallback)
+    this._initializeAnimation(colorScale)
+
+    L.LayerGroup.prototype.initialize.call(this, this._circleMarkers)
   },
-  redraw: redraw
+
+  onRemove: function (map) {
+    clearInterval(this._animationLoop)
+    L.LayerGroup.prototype.onRemove.call(this, map)
+  },
+
+  _initializeAnimation: function (colorScale) {
+    let year = MIN_YEAR
+
+    this._animationLoop = setInterval(() => {
+      console.log(year)
+      this._redraw(year++, colorScale)
+      if (year > MAX_YEAR) clearInterval(this._animationLoop)
+    }, 1000)
+  },
+
+  _redraw: function (year, colorScale) {
+    this._circleMarkers.forEach((marker, i) => {
+      const tide = findTide(this._stations[i], year)
+      const color = colorScale(tide)
+
+      marker.setStyle({
+        color: d3.rgb(color).darker(0.2),
+        fillColor: color
+      })
+    })
+  }
+})
+
+export default (...args) => {
+  return new ExplorerLayer(...args)
 }
