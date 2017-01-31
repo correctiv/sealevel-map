@@ -3,28 +3,22 @@
   <sealevel-map-slider if="{ this.next }" value="{ this.year }" oninput="{ this.onSliderInput }" class="slider"></sealevel-map-slider>
 
   <div if="{ this.opts.active === 0 }" class="sealevel__map__infobox">
-    <p>FOO</p>
-    <a href="#{this.opts.steps[1]}">Tell me more!</a>
+    <h2>Data Explorer (WIP)</h2>
+    <p>Change in tides 1985 - 2014</p>
+    <p>Click on an item to learn more.</p>
+    <a href="#{this.opts.steps[1]}">Show animation</a>
   </div>
 
   <div if="{ this.opts.active === 1 }" class="sealevel__map__infobox">
-    <p>BAR</p>
-    <a href="#{this.opts.steps[2]}">Tell me more!</a>
+    <h2>Simple animation (WIP)</h2>
+    <p>Change in tides 1985 - 2014</p>
+    <a href="#{this.opts.steps[2]}">Show another animation (experimental)</a>
   </div>
 
   <div if="{ this.opts.active === 2 }" class="sealevel__map__infobox">
-    <p>BAZ</p>
-    <a href="#{this.opts.steps[3]}">Tell me more!</a>
-  </div>
-
-  <div if="{ this.opts.active === 3 }" class="sealevel__map__infobox">
-    <p>LOREM IPSUM</p>
-    <a href="#{this.opts.steps[4]}">Tell me more!</a>
-  </div>
-
-  <div if="{ this.opts.active === 4 }" class="sealevel__map__infobox">
-    <p>DOLOR SIT AMET</p>
-    <a href="#{this.opts.steps[0]}">Tell me more!</a>
+    <h2>Experimental animation (WIP)</h2>
+    <p>Change in tides 1985 - 2014</p>
+    <a href="#{this.opts.steps[3]}">Explore the data</a>
   </div>
 
   <div id="sealevel__map" class="sealevel__map"></div>
@@ -60,29 +54,25 @@
       switch (activeStep) {
         case 0:
           clearLayers()
-          const explorer = explorerLayer(animationData, opts.onmarkerclick)
-          addLayer(explorer)
+          addLayer(explorerLayer({
+            stations: animationData,
+            clickCallback: opts.onmarkerclick,
+            isAnimated: false
+          }))
           break
 
         case 1:
           clearLayers()
-          renderTideOverTimeLayer()
+          addLayer(explorerLayer({
+            stations: animationData,
+            clickCallback: opts.onmarkerclick,
+            isAnimated: true
+          }))
           break
 
         case 2:
-          console.log('Do something on the third step!')
-          break
-
-        case 3:
-          console.log('Do something on the fourth step!')
-          break
-
-        case 4:
-          console.log('Do something on the fifth step!')
-          break
-
-        case 5:
-          console.log('Do something on the sixth step!')
+          clearLayers()
+          renderTideOverTimeLayer(this.map)
           break
       }
     }

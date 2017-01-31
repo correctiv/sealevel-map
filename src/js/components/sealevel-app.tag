@@ -12,14 +12,10 @@
 
     this.currentStation = null
 
-    this.activeStep = 0
-
     this.steps = [
-      'foo',
-      'bar',
-      'baz',
-      'lorem-ipsum',
-      'dolor-sit-amet'
+      '',
+      'experimental-animation-1',
+      'experimental-animation-2'
     ]
 
     this.findStation = (data, id) => {
