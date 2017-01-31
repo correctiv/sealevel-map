@@ -47,13 +47,18 @@ const createMarkers = (stations, clickCallback) => {
 
 const ExplorerLayer = L.LayerGroup.extend({
 
-  initialize: function (stations, clickCallback) {
+  initialize: function ({ stations, clickCallback, isAnimated }) {
     let domain = calculateDomain(stations)
     let colorScale = d3.scaleSqrt().domain(domain).range(COLORS)
 
     this._stations = stations
     this._circleMarkers = createMarkers(stations, clickCallback)
-    this._initializeAnimation(colorScale)
+
+    if (isAnimated) {
+      this._initializeAnimation(colorScale)
+    } else {
+      this._redraw(MAX_YEAR, colorScale)
+    }
 
     L.LayerGroup.prototype.initialize.call(this, this._circleMarkers)
   },
