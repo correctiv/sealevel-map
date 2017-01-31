@@ -42,15 +42,31 @@
     const MIN_YEAR = 1985
     const MAX_YEAR = 2014
 
+    this.activeLayers = []
+
     // cleanup resources after tag is no longer part of DOM
     this.on('updated', () => {
-      switch (this.opts.active) {
+      if (this.opts.active !== this.active) {
+        this.active = this.opts.active
+        updateLayers(this.active)
+      }
+    })
+
+    this.on('mount', () => {
+      this.map = renderMap(opts.options)
+    })
+
+    const updateLayers = (activeStep) => {
+      switch (activeStep) {
         case 0:
-          renderCircleMarkerLayer(this.map)
+          clearLayers()
+          const explorer = explorerLayer(animationData, opts.onmarkerclick)
+          addLayer(explorer)
           break
 
         case 1:
-          renderTideOverTimeLayer(this.map)
+          clearLayers()
+          renderTideOverTimeLayer()
           break
 
         case 2:
@@ -69,13 +85,9 @@
           console.log('Do something on the sixth step!')
           break
       }
-    })
+    }
 
-    this.on('mount', () => {
-      this.map = renderMap(opts.options)
-    })
-
-    function renderMap ({ center, zoom, tiles, attribution }) {
+    const renderMap = ({ center, zoom, tiles, attribution }) => {
       const map = L.map('sealevel__map', { center, zoom })
       const tileLayer = L.tileLayer(tiles, { attribution })
 
@@ -85,16 +97,23 @@
       return map
     }
 
-    function renderCircleMarkerLayer (map) {
-      const explorer = explorerLayer(animationData, opts.onmarkerclick)
-      map.addLayer(explorer)
+    const addLayer = (layer) => {
+      this.map.addLayer(layer)
+      this.activeLayers.push(layer)
     }
 
-    function renderTideOverTimeLayer (map) {
+    const clearLayers = () => {
+      this.activeLayers.forEach(layer => {
+        this.map.removeLayer(layer)
+      })
+      this.activeLayers = []
+    }
+
+    const renderTideOverTimeLayer = (map) => {
       const tideData = animationData
       let year = MIN_YEAR
 
-      tideOverTimeLayer.addTo(map, tideData)
+      tideOverTimeLayer.addTo(this.map, tideData)
 
       /* redraw bars for torque effect  */
       const animationLoop = setInterval(() => {

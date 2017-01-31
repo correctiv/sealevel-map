@@ -45,7 +45,9 @@
 
     route(slug => {
       const activeStep = this.steps.indexOf(slug)
-      this.update({ activeStep })
+      if (activeStep >= 0) {
+        this.update({ activeStep })
+      }
     })
 
     route('stations', () => {
