@@ -1,9 +1,12 @@
 import * as d3 from 'd3'
 import LeafletD3Layer from '../lib/leaflet-d3-layer.js'
 
+const MIN_YEAR = 1985
+const MAX_YEAR = 2014
+const ANIMATION_INTERVAL = 1000
 const MAX_HEIGHT = 200
 
-var _stations, _selection, _projection
+var _stations, _selection, _projection, _animationLoop
 
 function findTide ({ tideData }, year) {
   let tideItem = tideData.find(item => item.year === year)
@@ -22,7 +25,7 @@ function getDomainValues (items) {
   return [yMin, yMax]
 }
 
-function initialize (selection, projection, stations) {
+function initializeVisualization (selection, projection, stations) {
   _projection = projection
   _selection = selection
   _stations = stations
@@ -32,11 +35,17 @@ function initialize (selection, projection, stations) {
     .enter().append('path')
 }
 
-function redraw (year) {
-  /* set domain and scale */
-  const domain = getDomainValues(_stations)
-  const scale = d3.scaleLinear().rangeRound([MAX_HEIGHT, 0]).domain(domain)
+function initializeAnimation (scale) {
+  let year = MIN_YEAR
 
+  _animationLoop = setInterval(() => {
+    console.log(year)
+    redraw(year++, scale)
+    if (year > MAX_YEAR) clearInterval(_animationLoop)
+  }, ANIMATION_INTERVAL)
+}
+
+function redraw (year, scale) {
   _selection.selectAll('path')
     .data(_stations)
     .transition()
@@ -78,12 +87,13 @@ function redraw (year) {
     })
 }
 
-export default {
-  addTo: (map, stations) => {
-    const d3Layer = LeafletD3Layer((selection, projection) => {
-      initialize(selection, projection, stations)
-    })
-    d3Layer.addTo(map)
-  },
-  redraw: redraw
+export default (stations) => {
+  return LeafletD3Layer((selection, projection) => {
+    /* set domain and scale */
+    const domain = getDomainValues(stations)
+    const scale = d3.scaleLinear().rangeRound([MAX_HEIGHT, 0]).domain(domain)
+
+    initializeVisualization(selection, projection, stations)
+    initializeAnimation(scale)
+  })
 }

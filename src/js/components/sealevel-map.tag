@@ -33,9 +33,6 @@
     import explorerLayer from './explorer-layer.js'
     import animationData from '../../data/mapanimation.json'
 
-    const MIN_YEAR = 1985
-    const MAX_YEAR = 2014
-
     this.activeLayers = []
 
     // cleanup resources after tag is no longer part of DOM
@@ -72,7 +69,7 @@
 
         case 2:
           clearLayers()
-          renderTideOverTimeLayer(this.map)
+          addLayer(tideOverTimeLayer(animationData))
           break
       }
     }
@@ -97,19 +94,6 @@
         this.map.removeLayer(layer)
       })
       this.activeLayers = []
-    }
-
-    const renderTideOverTimeLayer = (map) => {
-      const tideData = animationData
-      let year = MIN_YEAR
-
-      tideOverTimeLayer.addTo(this.map, tideData)
-
-      /* redraw bars for torque effect  */
-      const animationLoop = setInterval(() => {
-        tideOverTimeLayer.redraw(year++)
-        if (year > MAX_YEAR) clearInterval(animationLoop)
-      }, 1000)
     }
   </script>
 </sealevel-map>
