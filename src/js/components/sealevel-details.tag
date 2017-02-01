@@ -4,13 +4,9 @@
 
       <div class="sealevel__details__close" onclick="{ opts.oncloseclick }">&#10006;</div>
 
-      <h1 class="sealevel__details__titel">{ opts.station.Location }</h1>
+      <h1 class="sealevel__details__titel">{ opts.station.location }</h1>
 
-      <p>{ opts.station.Country }</p>
-
-      <h4>Trend of Sea Level (1961-2011)</h4>
-
-      <p>{ rise } { Math.abs(opts.station.trend) } mm per year</p>
+      <p>{ opts.station.country }</p>
 
       <sealevel-linechart chartdata="{ this.opts.station.tideData }"></sealevel-linechart>
 
