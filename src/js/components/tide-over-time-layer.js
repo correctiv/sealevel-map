@@ -25,7 +25,7 @@ function getDomainValues (items) {
   return [yMin, yMax]
 }
 
-function initializeVisualization (selection, projection, stations) {
+function initialize (selection, projection, stations) {
   _projection = projection
   _selection = selection
   _stations = stations
@@ -35,14 +35,18 @@ function initializeVisualization (selection, projection, stations) {
     .enter().append('path')
 }
 
-function initializeAnimation (scale) {
+function startAnimation (scale) {
   let year = MIN_YEAR
 
   _animationLoop = setInterval(() => {
     console.log(year)
     redraw(year++, scale)
-    if (year > MAX_YEAR) clearInterval(_animationLoop)
+    if (year > MAX_YEAR) stopAnimation()
   }, ANIMATION_INTERVAL)
+}
+
+function stopAnimation () {
+  clearInterval(_animationLoop)
 }
 
 function redraw (year, scale) {
@@ -93,7 +97,8 @@ export default (stations) => {
     const domain = getDomainValues(stations)
     const scale = d3.scaleLinear().rangeRound([MAX_HEIGHT, 0]).domain(domain)
 
-    initializeVisualization(selection, projection, stations)
-    initializeAnimation(scale)
+    projection.layer.on('remove', stopAnimation)
+    initialize(selection, projection, stations)
+    startAnimation(scale)
   })
 }
