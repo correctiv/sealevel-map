@@ -31,7 +31,7 @@
     import 'leaflet_marker_shadow'
     import tideOverTimeLayer from './tide-over-time-layer.js'
     import explorerLayer from './explorer-layer.js'
-    import animationData from '../../data/mapanimation.json'
+    import animationData from 'json!../../data/mapanimation.json'
 
     this.activeLayers = []
 

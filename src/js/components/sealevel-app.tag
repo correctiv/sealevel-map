@@ -2,30 +2,31 @@
   <sealevel-map onmarkerclick="{ routeToStationDetails }" center="{ center }"
     active="{ activeStep }" options="{ opts }" steps="{ steps }"></sealevel-map>
 
-  <sealevel-details if="{ currentStation }" oncloseclick="{ routeToStationOverview }"
-    station="{ currentStation }"></sealevel-details>
+  <sealevel-details if="{ state.currentStation }" oncloseclick="{ routeToStationOverview }"
+    station="{ state.currentStation }"></sealevel-details>
 
   <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
 
   <script type="text/babel">
     import route from 'riot-route'
+    import { loadExplorerData, showStationDetails } from '../actions'
 
-    this.currentStation = null
+    const store = this.opts.store
+
+    this.on('mount', () => {
+      store.dispatch(loadExplorerData())
+    })
+
+    store.subscribe(() => {
+      this.state = store.getState()
+      this.update()
+    })
 
     this.steps = [
       '',
       'experimental-animation-1',
       'experimental-animation-2'
     ]
-
-    this.findStation = (data, id) => {
-      return data.find(({ID}) => ID.toString() === id.toString())
-    }
-
-    this.showDetailsForStation = (id) => {
-      const currentStation = this.findStation(opts.explorerData, id)
-      this.update({ currentStation })
-    }
 
     this.hideDetails = () => {
       this.update({ currentStation: null })
@@ -51,7 +52,7 @@
     })
 
     route('stations/*', id => {
-      this.showDetailsForStation(id)
+      store.dispatch(showStationDetails(id))
     })
 
     route.start(true)
