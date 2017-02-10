@@ -9,7 +9,7 @@
 
   <script type="text/babel">
     import route from 'riot-route'
-    import { loadExplorerData, showStationDetails } from '../actions'
+    import { loadExplorerData, showStationDetails, hideStationDetails } from '../actions'
 
     const store = this.opts.store
 
@@ -28,10 +28,6 @@
       'experimental-animation-2'
     ]
 
-    this.hideDetails = () => {
-      this.update({ currentStation: null })
-    }
-
     this.routeToStationDetails = (id) => {
       route(`stations/${id}`)
     }
@@ -48,7 +44,7 @@
     })
 
     route('stations', () => {
-      this.hideDetails()
+      store.dispatch(hideStationDetails())
     })
 
     route('stations/*', id => {
