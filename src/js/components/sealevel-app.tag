@@ -1,6 +1,7 @@
 <sealevel-app>
   <sealevel-map onmarkerclick="{ routeToStationDetails }" center="{ center }"
-    active="{ activeStep }" options="{ opts }" steps="{ steps }"></sealevel-map>
+    active="{ activeStep }" animationdata="{ state.animationData }" options="{ opts }"
+    steps="{ steps }"></sealevel-map>
 
   <sealevel-details if="{ state.currentStation }" oncloseclick="{ routeToStationOverview }"
     station="{ state.currentStation }"></sealevel-details>
@@ -9,17 +10,21 @@
 
   <script type="text/babel">
     import route from 'riot-route'
-    import { loadExplorerData, showStationDetails, hideStationDetails } from '../actions'
+    import {
+      loadExplorerData,
+      showStationDetails,
+      hideStationDetails,
+      loadAnimationData
+    } from '../actions'
 
     const store = this.opts.store
 
     this.on('mount', () => {
-      store.dispatch(loadExplorerData())
+      store.dispatch(loadAnimationData())
     })
 
     store.subscribe(() => {
-      this.state = store.getState()
-      this.update()
+      this.update({ state: store.getState() })
     })
 
     this.steps = [
@@ -48,6 +53,7 @@
     })
 
     route('stations/*', id => {
+      store.dispatch(loadExplorerData())
       store.dispatch(showStationDetails(id))
     })
 

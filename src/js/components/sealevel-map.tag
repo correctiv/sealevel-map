@@ -31,13 +31,11 @@
     import 'leaflet_marker_shadow'
     import tideOverTimeLayer from './tide-over-time-layer.js'
     import explorerLayer from './explorer-layer.js'
-    import animationData from 'json!../../data/mapanimation.json'
 
     this.activeLayers = []
 
-    // cleanup resources after tag is no longer part of DOM
     this.on('updated', () => {
-      if (this.opts.active !== this.active) {
+      if (this.opts.animationdata) {
         this.active = this.opts.active
         updateLayers(this.active)
       }
@@ -52,7 +50,7 @@
         case 0:
           clearLayers()
           addLayer(explorerLayer({
-            stations: animationData,
+            stations: opts.animationdata,
             clickCallback: opts.onmarkerclick,
             isAnimated: false
           }))
@@ -61,7 +59,7 @@
         case 1:
           clearLayers()
           addLayer(explorerLayer({
-            stations: animationData,
+            stations: opts.animationdata,
             clickCallback: opts.onmarkerclick,
             isAnimated: true
           }))
@@ -69,7 +67,7 @@
 
         case 2:
           clearLayers()
-          addLayer(tideOverTimeLayer(animationData))
+          addLayer(tideOverTimeLayer(opts.animationdata))
           break
       }
     }

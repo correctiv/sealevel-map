@@ -1,8 +1,14 @@
-import { SHOW_STATION_DETAILS, HIDE_STATION_DETAILS, EXPLORER_DATA_LOADED } from '../actions'
+import {
+  SHOW_STATION_DETAILS,
+  HIDE_STATION_DETAILS,
+  EXPLORER_DATA_LOADED,
+  ANIMATION_DATA_LOADED
+} from '../actions'
 
 const initialState = {
   currentStation: null,
-  explorerData: []
+  explorerData: [],
+  animationData: []
 }
 
 const findStation = (data, id) => {
@@ -15,6 +21,9 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case EXPLORER_DATA_LOADED:
       return { ...state, explorerData: action.data.stations }
+
+    case ANIMATION_DATA_LOADED:
+      return { ...state, animationData: action.data.stations }
 
     case SHOW_STATION_DETAILS:
       let station = findStation(state.explorerData, action.id)
