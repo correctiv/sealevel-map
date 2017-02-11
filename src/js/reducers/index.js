@@ -1,38 +1,80 @@
+import { combineReducers } from 'redux'
 import {
   SHOW_STATION_DETAILS,
   HIDE_STATION_DETAILS,
-  EXPLORER_DATA_LOADED,
-  ANIMATION_DATA_LOADED
+  REQUEST_STATION_DATA,
+  RECEIVE_STATION_DATA,
+  REQUEST_ANIMATION_DATA,
+  RECEIVE_ANIMATION_DATA,
+  SET_STEP
 } from '../actions'
 
-const initialState = {
-  currentStation: null,
-  explorerData: [],
-  animationData: []
-}
-
-const findStation = (data, id) => {
-  return data.find(({ID}) => ID.toString() === id.toString())
-}
-
-export default (state = initialState, action) => {
+const explorerReducer = (state = {}, action) => {
   console.log(action)
 
   switch (action.type) {
-    case EXPLORER_DATA_LOADED:
-      return { ...state, explorerData: action.data.stations }
-
-    case ANIMATION_DATA_LOADED:
-      return { ...state, animationData: action.data.stations }
-
+    case REQUEST_STATION_DATA:
+      return {
+        ...state,
+        isFetching: true
+      }
+    case RECEIVE_STATION_DATA:
+      return {
+        ...state,
+        isFetching: false,
+        items: action.data.stations
+      }
     case SHOW_STATION_DETAILS:
-      let station = findStation(state.explorerData, action.id)
-      return { ...state, currentStation: station }
-
+      return {
+        ...state,
+        currentStation: action.data
+      }
     case HIDE_STATION_DETAILS:
-      return { ...state, currentStation: null }
-
+      return {
+        ...state,
+        currentStation: null
+      }
     default:
       return state
   }
 }
+
+const navigationReducer = (state = {
+  activeStep: null
+}, action) => {
+  switch (action.type) {
+    case SET_STEP:
+      return {
+        ...state,
+        activeStep: action.id
+      }
+    default:
+      return state
+  }
+}
+
+const animationReducer = (state = {}, action) => {
+  switch (action.type) {
+    case REQUEST_ANIMATION_DATA:
+      return {
+        ...state,
+        isFetching: true
+      }
+    case RECEIVE_ANIMATION_DATA:
+      return {
+        ...state,
+        isFetching: false,
+        items: action.data.stations
+      }
+    default:
+      return state
+  }
+}
+
+const rootReducer = combineReducers({
+  navigation: navigationReducer,
+  explorer: explorerReducer,
+  animation: animationReducer
+})
+
+export default rootReducer

@@ -2,52 +2,88 @@ import request from 'superagent'
 
 export const SHOW_STATION_DETAILS = 'SHOW_STATION_DETAILS'
 export const HIDE_STATION_DETAILS = 'HIDE_STATION_DETAILS'
-export const EXPLORER_DATA_LOADED = 'EXPLORER_DATA_LOADED'
-export const ANIMATION_DATA_LOADED = 'ANIMATION_DATA_LOADED'
+export const REQUEST_STATION_DATA = 'REQUEST_STATION_DATA'
+export const RECEIVE_STATION_DATA = 'RECEIVE_STATION_DATA'
+export const REQUEST_ANIMATION_DATA = 'REQUEST_ANIMATION_DATA'
+export const RECEIVE_ANIMATION_DATA = 'RECEIVE_ANIMATION_DATA'
+export const SET_STEP = 'SET_STEP'
 
-export const showStationDetails = (id) => ({
-  type: SHOW_STATION_DETAILS,
+export const setStep = (id) => ({
+  type: SET_STEP,
   id
 })
+
+// Animation data:
+
+const shouldFetchData = (dataset) => (
+  !dataset.isFetching || !dataset.items
+)
+
+const receiveAnimationData = (data) => ({
+  type: RECEIVE_ANIMATION_DATA,
+  data
+})
+
+const requestAnimationData = () => ({
+  type: REQUEST_ANIMATION_DATA
+})
+
+const fetchAnimationData = () => dispatch => {
+  dispatch(requestAnimationData())
+  return request
+    .get('data/mapanimation.json')
+    .then(({ body }) => {
+      dispatch(receiveAnimationData(body))
+    })
+}
+
+export const fetchAnimationDataIfNeeded = () => (dispatch, getState) => {
+  if (shouldFetchData(getState().animation)) {
+    return dispatch(fetchAnimationData())
+  }
+}
 
 export const hideStationDetails = () => ({
   type: HIDE_STATION_DETAILS
 })
 
-export const loadAnimationData = () => {
-  return (dispatch, getState) => {
-    request
-      .get('data/mapanimation.json')
-      .end((error, { body }) => {
-        if (error) {
-          console.error(error)
-        } else {
-          dispatch(animationDataLoaded(body))
-        }
-      })
-  }
-}
-
-export const loadExplorerData = () => {
-  return (dispatch, getState) => {
-    request
-      .get('data/dataexplorer.json')
-      .end((error, { body }) => {
-        if (error) {
-          console.error(error)
-        } else {
-          dispatch(explorerDataLoaded(body))
-        }
-      })
-  }
-}
-
-const explorerDataLoaded = (data) => ({
-  type: EXPLORER_DATA_LOADED,
+const showStationDetails = (data) => ({
+  type: SHOW_STATION_DETAILS,
   data
 })
 
-const animationDataLoaded = (data) => ({
-  type: ANIMATION_DATA_LOADED,
+// Explorer data:
+
+const findStation = (data, id) => {
+  return data.find(({ID}) => ID.toString() === id.toString())
+}
+
+const receiveStationData = (data) => ({
+  type: RECEIVE_STATION_DATA,
   data
 })
+
+const requestStationData = () => ({
+  type: REQUEST_STATION_DATA
+})
+
+const fetchStationData = (id) => dispatch => {
+  dispatch(requestStationData())
+  return request
+    .get('data/dataexplorer.json')
+    .then(({ body }) => {
+      dispatch(receiveStationData(body.stations))
+      // TODO: Load individual stations instead of filtering bulk data
+      let station = findStation(body.stations, id)
+      dispatch(showStationDetails(station))
+    })
+}
+
+export const requestStationDetails = (id) => (dispatch, getState) => {
+  if (shouldFetchData(getState().explorer)) {
+    return dispatch(fetchStationData(id))
+  } else {
+    let station = findStation(getState().explorer.items, id)
+    return dispatch(receiveStationData(station))
+  }
+}
