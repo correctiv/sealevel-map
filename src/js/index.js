@@ -4,8 +4,12 @@ if (module.hot) {
   module.hot.accept()
 }
 
-import { mount } from 'riot'
-import explorerData from '../data/dataexplorer.json'
+import riot from 'riot'
+import thunk from 'redux-thunk'
+import { createStore, applyMiddleware } from 'redux'
+
+import reducer from './reducers'
+
 import '../styles/index.scss'
 import './components/sealevel-app.tag'
 import './components/sealevel-map.tag'
@@ -13,8 +17,10 @@ import './components/sealevel-details.tag'
 import './components/sealevel-linechart.tag'
 import './components/sealevel-navigation.tag'
 
-mount('sealevel-app', {
-  explorerData: explorerData,
+const store = createStore(reducer, applyMiddleware(thunk))
+
+riot.mount('sealevel-app', {
+  store: store,
   center: [41.890251, 12.492373],
   zoom: 2,
   overlayOptions: {

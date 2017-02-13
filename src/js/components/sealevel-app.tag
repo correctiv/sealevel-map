@@ -1,35 +1,34 @@
 <sealevel-app>
   <sealevel-map onmarkerclick="{ routeToStationDetails }" center="{ center }"
-    active="{ activeStep }" options="{ opts }" steps="{ steps }"></sealevel-map>
+    active="{ state.navigation.activeStep }" animationdata="{ state.animation.items }" options="{ opts }"
+    steps="{ steps }"></sealevel-map>
 
-  <sealevel-details if="{ currentStation }" oncloseclick="{ routeToStationOverview }"
-    station="{ currentStation }"></sealevel-details>
+  <sealevel-details if="{ state.explorer.currentStation }" oncloseclick="{ routeToStationOverview }"
+    station="{ state.explorer.currentStation }"></sealevel-details>
 
   <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
 
   <script type="text/babel">
     import route from 'riot-route'
+    import { setStep } from '../actions/navigation'
+    import { fetchAnimationDataIfNeeded } from '../actions/animation'
+    import { requestStationDetails, hideStationDetails } from '../actions/explorer'
 
-    this.currentStation = null
+    const store = this.opts.store
+
+    this.on('mount', () => {
+      store.dispatch(fetchAnimationDataIfNeeded())
+    })
+
+    store.subscribe(() => {
+      this.update({ state: store.getState() })
+    })
 
     this.steps = [
       '',
       'experimental-animation-1',
       'experimental-animation-2'
     ]
-
-    this.findStation = (data, id) => {
-      return data.find(({ID}) => ID.toString() === id.toString())
-    }
-
-    this.showDetailsForStation = (id) => {
-      const currentStation = this.findStation(opts.explorerData, id)
-      this.update({ currentStation })
-    }
-
-    this.hideDetails = () => {
-      this.update({ currentStation: null })
-    }
 
     this.routeToStationDetails = (id) => {
       route(`stations/${id}`)
@@ -42,16 +41,16 @@
     route(slug => {
       const activeStep = this.steps.indexOf(slug)
       if (activeStep >= 0) {
-        this.update({ activeStep })
+        store.dispatch(setStep(activeStep))
       }
     })
 
     route('stations', () => {
-      this.hideDetails()
+      store.dispatch(hideStationDetails())
     })
 
     route('stations/*', id => {
-      this.showDetailsForStation(id)
+      store.dispatch(requestStationDetails(id))
     })
 
     route.start(true)

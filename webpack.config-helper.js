@@ -4,6 +4,7 @@ const Path = require('path')
 const Webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const ExtractSASS = new ExtractTextPlugin('styles/bundle.css')
 
 module.exports = (options) => {
@@ -38,7 +39,11 @@ module.exports = (options) => {
       }),
       new HtmlWebpackPlugin({
         template: './src/index.html'
-      })
+      }),
+      new CopyWebpackPlugin([{
+        from: './src/data',
+        to: 'data'
+      }])
     ],
     module: {
       preLoaders: [{
@@ -66,10 +71,6 @@ module.exports = (options) => {
         {
           test: /\.css?$/,
           loader: 'style-loader!css-loader!'
-        },
-        {
-          test: /\.json?$/,
-          loader: 'json-loader'
         }
       ]
     }
