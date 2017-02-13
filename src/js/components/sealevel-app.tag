@@ -10,12 +10,9 @@
 
   <script type="text/babel">
     import route from 'riot-route'
-    import {
-      fetchAnimationDataIfNeeded,
-      requestStationDetails,
-      hideStationDetails,
-      setStep
-    } from '../actions'
+    import { setStep } from '../actions/navigation'
+    import { fetchAnimationDataIfNeeded } from '../actions/animation'
+    import { requestStationDetails, hideStationDetails } from '../actions/explorer'
 
     const store = this.opts.store
 

@@ -1,7 +1,7 @@
 import {
   REQUEST_ANIMATION_DATA,
   RECEIVE_ANIMATION_DATA
-} from '../actions'
+} from '../actions/animation'
 
 const animationReducer = (state = {}, action) => {
   switch (action.type) {

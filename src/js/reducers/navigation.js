@@ -1,4 +1,4 @@
-import { SET_STEP } from '../actions'
+import { SET_STEP } from '../actions/navigation'
 
 const navigationReducer = (state = {
   activeStep: null

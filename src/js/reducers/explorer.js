@@ -3,7 +3,7 @@ import {
   HIDE_STATION_DETAILS,
   REQUEST_STATION_DATA,
   RECEIVE_STATION_DATA
-} from '../actions'
+} from '../actions/explorer'
 
 const explorerReducer = (state = {}, action) => {
   switch (action.type) {
