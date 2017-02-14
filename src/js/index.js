@@ -16,6 +16,7 @@ import './components/sealevel-map.tag'
 import './components/sealevel-details.tag'
 import './components/sealevel-linechart.tag'
 import './components/sealevel-navigation.tag'
+import './components/sealevel-explorer-overview.tag'
 
 const store = createStore(reducer, applyMiddleware(thunk))
 

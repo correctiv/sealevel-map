@@ -6,6 +6,8 @@
   <sealevel-details if="{ state.explorer.currentStation }" oncloseclick="{ routeToStationOverview }"
     station="{ state.explorer.currentStation }"></sealevel-details>
 
+  <sealevel-explorer-overview data="{ state.animation }"></sealevel-explorer-overview>
+
   <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
 
   <script type="text/babel">
