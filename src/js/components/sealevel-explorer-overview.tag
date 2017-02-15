@@ -2,13 +2,13 @@
 
     <div class="sealevel__details">
 
-      <select value={ this.component } onchange={ continentSelected }>
+      <select onchange={ continentSelected }>
         <option  each={ continent in continents } value={ continent } selected={ continent === selected }>
           { continent }
         </option>
       </select>
 
-      <ul>
+      <ul if={ !country && !continent }>
         <li each={ continent, countries in stationsByContinent } >
           <h3>{ continent }</h3>
           <ul>
@@ -17,6 +17,14 @@
             </li>
           </ul>
         </li>
+      </ul>
+
+      <ul if={ country }>
+        { country }
+      </ul>
+
+      <ul if={ continent }>
+        { continent }
       </ul>
 
     </div>
@@ -42,13 +50,14 @@
 
       this.on('mount', () => {
         this.continents = CONTINENTS
-        this.currentContinent = ''
       })
 
       this.on('update', () => {
-        if (this.opts.data && this.opts.data.items) {
-          let stations = this.opts.data.items
-          this.stationsByContinent = groupStationsByContinent(stations)
+        const data = this.opts.data
+        if (data && data.items) {
+          this.stationsByContinent = groupStationsByContinent(data.items)
+          this.country = data.country
+          this.continent = data.continent
         }
       })
 

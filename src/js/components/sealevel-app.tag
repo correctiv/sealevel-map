@@ -59,6 +59,14 @@
       store.dispatch(requestStationList())
     })
 
+    route('countries/*', id => {
+      store.dispatch(requestStationList({ country: id }))
+    })
+
+    route('continents/*', id => {
+      store.dispatch(requestStationList({ continent: id }))
+    })
+
     route.start(true)
   </script>
 </sealevel-app>

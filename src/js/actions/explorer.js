@@ -55,9 +55,11 @@ export const requestStationDetails = (id) => (dispatch, getState) => {
   }
 }
 
-const showStationList = (data) => ({
+const showStationList = (data, { country, continent }) => ({
   type: SHOW_STATION_LIST,
-  data
+  data,
+  country,
+  continent
 })
 
 const receiveStationListData = () => ({
@@ -68,20 +70,20 @@ const requestStationListData = () => ({
   type: REQUEST_STATION_LIST_DATA
 })
 
-const fetchStationListData = (id) => dispatch => {
+const fetchStationListData = (options) => dispatch => {
   dispatch(requestStationListData())
   return request
     .get('data/dataexplorer.json')
     .then(({ body }) => {
       dispatch(receiveStationListData())
-      dispatch(showStationList(body.stations))
+      dispatch(showStationList(body.stations, options))
     })
 }
 
-export const requestStationList = () => (dispatch, getState) => {
+export const requestStationList = (options = {}) => (dispatch, getState) => {
   if (shouldFetchData(getState().explorer)) {
-    return dispatch(fetchStationListData())
+    return dispatch(fetchStationListData(options))
   } else {
-    return dispatch(showStationList(getState().explorer.items))
+    return dispatch(showStationList(getState().explorer.items, options))
   }
 }
