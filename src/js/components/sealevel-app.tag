@@ -6,7 +6,7 @@
   <sealevel-details if="{ state.explorer.currentStation }" oncloseclick="{ routeToStationOverview }"
     station="{ state.explorer.currentStation }"></sealevel-details>
 
-  <sealevel-explorer-overview data="{ state.animation }"></sealevel-explorer-overview>
+  <sealevel-explorer-overview data="{ state.explorer }"></sealevel-explorer-overview>
 
   <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
 
@@ -14,7 +14,7 @@
     import route from 'riot-route'
     import { setStep } from '../actions/navigation'
     import { fetchAnimationDataIfNeeded } from '../actions/animation'
-    import { requestStationDetails, hideStationDetails } from '../actions/explorer'
+    import { requestStationDetails, hideStationDetails, requestStationList } from '../actions/explorer'
 
     const store = this.opts.store
 
@@ -53,6 +53,10 @@
 
     route('stations/*', id => {
       store.dispatch(requestStationDetails(id))
+    })
+
+    route('countries', () => {
+      store.dispatch(requestStationList())
     })
 
     route.start(true)

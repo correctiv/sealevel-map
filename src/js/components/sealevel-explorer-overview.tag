@@ -12,11 +12,12 @@
         <li each={ continent, countries in stationsByContinent } >
           <h3>{ continent }</h3>
           <ul>
-            <li each={ country, data in countries } no-reorder>
-              { country }
+            <li each={ country, data in countries }>
+              <a href={ getCountryRoute(country) }>{ country }</a>
             </li>
           </ul>
         </li>
+      </ul>
 
     </div>
 
@@ -50,6 +51,8 @@
           this.stationsByContinent = groupStationsByContinent(stations)
         }
       })
+
+      this.getCountryRoute = (id) => `#countries/${id}`
 
       this.continentSelected = (event) => {
         this.currentContinent = event.target.value
