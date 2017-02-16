@@ -6,7 +6,7 @@
   <sealevel-details if="{ state.explorer.currentStation }" oncloseclick="{ routeToStationOverview }"
     station="{ state.explorer.currentStation }"></sealevel-details>
 
-  <sealevel-explorer-overview data="{ state.explorer }"></sealevel-explorer-overview>
+  <sealevel-explorer-overview data="{ state.explorer }" onselect="{ routeToStationList }"></sealevel-explorer-overview>
 
   <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
 
@@ -34,6 +34,10 @@
 
     this.routeToStationDetails = (id) => {
       route(`stations/${id}`)
+    }
+
+    this.routeToStationList = (id) => {
+      route(`continents/${id}`)
     }
 
     this.routeToStationOverview = () => {

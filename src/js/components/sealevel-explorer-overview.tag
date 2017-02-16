@@ -3,8 +3,9 @@
     <div class="sealevel__details">
 
       <select onchange={ continentSelected }>
-        <option  each={ continent in continents } value={ continent } selected={ continent === selected }>
-          { continent }
+        <option each={ key, name in continents }
+          value={ key } selected={ continent === name }>
+          { name }
         </option>
       </select>
 
@@ -23,8 +24,15 @@
         { country }
       </ul>
 
-      <ul if={ continent }>
-        { continent }
+      <ul if={ stationsByContinent[continent] }>
+        <li each={ country, stations in stationsByContinent[continent] } >
+          <h3>{ country }</h3>
+          <ul>
+            <li each={ station in stations }>
+              <a href={ getStationRoute(station.ID) }>{ station.location }</a>
+            </li>
+          </ul>
+        </li>
       </ul>
 
     </div>
@@ -32,14 +40,14 @@
     <script type="text/babel">
       import _ from 'lodash'
 
-      const CONTINENTS = [
-        'Africa',
-        'North America',
-        'South America',
-        'Asia',
-        'Europe',
-        'Oceania'
-      ]
+      const CONTINENTS = {
+        'africa': 'Africa',
+        'north-america': 'North America',
+        'south-america': 'South America',
+        'asia': 'Asia',
+        'europe': 'Europe',
+        'oceania': 'Oceania'
+      }
 
       const groupStationsByContinent = (stations) => {
         return _(stations)
@@ -57,14 +65,16 @@
         if (data && data.items) {
           this.stationsByContinent = groupStationsByContinent(data.items)
           this.country = data.country
-          this.continent = data.continent
+          this.continent = CONTINENTS[data.continent]
         }
       })
 
       this.getCountryRoute = (id) => `#countries/${id}`
 
-      this.continentSelected = (event) => {
-        this.currentContinent = event.target.value
+      this.getStationRoute = (id) => `#stations/${id}`
+
+      this.continentSelected = ({ target }) => {
+        this.opts.onselect(target.value)
       }
     </script>
 
