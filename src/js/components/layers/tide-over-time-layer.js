@@ -1,5 +1,5 @@
 import * as d3 from 'd3'
-import LeafletD3Layer from '../lib/leaflet-d3-layer.js'
+import LeafletD3Layer from './leaflet-d3-layer.js'
 
 const MIN_YEAR = 1985
 const MAX_YEAR = 2014

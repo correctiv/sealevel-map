@@ -11,12 +11,12 @@ import { createStore, applyMiddleware } from 'redux'
 import reducer from './reducers'
 
 import '../styles/index.scss'
-import './components/sealevel-app.tag'
-import './components/sealevel-map.tag'
-import './components/sealevel-details.tag'
-import './components/sealevel-linechart.tag'
-import './components/sealevel-navigation.tag'
-import './components/sealevel-explorer-overview.tag'
+import './components/app.tag'
+import './components/map.tag'
+import './components/details.tag'
+import './components/linechart.tag'
+import './components/navigation.tag'
+import './components/explorer-overview.tag'
 
 const store = createStore(reducer, applyMiddleware(thunk))
 

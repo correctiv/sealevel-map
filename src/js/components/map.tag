@@ -29,8 +29,8 @@
     import 'leaflet_marker'
     import 'leaflet_marker_2x'
     import 'leaflet_marker_shadow'
-    import tideOverTimeLayer from './tide-over-time-layer.js'
-    import explorerLayer from './explorer-layer.js'
+    import tideOverTimeLayer from './layers/tide-over-time-layer.js'
+    import explorerLayer from './layers/explorer-layer.js'
 
     this.activeLayers = []
 

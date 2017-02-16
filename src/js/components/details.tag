@@ -23,7 +23,7 @@
     </div>
 
     <script type="text/babel">
-      import './sealevel-linechart.tag'
+      import './linechart.tag'
 
       this.on('update', () => {
         if (this.opts.station) {
