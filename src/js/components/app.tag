@@ -1,20 +1,34 @@
 <sealevel-app>
-  <sealevel-map onmarkerclick="{ routeToStationDetails }" center="{ center }"
-    active="{ state.navigation.activeStep }" animationdata="{ state.animation.items }" options="{ opts }"
-    steps="{ steps }"></sealevel-map>
 
-  <sealevel-details if="{ state.explorer.currentStation }" oncloseclick="{ routeToStationOverview }"
-    station="{ state.explorer.currentStation }"></sealevel-details>
+  <sealevel-map
+    onmarkerclick={ routeToStationDetails }
+    center={ center }
+    active={ state.navigation.activeStep }
+    animationdata={ state.animation.items }
+    options={ opts }
+    steps={ steps }
+  />
 
-  <sealevel-explorer-overview data="{ state.explorer }" onselect="{ routeToStationList }"></sealevel-explorer-overview>
+  <sealevel-navigation
+    steps={ steps }
+    active={ activeStep }
+  />
 
-  <sealevel-navigation steps="{ steps }" active="{ activeStep }"></sealevel-navigation>
+  <sealevel-explorer
+    state={ state.explorer }
+    onselect={ routeToStationList }
+    route-to-continent={ routeToContinent }
+  />
 
   <script type="text/babel">
     import route from 'riot-route'
     import { setStep } from '../actions/navigation'
     import { fetchAnimationDataIfNeeded } from '../actions/animation'
-    import { requestStationDetails, hideStationDetails, requestStationList } from '../actions/explorer'
+    import {
+      requestStationDetails,
+      hideStationDetails,
+      requestStationList
+    } from '../actions/explorer'
 
     const store = this.opts.store
 
@@ -32,11 +46,15 @@
       'experimental-animation-2'
     ]
 
-    this.routeToStationDetails = (id) => {
+    this.routeToStation = (id) => {
       route(`stations/${id}`)
     }
 
-    this.routeToStationList = (id) => {
+    this.routeToCountry = (id) => {
+      route(`countries/${id}`)
+    }
+
+    this.routeToContinent = (id) => {
       route(`continents/${id}`)
     }
 

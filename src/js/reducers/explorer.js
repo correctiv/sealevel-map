@@ -23,16 +23,17 @@ const explorerReducer = (state = {}, action) => {
     case SHOW_STATION_DETAILS:
       return {
         ...state,
-        currentStation: action.data
+        station: action.data
       }
     case HIDE_STATION_DETAILS:
       return {
         ...state,
-        currentStation: null
+        station: null
       }
     case SHOW_STATION_LIST:
       return {
         ...state,
+        station: null,
         items: action.data,
         country: action.country,
         continent: action.continent

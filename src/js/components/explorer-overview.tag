@@ -74,7 +74,7 @@
       this.getStationRoute = (id) => `#stations/${id}`
 
       this.continentSelected = ({ target }) => {
-        this.opts.onselect(target.value)
+        this.opts.onContinentSelect(target.value)
       }
     </script>
 

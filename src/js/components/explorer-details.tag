@@ -1,8 +1,16 @@
-<sealevel-details>
+<sealevel-explorer-details>
 
     <div class="sealevel__details">
 
-      <div class="sealevel__details__close" onclick="{ opts.oncloseclick }">&#10006;</div>
+      <a href={ getCountryRoute(opts.station.country) }>
+        { opts.station.country }
+      </a>
+
+      <a href={ getContinentRoute(opts.station.continent) }>
+        { opts.station.continent }
+      </a>
+
+      <div class="sealevel__details__close" onclick={ opts.onBack }>&#10006;</div>
 
       <h1 class="sealevel__details__titel">{ opts.station.location }</h1>
 
@@ -25,6 +33,8 @@
     <script type="text/babel">
       import './linechart.tag'
 
+      this.getCountryRoute = (id) => `#countries/${id}`
+
       this.on('update', () => {
         if (this.opts.station) {
           const getYear = new Date(this.opts.station.tideData[0].timestamp)
@@ -40,4 +50,4 @@
     </script>
 
 
-</sealevel-details>
+</sealevel-explorer-details>

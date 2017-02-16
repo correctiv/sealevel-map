@@ -13,10 +13,11 @@ import reducer from './reducers'
 import '../styles/index.scss'
 import './components/app.tag'
 import './components/map.tag'
-import './components/details.tag'
 import './components/linechart.tag'
 import './components/navigation.tag'
+import './components/explorer.tag'
 import './components/explorer-overview.tag'
+import './components/explorer-details.tag'
 
 const store = createStore(reducer, applyMiddleware(thunk))
 
