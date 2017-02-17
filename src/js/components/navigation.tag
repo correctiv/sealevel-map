@@ -9,9 +9,7 @@
   </ul>
 
   <script type="text/babel">
-    this.isActive = (id) => {
-      return this.opts.active === id
-    }
+    this.isActive = id => this.opts.active === id
   </script>
 
 </sealevel-navigation>

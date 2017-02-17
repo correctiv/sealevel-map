@@ -51,7 +51,7 @@
           clearLayers()
           addLayer(explorerLayer({
             stations: opts.animationdata,
-            clickCallback: opts.onmarkerclick,
+            clickCallback: opts.routes.routeToStation,
             isAnimated: false
           }))
           break
@@ -60,7 +60,7 @@
           clearLayers()
           addLayer(explorerLayer({
             stations: opts.animationdata,
-            clickCallback: opts.onmarkerclick,
+            clickCallback: opts.routes.routeToStation,
             isAnimated: true
           }))
           break

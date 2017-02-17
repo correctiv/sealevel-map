@@ -1,94 +1,38 @@
 <sealevel-app>
 
   <sealevel-map
-    onmarkerclick={ routeToStationDetails }
+    routes={ routes }
     center={ center }
     active={ state.navigation.activeStep }
     animationdata={ state.animation.items }
     options={ opts }
-    steps={ steps }
+    steps={ routes.steps }
   />
 
   <sealevel-navigation
-    steps={ steps }
-    active={ activeStep }
+    active={ state.navigation.activeStep }
+    steps={ routes.steps }
   />
 
   <sealevel-explorer
     state={ state.explorer }
-    onselect={ routeToStationList }
-    route-to-continent={ routeToContinent }
+    routes={ routes }
   />
 
   <script type="text/babel">
-    import route from 'riot-route'
-    import { setStep } from '../actions/navigation'
     import { fetchAnimationDataIfNeeded } from '../actions/animation'
-    import {
-      requestStationDetails,
-      hideStationDetails,
-      requestStationList
-    } from '../actions/explorer'
+    import * as routes from '../routes/'
 
     const store = this.opts.store
 
     this.on('mount', () => {
+      this.routes = routes
+      routes.startRouting(store)
       store.dispatch(fetchAnimationDataIfNeeded())
     })
 
     store.subscribe(() => {
       this.update({ state: store.getState() })
     })
-
-    this.steps = [
-      '',
-      'experimental-animation-1',
-      'experimental-animation-2'
-    ]
-
-    this.routeToStation = (id) => {
-      route(`stations/${id}`)
-    }
-
-    this.routeToCountry = (id) => {
-      route(`countries/${id}`)
-    }
-
-    this.routeToContinent = (id) => {
-      route(`continents/${id}`)
-    }
-
-    this.routeToStationOverview = () => {
-      route('stations')
-    }
-
-    route(slug => {
-      const activeStep = this.steps.indexOf(slug)
-      if (activeStep >= 0) {
-        store.dispatch(setStep(activeStep))
-      }
-    })
-
-    route('stations', () => {
-      store.dispatch(hideStationDetails())
-    })
-
-    route('stations/*', id => {
-      store.dispatch(requestStationDetails(id))
-    })
-
-    route('countries', () => {
-      store.dispatch(requestStationList())
-    })
-
-    route('countries/*', id => {
-      store.dispatch(requestStationList({ country: id }))
-    })
-
-    route('continents/*', id => {
-      store.dispatch(requestStationList({ continent: id }))
-    })
-
-    route.start(true)
   </script>
 </sealevel-app>

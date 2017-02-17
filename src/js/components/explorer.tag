@@ -2,7 +2,7 @@
 
   <sealevel-explorer-overview
     if={ !state.station }
-    on-continent-select={ opts.routeToContinent }
+    on-continent-select={ opts.routes.routeToContinent }
     data={ state }
   />
 
