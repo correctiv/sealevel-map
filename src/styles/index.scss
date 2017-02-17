@@ -1,11 +1,9 @@
-
 @import 'variables';
 @import 'layout';
-@import 'components/sealevel-map';
-@import 'components/sealevel-details';
-@import 'components/sealevel-navigation';
-@import 'components/sealevel-linechart';
-
+@import 'components/map';
+@import 'components/explorer';
+@import 'components/navigation';
+@import 'components/linechart';
 
 html,
 body {
