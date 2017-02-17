@@ -18,21 +18,6 @@
     </li>
   </ul>
 
-  <ul if={ country }>
-    { country }
-  </ul>
-
-  <ul if={ stationsByContinent[continent] }>
-    <li each={ country, stations in stationsByContinent[continent] } >
-      <h3>{ country }</h3>
-      <ul>
-        <li each={ station in stations }>
-          <a href={ getStationRoute(station.ID) }>{ station.location }</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-
   <script type="text/babel">
     import _ from 'lodash'
 

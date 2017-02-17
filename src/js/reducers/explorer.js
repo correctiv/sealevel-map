@@ -1,6 +1,5 @@
 import {
   SHOW_STATION_DETAILS,
-  HIDE_STATION_DETAILS,
   REQUEST_STATION_DETAIL_DATA,
   RECEIVE_STATION_DETAIL_DATA,
   SHOW_STATION_LIST
@@ -23,12 +22,9 @@ const explorerReducer = (state = {}, action) => {
     case SHOW_STATION_DETAILS:
       return {
         ...state,
-        station: action.data
-      }
-    case HIDE_STATION_DETAILS:
-      return {
-        ...state,
-        station: null
+        station: action.data,
+        country: null,
+        continent: null
       }
     case SHOW_STATION_LIST:
       return {

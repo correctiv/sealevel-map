@@ -17,6 +17,7 @@ import './components/linechart.tag'
 import './components/navigation.tag'
 import './components/explorer.tag'
 import './components/explorer-overview.tag'
+import './components/explorer-continent.tag'
 import './components/explorer-details.tag'
 
 const store = createStore(reducer, applyMiddleware(thunk))
