@@ -1,28 +1,28 @@
 <sealevel-explorer>
 
   <sealevel-explorer-overview
-    if={ !state.station }
+    if={ !opts.state.station }
     on-continent-select={ opts.routes.routeToContinent }
-    data={ state }
+    data={ opts.state.state }
   />
 
   <sealevel-explorer-continent
-    if={ continent }
-    continent={ continent }
-    countries={ stationsByContinent[continent] }
+    if={ opts.state.continent }
+    continent={ opts.state.continent }
+    countries={ countriesForContinent(opts.state.continent) }
     path-to-country={ opts.routes.country }
   />
 
   <sealevel-explorer-country
-    if={ country }
-    country={ country }
-    stations={ stationsByCountry[country] }
+    if={ opts.state.country }
+    country={ opts.state.country }
+    stations={ stationsForCountry(opts.state.country) }
     path-to-station={ opts.routes.station }
   />
 
   <sealevel-explorer-details
-    if={ state.station }
-    station={ state.station }
+    if={ opts.state.station }
+    station={ opts.state.station }
   />
 
   <script type="text/babel">
@@ -37,35 +37,21 @@
       'oceania': 'Oceania'
     }
 
-    const groupByContinent = (stations) => (
-      _(stations)
-        .groupBy('continent')
-        .mapValues(continent => _.groupBy(continent, 'country'))
+    this.countriesForContinent = id => (
+      _(this.opts.state.items)
+        .filter(station => station.continent === CONTINENTS[id])
+        .map('country')
+        .uniq()
+        .sort()
         .value()
     )
 
-    const groupByCountry = (stations) => (
-      _.groupBy(stations, 'country')
+    this.stationsForCountry = id => (
+      _(this.opts.state.items)
+        .filter(station => station.country === id)
+        .sortBy('location')
+        .value()
     )
-
-    this.on('mount', () => {
-      this.continents = CONTINENTS
-    })
-
-    this.on('update', () => {
-      const data = this.opts.state
-      if (data && data.items) {
-        this.stationsByContinent = groupByContinent(data.items)
-        this.stationsByCountry = groupByCountry(data.items)
-        this.country = data.country
-        this.continent = CONTINENTS[data.continent]
-      }
-    })
-
-    this.on('update', () => {
-      this.state = opts.state
-    })
-
   </script>
 
 </sealevel-explorer>
