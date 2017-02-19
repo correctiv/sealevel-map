@@ -35,10 +35,11 @@
     this.activeLayers = []
 
     this.on('updated', () => {
-      if (this.opts.animationdata) {
-        this.active = this.opts.active
-        updateLayers(this.active)
-      }
+      const activeStep = this.opts.state.navigation.activeStep
+      const activeStation = this.opts.state.explorer.station
+
+      if (activeStep) updateLayers(activeStep)
+      zoomToStation(activeStation)
     })
 
     this.on('mount', () => {
@@ -50,7 +51,7 @@
         case 0:
           clearLayers()
           addLayer(explorerLayer({
-            stations: opts.animationdata,
+            stations: opts.state.animation.items,
             clickCallback: opts.routes.routeToStation,
             isAnimated: false
           }))
@@ -59,7 +60,7 @@
         case 1:
           clearLayers()
           addLayer(explorerLayer({
-            stations: opts.animationdata,
+            stations: opts.state.animation.items,
             clickCallback: opts.routes.routeToStation,
             isAnimated: true
           }))
@@ -67,8 +68,14 @@
 
         case 2:
           clearLayers()
-          addLayer(tideOverTimeLayer(opts.animationdata))
+          addLayer(tideOverTimeLayer(opts.state.animation.items))
           break
+      }
+    }
+
+    const zoomToStation = (target) => {
+      if (target) {
+        this.map.setView([target.latitude, target.longitude], 6)
       }
     }
 

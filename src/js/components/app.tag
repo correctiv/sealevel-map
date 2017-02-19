@@ -3,10 +3,8 @@
   <sealevel-map
     routes={ routes }
     center={ center }
-    active={ state.navigation.activeStep }
-    animationdata={ state.animation.items }
+    state={ state }
     options={ opts }
-    steps={ routes.steps }
   />
 
   <sealevel-navigation
