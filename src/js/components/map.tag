@@ -2,25 +2,6 @@
 
   <sealevel-map-slider if="{ this.next }" value="{ this.year }" oninput="{ this.onSliderInput }" class="slider"></sealevel-map-slider>
 
-  <div if="{ isActiveStep('explorer') }" class="sealevel__map__infobox">
-    <h2>Data Explorer (WIP)</h2>
-    <p>Change in tides 1985 - 2014</p>
-    <p>Click on an item to learn more.</p>
-    <a href="#{this.opts.steps[1]}">Show animation</a>
-  </div>
-
-  <div if="{ isActiveStep('experimental-animation-1') }" class="sealevel__map__infobox">
-    <h2>Simple animation (WIP)</h2>
-    <p>Change in tides 1985 - 2014</p>
-    <a href="#{this.opts.steps[2]}">Show another animation (experimental)</a>
-  </div>
-
-  <div if="{ isActiveStep('experimental-animation-2') }" class="sealevel__map__infobox">
-    <h2>Experimental animation (WIP)</h2>
-    <p>Change in tides 1985 - 2014</p>
-    <a href="#{this.opts.steps[3]}">Explore the data</a>
-  </div>
-
   <div id="sealevel__map" class="sealevel__map"></div>
 
   <script type="text/babel">
@@ -34,8 +15,6 @@
     import { STEPS } from '../routes/'
 
     this.activeLayers = []
-
-    this.isActiveStep = step => this.opts.activeStep === step
 
     this.on('updated', () => {
       const activeStep = this.opts.state.navigation.activeStep
