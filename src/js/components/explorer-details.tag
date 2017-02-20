@@ -29,7 +29,7 @@
   <script type="text/babel">
     import './linechart.tag'
 
-    this.getCountryRoute = (id) => `#countries/${id}`
+    this.getCountryRoute = (id) => `#${opts.pathToCountry(id)}`
 
     this.on('update', () => {
       if (this.opts.station) {

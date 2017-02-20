@@ -23,6 +23,7 @@
   <sealevel-explorer-details
     if={ opts.state.station }
     station={ opts.state.station }
+    path-to-country={ opts.routes.country }
   />
 
   <script type="text/babel">

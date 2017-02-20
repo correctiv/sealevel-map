@@ -9,7 +9,7 @@
 
   <sealevel-navigation
     active={ state.navigation.activeStep }
-    steps={ routes.steps }
+    steps={ routes.STEPS }
   />
 
   <sealevel-explorer
