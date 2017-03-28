@@ -8,7 +8,8 @@ const animationReducer = (state = {}, action) => {
     case REQUEST_ANIMATION_DATA:
       return {
         ...state,
-        isFetching: true
+        isFetching: true,
+        items: []
       }
     case RECEIVE_ANIMATION_DATA:
       return {

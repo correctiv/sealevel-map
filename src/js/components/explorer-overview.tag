@@ -1,17 +1,17 @@
 <sealevel-explorer-overview>
 
   <select onchange={ continentSelected }>
-    <option each={ key, name in continents }
+    <option each={ name, key in continents }
       value={ key } selected={ continent === name }>
       { name }
     </option>
   </select>
 
   <ul if={ !country && !continent }>
-    <li each={ continent, countries in stationsByContinent } >
+    <li each={ countries, continent in stationsByContinent } >
       <h3>{ continent }</h3>
       <ul>
-        <li each={ country, data in countries }>
+        <li each={ data, country in countries }>
           <a href={ getCountryRoute(country) }>{ country }</a>
         </li>
       </ul>

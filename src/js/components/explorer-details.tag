@@ -4,10 +4,6 @@
     { opts.station.country }
   </a>
 
-  <a href={ getContinentRoute(opts.station.continent) }>
-    { opts.station.continent }
-  </a>
-
   <div class="details__close" onclick={ opts.onBack }>&#10006;</div>
 
   <h1 class="details__titel">{ opts.station.location }</h1>

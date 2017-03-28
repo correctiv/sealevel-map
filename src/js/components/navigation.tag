@@ -1,7 +1,7 @@
 <sealevel-navigation>
 
   <ul class="bullet-list">
-    <li class="bullet-list__item" each="{ key, slug in this.opts.steps }">
+    <li class="bullet-list__item" each="{ slug, key in this.opts.steps }">
       <a href="#{slug}" class="link {link--active: this.isActive(slug)}">
         { slug }
       </a>

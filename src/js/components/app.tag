@@ -22,15 +22,19 @@
     import * as routes from '../routes/'
 
     const store = this.opts.store
+    this.routes = routes
+    this.state = store.getState()
 
-    this.on('mount', () => {
-      this.routes = routes
-      routes.startRouting(store)
-      store.dispatch(fetchAnimationDataIfNeeded())
-    })
+    // Start router:
+    routes.startRouting(store)
 
+    // Fetch data:
+    store.dispatch(fetchAnimationDataIfNeeded())
+
+    // Subscribe to global redux state:
     store.subscribe(() => {
       this.update({ state: store.getState() })
     })
+
   </script>
 </sealevel-app>
