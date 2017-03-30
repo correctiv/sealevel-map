@@ -1,7 +1,5 @@
 <sealevel-map>
 
-  <sealevel-map-slider if="{ this.next }" value="{ this.year }" oninput="{ this.onSliderInput }" class="slider"></sealevel-map-slider>
-
   <div id="sealevel__map" class="sealevel__map"></div>
 
   <script type="text/babel">
@@ -10,22 +8,27 @@
     import 'leaflet_marker'
     import 'leaflet_marker_2x'
     import 'leaflet_marker_shadow'
+    import { fetchAnimationDataIfNeeded } from '../actions/animation'
     import tideOverTimeLayer from './layers/tide-over-time-layer.js'
     import explorerLayer from './layers/explorer-layer.js'
-    import { STEPS } from '../routes/'
+    import { STEPS, routeToStation } from '../routes/'
 
     this.activeLayers = []
+    this.state = this.store.getState()
+    this.subscribe(state => this.update({ state }))
 
     this.on('updated', () => {
-      const activeStep = this.opts.state.navigation.activeStep
-      const activeStation = this.opts.state.explorer.station
+      const activeStep = this.state.navigation.activeStep
+      const activeStation = this.state.explorer.station
 
+      console.log(activeStep, this.state.animation.items)
       updateLayers(activeStep)
       zoomToStation(activeStation)
     })
 
     this.on('mount', () => {
       this.map = renderMap(opts.options)
+      this.dispatch(fetchAnimationDataIfNeeded())
     })
 
     const updateLayers = (activeStep) => {
@@ -33,8 +36,8 @@
         case STEPS.EXPLORER:
           clearLayers()
           addLayer(explorerLayer({
-            stations: opts.state.animation.items,
-            clickCallback: opts.routes.routeToStation,
+            stations: this.state.animation.items,
+            clickCallback: routeToStation,
             isAnimated: false
           }))
           break
@@ -42,15 +45,15 @@
         case STEPS.EXPERIMENT_1:
           clearLayers()
           addLayer(explorerLayer({
-            stations: opts.state.animation.items,
-            clickCallback: opts.routes.routeToStation,
+            stations: this.state.animation.items,
+            clickCallback: routeToStation,
             isAnimated: true
           }))
           break
 
         case STEPS.EXPERIMENT_2:
           clearLayers()
-          addLayer(tideOverTimeLayer(opts.state.animation.items))
+          addLayer(tideOverTimeLayer(this.state.animation.items))
           break
       }
     }

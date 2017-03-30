@@ -30,11 +30,7 @@
     this.on('update', () => {
       if (this.opts.station) {
         const getYear = new Date(this.opts.station.tideData[0].timestamp)
-        const currentYear = getYear.getFullYear()
-
-        this.update({
-          year: currentYear
-        })
+        this.year = getYear.getFullYear()
 
         this.rise = opts.station.trend > 0 ? 'Rise of ' : 'Fall of '
       }

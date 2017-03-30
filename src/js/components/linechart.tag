@@ -5,9 +5,12 @@
   <script type='text/babel'>
     import * as d3 from 'd3'
 
+    this.on('mount', () => {
+      createChart(this.opts.chartdata, 200, 400)
+    })
+
     this.on('updated', () => {
-      const data = this.opts.chartdata
-      if (data) createChart(data, 200, 400)
+      createChart(this.opts.chartdata, 200, 400)
     })
 
     const bisectDate = d3.bisector(d => d.year).left

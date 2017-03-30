@@ -7,6 +7,7 @@ if (module.hot) {
 import riot from 'riot'
 import thunk from 'redux-thunk'
 import { createStore, applyMiddleware } from 'redux'
+import riotReduxMixin from 'riot-redux-mixin'
 
 import reducer from './reducers'
 
@@ -21,7 +22,9 @@ import './components/explorer-country.tag'
 import './components/explorer-continent.tag'
 import './components/explorer-details.tag'
 
+// Create redux store
 const store = createStore(reducer, applyMiddleware(thunk))
+riot.mixin(riotReduxMixin(store))
 
 riot.mount('sealevel-app', {
   store: store,

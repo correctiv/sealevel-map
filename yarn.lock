@@ -3866,6 +3866,10 @@ riot-observable@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/riot-observable/-/riot-observable-3.0.0.tgz#8bbd2daf72a2141bb043082df4023dc504bad2eb"
 
+riot-redux-mixin@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/riot-redux-mixin/-/riot-redux-mixin-1.0.0.tgz#d7c72648b9cae19d4a44e438a0f74396372b53dc"
+
 riot-route@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/riot-route/-/riot-route-3.1.1.tgz#5d73688944d0090b1cb1cbd190eb323fefec5c9c"

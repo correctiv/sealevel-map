@@ -1,40 +1,24 @@
 <sealevel-app>
 
-  <sealevel-map
-    routes={ routes }
-    center={ center }
-    state={ state }
-    options={ opts }
-  />
+  <router>
+    <route path="explore..">
+      <sealevel-explorer />
+    </route>
+  </router>
+
+  <sealevel-map options={ opts } />
 
   <sealevel-navigation
-    active={ state.navigation.activeStep }
-    steps={ routes.STEPS }
-  />
-
-  <sealevel-explorer
-    state={ state.explorer }
-    routes={ routes }
+    active={ store.getState().navigation.activeStep }
+    steps={ store.getState().STEPS }
   />
 
   <script type="text/babel">
-    import { fetchAnimationDataIfNeeded } from '../actions/animation'
+    import 'riot-route/tag'
     import * as routes from '../routes/'
 
-    const store = this.opts.store
-    this.routes = routes
-    this.state = store.getState()
-
     // Start router:
-    routes.startRouting(store)
-
-    // Fetch data:
-    store.dispatch(fetchAnimationDataIfNeeded())
-
-    // Subscribe to global redux state:
-    store.subscribe(() => {
-      this.update({ state: store.getState() })
-    })
-
+    routes.startRouting(this.store)
   </script>
+
 </sealevel-app>
