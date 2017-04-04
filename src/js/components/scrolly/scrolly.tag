@@ -1,6 +1,6 @@
 <sealevel-scrolly>
 
-  <sealevel-scrolly-intro  />
+  <sealevel-scrolly-intro active={introActive} />
 
   <script type="text/babel">
     import route from 'riot-route'
@@ -14,11 +14,12 @@
       route(slug, () => {
         console.log('show step', slug)
         this.store.dispatch(setStep(slug))
+        this.update({ introActive: false })
       })
     })
 
-    route('/', id => {
-      console.log('show intro')
+    route('/', () => {
+      this.update({ introActive: true })
     })
 
     route.exec()
