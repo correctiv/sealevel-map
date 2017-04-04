@@ -19,10 +19,6 @@
   <script type="text/babel">
     import 'riot-route/tag'
     import './scrolly/scrolly.tag'
-    import * as routes from '../routes/'
-
-    // Start router:
-    routes.startRouting(this.store)
   </script>
 
 </sealevel-app>

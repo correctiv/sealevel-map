@@ -22,7 +22,3 @@ export const routeToStation = (id) => {
   route(station(id))
 }
 
-export const startRouting = (store) => {
-  route.start(true)
-}
-
