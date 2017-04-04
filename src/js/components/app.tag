@@ -4,6 +4,9 @@
     <route path="explore..">
       <sealevel-explorer />
     </route>
+    <route path="..">
+      <sealevel-scrolly />
+    </route>
   </router>
 
   <sealevel-map options={ opts } />
@@ -15,6 +18,7 @@
 
   <script type="text/babel">
     import 'riot-route/tag'
+    import './scrolly/scrolly.tag'
     import * as routes from '../routes/'
 
     // Start router:

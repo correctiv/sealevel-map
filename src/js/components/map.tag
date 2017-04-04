@@ -33,14 +33,6 @@
 
     const updateLayers = (activeStep) => {
       switch (activeStep) {
-        case STEPS.EXPLORER:
-          clearLayers()
-          addLayer(explorerLayer({
-            stations: this.state.animation.items,
-            clickCallback: routeToStation,
-            isAnimated: false
-          }))
-          break
 
         case STEPS.EXPERIMENT_1:
           clearLayers()
@@ -55,6 +47,14 @@
           clearLayers()
           addLayer(tideOverTimeLayer(this.state.animation.items))
           break
+
+        default:
+          clearLayers()
+          addLayer(explorerLayer({
+            stations: this.state.animation.items,
+            clickCallback: routeToStation,
+            isAnimated: false
+          }))
       }
     }
 
