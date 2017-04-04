@@ -71,6 +71,10 @@ module.exports = (options) => {
         {
           test: /\.css?$/,
           loader: 'style-loader!css-loader!'
+        },
+        {
+          test: /\.md$/,
+          loaders: ['html', 'markdown']
         }
       ]
     }
