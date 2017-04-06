@@ -2117,6 +2117,10 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
+gumshoe@cferdinandi/gumshoe:
+  version "3.5.0"
+  resolved "https://codeload.github.com/cferdinandi/gumshoe/tar.gz/28cf9b73c7e2dbaac2c18c1a0d7661753a0a7878"
+
 har-schema@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"

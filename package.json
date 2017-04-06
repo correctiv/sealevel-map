@@ -44,6 +44,7 @@
   "dependencies": {
     "core-js": "2.4.1",
     "d3": "4.3.0",
+    "gumshoe": "cferdinandi/gumshoe",
     "html-loader": "^0.4.5",
     "leaflet": "^1.0.0-rc.3",
     "lodash": "^4.17.4",

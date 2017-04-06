@@ -2,18 +2,42 @@
 
   <sealevel-scrolly-intro active={introActive} />
 
-  <article ref="article" />
+  <article class="scrolly__article" ref="article" />
+
+  <nav class="scrolly__nav" data-gumshoe-header>
+    <ul data-gumshoe>
+      <li class="active"><a class="active" href="#titel-1">Eenie</a></li>
+      <li><a href="#titel-2">Meanie</a></li>
+      <li><a href="#titel-3">Minnie</a></li>
+      <li><a href="#titel-4">Moe</a></li>
+    </ul>
+  </nav>
 
   <script type="text/babel">
     import route from 'riot-route'
     import _ from 'lodash'
+    import gumshoe from 'gumshoe'
     import './scrolly-intro.tag'
     import { STEPS } from '../../routes/'
     import { setStep } from '../../actions/navigation'
     import content from '../../../en.md'
 
-    this.on('mount', () => {
+    this.on('route', () => {
       this.refs.article.innerHTML = content
+
+      _.defer(gumshoe.init, {
+        container: window,
+        callback: ({ target }) => {
+          const activeStep = target.id
+          if (activeStep !== this.activeStep) {
+            this.update({ activeStep })
+          }
+        }
+      })
+    })
+
+    this.on('update', step => {
+      console.log('update', step)
     })
 
     // initialize routes for main navigation:
