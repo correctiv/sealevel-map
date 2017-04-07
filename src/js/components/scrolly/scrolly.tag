@@ -6,10 +6,9 @@
 
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
-      <li class="active"><a class="active" href="#titel-1">Eenie</a></li>
-      <li><a href="#titel-2">Meanie</a></li>
-      <li><a href="#titel-3">Minnie</a></li>
-      <li><a href="#titel-4">Moe</a></li>
+      <li each={ steps }>
+        <a href="#{ id }">{ title }</a>
+      </li>
     </ul>
   </nav>
 
@@ -22,10 +21,20 @@
     import { setStep } from '../../actions/navigation'
     import content from '../../../en.md'
 
-    this.on('route', () => {
-      this.refs.article.innerHTML = content
+    const getSteps = (article) => {
+      return _.map(article.querySelectorAll('[id]'), element => ({
+        id: element.id,
+        title: element.textContent
+      }))
+    }
 
-      _.defer(gumshoe.init, {
+    this.on('mount', () => {
+      this.refs.article.innerHTML = content
+      this.steps = getSteps(this.refs.article)
+    })
+
+    this.on('route', () => {
+      gumshoe.init({
         container: window,
         callback: ({ target }) => {
           const activeStep = target.id
@@ -36,8 +45,10 @@
       })
     })
 
-    this.on('update', step => {
-      console.log('update', step)
+    this.on('update', update => {
+      if (this.activeStep) {
+        route(this.activeStep)
+      }
     })
 
     // initialize routes for main navigation:
