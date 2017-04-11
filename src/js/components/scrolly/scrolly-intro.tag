@@ -2,10 +2,6 @@
 
     <h1>Rising Seas</h1>
 
-    <a href="#experimental-animation-1">Read on</a>
-
-  <script type="text/babel">
-
-  </script>
+    <a href="#{opts.firstStep}">Read on</a>
 
 </sealevel-scrolly-intro>

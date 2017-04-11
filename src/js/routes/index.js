@@ -1,9 +1,9 @@
 import route from 'riot-route'
 
 export const STEPS = {
-  EXPLORE: 'explore',
   EXPERIMENT_1: 'titel-1',
-  EXPERIMENT_2: 'titel-2'
+  EXPERIMENT_2: 'titel-2',
+  EXPLORE: 'explore'
 }
 
 export const continent = id => `explore/${id}`

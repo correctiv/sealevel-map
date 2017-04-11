@@ -1,6 +1,9 @@
 <sealevel-scrolly>
 
-  <sealevel-scrolly-intro active={introActive} />
+  <sealevel-scrolly-intro
+    active={introActive}
+    first-step={steps[0] && steps[0].id}
+  />
 
   <article class="scrolly__article" ref="article" />
 
@@ -21,6 +24,8 @@
     import { setStep } from '../../actions/navigation'
     import content from '../../../en.md'
 
+    this.steps = []
+
     const getSteps = (article) => {
       return _.map(article.querySelectorAll('[id]'), element => ({
         id: element.id,
@@ -28,16 +33,14 @@
       }))
     }
 
-    this.on('mount', () => {
+    this.on('route', () => {
       this.refs.article.innerHTML = content
       this.steps = getSteps(this.refs.article)
-    })
 
-    this.on('route', () => {
       gumshoe.init({
         container: window,
-        callback: ({ target }) => {
-          const activeStep = target.id
+        callback: (event) => {
+          const activeStep = event && event.target.id
           if (activeStep !== this.activeStep) {
             this.update({ activeStep })
           }
