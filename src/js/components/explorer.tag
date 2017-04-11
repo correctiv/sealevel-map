@@ -4,6 +4,7 @@
     if={ !state.station }
     on-continent-select={ routes.routeToContinent }
     data={ state.state }
+    locale={ locale }
   />
 
   <sealevel-explorer-continent
@@ -11,6 +12,7 @@
     continent={ state.continent }
     countries={ countriesForContinent(state.continent) }
     path-to-country={ routes.country }
+    locale={ locale }
   />
 
   <sealevel-explorer-country
@@ -18,12 +20,14 @@
     country={ state.country }
     stations={ stationsForCountry(state.country) }
     path-to-station={ routes.station }
+    locale={ locale }
   />
 
   <sealevel-explorer-details
     if={ state.station }
     station={ state.station }
     path-to-country={ routes.country }
+    locale={ locale }
   />
 
   <script type="text/babel">
@@ -46,16 +50,16 @@
     this.routes = routes
     this.state = this.store.getState().explorer
 
-    route('explore/stations/*', id => {
+    route('*/explore/stations/*', (locale, id) => {
       this.dispatch(requestStationDetails(id))
       this.dispatch(setStep('explore'))
     })
 
-    route('explore/countries/*', id => {
+    route('*/explore/countries/*', (locale, id) => {
       this.dispatch(requestStationList({ country: id }))
     })
 
-    route('explore/*', id => {
+    route('*/explore/*', (locale, id) => {
       this.dispatch(requestStationList({ continent: id }))
     })
 
@@ -77,7 +81,10 @@
         .value()
     )
 
-    this.on('route', () => {
+    this.on('route', (locale) => {
+      // Set locale
+      this.locale = locale
+
       // Subscribe to global redux state:
       this.subscribe(({ explorer }) => {
         this.update({ state: explorer })

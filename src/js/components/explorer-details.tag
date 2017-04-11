@@ -1,6 +1,6 @@
 <sealevel-explorer-details>
 
-  <a href={ getCountryRoute(opts.station.country) }>
+  <a href={ opts.pathToCountry(opts.locale, opts.station.country) }>
     { opts.station.country }
   </a>
 
@@ -24,8 +24,6 @@
 
   <script type="text/babel">
     import './linechart.tag'
-
-    this.getCountryRoute = (id) => `#${opts.pathToCountry(id)}`
 
     this.on('update', () => {
       if (this.opts.station) {

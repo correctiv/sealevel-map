@@ -26,7 +26,7 @@ module.exports = (options) => {
     },
     output: {
       path: Path.join(__dirname, 'dist'),
-      filename: 'bundle.js'
+      filename: '/bundle.js'
     },
     plugins: [
       new Webpack.ProvidePlugin({
@@ -113,6 +113,7 @@ module.exports = (options) => {
 
     webpackConfig.devServer = {
       contentBase: './dist',
+      historyApiFallback: true,
       hot: true,
       port: options.port,
       inline: true,

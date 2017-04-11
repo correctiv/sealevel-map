@@ -5,6 +5,7 @@ if (module.hot) {
 }
 
 import riot from 'riot'
+import route from 'riot-route'
 import thunk from 'redux-thunk'
 import { createStore, applyMiddleware } from 'redux'
 import riotReduxMixin from 'riot-redux-mixin'
@@ -21,6 +22,9 @@ import './components/explorer-overview.tag'
 import './components/explorer-country.tag'
 import './components/explorer-continent.tag'
 import './components/explorer-details.tag'
+
+// Set base path for router
+route.base('/')
 
 // Create redux store
 const store = createStore(reducer, applyMiddleware(thunk))

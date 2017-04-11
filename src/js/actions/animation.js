@@ -19,7 +19,7 @@ const requestAnimationData = () => ({
 const fetchAnimationData = () => dispatch => {
   dispatch(requestAnimationData())
   return request
-    .get('data/mapanimation.json')
+    .get('/data/mapanimation.json')
     .then(({ body }) => {
       dispatch(receiveAnimationData(body))
     })

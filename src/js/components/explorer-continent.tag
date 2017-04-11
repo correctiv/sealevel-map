@@ -7,7 +7,7 @@
   </ul>
 
   <script type="text/babel">
-    this.route = (id) => `#${opts.pathToCountry(id)}`
+    this.route = (id) => opts.pathToCountry(opts.locale, id)
   </script>
 
 </sealevel-explorer-continent>

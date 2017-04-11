@@ -12,7 +12,7 @@
       <h3>{ continent }</h3>
       <ul>
         <li each={ data, country in countries }>
-          <a href={ getCountryRoute(country) }>{ country }</a>
+          <a href={ getCountryRoute(localem country) }>{ country }</a>
         </li>
       </ul>
     </li>
@@ -50,12 +50,10 @@
       }
     })
 
-    this.getCountryRoute = (id) => `#countries/${id}`
-
-    this.getStationRoute = (id) => `#stations/${id}`
+    this.getCountryRoute = (id) => `${this.locale}/countries/${id}`
 
     this.continentSelected = ({ target }) => {
-      this.opts.onContinentSelect(target.value)
+      this.opts.onContinentSelect(this.opts.locale, target.value)
     }
   </script>
 

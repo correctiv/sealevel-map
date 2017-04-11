@@ -38,7 +38,7 @@ const fetchStationDetailsData = (id) => dispatch => {
   dispatch(requestStationDetailsData())
   // TODO: Load individual stations instead of loading and filtering bulk data
   return request
-    .get('data/dataexplorer.json')
+    .get('/data/dataexplorer.json')
     .then(({ body }) => {
       dispatch(receiveStationDetailsData())
       let station = findStation(body.stations, id)
@@ -73,7 +73,7 @@ const requestStationListData = () => ({
 const fetchStationListData = (options) => dispatch => {
   dispatch(requestStationListData())
   return request
-    .get('data/dataexplorer.json')
+    .get('/data/dataexplorer.json')
     .then(({ body }) => {
       dispatch(receiveStationListData())
       dispatch(showStationList(body.stations, options))

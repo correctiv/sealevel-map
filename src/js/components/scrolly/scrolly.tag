@@ -33,9 +33,10 @@
       }))
     }
 
-    this.on('route', () => {
-      this.refs.article.innerHTML = content
+    this.on('route', (locale) => {
       this.steps = getSteps(this.refs.article)
+      this.locale = locale
+      this.refs.article.innerHTML = content
 
       gumshoe.init({
         container: window,
@@ -50,20 +51,21 @@
 
     this.on('update', update => {
       if (this.activeStep) {
-        route(this.activeStep)
+        route(`/${this.locale}/#${this.activeStep}`)
       }
     })
 
     // initialize routes for main navigation:
     _.forEach(STEPS, slug => {
-      route(slug, () => {
+      route(`*/#${slug}`, () => {
         console.log('show step', slug)
         this.store.dispatch(setStep(slug))
         this.update({ introActive: false })
       })
     })
 
-    route('/', () => {
+    route('*/#', (locale) => {
+      debugger
       this.update({ introActive: true })
     })
 
