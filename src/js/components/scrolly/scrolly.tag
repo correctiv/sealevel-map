@@ -2,10 +2,15 @@
 
   <sealevel-scrolly-intro
     active={introActive}
+    locale={locale}
     first-step={steps[0] && steps[0].id}
   />
 
-  <article class="scrolly__article" ref="article" />
+  <article
+    class="scrolly__article"
+    id="article"
+    ref="article"
+  />
 
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
@@ -33,7 +38,7 @@
       }))
     }
 
-    this.on('route', (locale) => {
+    this.on('route', (locale, anchor) => {
       this.steps = getSteps(this.refs.article)
       this.locale = locale
       this.refs.article.innerHTML = content
@@ -47,6 +52,9 @@
           }
         }
       })
+
+      // Toggle intro
+      this.update({ introActive: anchor === 'start' })
     })
 
     this.on('update', update => {
@@ -58,15 +66,9 @@
     // initialize routes for main navigation:
     _.forEach(STEPS, slug => {
       route(`*/#${slug}`, () => {
-        console.log('show step', slug)
         this.store.dispatch(setStep(slug))
         this.update({ introActive: false })
       })
-    })
-
-    route('*/#', (locale) => {
-      debugger
-      this.update({ introActive: true })
     })
 
     route.exec()

@@ -4,8 +4,11 @@
     <route path="*/explore..">
       <sealevel-explorer />
     </route>
-    <route path="*/..">
+    <route path="*/#*">
       <sealevel-scrolly />
+    </route>
+    <route path="..">
+      <sealevel-redirects />
     </route>
   </router>
 
@@ -19,6 +22,7 @@
   <script type="text/babel">
     import 'riot-route/tag'
     import './scrolly/scrolly.tag'
+    import './redirects.tag'
   </script>
 
 </sealevel-app>
