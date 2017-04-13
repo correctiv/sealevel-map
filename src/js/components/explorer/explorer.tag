@@ -33,10 +33,14 @@
   <script type="text/babel">
     import _ from 'lodash'
     import route from 'riot-route'
-    import * as routes from '../routes/'
-    import { fetchAnimationDataIfNeeded } from '../actions/animation'
-    import { requestStationDetails, requestStationList } from '../actions/explorer'
-    import { setStep } from '../actions/navigation'
+    import * as routes from '../../routes/'
+    import { fetchAnimationDataIfNeeded } from '../../actions/animation'
+    import { requestStationDetails, requestStationList } from '../../actions/explorer'
+    import { setStep } from '../../actions/navigation'
+    import './explorer-overview.tag'
+    import './explorer-country.tag'
+    import './explorer-continent.tag'
+    import './explorer-details.tag'
 
     const CONTINENTS = {
       'africa': 'Africa',

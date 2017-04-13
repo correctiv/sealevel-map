@@ -13,22 +13,19 @@ import i18n from './mixins/i18n'
 import '../styles/index.scss'
 import './components/app.tag'
 import './components/map.tag'
-import './components/linechart.tag'
 import './components/navigation.tag'
-import './components/explorer.tag'
-import './components/explorer-overview.tag'
-import './components/explorer-country.tag'
-import './components/explorer-continent.tag'
-import './components/explorer-details.tag'
 
 // Set base path for router
 route.base('/')
 
-// Create redux store
+// Initialize redux store
 const store = createStore(reducer, applyMiddleware(thunk))
 riot.mixin(riotReduxMixin(store))
+
+// Initialize i18n mixin
 riot.mixin(i18n('de'))
 
+// Mount root tag
 riot.mount('sealevel-app', {
   store: store,
   center: [41.890251, 12.492373],

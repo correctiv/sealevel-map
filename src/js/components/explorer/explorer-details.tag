@@ -23,7 +23,7 @@
   <p>People living in coastal areas: <b>{ opts.station.pop_sealevel.toFixed(1) } % of population</b></p>
 
   <script type="text/babel">
-    import './linechart.tag'
+    import '../linechart.tag'
 
     this.on('update', () => {
       if (this.opts.station) {
