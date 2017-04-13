@@ -2,14 +2,15 @@
 
   <sealevel-explorer-overview
     if={ !state.station && !state.continent && !state.country }
-    stations={ state.items }
     continents={ continents }
+    stations={ state.items }
     path-to-continent={ routes.continent }
   />
 
   <sealevel-explorer-continent
     continent={ state.continent }
     countries={ countriesForContinent(state.continent) }
+    stations={ state.items }
     path-to-country={ routes.country }
   />
 
@@ -46,6 +47,19 @@
       'oceania': 'Oceania'
     }
 
+    this.routes = routes
+    this.state = this.store.getState().explorer
+
+    this.on('route', (locale) => {
+      // Set locale
+      this.i18n.setLocale(locale)
+
+      // Subscribe to global redux state:
+      this.subscribe(({ explorer }) => {
+        this.update({ state: explorer })
+      })
+    })
+
     route('*/explore/stations/*', (locale, id) => {
       this.dispatch(requestStationDetails(id))
       this.dispatch(setStep('explore'))
@@ -64,19 +78,6 @@
     })
 
     route.exec()
-
-    this.routes = routes
-    this.state = this.store.getState().explorer
-
-    this.on('route', (locale) => {
-      // Set locale
-      this.i18n.setLocale(locale)
-
-      // Subscribe to global redux state:
-      this.subscribe(({ explorer }) => {
-        this.update({ state: explorer })
-      })
-    })
 
     this.countriesForContinent = id => (
       _(this.state.items)
