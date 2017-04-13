@@ -1,18 +1,16 @@
 <sealevel-explorer>
 
   <sealevel-explorer-overview
-    if={ !state.station }
-    on-continent-select={ routes.routeToContinent }
-    data={ state.state }
-    locale={ locale }
+    if={ !state.station && !state.continent && !state.country }
+    stations={ state.items }
+    continents={ continents }
+    path-to-continent={ routes.continent }
   />
 
   <sealevel-explorer-continent
-    if={ state.continent }
     continent={ state.continent }
     countries={ countriesForContinent(state.continent) }
     path-to-country={ routes.country }
-    locale={ locale }
   />
 
   <sealevel-explorer-country
@@ -20,21 +18,18 @@
     country={ state.country }
     stations={ stationsForCountry(state.country) }
     path-to-station={ routes.station }
-    locale={ locale }
   />
 
   <sealevel-explorer-details
     if={ state.station }
     station={ state.station }
     path-to-country={ routes.country }
-    locale={ locale }
   />
 
   <script type="text/babel">
     import _ from 'lodash'
     import route from 'riot-route'
     import * as routes from '../../routes/'
-    import { fetchAnimationDataIfNeeded } from '../../actions/animation'
     import { requestStationDetails, requestStationList } from '../../actions/explorer'
     import { setStep } from '../../actions/navigation'
     import './explorer-overview.tag'
@@ -42,7 +37,7 @@
     import './explorer-continent.tag'
     import './explorer-details.tag'
 
-    const CONTINENTS = {
+    this.continents = {
       'africa': 'Africa',
       'north-america': 'North America',
       'south-america': 'South America',
@@ -50,9 +45,6 @@
       'europe': 'Europe',
       'oceania': 'Oceania'
     }
-
-    this.routes = routes
-    this.state = this.store.getState().explorer
 
     route('*/explore/stations/*', (locale, id) => {
       this.dispatch(requestStationDetails(id))
@@ -67,11 +59,28 @@
       this.dispatch(requestStationList({ continent: id }))
     })
 
+    route('*/explore', (locale, id) => {
+      this.dispatch(requestStationList())
+    })
+
     route.exec()
+
+    this.routes = routes
+    this.state = this.store.getState().explorer
+
+    this.on('route', (locale) => {
+      // Set locale
+      this.i18n.setLocale(locale)
+
+      // Subscribe to global redux state:
+      this.subscribe(({ explorer }) => {
+        this.update({ state: explorer })
+      })
+    })
 
     this.countriesForContinent = id => (
       _(this.state.items)
-        .filter(station => station.continent === CONTINENTS[id])
+        .filter(station => station.continent === this.continents[id])
         .map('country')
         .uniq()
         .sort()
@@ -84,19 +93,6 @@
         .sortBy('location')
         .value()
     )
-
-    this.on('route', (locale) => {
-      // Set locale
-      this.locale = locale
-
-      // Subscribe to global redux state:
-      this.subscribe(({ explorer }) => {
-        this.update({ state: explorer })
-      })
-
-      // Fetch data:
-      this.dispatch(fetchAnimationDataIfNeeded())
-    })
 
   </script>
 

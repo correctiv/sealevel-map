@@ -21,7 +21,6 @@
       const activeStep = this.state.navigation.activeStep
       const activeStation = this.state.explorer.station
 
-      console.log(activeStep, this.state.animation.items)
       updateLayers(activeStep)
       zoomToStation(activeStation)
     })

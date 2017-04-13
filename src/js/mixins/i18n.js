@@ -7,7 +7,16 @@ const translations = {
     'read on': 'weiterlesen',
     'explorer': {
       'title': 'Explore',
-      'choose a contintent': 'Choose a continent'
+      'choose_continent': 'Choose a continent',
+      'continents': {
+        'africa': 'Africa',
+        'north-america': 'North America',
+        'south-america': 'South America',
+        'asia': 'Asia',
+        'europe': 'Europe',
+        'oceania': 'Australia and Oceania'
+      },
+      'num_stations': '%{smart_count} station |||| %{smart_count} stations'
     }
   },
   'de': {
@@ -15,7 +24,16 @@ const translations = {
     'read on': 'weiterlesen',
     'explorer': {
       'title': 'Explorer',
-      'choose a contintent': 'Wähle einen Kontinent'
+      'choose_continent': 'Wähle einen Kontinent',
+      'continents': {
+        'africa': 'Afrika',
+        'north-america': 'Nordamerika',
+        'south-america': 'Südamerika',
+        'asia': 'Asien',
+        'europe': 'Europa',
+        'oceania': 'Australien und Ozeanien'
+      },
+      'num_stations': '%{smart_count} Station |||| %{smart_count} Stationen'
     }
   }
 }
@@ -29,7 +47,7 @@ export default function (language) {
 
       this.i18n = {
         t: (...args) => {
-          return dictionaries[language].t(args)
+          return dictionaries[language].t(...args)
         },
         setLocale: (locale) => {
           language = locale

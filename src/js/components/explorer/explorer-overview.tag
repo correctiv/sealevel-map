@@ -1,60 +1,32 @@
 <sealevel-explorer-overview>
 
-  <select onchange={ continentSelected }>
-    <option each={ name, key in continents }
-      value={ key } selected={ continent === name }>
-      { name }
-    </option>
-  </select>
+  <h1>{ i18n.t('explorer.title') }</h1>
+  <h2>{ i18n.t('explorer.choose_continent') }</h2>
 
-  <ul if={ !country && !continent }>
-    <li each={ countries, continent in stationsByContinent } >
-      <h3>{ continent }</h3>
-      <ul>
-        <li each={ data, country in countries }>
-          <a href={ getCountryRoute(localem country) }>{ country }</a>
-        </li>
-      </ul>
+  <ul>
+    <li each={ name, slug in opts.continents }>
+      <a href={ route(slug) }>
+        { i18n.t('explorer.continents.' + slug) }
+        <p if={ stationCount && stationCount[name] }>
+          { i18n.t('explorer.num_stations', stationCount[name]) }
+        </p>
+      </a>
     </li>
   </ul>
 
   <script type="text/babel">
     import _ from 'lodash'
 
-    const CONTINENTS = {
-      'africa': 'Africa',
-      'north-america': 'North America',
-      'south-america': 'South America',
-      'asia': 'Asia',
-      'europe': 'Europe',
-      'oceania': 'Oceania'
-    }
-
-    const groupStationsByContinent = (stations) => {
-      return _(stations)
-        .groupBy('continent')
-        .mapValues(continent => _.groupBy(continent, 'country'))
-        .value()
-    }
-
-    this.on('mount', () => {
-      this.continents = CONTINENTS
-    })
-
     this.on('update', () => {
-      const data = this.opts.data
-      if (data && data.items) {
-        this.stationsByContinent = groupStationsByContinent(data.items)
-        this.country = data.country
-        this.continent = CONTINENTS[data.continent]
-      }
+      this.stationCount = _.countBy(this.opts.stations, 'continent')
     })
 
-    this.getCountryRoute = (id) => `${this.locale}/countries/${id}`
+    this.route = (slug) => (
+      opts.pathToContinent(this.i18n.getLocale(), slug)
+    )
 
-    this.continentSelected = ({ target }) => {
-      this.opts.onContinentSelect(this.opts.locale, target.value)
-    }
+  </script>
+
   </script>
 
 </sealevel-explorer-overview>
