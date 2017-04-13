@@ -1,6 +1,6 @@
 <sealevel-explorer-details>
 
-  <a href={ opts.pathToCountry(opts.locale, opts.station.country) }>
+  <a href={ opts.pathToCountry(i18n.getLocale(), opts.station.country) }>
     { opts.station.country }
   </a>
 

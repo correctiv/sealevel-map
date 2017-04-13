@@ -9,7 +9,7 @@
   </ul>
 
   <script type="text/babel">
-    this.route = (id) => opts.pathToStation(opts.locale, id)
+    this.route = (id) => opts.pathToStation(this.i18n.getLocale(), id)
   </script>
 
 </sealevel-explorer-country>
