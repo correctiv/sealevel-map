@@ -1,9 +1,8 @@
 <sealevel-scrolly>
 
   <sealevel-scrolly-intro
-    active={introActive}
+    active={state.activeStep === 'start'}
     locale={locale}
-    first-step={steps[0] && steps[0].id}
   />
 
   <article
@@ -25,11 +24,8 @@
     import _ from 'lodash'
     import gumshoe from 'gumshoe'
     import './scrolly-intro.tag'
-    import { STEPS } from '../../routes/'
     import { setStep } from '../../actions/navigation'
     import content from '../../../en.md'
-
-    this.steps = []
 
     const getSteps = (article) => {
       return _.map(article.querySelectorAll('[id]'), element => ({
@@ -38,40 +34,48 @@
       }))
     }
 
-    this.on('route', (locale, anchor) => {
-      this.steps = getSteps(this.refs.article)
-      this.locale = locale
+    const initContent = (language) => {
       this.refs.article.innerHTML = content
+      this.steps = getSteps(this.refs.article)
 
-      gumshoe.init({
+      _.defer(gumshoe.init, {
         container: window,
         callback: (event) => {
-          const activeStep = event && event.target.id
-          if (activeStep !== this.activeStep) {
-            this.update({ activeStep })
+          const active = event && event.target.id
+          if (active && active !== this.state.activeStep) {
+            route(`${language}/#${active}`)
           }
         }
       })
+    }
 
-      // Toggle intro
-      this.update({ introActive: anchor === 'start' })
-    })
+    this.state = {
+      activeStep: null
+    }
 
-    this.on('update', update => {
-      if (this.activeStep) {
-        route(`/${this.locale}/#${this.activeStep}`)
+    this.on('route', (language, anchor) => {
+      // if (language !== i18n.getLanguage()) {
+      this.i18n.setLocale(language)
+      initContent(language)
+      // }
+
+      if (anchor !== this.state.activeStep) {
+        this.store.dispatch(setStep(anchor))
       }
-    })
 
-    // initialize routes for main navigation:
-    _.forEach(STEPS, slug => {
-      route(`*/#${slug}`, () => {
-        this.store.dispatch(setStep(slug))
-        this.update({ introActive: false })
+      // Subscribe to global redux state:
+      this.subscribe(({ navigation }) => {
+        this.update({ state: navigation })
       })
     })
 
-    route.exec()
+    this.on('mount', () => {
+      // console.log('state', this.state)
+      // debugger
+      // riot.mixin('i18n', i18n, true)
+      // i18n.setLanguage('de')
+      // i18n.localise('Hello') // -> Hello
+    })
 
   </script>
 

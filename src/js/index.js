@@ -1,5 +1,3 @@
-'use strict'
-
 if (module.hot) {
   module.hot.accept()
 }
@@ -9,8 +7,8 @@ import route from 'riot-route'
 import thunk from 'redux-thunk'
 import { createStore, applyMiddleware } from 'redux'
 import riotReduxMixin from 'riot-redux-mixin'
-
 import reducer from './reducers'
+import i18n from './mixins/i18n'
 
 import '../styles/index.scss'
 import './components/app.tag'
@@ -29,6 +27,7 @@ route.base('/')
 // Create redux store
 const store = createStore(reducer, applyMiddleware(thunk))
 riot.mixin(riotReduxMixin(store))
+riot.mixin(i18n('de'))
 
 riot.mount('sealevel-app', {
   store: store,
