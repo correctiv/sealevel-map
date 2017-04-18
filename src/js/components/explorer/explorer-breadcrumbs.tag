@@ -1,7 +1,7 @@
 <sealevel-explorer-breadcrumbs>
 
-  <ul>
-    <li>
+  <ul class="breadcrumbs">
+    <li if={continent}>
       <a href={ pathToExplorer() }>
         { i18n.t('explorer.start') }
       </a>

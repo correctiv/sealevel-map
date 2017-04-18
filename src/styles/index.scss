@@ -1,6 +1,9 @@
+@import '../../node_modules/normalize-scss/sass/normalize';
+@import 'config';
 @import 'layout';
 @import 'components/map';
 @import 'components/explorer';
+@import 'components/explorer/breadcrumbs';
 @import 'components/intro';
 @import 'components/scrolly';
 @import 'components/navigation';

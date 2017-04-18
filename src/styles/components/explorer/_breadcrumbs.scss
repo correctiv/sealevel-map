@@ -1,0 +1,37 @@
+.breadcrumbs {
+  background: $gray;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  li:first-child > a {
+    background: none;
+    padding-left: 20px;
+  }
+
+  a {
+    display: inline-block;
+    color: $black;
+    height: 40px;
+    padding: 0 10px 0 30px;
+    line-height: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url(../assets/images/breadcrumb-chevron.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: underline;
+  }
+}
