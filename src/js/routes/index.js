@@ -8,6 +8,7 @@ export const STEPS = {
 
 export const intro = (locale) => `/${locale}/#start`
 export const article = (locale) => `/${locale}/#article`
+export const explorer = (locale) => `/${locale}/explore`
 export const continent = (locale, id) => `/${locale}/explore/${id}`
 export const country = (locale, id) => `/${locale}/explore/countries/${id}`
 export const station = (locale, id) => `/${locale}/explore/stations/${id}`
@@ -17,6 +18,10 @@ export const routeToIntro = (locale) => {
 }
 
 export const routeToArticle = (locale) => {
+  route(article(locale))
+}
+
+export const routeToExplorer = (locale) => {
   route(article(locale))
 }
 

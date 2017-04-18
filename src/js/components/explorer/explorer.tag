@@ -1,5 +1,12 @@
 <sealevel-explorer>
 
+  <sealevel-explorer-breadcrumbs
+    continent={ state.continent || continentForCountry(state.country) }
+    country={ state.country }
+    station={ state.station }
+    routes={ routes }
+  />
+
   <sealevel-explorer-overview
     if={ !state.station && !state.continent && !state.country }
     continents={ continents }
@@ -33,6 +40,7 @@
     import * as routes from '../../routes/'
     import { requestStationDetails, requestStationList } from '../../actions/explorer'
     import { setStep } from '../../actions/navigation'
+    import './explorer-breadcrumbs.tag'
     import './explorer-overview.tag'
     import './explorer-country.tag'
     import './explorer-continent.tag'
@@ -78,6 +86,11 @@
     })
 
     route.exec()
+
+    this.continentForCountry = id => {
+      const sample = _.find(this.state.items, ({ country }) => country === id)
+      return sample && _.findKey(this.continents, _.partial(_.isEqual, sample.continent))
+    }
 
     this.countriesForContinent = id => (
       _(this.state.items)
