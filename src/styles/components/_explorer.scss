@@ -1,28 +1,39 @@
 // styles for details page
 
-sealevel-explorer {
+.explorer {
   display: block;
   position: absolute;
+  width: 400px;
+  min-height: 100%;
   top: 0;
   right: 0;
   z-index: 100;
-  width: 400px;
-  height: 100%;
   background: white;
+  padding: 1em;
 
   @include MQ(S) {
     width:100%
   }
-
-  .details__titel {
-    margin-top: -30px;
-  }
-
-  .details__close {
-    cursor: pointer;
-    font-size: 20px;
-    text-align: right;
-    margin-top: 5px;
-  }
 }
 
+.explorer__title {
+  margin: 0;
+  padding: 3em 0 1em 0;
+  @include font-size($font-size-h3, false);
+  line-height: 1.2;
+  color: $gray-dark;
+}
+
+.explorer__intro {
+  background: $gray-light;
+  padding: 1em;
+  margin: -1em;
+}
+
+.explorer__intro__title {
+  margin: 0;
+  padding: 1.5em 0 0.5em 0;
+  @include font-size($font-size-h2, false);
+  line-height: 1.2;
+  color: $color-text;
+}

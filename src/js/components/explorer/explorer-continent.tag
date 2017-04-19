@@ -1,11 +1,19 @@
 <sealevel-explorer-continent>
 
-  <ul>
+  <h2 class="explorer__title">
+    { i18n.t('explorer.continents.' + opts.continent) }
+  </h2>
+
+  <ul class="entries">
     <li each={ country in opts.countries } >
-      <a href={ route(country) }>{ country }</a>
-      <p if={ stationCount && stationCount[country] }>
-        { i18n.t('explorer.num_stations', stationCount[country]) }
-      </p>
+      <a href={ route(country) }>
+        <h3 class="entries__title">
+          { country }
+        </h3>
+        <p class="entries__description" if={ stationCount && stationCount[country] }>
+          { i18n.t('explorer.num_stations', stationCount[country]) }
+        </p>
+      </a>
     </li>
   </ul>
 

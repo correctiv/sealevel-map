@@ -1,4 +1,4 @@
-<sealevel-explorer>
+<sealevel-explorer class="explorer">
 
   <sealevel-explorer-breadcrumbs
     continent={ state.continent || continentForCountry(state.country) }
@@ -15,6 +15,7 @@
   />
 
   <sealevel-explorer-continent
+    if={ state.continent }
     continent={ state.continent }
     countries={ countriesForContinent(state.continent) }
     stations={ state.items }
