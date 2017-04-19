@@ -1,7 +1,7 @@
 <sealevel-explorer class="explorer">
 
   <sealevel-explorer-breadcrumbs
-    continent={ state.continent || continentForCountry(state.country) }
+    continent={ state.continent || getContinentForCountry(state.country) }
     country={ state.country }
     station={ state.station }
     routes={ routes }
@@ -17,7 +17,7 @@
   <sealevel-explorer-continent
     if={ state.continent }
     continent={ state.continent }
-    countries={ countriesForContinent(state.continent) }
+    countries={ getCountriesForContinent(state.continent) }
     stations={ state.items }
     path-to-country={ routes.country }
   />
@@ -25,14 +25,14 @@
   <sealevel-explorer-country
     if={ state.country }
     country={ state.country }
-    stations={ stationsForCountry(state.country) }
+    stations={ getStationsForCountry(state.country) }
     path-to-station={ routes.station }
   />
 
-  <sealevel-explorer-details
+  <sealevel-explorer-station
     if={ state.station }
-    station={ state.station }
-    path-to-country={ routes.country }
+    station={ getStationContext(state.station.ID) }
+    tides={ state.station.tideData }
   />
 
   <script type="text/babel">
@@ -45,7 +45,7 @@
     import './explorer-overview.tag'
     import './explorer-country.tag'
     import './explorer-continent.tag'
-    import './explorer-details.tag'
+    import './explorer-station.tag'
 
     this.continents = {
       'africa': 'Africa',
@@ -70,6 +70,7 @@
     })
 
     route('*/explore/stations/*', (locale, id) => {
+      this.dispatch(requestStationList())
       this.dispatch(requestStationDetails(id))
       this.dispatch(setStep('explore'))
     })
@@ -88,12 +89,16 @@
 
     route.exec()
 
-    this.continentForCountry = id => {
+    this.getStationContext = stationId => (
+      _.find(this.state.items, ({ id }) => id === stationId.toString())
+    )
+
+    this.getContinentForCountry = id => {
       const sample = _.find(this.state.items, station => station.country_code === id)
       return sample && _.findKey(this.continents, _.partial(_.isEqual, sample.continent))
     }
 
-    this.countriesForContinent = id => (
+    this.getCountriesForContinent = id => (
       _(this.state.items)
         .filter(station => station.continent === this.continents[id])
         .map('country_code')
@@ -102,7 +107,7 @@
         .value()
     )
 
-    this.stationsForCountry = id => (
+    this.getStationsForCountry = id => (
       _(this.state.items)
         .filter(station => station.country_code === id)
         .sortBy('location')

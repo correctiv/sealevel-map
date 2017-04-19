@@ -17,11 +17,6 @@
 
   <script type="text/babel">
     this.route = (id) => opts.pathToStation(this.i18n.getLocale(), id)
-
-    this.on('update', () => {
-      console.log(this.opts.stations)
-    })
-
   </script>
 
 </sealevel-explorer-country>
