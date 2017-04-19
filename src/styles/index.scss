@@ -1,6 +1,9 @@
 @import '../../node_modules/normalize-scss/sass/normalize';
 @import 'config';
-@import 'layout';
+@import 'mixins';
+@import 'elements/page';
+@import 'elements/headings';
+@import 'elements/links';
 @import 'components/map';
 @import 'components/explorer';
 @import 'components/explorer/breadcrumbs';
@@ -8,10 +11,4 @@
 @import 'components/scrolly';
 @import 'components/navigation';
 @import 'components/linechart';
-
-html,
-body {
-  height: 100%;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-}
+@import 'components/common/entries';

@@ -1,14 +1,29 @@
-// Layout
-
-$S: 480px;
-$M: 768px;
-$L: 1100px;
-
 // colors
 $black: #112233;
 $white: #ffffff;
 $gray: #d9d9de;
-$gray-dark: #748698;
+$gray-dark: #8798a9;
+$blue: blue;
+$blue-dark: red;
+
+$color-text: $black;
+$color-background: $white;
+$color-link: $blue;
+$color-link-highlight: $blue-dark;
 
 // fonts
+$font-size-default: 18px;
+$line-height-default: 26px;
+
+$font-size-h1:  40px;
+$font-size-h2:  32px;
+$font-size-h3:  24px;
+$font-size-h4:  18px;
+
+$font-family-default: sans-serif;
+
+// Layout
+$S: 480px;
+$M: 768px;
+$L: 1100px;
 

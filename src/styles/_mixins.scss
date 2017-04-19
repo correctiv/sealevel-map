@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   `@include font-size(10px);`
+ *
+ * http://jsfiddle.net/redclover/mkYtY/
+ */
+@mixin font-size($font-size, $use-default-line-height:true){
+  font-size:$font-size;
+  font-size:($font-size / $font-size-default)*1rem;
+  @if $use-default-line-height == true {
+    line-height:ceil($font-size / $line-height-default) * ($line-height-default / $font-size);
+  }
+}
+
+/**
+ * Media queries
+ */
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+    @media only screen and (max-width: $S) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (max-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (max-width: $L) { @content; }
+  }
+}

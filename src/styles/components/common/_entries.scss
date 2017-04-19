@@ -1,0 +1,51 @@
+.entries {
+  color: $black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray;
+    text-decoration: none;
+    color: $gray-dark;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+    font-weight: normal;
+  }
+
+  a:after {
+    content: '⟩';
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: underline;
+  }
+}
+
+.entries__title {
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  font-weight: bold;
+  color: $black;
+}
+
+.entries__description {
+  margin: 0;
+  padding: 0;
+}

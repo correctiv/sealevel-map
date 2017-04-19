@@ -24,7 +24,6 @@
   </ul>
 
   <script type="text/babel">
-
     this.on('update', () => {
       const { station, country, continent } = this.opts
       this.country = station && station.country || country
@@ -47,7 +46,6 @@
     this.pathToStation = id => (
       opts.routes.station(this.i18n.getLocale(), id)
     )
-
   </script>
 
 </sealevel-explorer-breadcrumbs>
