@@ -89,14 +89,14 @@
     route.exec()
 
     this.continentForCountry = id => {
-      const sample = _.find(this.state.items, ({ country }) => country === id)
+      const sample = _.find(this.state.items, station => station.country_code === id)
       return sample && _.findKey(this.continents, _.partial(_.isEqual, sample.continent))
     }
 
     this.countriesForContinent = id => (
       _(this.state.items)
         .filter(station => station.continent === this.continents[id])
-        .map('country')
+        .map('country_code')
         .uniq()
         .sort()
         .value()
@@ -104,7 +104,7 @@
 
     this.stationsForCountry = id => (
       _(this.state.items)
-        .filter(station => station.country === id)
+        .filter(station => station.country_code === id)
         .sortBy('location')
         .value()
     )

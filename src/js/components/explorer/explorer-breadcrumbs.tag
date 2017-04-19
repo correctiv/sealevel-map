@@ -26,7 +26,7 @@
   <script type="text/babel">
     this.on('update', () => {
       const { station, country, continent } = this.opts
-      this.country = station && station.country || country
+      this.country = station && station.country_id || country
       this.continent = station && station.continent || continent
       this.station = station
     })

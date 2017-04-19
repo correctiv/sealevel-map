@@ -1,3 +1,4 @@
+import * as d3 from 'd3'
 import request from 'superagent'
 
 export const SHOW_STATION_LIST = 'SHOW_STATION_LIST'
@@ -72,12 +73,11 @@ const requestStationListData = () => ({
 
 const fetchStationListData = (options) => dispatch => {
   dispatch(requestStationListData())
-  return request
-    .get('/data/dataexplorer.json')
-    .then(({ body }) => {
-      dispatch(receiveStationListData())
-      dispatch(showStationList(body.stations, options))
-    })
+
+  d3.csv('/data/sealevel_context_data.csv', (stations) => {
+    dispatch(receiveStationListData())
+    dispatch(showStationList(stations, options))
+  })
 }
 
 export const requestStationList = (options = {}) => (dispatch, getState) => {
