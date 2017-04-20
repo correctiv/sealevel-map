@@ -78,7 +78,8 @@ const translations = {
         'TZA': 'TZA',
         'ECU': 'ECU'
       },
-      'num_stations': '%{smart_count} station |||| %{smart_count} stations'
+      'num_stations': '%{smart_count} station |||| %{smart_count} stations',
+      'station_description': 'In %{ location } sea level %{ sealevel_change_short }  yearly around %{ trend_1985_2015 } mm between 1985 and 2015. Since the very beginning of measurements in %{ start_year }, sea level %{ sealevel_change_long } yearly around %{ trend_longest }.'
     }
   },
   'de': {
@@ -157,7 +158,11 @@ const translations = {
         'TZA': 'TZA',
         'ECU': 'ECU'
       },
-      'num_stations': '%{smart_count} Station |||| %{smart_count} Stationen'
+      'num_stations': '%{smart_count} Station |||| %{smart_count} Stationen',
+      'station_desc_rising': 'In %{location}, the sea level rose yearly around %{trend_1985_2015}mm between 1985 and 2015. Since the very beginning of measurements in %{start_year}, sea level rose yearly around %{trend_longest}mm.',
+      'station_desc_falling': 'In %{location}, the sea level fell yearly around %{trend_1985_2015}mm between 1985 and 2015. Since the very beginning of measurements in %{start_year}, sea level fell yearly around %{trend_longest}mm.',
+      'risk_desc': 'In %{country_name}, %{coastal_population2010_sum} people of the %{total_population} population live in coastal regions. According to World Risk Index, %{country_name} has a %{risk_description}  risk ( %{risk_index} ) to be affected by a natural disaster.',
+      'emissions_desc': 'According to calculations of the United Nations, each person is allowed to emit two tonnes of C02 per year in order to keep global warming below two degrees. %{country_name} emits %{c02_emissions} tonnes of C02 emissions per person. On the global rank of largest C02 emissions per person, %{country_name} is placed on rank %{c02_rank}.'
     }
   }
 }
