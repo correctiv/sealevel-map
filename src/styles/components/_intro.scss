@@ -1,6 +1,6 @@
 // styles for details page
 
-sealevel-scrolly-intro {
+.intro {
   display: block;
   position: absolute;
   top: 0;
@@ -8,18 +8,55 @@ sealevel-scrolly-intro {
   bottom: 0;
   left: 0;
   z-index: 100;
-  background: url('../assets/images/intro_dummy_1_720.jpg') no-repeat fixed;
-  background-color: black;
-  background-position: center center;
-  background-size: cover;
-  color: white;
   opacity: 0;
   transition: .5s ease-out opacity;
   pointer-events: none;
 
-  &.intro--active {
-    opacity: 1;
-    pointer-events: auto;
+  video {
+    position: fixed;
+    top: 0;
+    height: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('../assets/images/intro_dummy_1_720.jpg') no-repeat fixed;
+    background-size: cover;
   }
 }
 
+.intro--active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.intro__title {
+  font-size: 70px;
+  text-transform: none;
+  text-align: center;
+  color: $white;
+  text-shadow: 1px 1px 50px rgba(0, 0, 0, 0.5);
+  margin: 30vh 30px 30vh 30px;
+}
+
+.intro__logo-correctiv {
+  position: absolute;
+  display: block;
+  width: 220px;
+  height: 80px;
+  top: 1vh;
+  left: 5vw;
+  background: url('../assets/images/logo-correctiv.svg') no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.intro__lead {
+  text-align: center;
+}
+
+.intro__more {
+  color: $white;
+}

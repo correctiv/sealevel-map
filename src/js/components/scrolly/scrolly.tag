@@ -69,14 +69,6 @@
       })
     })
 
-    this.on('mount', () => {
-      // console.log('state', this.state)
-      // debugger
-      // riot.mixin('i18n', i18n, true)
-      // i18n.setLanguage('de')
-      // i18n.localise('Hello') // -> Hello
-    })
-
   </script>
 
 </sealevel-scrolly>
