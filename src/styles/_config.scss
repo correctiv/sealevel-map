@@ -6,11 +6,12 @@ $gray-dark: #8798a9;
 $gray-light: #f3f6f9;
 $blue: blue;
 $blue-dark: red;
+$purple: #ee0049;
 
 $color-text: $black;
 $color-background: $white;
 $color-link: $blue;
-$color-link-highlight: $blue-dark;
+$color-link-highlight: $purple;
 
 // fonts
 $font-size-default: 18px;
@@ -22,6 +23,7 @@ $font-size-h3:  24px;
 $font-size-h4:  18px;
 
 $font-family-default: sans-serif;
+$font-family-serif: serif;
 
 // Layout
 $S: 480px;

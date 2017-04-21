@@ -34,6 +34,6 @@ riot.mount('sealevel-app', {
     barWidth: 2,
     maxHeight: 300
   },
-  tiles: 'https://api.mapbox.com/styles/v1/felixmichel/ciy1kvtfs00cn2sn05vsxk0g2/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ',
+  tiles: 'https://api.mapbox.com/styles/v1/felixmichel/cj1550ogw002s2smkgbz60keh/tiles/512/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ',
   attribution: 'CartoDB <a href="https://cartodb.com/attributions">attribution</a>'
 })

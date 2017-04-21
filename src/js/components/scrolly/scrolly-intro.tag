@@ -1,22 +1,24 @@
 <sealevel-scrolly-intro class={ intro: true, intro--active: opts.active }>
 
-  <h1 class="intro__title">{ i18n.t('title') }</h1>
+  <h1 class="intro__title">{ i18n.t('intro.title') }</h1>
 
   <p class="intro__logo-correctiv">Ein Projekt von CORRECTIV</p>
 
-  <video autoplay muted loop poster="intro.jpg">
-    <source src="../{ videos.mp4 }" type="video/mp4">
-    <source src="../{ videos.webm }" type="video/webm">
+  <video autoplay muted loop poster="../{ video.jpg }">
+    <source src="../{ video.mp4 }" type="video/mp4">
+    <source src="../{ video.webm }" type="video/webm">
   </video>
 
-  <p class="intro__lead">
-    <a class="intro__more" href={ articlePath() }>{ i18n.t('read on') }</a>
-  </p>
+  <div class="intro__lead">
+    <p>{ i18n.t('intro.lead') }</p>
+    <a class="intro__more" href={ articlePath() }>{ i18n.t('intro.more') }</a>
+  </div>
 
   <script type="text/babel">
     import { article } from '../../routes/'
 
-    this.videos = {
+    this.video = {
+      jpg: require('file!../../../assets/images/intro.jpg'),
       mp4: require('file?&mimetype=video/mp4!../../../assets/videos/intro.mp4'),
       webm: require('file?&mimetype=video/webm!../../../assets/videos/intro.webm')
     }

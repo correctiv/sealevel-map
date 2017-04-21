@@ -3,8 +3,12 @@ import _ from 'lodash'
 
 const translations = {
   'en': {
-    'title': 'Rising seas',
-    'read on': 'weiterlesen',
+    'intro': {
+      'title': 'Rising Seas',
+      'lead': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim consectetur adipisicing elit sed do.',
+      'more': 'read more',
+      'logo_alt': 'a project by CORRECTIV'
+    },
     'explorer': {
       'title': 'Explore',
       'choose_continent': 'Choose a continent',
@@ -83,8 +87,12 @@ const translations = {
     }
   },
   'de': {
-    'title': 'Steigende Meere',
-    'read on': 'weiterlesen',
+    'intro': {
+      'title': 'Steigende Meere',
+      'lead': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim consectetur adipisicing elit sed do.',
+      'more': 'mehr erfahren',
+      'logo_alt': 'ein Projekt von CORRECTIV'
+    },
     'explorer': {
       'title': 'Explorer',
       'choose_continent': 'Wähle einen Kontinent',

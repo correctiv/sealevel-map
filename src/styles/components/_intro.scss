@@ -21,7 +21,7 @@
     width: auto;
     height: auto;
     z-index: -100;
-    background: url('../assets/images/intro_dummy_1_720.jpg') no-repeat fixed;
+    background: url('../assets/images/intro.jpg') no-repeat fixed;
     background-size: cover;
   }
 }
@@ -35,9 +35,22 @@
   font-size: 70px;
   text-transform: none;
   text-align: center;
-  color: $white;
-  text-shadow: 1px 1px 50px rgba(0, 0, 0, 0.5);
-  margin: 30vh 30px 30vh 30px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 50px rgba(255, 255, 255, 0.7);
+  margin: 30vh 30px 0 30px;
+}
+
+.intro__lead {
+  padding: 5vw;
+  margin: 0 auto;
+  max-width: 960px;
+  text-transform: none;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 50px rgba(255, 255, 255, 0.7);
+  font-family: $font-family-serif;
+  font-size: 24px;
 }
 
 .intro__logo-correctiv {
@@ -53,10 +66,11 @@
   overflow: hidden;
 }
 
-.intro__lead {
-  text-align: center;
-}
-
 .intro__more {
   color: $white;
+  display: inline-block;
+  font-family: $font-family-default;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 3vh;
 }
