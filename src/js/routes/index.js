@@ -34,6 +34,6 @@ export const routeToCountry = (locale, id) => {
 }
 
 export const routeToStation = (locale, id) => {
-  route(station(id))
+  route(station(locale, id))
 }
 

@@ -30,6 +30,10 @@
       this.dispatch(fetchAnimationDataIfNeeded())
     })
 
+    const selectStation = (id) => {
+      routeToStation(this.i18n.getLocale(), id)
+    }
+
     const updateLayers = (activeStep) => {
       switch (activeStep) {
 
@@ -37,7 +41,7 @@
           clearLayers()
           addLayer(explorerLayer({
             stations: this.state.animation.items,
-            clickCallback: routeToStation,
+            clickCallback: selectStation,
             isAnimated: true
           }))
           break
@@ -51,7 +55,7 @@
           clearLayers()
           addLayer(explorerLayer({
             stations: this.state.animation.items,
-            clickCallback: routeToStation,
+            clickCallback: selectStation,
             isAnimated: false
           }))
       }
@@ -69,6 +73,7 @@
 
       map.addLayer(tileLayer)
       map.zoomControl.setPosition('topleft')
+      map.scrollWheelZoom.disable()
 
       return map
     }
