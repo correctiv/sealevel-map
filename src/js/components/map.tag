@@ -56,7 +56,7 @@
           addLayer(explorerLayer({
             stations: this.state.animation.items,
             clickCallback: selectStation,
-            isAnimated: false
+            isAnimated: true
           }))
       }
     }

@@ -1,3 +1,4 @@
+import riot from 'riot'
 import L from 'leaflet'
 import * as d3 from 'd3'
 
@@ -39,7 +40,15 @@ const findTide = ({ tideData }, year) => {
 const createMarkers = (stations, clickCallback) => {
   return stations.map(station => {
     const latLng = [station.latitude, station.longitude]
-    const marker = L.circleMarker(latLng, MARKER_OPTIONS)
+    // const marker = L.divIcon(latLng, MARKER_OPTIONS)
+    const circleIcon = L.divIcon({
+      className: 'tide-circle-marker',
+      iconSize: 10
+    })
+
+    const marker = L.marker(latLng, {
+      icon: circleIcon
+    })
     marker.on('click', event => clickCallback(station.ID))
     return marker
   })
