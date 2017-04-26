@@ -1,0 +1,58 @@
+$color-scale-lower: #008080;
+$color-scale-low: #5aaf8c;
+$color-scale-neutral: #ffffe0;
+$color-scale-high: #ef738b;
+$color-scale-higher: #8b0000;
+
+@mixin glow($color) {
+  &.circle-marker--blink:after {
+    box-shadow: 0px 0px 0px 1px $color inset;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: 1;
+    opacity: 1.0;
+  }
+}
+
+@keyframes pulsate {
+  0% {transform: scale(0.5, 0.5); opacity: 0.0;}
+  50% {opacity: 0.5;}
+  100% {transform: scale(2, 2); opacity: 0.0;}
+}
+
+.circle-marker {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background 0.5s ease-out;
+  background: $color-scale-neutral;
+}
+
+.circle-marker--lower {
+  background: $color-scale-lower;
+  @include glow($color-scale-lower);
+}
+
+.circle-marker--low {
+  background: $color-scale-low;
+  @include glow($color-scale-low);
+}
+
+.circle-marker--neutral {
+  background: $color-scale-neutral;
+  @include glow($color-scale-neutral);
+}
+
+.circle-marker--high {
+  background: $color-scale-high;
+  @include glow($color-scale-high);
+}
+
+.circle-marker--higher {
+  background: $color-scale-higher;
+  @include glow($color-scale-higher);
+}

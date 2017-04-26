@@ -1,24 +1,23 @@
-import riot from 'riot'
 import L from 'leaflet'
 import * as d3 from 'd3'
 
 const MIN_YEAR = 1985
 const MAX_YEAR = 2014
 
-const COLORS = [
-  '#132c6c',
-  'rgba(87, 22, 58, 0)',
-  '#9a0008'
+const MARKER_OPTIONS = {
+  className: 'circle-marker',
+  iconSize: 10
+}
+
+const CATEGORIES = [
+  'circle-marker--lower',
+  'circle-marker--low',
+  'circle-marker--neutral',
+  'circle-marker--high',
+  'circle-marker--higher'
 ]
 
-const MARKER_OPTIONS = {
-  stroke: true,
-  weight: 1,
-  radius: 3,
-  fillOpacity: 0.7,
-  color: COLORS[1],
-  className: 'tide-circle-marker'
-}
+const ANIMATION = 'circle-marker--blink'
 
 const calculateDomain = (stations) => {
   let min = d3.min(stations, (station) => {
@@ -29,7 +28,7 @@ const calculateDomain = (stations) => {
     return d3.max(station.tideData, (d) => d.tide)
   })
 
-  return [min, 0, max]
+  return [min, max]
 }
 
 const findTide = ({ tideData }, year) => {
@@ -40,34 +39,38 @@ const findTide = ({ tideData }, year) => {
 const createMarkers = (stations, clickCallback) => {
   return stations.map(station => {
     const latLng = [station.latitude, station.longitude]
-    // const marker = L.divIcon(latLng, MARKER_OPTIONS)
-    const circleIcon = L.divIcon({
-      className: 'tide-circle-marker',
-      iconSize: 10
+    const circleIcon = L.divIcon(MARKER_OPTIONS)
+    const marker = L.marker(latLng, {
+      icon: circleIcon,
+      maxValue: 0
     })
 
-    const marker = L.marker(latLng, {
-      icon: circleIcon
-    })
     marker.on('click', event => clickCallback(station.ID))
     return marker
   })
+}
+
+const triggerMarkerAnimation = (element) => {
+  element.addEventListener('animationend', () => {
+    element.classList.remove(ANIMATION)
+  })
+
+  element.classList.add(ANIMATION)
 }
 
 const ExplorerLayer = L.LayerGroup.extend({
 
   initialize: function ({ stations, clickCallback, isAnimated }) {
     let domain = calculateDomain(stations)
-    let colorScale = d3.scaleSqrt().domain(domain).range(COLORS)
+    let scale = d3.scaleQuantize().domain(domain).range(CATEGORIES)
 
     this._stations = stations
-    this._maxValues = []
     this._circleMarkers = createMarkers(stations, clickCallback)
 
     if (isAnimated) {
-      this._initializeAnimation(colorScale)
+      this._initializeAnimation(scale)
     } else {
-      this._redraw(MAX_YEAR, colorScale)
+      this._redraw(MAX_YEAR, scale)
     }
 
     L.LayerGroup.prototype.initialize.call(this, this._circleMarkers)
@@ -78,37 +81,34 @@ const ExplorerLayer = L.LayerGroup.extend({
     L.LayerGroup.prototype.onRemove.call(this, map)
   },
 
-  _initializeAnimation: function (colorScale) {
+  _initializeAnimation: function (scale) {
     let year = MIN_YEAR
 
+    // Initialize animation loop:
     this._animationLoop = setInterval(() => {
-      console.log(year)
-      this._redraw(year++, colorScale)
+      this._redraw(year++, scale)
       if (year > MAX_YEAR) clearInterval(this._animationLoop)
     }, 1000)
   },
 
-  _redraw: function (year, colorScale) {
+  _redraw: function (year, scale) {
     this._circleMarkers.forEach((marker, i) => {
       const tide = findTide(this._stations[i], year)
-      const color = colorScale(tide)
+      const element = marker.getElement()
+      const categoryClassName = scale(tide)
 
-      console.log(color, tide)
+      // Remove old categories:
+      CATEGORIES.forEach(className => {
+        element.classList.remove(className)
+      })
 
-      if (!this._maxValues[i]) {
-        this._maxValues[i] = tide
-      }
+      // Apply new category:
+      element.classList.add(categoryClassName)
 
-      if (tide > this._maxValues[i]) {
-        this._maxValues[i] = tide
-
-        const el = marker.getElement()
-
-        el.addEventListener('animationend', () => {
-          el.classList.remove('blink')
-        })
-
-        el.classList.add('blink')
+      // Trigger animation for new maxima:
+      if (tide > marker.options.maxValue) {
+        marker.options.maxValue = tide
+        triggerMarkerAnimation(element)
       }
     })
   }
