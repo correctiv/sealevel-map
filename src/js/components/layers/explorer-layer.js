@@ -61,6 +61,7 @@ const ExplorerLayer = L.LayerGroup.extend({
     let colorScale = d3.scaleSqrt().domain(domain).range(COLORS)
 
     this._stations = stations
+    this._maxValues = []
     this._circleMarkers = createMarkers(stations, clickCallback)
 
     if (isAnimated) {
@@ -92,10 +93,23 @@ const ExplorerLayer = L.LayerGroup.extend({
       const tide = findTide(this._stations[i], year)
       const color = colorScale(tide)
 
-      marker.setStyle({
-        color: d3.rgb(color).darker(0.2),
-        fillColor: color
-      })
+      console.log(color, tide)
+
+      if (!this._maxValues[i]) {
+        this._maxValues[i] = tide
+      }
+
+      if (tide > this._maxValues[i]) {
+        this._maxValues[i] = tide
+
+        const el = marker.getElement()
+
+        el.addEventListener('animationend', () => {
+          el.classList.remove('blink')
+        })
+
+        el.classList.add('blink')
+      }
     })
   }
 })
