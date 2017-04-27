@@ -4,6 +4,8 @@ import * as d3 from 'd3'
 const MIN_YEAR = 1985
 const MAX_YEAR = 2014
 
+const DOMAIN = [-100, 100]
+
 const MARKER_OPTIONS = {
   className: 'circle-marker',
   iconSize: 10
@@ -18,18 +20,6 @@ const CATEGORIES = [
 ]
 
 const ANIMATION = 'circle-marker--blink'
-
-const calculateDomain = (stations) => {
-  let min = d3.min(stations, (station) => {
-    return d3.min(station.tideData, (d) => d.tide)
-  })
-
-  let max = d3.max(stations, (station) => {
-    return d3.max(station.tideData, (d) => d.tide)
-  })
-
-  return [min, max]
-}
 
 const findTide = ({ tideData }, year) => {
   let tideItem = tideData.find(item => item.year === year)
@@ -61,8 +51,7 @@ const triggerMarkerAnimation = (element) => {
 const ExplorerLayer = L.LayerGroup.extend({
 
   initialize: function ({ stations, clickCallback, isAnimated }) {
-    let domain = calculateDomain(stations)
-    let scale = d3.scaleQuantize().domain(domain).range(CATEGORIES)
+    let scale = d3.scaleQuantize().domain(DOMAIN).range(CATEGORIES)
 
     this._stations = stations
     this._circleMarkers = createMarkers(stations, clickCallback)
