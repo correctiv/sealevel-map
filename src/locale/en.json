@@ -5,6 +5,10 @@
     "more": "read more",
     "logo_alt": "a project by CORRECTIV"
   },
+  "scrolly": {
+    "title": "Rising Seas",
+    "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim consectetur adipisicing elit sed do."
+  },
   "explorer": {
     "title": "Explore",
     "choose_continent": "Choose a continent",

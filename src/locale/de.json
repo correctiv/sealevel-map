@@ -5,6 +5,10 @@
     "more": "mehr erfahren",
     "logo_alt": "ein Projekt von CORRECTIV"
   },
+  "scrolly": {
+    "title": "Steigende Meere",
+    "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim consectetur adipisicing elit sed do."
+  },
   "explorer": {
     "title": "Explorer",
     "choose_continent": "Wähle einen Kontinent",

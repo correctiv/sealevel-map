@@ -5,11 +5,18 @@
     locale={locale}
   />
 
-  <article
-    class="scrolly__article"
-    id="article"
-    ref="article"
-  />
+  <article class="scrolly__article" id="article">
+    <header class="scrolly__header">
+      <h1 class="scrolly__title">
+        { i18n.t('scrolly.title') }
+      </h1>
+      <p class="scrolly__lead">
+        { i18n.t('scrolly.lead') }
+      </p>
+    </header>
+
+    <div ref="container"></div>
+  </article>
 
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
@@ -35,11 +42,12 @@
     }
 
     const initContent = (language) => {
-      this.refs.article.innerHTML = content
-      this.steps = getSteps(this.refs.article)
+      this.refs.container.innerHTML = content
+      this.steps = getSteps(this.refs.container)
 
       _.defer(gumshoe.init, {
         container: window,
+        activeClass: 'scrolly__nav__link--active',
         callback: (event) => {
           const active = event && event.target.id
           if (active && active !== this.state.activeStep) {
