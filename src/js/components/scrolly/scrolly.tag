@@ -21,7 +21,7 @@
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
       <li each={ steps }>
-        <a href="#{ id }">{ title }</a>
+        <a class="scrolly__nav__link" href="#{ id }">{ title }</a>
       </li>
     </ul>
   </nav>

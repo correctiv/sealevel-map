@@ -1,0 +1,33 @@
+$bullet-width: 20px;
+$bullet-height: 5px;
+
+.scrolly__nav {
+  z-index: 5;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: inline;
+    display: block;
+  }
+}
+
+.scrolly__nav__link {
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  height: $bullet-height;
+  width: $bullet-width;
+  margin-bottom: $bullet-height;
+  background: $black;
+}
+
+.scrolly__nav__link--active,
+.scrolly__nav__link:hover,
+.scrolly__nav__link:focus,
+.scrolly__nav__link:active {
+  background: $purple;
+}

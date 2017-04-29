@@ -1,8 +1,9 @@
 .scrolly__article {
   position: relative;
   z-index: 10;
-  background: white;
+  background: $white;
   margin-left: 60%;
+  padding: 30px;
 }
 
 .scrolly__nav {
@@ -10,5 +11,4 @@
   left: 0;
   top: 0;
   z-index: 10;
-  background: red;
 }
