@@ -13,11 +13,13 @@ const MARKER_OPTIONS = {
 }
 
 const CATEGORIES = [
+  'circle-marker--lowest',
   'circle-marker--lower',
   'circle-marker--low',
   'circle-marker--neutral',
   'circle-marker--high',
-  'circle-marker--higher'
+  'circle-marker--higher',
+  'circle-marker--highest'
 ]
 
 const ANIMATION = 'circle-marker--blink'
