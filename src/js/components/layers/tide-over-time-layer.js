@@ -4,7 +4,7 @@ import LeafletD3Layer from './leaflet-d3-layer.js'
 const MIN_YEAR = 1985
 const MAX_YEAR = 2014
 const ANIMATION_INTERVAL = 1000
-const MAX_HEIGHT = 200
+const MAX_HEIGHT = 150
 
 var _stations, _selection, _projection, _animationLoop
 

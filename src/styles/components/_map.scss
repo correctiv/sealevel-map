@@ -1,3 +1,6 @@
+$color-negative: #008080;
+$color-positive: #8b0000;
+
 .sealevel__map {
   top:0;
   left:0;
@@ -32,41 +35,13 @@
 }
 
 .negative {
-  fill: blue;
-  fill-opacity: 0.4;
+  fill: $color-negative;
+  fill-opacity: 0.5;
 }
 
 .positive {
-  fill: red;
-  fill-opacity: 0.4;
-}
-
-
-.slider {
-  z-index: 5;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  color: lightgrey;
-  font-weight: bold;
-  font-size: 24px;
-  bottom: 0;
-  background: white;
-}
-
-.overlay {
-  z-index: 5;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  color: lightgrey;
-  font-weight: bold;
-  font-size: 56px;
-  top: 0;
-}
-
-#sealevel-range-input {
-  width: 75%;
+  fill: $color-positive;
+  fill-opacity: 0.5;
 }
 
 .sealevel__map__infobox {
