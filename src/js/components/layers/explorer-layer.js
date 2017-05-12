@@ -1,5 +1,6 @@
 import L from 'leaflet'
 import * as d3 from 'd3'
+import counter from 'counter'
 
 const MIN_YEAR = 1985
 const MAX_YEAR = 2014
@@ -51,22 +52,30 @@ const triggerMarkerAnimation = (element) => {
 const ExplorerLayer = L.LayerGroup.extend({
 
   initialize: function ({ stations, clickCallback, isAnimated }) {
-    let scale = d3.scaleQuantize().domain(DOMAIN).range(CATEGORIES)
-
     this._stations = stations
     this._circleMarkers = createMarkers(stations, clickCallback)
+    this._isAnimated = isAnimated
 
-    if (isAnimated) {
+    L.LayerGroup.prototype.initialize.call(this, this._circleMarkers)
+  },
+
+  onAdd: function (map) {
+    let scale = d3.scaleQuantize().domain(DOMAIN).range(CATEGORIES)
+    this._counter = counter({ position: 'topleft' })
+    this._counter.addTo(map)
+
+    if (this._isAnimated) {
       this._initializeAnimation(scale)
     } else {
       this._redraw(MAX_YEAR, scale)
     }
 
-    L.LayerGroup.prototype.initialize.call(this, this._circleMarkers)
+    L.LayerGroup.prototype.onAdd.call(this, map)
   },
 
   onRemove: function (map) {
     clearInterval(this._animationLoop)
+    this._counter.remove()
     L.LayerGroup.prototype.onRemove.call(this, map)
   },
 
@@ -81,6 +90,8 @@ const ExplorerLayer = L.LayerGroup.extend({
   },
 
   _redraw: function (year, scale) {
+    this._counter.update(year)
+
     this._circleMarkers.forEach((marker, i) => {
       const tide = findTide(this._stations[i], year)
       const element = marker.getElement()
