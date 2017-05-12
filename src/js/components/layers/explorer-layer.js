@@ -1,6 +1,6 @@
 import L from 'leaflet'
 import * as d3 from 'd3'
-import counter from 'counter'
+import counter from './counter'
 
 const MIN_YEAR = 1985
 const MAX_YEAR = 2014
