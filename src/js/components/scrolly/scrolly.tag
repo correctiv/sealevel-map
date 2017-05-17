@@ -50,11 +50,18 @@
       })
     }
 
+    // Make steps available in template:
+    this.steps = STEPS
+
+    // Set initial state:
     this.state = {
       activeStep: null
     }
 
-    this.steps = STEPS
+    // Subscribe to global redux state:
+    this.subscribe(({ navigation }) => {
+      this.update({ state: navigation })
+    })
 
     this.on('route', (language, anchor) => {
       this.i18n.setLocale(language)
@@ -63,11 +70,6 @@
       if (anchor !== this.state.activeStep) {
         this.store.dispatch(setStep(anchor))
       }
-
-      // Subscribe to global redux state:
-      this.subscribe(({ navigation }) => {
-        this.update({ state: navigation })
-      })
     })
 
   </script>

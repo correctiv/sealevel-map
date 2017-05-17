@@ -4,11 +4,26 @@
     const addContentSection = (stepName) => {
       const section = document.createElement('section')
       section.setAttribute('id', stepName)
-      section.innerHTML = require(`../../../locale/de/${stepName}.md`)
+      section.innerHTML = require(`../../../locale/${this.locale}/${stepName}.md`)
       this.root.appendChild(section)
     }
 
-    this.opts.steps.forEach(addContentSection)
+    const updateContent = () => {
+      this.opts.steps.forEach(addContentSection)
+    }
+
+    // Only update when the language has changed
+    this.shouldUpdate = () => {
+      if (this.locale !== this.i18n.getLocale()) {
+        return true
+      }
+    }
+
+    this.on('update', () => {
+      this.locale = this.i18n.getLocale()
+      updateContent()
+    })
+
   </script>
 
 </sealevel-scrolly-content>
