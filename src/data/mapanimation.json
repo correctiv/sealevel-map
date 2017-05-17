@@ -2,7 +2,7 @@
   "stations": [
     {
       "ID": 1,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 48.383,
       "location": "Brest",
@@ -136,7 +136,7 @@
     },
     {
       "ID": 3,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 51.446,
       "location": "Sheerness",
@@ -259,7 +259,7 @@
           "year": 2013
         },
         {
-          "tide": null,
+          "tide": 27.5,
           "year": 2014
         },
         {
@@ -270,7 +270,7 @@
     },
     {
       "ID": 5,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 53.314,
       "location": "Holyhead",
@@ -404,7 +404,7 @@
     },
     {
       "ID": 7,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DEU",
       "latitude": 53.867,
       "location": "Cuxhaven 2",
@@ -518,7 +518,7 @@
     },
     {
       "ID": 8,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DEU",
       "latitude": 53.899,
       "location": "Wismar 2",
@@ -652,7 +652,7 @@
     },
     {
       "ID": 9,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 51.918,
       "location": "Maassluis",
@@ -786,7 +786,7 @@
     },
     {
       "ID": 10,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 37.807,
       "location": "San Francisco",
@@ -920,7 +920,7 @@
     },
     {
       "ID": 11,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DEU",
       "latitude": 54.17,
       "location": "Warnemunde 2",
@@ -1054,7 +1054,7 @@
     },
     {
       "ID": 12,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 40.7,
       "location": "New York (The Battery)",
@@ -1188,7 +1188,7 @@
     },
     {
       "ID": 14,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 60.154,
       "location": "Helsinki",
@@ -1322,7 +1322,7 @@
     },
     {
       "ID": 20,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 51.442,
       "location": "Vlissingen",
@@ -1456,7 +1456,7 @@
     },
     {
       "ID": 22,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 51.978,
       "location": "Hoek Van Holland",
@@ -1590,7 +1590,7 @@
     },
     {
       "ID": 23,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 52.964,
       "location": "Den Helder",
@@ -1724,7 +1724,7 @@
     },
     {
       "ID": 24,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 53.326,
       "location": "Delfzijl",
@@ -1858,7 +1858,7 @@
     },
     {
       "ID": 25,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 53.176,
       "location": "Harlingen",
@@ -1992,7 +1992,7 @@
     },
     {
       "ID": 32,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 52.462,
       "location": "Ijmuiden",
@@ -2126,7 +2126,7 @@
     },
     {
       "ID": 33,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 59.678,
       "location": "Oscarsborg",
@@ -2260,7 +2260,7 @@
     },
     {
       "ID": 41,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GEO",
       "latitude": 42.167,
       "location": "Poti",
@@ -2518,7 +2518,7 @@
     },
     {
       "ID": 45,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 68.213,
       "location": "Kabelvag",
@@ -2652,7 +2652,7 @@
     },
     {
       "ID": 47,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 58.974,
       "location": "Stavanger",
@@ -2786,7 +2786,7 @@
     },
     {
       "ID": 51,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GEO",
       "latitude": 41.633,
       "location": "Batumi",
@@ -2921,19 +2921,19 @@
           "year": 2000
         },
         {
-          "tide": null,
+          "tide": 159.3333333333,
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": 159.3333333333,
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": 97.6666666667,
           "year": 2002
         },
         {
-          "tide": null,
+          "tide": 97.6666666667,
           "year": 2002
         },
         {
@@ -3044,7 +3044,7 @@
     },
     {
       "ID": 57,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 63.082,
       "location": "Vaasa / Vasa",
@@ -3178,7 +3178,7 @@
     },
     {
       "ID": 58,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 60.398,
       "location": "Bergen",
@@ -3312,7 +3312,7 @@
     },
     {
       "ID": 61,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 43.279,
       "location": "Marseille",
@@ -3446,7 +3446,7 @@
     },
     {
       "ID": 62,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 59.909,
       "location": "Oslo",
@@ -3580,7 +3580,7 @@
     },
     {
       "ID": 69,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 57.366,
       "location": "Olands Norra Udde",
@@ -3714,7 +3714,7 @@
     },
     {
       "ID": 70,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 56.105,
       "location": "Kungsholmsfort",
@@ -3848,7 +3848,7 @@
     },
     {
       "ID": 71,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 59.823,
       "location": "Hanko / Hango",
@@ -3923,11 +3923,11 @@
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": -36.6666666667,
           "year": 2002
         },
         {
-          "tide": null,
+          "tide": -31.3333333333,
           "year": 2003
         },
         {
@@ -3982,7 +3982,7 @@
     },
     {
       "ID": 76,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 56.147,
       "location": "Aarhus",
@@ -4104,7 +4104,7 @@
     },
     {
       "ID": 78,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 59.324,
       "location": "Stockholm",
@@ -4238,7 +4238,7 @@
     },
     {
       "ID": 79,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 65.04,
       "location": "Oulu / Uleaborg",
@@ -4372,7 +4372,7 @@
     },
     {
       "ID": 80,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 55.461,
       "location": "Esbjerg",
@@ -4494,7 +4494,7 @@
     },
     {
       "ID": 81,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 55.561,
       "location": "Fredericia",
@@ -4616,7 +4616,7 @@
     },
     {
       "ID": 82,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 55.705,
       "location": "Kobenhavn",
@@ -4738,7 +4738,7 @@
     },
     {
       "ID": 88,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 63.986,
       "location": "Ratan",
@@ -4872,7 +4872,7 @@
     },
     {
       "ID": 89,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 57.596,
       "location": "Hirtshals",
@@ -4994,7 +4994,7 @@
     },
     {
       "ID": 91,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 57.436,
       "location": "Frederikshavn",
@@ -5116,7 +5116,7 @@
     },
     {
       "ID": 95,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 55.007,
       "location": "North Shields",
@@ -5250,7 +5250,7 @@
     },
     {
       "ID": 96,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 44.667,
       "location": "Halifax",
@@ -5376,7 +5376,7 @@
     },
     {
       "ID": 98,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 55.288,
       "location": "Slipshavn",
@@ -5498,7 +5498,7 @@
     },
     {
       "ID": 111,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -32.066,
       "location": "Fremantle",
@@ -5632,7 +5632,7 @@
     },
     {
       "ID": 112,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 30.672,
       "location": "Fernandina Beach",
@@ -5766,7 +5766,7 @@
     },
     {
       "ID": 113,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 55.332,
       "location": "Korsor",
@@ -5888,7 +5888,7 @@
     },
     {
       "ID": 118,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "LTU",
       "latitude": 55.7,
       "location": "Klaipeda",
@@ -6006,7 +6006,7 @@
     },
     {
       "ID": 119,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 56.091,
       "location": "Hornbaek",
@@ -6128,7 +6128,7 @@
     },
     {
       "ID": 120,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 54.573,
       "location": "Gedser",
@@ -6250,7 +6250,7 @@
     },
     {
       "ID": 126,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.333,
       "location": "Trois-Rivieres",
@@ -6384,7 +6384,7 @@
     },
     {
       "ID": 127,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 47.602,
       "location": "Seattle",
@@ -6518,7 +6518,7 @@
     },
     {
       "ID": 130,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.16,
       "location": "Aburatsubo",
@@ -6652,7 +6652,7 @@
     },
     {
       "ID": 131,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 38.297,
       "location": "Ayukawa",
@@ -6774,7 +6774,7 @@
     },
     {
       "ID": 132,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 37.406,
       "location": "Wajima",
@@ -6908,7 +6908,7 @@
     },
     {
       "ID": 133,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.429,
       "location": "Hosojima",
@@ -7042,7 +7042,7 @@
     },
     {
       "ID": 134,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.476,
       "location": "Kushimoto",
@@ -7176,7 +7176,7 @@
     },
     {
       "ID": 135,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 39.933,
       "location": "Philadelphia (Pier 9N)",
@@ -7310,7 +7310,7 @@
     },
     {
       "ID": 136,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -45.879,
       "location": "Dunedin Ii",
@@ -7357,7 +7357,7 @@
           "year": 1994
         },
         {
-          "tide": null,
+          "tide": 46.5,
           "year": 1995
         },
         {
@@ -7444,7 +7444,7 @@
     },
     {
       "ID": 137,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.267,
       "location": "Port-Saint-Francois",
@@ -7507,7 +7507,7 @@
           "year": 1998
         },
         {
-          "tide": null,
+          "tide": -260.0,
           "year": 1999
         },
         {
@@ -7578,7 +7578,7 @@
     },
     {
       "ID": 144,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.5,
       "location": "Batiscan",
@@ -7712,7 +7712,7 @@
     },
     {
       "ID": 145,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "PHL",
       "latitude": 14.583,
       "location": "Manila, S. Harbor",
@@ -7846,7 +7846,7 @@
     },
     {
       "ID": 148,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 39.267,
       "location": "Baltimore",
@@ -7980,7 +7980,7 @@
     },
     {
       "ID": 154,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ITA",
       "latitude": 45.647,
       "location": "Trieste",
@@ -8114,7 +8114,7 @@
     },
     {
       "ID": 155,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 21.307,
       "location": "Honolulu",
@@ -8248,7 +8248,7 @@
     },
     {
       "ID": 158,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 32.713,
       "location": "San Diego (Quarantine Station)",
@@ -8382,7 +8382,7 @@
     },
     {
       "ID": 161,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 29.31,
       "location": "Galveston Ii, Pier 21, Tx",
@@ -8516,7 +8516,7 @@
     },
     {
       "ID": 163,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "PAN",
       "latitude": 8.967,
       "location": "Balboa",
@@ -8650,7 +8650,7 @@
     },
     {
       "ID": 165,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 49.15,
       "location": "Tofino",
@@ -8784,7 +8784,7 @@
     },
     {
       "ID": 166,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 48.417,
       "location": "Victoria",
@@ -8918,7 +8918,7 @@
     },
     {
       "ID": 167,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 54.317,
       "location": "Prince Rupert",
@@ -9052,7 +9052,7 @@
     },
     {
       "ID": 172,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 61.594,
       "location": "Mantyluoto",
@@ -9186,7 +9186,7 @@
     },
     {
       "ID": 173,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.833,
       "location": "Quebec (Lauzon)",
@@ -9308,7 +9308,7 @@
     },
     {
       "ID": 174,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "THA",
       "latitude": 11.8,
       "location": "Ko Lak",
@@ -9442,7 +9442,7 @@
     },
     {
       "ID": 175,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 49.283,
       "location": "Vancouver",
@@ -9576,7 +9576,7 @@
     },
     {
       "ID": 179,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 58.354,
       "location": "Smogen",
@@ -9710,7 +9710,7 @@
     },
     {
       "ID": 180,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 39.355,
       "location": "Atlantic City",
@@ -9844,7 +9844,7 @@
     },
     {
       "ID": 183,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 43.657,
       "location": "Portland (Maine)",
@@ -9978,7 +9978,7 @@
     },
     {
       "ID": 188,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 24.555,
       "location": "Key West",
@@ -10112,7 +10112,7 @@
     },
     {
       "ID": 189,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -20.318,
       "location": "Port Hedland",
@@ -10246,7 +10246,7 @@
     },
     {
       "ID": 192,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.7,
       "location": "Neuville",
@@ -10380,7 +10380,7 @@
     },
     {
       "ID": 193,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 49.333,
       "location": "Point Atkinson",
@@ -10514,7 +10514,7 @@
     },
     {
       "ID": 194,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 63.709,
       "location": "Pietarsaari / Jakobstad",
@@ -10648,7 +10648,7 @@
     },
     {
       "ID": 195,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 45.267,
       "location": "Saint John, N.B.",
@@ -10782,7 +10782,7 @@
     },
     {
       "ID": 196,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -33.855,
       "location": "Sydney, Fort Denison 2",
@@ -10916,7 +10916,7 @@
     },
     {
       "ID": 201,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.567,
       "location": "Deschaillons",
@@ -11050,7 +11050,7 @@
     },
     {
       "ID": 202,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 50.103,
       "location": "Newlyn",
@@ -11184,7 +11184,7 @@
     },
     {
       "ID": 203,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 64.916,
       "location": "Furuogrund",
@@ -11318,7 +11318,7 @@
     },
     {
       "ID": 205,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 13.1,
       "location": "Chennai / Madras",
@@ -11440,7 +11440,7 @@
     },
     {
       "ID": 213,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -46.598,
       "location": "Bluff (Southland Harbour)",
@@ -11491,11 +11491,11 @@
           "year": 1995
         },
         {
-          "tide": null,
+          "tide": 19.0,
           "year": 1996
         },
         {
-          "tide": null,
+          "tide": 15.0,
           "year": 1997
         },
         {
@@ -11574,7 +11574,7 @@
     },
     {
       "ID": 215,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 44.1,
       "location": "Tuapse",
@@ -11832,7 +11832,7 @@
     },
     {
       "ID": 216,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -33.178,
       "location": "Port Pirie",
@@ -11966,7 +11966,7 @@
     },
     {
       "ID": 221,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -41.284,
       "location": "Wellington Harbour",
@@ -12100,7 +12100,7 @@
     },
     {
       "ID": 224,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 38.782,
       "location": "Lewes (Breakwater Harbor)",
@@ -12234,7 +12234,7 @@
     },
     {
       "ID": 225,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 55.332,
       "location": "Ketchikan",
@@ -12368,7 +12368,7 @@
     },
     {
       "ID": 229,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 65.673,
       "location": "Kemi",
@@ -12502,7 +12502,7 @@
     },
     {
       "ID": 230,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -34.716,
       "location": "Port Lincoln",
@@ -12636,7 +12636,7 @@
     },
     {
       "ID": 234,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 32.782,
       "location": "Charleston I",
@@ -12770,7 +12770,7 @@
     },
     {
       "ID": 235,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 42.353,
       "location": "Boston",
@@ -12904,7 +12904,7 @@
     },
     {
       "ID": 236,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NLD",
       "latitude": 53.363,
       "location": "West-Terschelling",
@@ -13038,7 +13038,7 @@
     },
     {
       "ID": 239,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 60.428,
       "location": "Turku / Abo",
@@ -13172,7 +13172,7 @@
     },
     {
       "ID": 240,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 64.666,
       "location": "Raahe / Brahestad",
@@ -13306,7 +13306,7 @@
     },
     {
       "ID": 245,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 33.72,
       "location": "Los Angeles",
@@ -13440,7 +13440,7 @@
     },
     {
       "ID": 246,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 30.403,
       "location": "Pensacola",
@@ -13574,7 +13574,7 @@
     },
     {
       "ID": 248,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "MYS",
       "latitude": 1.462,
       "location": "Johor Bahru",
@@ -13700,7 +13700,7 @@
     },
     {
       "ID": 249,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ALA",
       "latitude": 60.032,
       "location": "Foglo / Degerby",
@@ -13834,7 +13834,7 @@
     },
     {
       "ID": 255,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 51.114,
       "location": "Dover",
@@ -13968,7 +13968,7 @@
     },
     {
       "ID": 256,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 32.867,
       "location": "La Jolla (Scripps Pier)",
@@ -14102,7 +14102,7 @@
     },
     {
       "ID": 258,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "PRT",
       "latitude": 37.736,
       "location": "Ponta Delgada",
@@ -14236,7 +14236,7 @@
     },
     {
       "ID": 265,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 46.207,
       "location": "Astoria (Tongue Point)",
@@ -14370,7 +14370,7 @@
     },
     {
       "ID": 266,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 60.12,
       "location": "Seward",
@@ -14504,7 +14504,7 @@
     },
     {
       "ID": 285,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 62.344,
       "location": "Kaskinen / Kasko",
@@ -14638,7 +14638,7 @@
     },
     {
       "ID": 286,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 53.63,
       "location": "Immingham",
@@ -14768,7 +14768,7 @@
     },
     {
       "ID": 299,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 36.947,
       "location": "Sewells Point, Hampton Roads",
@@ -14902,7 +14902,7 @@
     },
     {
       "ID": 300,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 19.73,
       "location": "Hilo, Hawaii Island",
@@ -15036,7 +15036,7 @@
     },
     {
       "ID": 302,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 58.006,
       "location": "Tregde",
@@ -15170,7 +15170,7 @@
     },
     {
       "ID": 311,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 38.983,
       "location": "Annapolis (Naval Academy)",
@@ -15304,7 +15304,7 @@
     },
     {
       "ID": 312,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 68.428,
       "location": "Narvik",
@@ -15438,7 +15438,7 @@
     },
     {
       "ID": 313,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 63.425,
       "location": "Heimsjo",
@@ -15572,7 +15572,7 @@
     },
     {
       "ID": 314,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 58.208,
       "location": "Stornoway",
@@ -15706,7 +15706,7 @@
     },
     {
       "ID": 315,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 60.563,
       "location": "Hamina",
@@ -15840,7 +15840,7 @@
     },
     {
       "ID": 330,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 55.522,
       "location": "Klagshamn",
@@ -15974,7 +15974,7 @@
     },
     {
       "ID": 332,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 44.903,
       "location": "Eastport",
@@ -16108,7 +16108,7 @@
     },
     {
       "ID": 350,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 50.802,
       "location": "Portsmouth",
@@ -16242,7 +16242,7 @@
     },
     {
       "ID": 351,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.505,
       "location": "Newport",
@@ -16376,7 +16376,7 @@
     },
     {
       "ID": 352,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "HRV",
       "latitude": 43.507,
       "location": "Split - Gradska Luka",
@@ -16506,7 +16506,7 @@
     },
     {
       "ID": 353,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "HRV",
       "latitude": 45.3,
       "location": "Bakar",
@@ -16632,7 +16632,7 @@
     },
     {
       "ID": 359,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.919,
       "location": "Mera",
@@ -16766,7 +16766,7 @@
     },
     {
       "ID": 360,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 38.873,
       "location": "Washington Dc",
@@ -16900,7 +16900,7 @@
     },
     {
       "ID": 361,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 57.144,
       "location": "Aberdeen I",
@@ -17034,7 +17034,7 @@
     },
     {
       "ID": 366,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 40.467,
       "location": "Sandy Hook",
@@ -17168,7 +17168,7 @@
     },
     {
       "ID": 367,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.523,
       "location": "Woods Hole (Ocean. Inst.)",
@@ -17302,7 +17302,7 @@
     },
     {
       "ID": 368,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "BMU",
       "latitude": 32.373,
       "location": "St. Georges / Esso Pier (Bermuda)",
@@ -17436,7 +17436,7 @@
     },
     {
       "ID": 369,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 22.55,
       "location": "Calcutta (Garden Reach)",
@@ -17558,7 +17558,7 @@
     },
     {
       "ID": 373,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 40.633,
       "location": "Thessaloniki",
@@ -17692,7 +17692,7 @@
     },
     {
       "ID": 374,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 37.937,
       "location": "Piraievs",
@@ -17826,7 +17826,7 @@
     },
     {
       "ID": 375,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 40.935,
       "location": "Kavalla",
@@ -17940,7 +17940,7 @@
     },
     {
       "ID": 376,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FIN",
       "latitude": 61.134,
       "location": "Rauma / Raumo",
@@ -18074,7 +18074,7 @@
     },
     {
       "ID": 377,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 34.008,
       "location": "Santa Monica (Municipal Pier)",
@@ -18208,7 +18208,7 @@
     },
     {
       "ID": 378,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.745,
       "location": "Crescent City",
@@ -18342,7 +18342,7 @@
     },
     {
       "ID": 384,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 48.547,
       "location": "Friday Harbor (Ocean. Labs.)",
@@ -18476,7 +18476,7 @@
     },
     {
       "ID": 385,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 48.367,
       "location": "Neah Bay",
@@ -18610,7 +18610,7 @@
     },
     {
       "ID": 392,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 47.567,
       "location": "Port Aux Basques",
@@ -18744,7 +18744,7 @@
     },
     {
       "ID": 393,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 47.567,
       "location": "St. John'S, Nfld.",
@@ -18878,7 +18878,7 @@
     },
     {
       "ID": 394,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "PHL",
       "latitude": 10.3,
       "location": "Cebu",
@@ -19012,7 +19012,7 @@
     },
     {
       "ID": 395,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 32.033,
       "location": "Fort Pulaski",
@@ -19146,7 +19146,7 @@
     },
     {
       "ID": 396,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 34.227,
       "location": "Wilmington",
@@ -19280,7 +19280,7 @@
     },
     {
       "ID": 397,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DEU",
       "latitude": 54.511,
       "location": "Sassnitz",
@@ -19315,7 +19315,7 @@
           "year": 1991
         },
         {
-          "tide": null,
+          "tide": -53.5,
           "year": 1992
         },
         {
@@ -19414,7 +19414,7 @@
     },
     {
       "ID": 405,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 58.298,
       "location": "Juneau",
@@ -19548,7 +19548,7 @@
     },
     {
       "ID": 407,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.017,
       "location": "Uchiura",
@@ -19682,7 +19682,7 @@
     },
     {
       "ID": 408,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 38.372,
       "location": "Khios",
@@ -19816,7 +19816,7 @@
     },
     {
       "ID": 409,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 37.951,
       "location": "Posidhonia",
@@ -19875,7 +19875,7 @@
           "year": 1997
         },
         {
-          "tide": null,
+          "tide": -59.0,
           "year": 1998
         },
         {
@@ -19950,7 +19950,7 @@
     },
     {
       "ID": 410,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 38.959,
       "location": "Preveza",
@@ -20084,7 +20084,7 @@
     },
     {
       "ID": 411,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 37.024,
       "location": "Kalamai",
@@ -20218,7 +20218,7 @@
     },
     {
       "ID": 412,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 38.317,
       "location": "Solomon'S Island (Biol. Lab.)",
@@ -20352,7 +20352,7 @@
     },
     {
       "ID": 413,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "BEL",
       "latitude": 51.233,
       "location": "Oostende",
@@ -20486,7 +20486,7 @@
     },
     {
       "ID": 414,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 17.683,
       "location": "Vishakhapatnam",
@@ -20608,7 +20608,7 @@
     },
     {
       "ID": 425,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 69.326,
       "location": "Andenes",
@@ -20742,7 +20742,7 @@
     },
     {
       "ID": 426,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 57.052,
       "location": "Sitka",
@@ -20876,7 +20876,7 @@
     },
     {
       "ID": 427,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.233,
       "location": "Charlottetown",
@@ -21010,7 +21010,7 @@
     },
     {
       "ID": 428,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 29.135,
       "location": "Cedar Key Ii",
@@ -21144,7 +21144,7 @@
     },
     {
       "ID": 429,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.36,
       "location": "New London",
@@ -21278,7 +21278,7 @@
     },
     {
       "ID": 430,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.807,
       "location": "Providence (State Pier)",
@@ -21412,7 +21412,7 @@
     },
     {
       "ID": 431,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "URY",
       "latitude": -34.9,
       "location": "Montevideo (Punta Lobos)",
@@ -21546,7 +21546,7 @@
     },
     {
       "ID": 437,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 37.772,
       "location": "Alameda (Naval Air Station)",
@@ -21680,7 +21680,7 @@
     },
     {
       "ID": 438,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 9.967,
       "location": "Cochin (Willingdon Is.)",
@@ -21802,7 +21802,7 @@
     },
     {
       "ID": 444,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "THA",
       "latitude": 13.55,
       "location": "Fort Phrachula Chomklao (Pom Phrachun)",
@@ -21936,7 +21936,7 @@
     },
     {
       "ID": 445,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 59.548,
       "location": "Yakutat",
@@ -22070,7 +22070,7 @@
     },
     {
       "ID": 446,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "THA",
       "latitude": 7.833,
       "location": "Ko Taphao Noi",
@@ -22204,7 +22204,7 @@
     },
     {
       "ID": 447,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 58.767,
       "location": "Churchill",
@@ -22338,7 +22338,7 @@
     },
     {
       "ID": 448,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -34.78,
       "location": "Port Adelaide (Outer Harbor)",
@@ -22472,7 +22472,7 @@
     },
     {
       "ID": 453,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 49.482,
       "location": "Le Havre",
@@ -22606,7 +22606,7 @@
     },
     {
       "ID": 467,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 49.651,
       "location": "Cherbourg",
@@ -22740,7 +22740,7 @@
     },
     {
       "ID": 468,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 51.048,
       "location": "Dunkerque",
@@ -22874,7 +22874,7 @@
     },
     {
       "ID": 469,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 43.395,
       "location": "St Jean De Luz (Socoa)",
@@ -22945,15 +22945,15 @@
           "year": 2000
         },
         {
-          "tide": null,
+          "tide": 41.25,
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": 35.5,
           "year": 2002
         },
         {
-          "tide": null,
+          "tide": 29.75,
           "year": 2003
         },
         {
@@ -23004,7 +23004,7 @@
     },
     {
       "ID": 470,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "BEL",
       "latitude": 51.35,
       "location": "Zeebrugge",
@@ -23138,7 +23138,7 @@
     },
     {
       "ID": 471,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 50.728,
       "location": "Boulogne",
@@ -23272,7 +23272,7 @@
     },
     {
       "ID": 474,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 49.929,
       "location": "Dieppe",
@@ -23406,7 +23406,7 @@
     },
     {
       "ID": 483,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 42.238,
       "location": "Vigo",
@@ -23540,7 +23540,7 @@
     },
     {
       "ID": 484,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 43.369,
       "location": "La Coruna I",
@@ -23674,7 +23674,7 @@
     },
     {
       "ID": 485,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 43.461,
       "location": "Santander I",
@@ -23808,7 +23808,7 @@
     },
     {
       "ID": 486,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 61.934,
       "location": "Maloy",
@@ -23942,7 +23942,7 @@
     },
     {
       "ID": 487,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 51.863,
       "location": "Adak Sweeper Cove",
@@ -24076,7 +24076,7 @@
     },
     {
       "ID": 488,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 36.009,
       "location": "Tarifa",
@@ -24210,7 +24210,7 @@
     },
     {
       "ID": 489,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "BEL",
       "latitude": 51.15,
       "location": "Nieuwpoort",
@@ -24344,7 +24344,7 @@
     },
     {
       "ID": 495,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 59.45,
       "location": "Skagway",
@@ -24478,7 +24478,7 @@
     },
     {
       "ID": 496,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 36.713,
       "location": "Malaga",
@@ -24604,7 +24604,7 @@
     },
     {
       "ID": 497,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 26.06,
       "location": "Port Isabel",
@@ -24738,7 +24738,7 @@
     },
     {
       "ID": 498,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 35.892,
       "location": "Ceuta",
@@ -24872,7 +24872,7 @@
     },
     {
       "ID": 499,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "CHL",
       "latitude": -33.027,
       "location": "Valparaiso",
@@ -25006,7 +25006,7 @@
     },
     {
       "ID": 508,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 35.177,
       "location": "Port San Luis",
@@ -25140,7 +25140,7 @@
     },
     {
       "ID": 509,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 62.469,
       "location": "Alesund",
@@ -25274,7 +25274,7 @@
     },
     {
       "ID": 510,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "CHL",
       "latitude": -23.653,
       "location": "Antofagasta 2",
@@ -25408,7 +25408,7 @@
     },
     {
       "ID": 513,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "MHL",
       "latitude": 8.732,
       "location": "Kwajalein",
@@ -25542,7 +25542,7 @@
     },
     {
       "ID": 518,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 42.976,
       "location": "Kushiro",
@@ -25676,7 +25676,7 @@
     },
     {
       "ID": 519,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.048,
       "location": "Montauk",
@@ -25810,7 +25810,7 @@
     },
     {
       "ID": 520,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 27.76,
       "location": "St. Petersburg",
@@ -25944,7 +25944,7 @@
     },
     {
       "ID": 521,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 20.895,
       "location": "Kahului Harbor, Maui Island",
@@ -26078,7 +26078,7 @@
     },
     {
       "ID": 522,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "PHL",
       "latitude": 13.15,
       "location": "Legaspi, Albay",
@@ -26212,8 +26212,8 @@
     },
     {
       "ID": 523,
-      "continent": "Oceania",
-      "country": "UMI",
+      "continent": "north-america",
+      "country": "USA",
       "latitude": 28.212,
       "location": "Midway Island",
       "longitude": -177.36,
@@ -26223,20 +26223,8 @@
           "year": 1985
         },
         {
-          "tide": 0.0,
-          "year": 1985
-        },
-        {
           "tide": 15.0,
           "year": 1986
-        },
-        {
-          "tide": 15.0,
-          "year": 1986
-        },
-        {
-          "tide": 24.0,
-          "year": 1987
         },
         {
           "tide": 24.0,
@@ -26247,20 +26235,8 @@
           "year": 1988
         },
         {
-          "tide": 28.0,
-          "year": 1988
-        },
-        {
           "tide": 21.0,
           "year": 1989
-        },
-        {
-          "tide": 21.0,
-          "year": 1989
-        },
-        {
-          "tide": 26.0,
-          "year": 1990
         },
         {
           "tide": 26.0,
@@ -26271,20 +26247,8 @@
           "year": 1991
         },
         {
-          "tide": 28.0,
-          "year": 1991
-        },
-        {
           "tide": 29.0,
           "year": 1992
-        },
-        {
-          "tide": 29.0,
-          "year": 1992
-        },
-        {
-          "tide": 28.0,
-          "year": 1993
         },
         {
           "tide": 28.0,
@@ -26295,20 +26259,8 @@
           "year": 1994
         },
         {
-          "tide": 32.0,
-          "year": 1994
-        },
-        {
           "tide": 38.0,
           "year": 1995
-        },
-        {
-          "tide": 38.0,
-          "year": 1995
-        },
-        {
-          "tide": 35.0,
-          "year": 1996
         },
         {
           "tide": 35.0,
@@ -26319,20 +26271,8 @@
           "year": 1997
         },
         {
-          "tide": 20.0,
-          "year": 1997
-        },
-        {
           "tide": 37.0,
           "year": 1998
-        },
-        {
-          "tide": 37.0,
-          "year": 1998
-        },
-        {
-          "tide": 41.0,
-          "year": 1999
         },
         {
           "tide": 41.0,
@@ -26343,20 +26283,8 @@
           "year": 2000
         },
         {
-          "tide": 49.0,
-          "year": 2000
-        },
-        {
           "tide": 60.0,
           "year": 2001
-        },
-        {
-          "tide": 60.0,
-          "year": 2001
-        },
-        {
-          "tide": 88.0,
-          "year": 2002
         },
         {
           "tide": 88.0,
@@ -26367,20 +26295,8 @@
           "year": 2003
         },
         {
-          "tide": 91.0,
-          "year": 2003
-        },
-        {
           "tide": 98.0,
           "year": 2004
-        },
-        {
-          "tide": 98.0,
-          "year": 2004
-        },
-        {
-          "tide": 85.0,
-          "year": 2005
         },
         {
           "tide": 85.0,
@@ -26391,20 +26307,8 @@
           "year": 2006
         },
         {
-          "tide": 81.0,
-          "year": 2006
-        },
-        {
           "tide": 74.0,
           "year": 2007
-        },
-        {
-          "tide": 74.0,
-          "year": 2007
-        },
-        {
-          "tide": 78.0,
-          "year": 2008
         },
         {
           "tide": 78.0,
@@ -26415,20 +26319,8 @@
           "year": 2009
         },
         {
-          "tide": 83.0,
-          "year": 2009
-        },
-        {
           "tide": 100.0,
           "year": 2010
-        },
-        {
-          "tide": 100.0,
-          "year": 2010
-        },
-        {
-          "tide": 94.0,
-          "year": 2011
         },
         {
           "tide": 94.0,
@@ -26439,28 +26331,12 @@
           "year": 2012
         },
         {
-          "tide": 114.0,
-          "year": 2012
-        },
-        {
-          "tide": 116.0,
-          "year": 2013
-        },
-        {
           "tide": 116.0,
           "year": 2013
         },
         {
           "tide": 118.0,
           "year": 2014
-        },
-        {
-          "tide": 118.0,
-          "year": 2014
-        },
-        {
-          "tide": 113.0,
-          "year": 2015
         },
         {
           "tide": 113.0,
@@ -26470,7 +26346,7 @@
     },
     {
       "ID": 524,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 70.375,
       "location": "Vardo",
@@ -26604,7 +26480,7 @@
     },
     {
       "ID": 525,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 44.392,
       "location": "Bar Harbor, Frenchman Bay, Me",
@@ -26738,7 +26614,7 @@
     },
     {
       "ID": 526,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 29.263,
       "location": "Grand Isle",
@@ -26872,7 +26748,7 @@
     },
     {
       "ID": 537,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "PHL",
       "latitude": 7.083,
       "location": "Davao, Davao Gulf",
@@ -26931,23 +26807,23 @@
           "year": 1997
         },
         {
-          "tide": null,
+          "tide": -34.8333333333,
           "year": 1998
         },
         {
-          "tide": null,
+          "tide": -60.6666666667,
           "year": 1999
         },
         {
-          "tide": null,
+          "tide": -86.5,
           "year": 2000
         },
         {
-          "tide": null,
+          "tide": -112.3333333333,
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": -138.1666666667,
           "year": 2002
         },
         {
@@ -27006,7 +26882,7 @@
     },
     {
       "ID": 538,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 28.022,
       "location": "Rockport",
@@ -27140,7 +27016,7 @@
     },
     {
       "ID": 539,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "ASM",
       "latitude": -14.28,
       "location": "Pago Pago",
@@ -27274,7 +27150,7 @@
     },
     {
       "ID": 540,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "GUM",
       "latitude": 13.438,
       "location": "Apra Harbour, Guam",
@@ -27408,7 +27284,7 @@
     },
     {
       "ID": 541,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SJM",
       "latitude": 78.067,
       "location": "Barentsburg",
@@ -27542,7 +27418,7 @@
     },
     {
       "ID": 543,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 22.2,
       "location": "Diamond Harbour",
@@ -27664,7 +27540,7 @@
     },
     {
       "ID": 562,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 67.288,
       "location": "Bodo",
@@ -27798,7 +27674,7 @@
     },
     {
       "ID": 563,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CUB",
       "latitude": 21.108,
       "location": "Gibara",
@@ -27928,7 +27804,7 @@
     },
     {
       "ID": 564,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -21.1,
       "location": "Mackay",
@@ -28062,7 +27938,7 @@
     },
     {
       "ID": 566,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 60.558,
       "location": "Cordova",
@@ -28196,7 +28072,7 @@
     },
     {
       "ID": 567,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 57.732,
       "location": "Kodiak Island, Womens Bay",
@@ -28330,7 +28206,7 @@
     },
     {
       "ID": 569,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 71.583,
       "location": "Tiksi (Tiksi Bukhta)",
@@ -28548,7 +28424,7 @@
     },
     {
       "ID": 593,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 28.972,
       "location": "Arrecife",
@@ -28682,7 +28558,7 @@
     },
     {
       "ID": 595,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "MHL",
       "latitude": 19.29,
       "location": "Wake Island",
@@ -28816,7 +28692,7 @@
     },
     {
       "ID": 599,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 69.75,
       "location": "Amderma",
@@ -29058,7 +28934,7 @@
     },
     {
       "ID": 600,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 69.25,
       "location": "Ust Kara",
@@ -29121,19 +28997,19 @@
           "year": 1991
         },
         {
-          "tide": null,
+          "tide": -67.6666666667,
           "year": 1992
         },
         {
-          "tide": null,
+          "tide": -67.6666666667,
           "year": 1992
         },
         {
-          "tide": null,
+          "tide": -192.3333333333,
           "year": 1993
         },
         {
-          "tide": null,
+          "tide": -192.3333333333,
           "year": 1993
         },
         {
@@ -29300,7 +29176,7 @@
     },
     {
       "ID": 601,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 77.717,
       "location": "Fedorova (Cheluskin Mys)",
@@ -29534,7 +29410,7 @@
     },
     {
       "ID": 602,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 74.667,
       "location": "Sannikova (Sannikova Proliv)",
@@ -29776,7 +29652,7 @@
     },
     {
       "ID": 604,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 69.617,
       "location": "Ambarchik",
@@ -30018,7 +29894,7 @@
     },
     {
       "ID": 605,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 69.5,
       "location": "Rau-Chua",
@@ -30260,7 +30136,7 @@
     },
     {
       "ID": 606,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 69.7,
       "location": "Pevek",
@@ -30502,7 +30378,7 @@
     },
     {
       "ID": 612,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 75.417,
       "location": "Sterlegova (Sterlegova Mys)",
@@ -30629,27 +30505,27 @@
           "year": 1999
         },
         {
-          "tide": null,
+          "tide": 114.75,
           "year": 2000
         },
         {
-          "tide": null,
+          "tide": 114.75,
           "year": 2000
         },
         {
-          "tide": null,
+          "tide": 144.5,
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": 144.5,
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": 174.25,
           "year": 2002
         },
         {
-          "tide": null,
+          "tide": 174.25,
           "year": 2002
         },
         {
@@ -30736,7 +30612,7 @@
     },
     {
       "ID": 634,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 35.348,
       "location": "Iraklion",
@@ -30854,7 +30730,7 @@
     },
     {
       "ID": 635,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 36.938,
       "location": "Onahama",
@@ -30976,7 +30852,7 @@
     },
     {
       "ID": 636,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 37.165,
       "location": "Kiptopeke Beach",
@@ -31110,7 +30986,7 @@
     },
     {
       "ID": 637,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -19.25,
       "location": "Townsville I",
@@ -31244,7 +31120,7 @@
     },
     {
       "ID": 638,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ISL",
       "latitude": 64.151,
       "location": "Reykjavik",
@@ -31378,7 +31254,7 @@
     },
     {
       "ID": 640,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 73.933,
       "location": "Dunai (Dunai Ostrov)",
@@ -31604,7 +31480,7 @@
     },
     {
       "ID": 641,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 76.0,
       "location": "Kotelnyi (Kotelnyi Ostrov)",
@@ -31846,7 +31722,7 @@
     },
     {
       "ID": 642,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 73.333,
       "location": "Kigiliah",
@@ -32088,7 +31964,7 @@
     },
     {
       "ID": 680,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 69.647,
       "location": "Tromso",
@@ -32222,7 +32098,7 @@
     },
     {
       "ID": 681,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 68.801,
       "location": "Harstad",
@@ -32356,7 +32232,7 @@
     },
     {
       "ID": 682,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 63.114,
       "location": "Kristiansund",
@@ -32490,7 +32366,7 @@
     },
     {
       "ID": 684,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 68.967,
       "location": "Murmansk",
@@ -32748,7 +32624,7 @@
     },
     {
       "ID": 685,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "HRV",
       "latitude": 43.508,
       "location": "Split Rt Marjana",
@@ -32866,7 +32742,7 @@
     },
     {
       "ID": 701,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.144,
       "location": "Kainan",
@@ -33000,7 +32876,7 @@
     },
     {
       "ID": 703,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 57.119,
       "location": "Hanstholm",
@@ -33122,7 +32998,7 @@
     },
     {
       "ID": 704,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 79.5,
       "location": "Vise (Vise Ostrov)",
@@ -33364,7 +33240,7 @@
     },
     {
       "ID": 721,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 40.898,
       "location": "Asamushi",
@@ -33498,7 +33374,7 @@
     },
     {
       "ID": 722,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.288,
       "location": "Yokosuka",
@@ -33632,7 +33508,7 @@
     },
     {
       "ID": 723,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "CHN",
       "latitude": 38.867,
       "location": "Dalian",
@@ -33766,7 +33642,7 @@
     },
     {
       "ID": 724,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "SGP",
       "latitude": 1.467,
       "location": "Sembawang",
@@ -33900,7 +33776,7 @@
     },
     {
       "ID": 728,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 75.95,
       "location": "Izvestia Tsik (Izvestia Tsik Ostrova)",
@@ -34142,7 +34018,7 @@
     },
     {
       "ID": 729,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 79.55,
       "location": "Golomianyi (Golomianyi Ostrov)",
@@ -34376,7 +34252,7 @@
     },
     {
       "ID": 752,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 38.563,
       "location": "Nezugaseki",
@@ -34510,7 +34386,7 @@
     },
     {
       "ID": 753,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 37.357,
       "location": "Kashiwazaki",
@@ -34644,7 +34520,7 @@
     },
     {
       "ID": 754,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 52.473,
       "location": "Lowestoft",
@@ -34778,7 +34654,7 @@
     },
     {
       "ID": 755,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 55.75,
       "location": "Millport",
@@ -34912,7 +34788,7 @@
     },
     {
       "ID": 756,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 21.953,
       "location": "Nawiliwili Bay, Kauai Island",
@@ -35046,7 +34922,7 @@
     },
     {
       "ID": 757,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 53.88,
       "location": "Unalaska",
@@ -35180,7 +35056,7 @@
     },
     {
       "ID": 758,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 70.665,
       "location": "Hammerfest",
@@ -35314,7 +35190,7 @@
     },
     {
       "ID": 759,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "PRI",
       "latitude": 17.97,
       "location": "Magueyes Island",
@@ -35448,7 +35324,7 @@
     },
     {
       "ID": 760,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "HRV",
       "latitude": 42.658,
       "location": "Dubrovnik",
@@ -35578,7 +35454,7 @@
     },
     {
       "ID": 761,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "HRV",
       "latitude": 45.083,
       "location": "Rovinj",
@@ -35708,7 +35584,7 @@
     },
     {
       "ID": 762,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 54.656,
       "location": "Rodbyhavn",
@@ -35830,7 +35706,7 @@
     },
     {
       "ID": 786,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 39.558,
       "location": "Reedy Point",
@@ -35964,7 +35840,7 @@
     },
     {
       "ID": 787,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -41.261,
       "location": "Nelson",
@@ -36003,15 +35879,15 @@
           "year": 1992
         },
         {
-          "tide": null,
+          "tide": -41.0,
           "year": 1993
         },
         {
-          "tide": null,
+          "tide": -38.0,
           "year": 1994
         },
         {
-          "tide": null,
+          "tide": -35.0,
           "year": 1995
         },
         {
@@ -36098,7 +35974,7 @@
     },
     {
       "ID": 808,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.012,
       "location": "Shimizu-Minato",
@@ -36232,7 +36108,7 @@
     },
     {
       "ID": 809,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.009,
       "location": "Komatsushima",
@@ -36366,7 +36242,7 @@
     },
     {
       "ID": 810,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.623,
       "location": "Misumi",
@@ -36488,7 +36364,7 @@
     },
     {
       "ID": 811,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.548,
       "location": "Sakai",
@@ -36622,7 +36498,7 @@
     },
     {
       "ID": 812,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.489,
       "location": "Uno",
@@ -36756,7 +36632,7 @@
     },
     {
       "ID": 813,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 41.782,
       "location": "Hakodate I",
@@ -36890,7 +36766,7 @@
     },
     {
       "ID": 814,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 31.577,
       "location": "Aburatsu",
@@ -37024,7 +36900,7 @@
     },
     {
       "ID": 815,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.779,
       "location": "Tosa Shimizu",
@@ -37158,7 +37034,7 @@
     },
     {
       "ID": 816,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.222,
       "location": "Wakayama",
@@ -37292,7 +37168,7 @@
     },
     {
       "ID": 817,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.339,
       "location": "Tan-Nowa",
@@ -37426,7 +37302,7 @@
     },
     {
       "ID": 819,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "ARG",
       "latitude": -38.033,
       "location": "Mar Del Plata (Naval Base)",
@@ -37556,7 +37432,7 @@
     },
     {
       "ID": 820,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "ZAF",
       "latitude": -33.951,
       "location": "Port Elizabeth",
@@ -37690,7 +37566,7 @@
     },
     {
       "ID": 822,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -27.367,
       "location": "Brisbane (West Inner Bar)",
@@ -37824,7 +37700,7 @@
     },
     {
       "ID": 823,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 21.432,
       "location": "Mokuoloe Island",
@@ -37958,7 +37834,7 @@
     },
     {
       "ID": 824,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 52.983,
       "location": "Petropavlovsk-Kamchatsky",
@@ -38216,7 +38092,7 @@
     },
     {
       "ID": 825,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -23.854,
       "location": "Gladstone",
@@ -38350,7 +38226,7 @@
     },
     {
       "ID": 826,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "ZAF",
       "latitude": -34.188,
       "location": "Simons Bay",
@@ -38484,7 +38360,7 @@
     },
     {
       "ID": 827,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 59.55,
       "location": "Nagaevo",
@@ -38742,7 +38618,7 @@
     },
     {
       "ID": 828,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 29.285,
       "location": "Galveston I, Pleasure Pier, Tx",
@@ -38860,7 +38736,7 @@
     },
     {
       "ID": 829,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 53.25,
       "location": "Queen Charlotte City",
@@ -38994,7 +38870,7 @@
     },
     {
       "ID": 830,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 60.154,
       "location": "Lerwick",
@@ -39128,7 +39004,7 @@
     },
     {
       "ID": 832,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "ARG",
       "latitude": -34.567,
       "location": "Palermo",
@@ -39258,7 +39134,7 @@
     },
     {
       "ID": 834,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -33.323,
       "location": "Bunbury",
@@ -39392,7 +39268,7 @@
     },
     {
       "ID": 835,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -17.5,
       "location": "Karumba",
@@ -39526,7 +39402,7 @@
     },
     {
       "ID": 836,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "ZAF",
       "latitude": -29.257,
       "location": "Port Nolloth",
@@ -39589,11 +39465,11 @@
           "year": 1998
         },
         {
-          "tide": null,
+          "tide": 13.6666666667,
           "year": 1999
         },
         {
-          "tide": null,
+          "tide": 30.3333333333,
           "year": 2000
         },
         {
@@ -39660,7 +39536,7 @@
     },
     {
       "ID": 837,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -32.924,
       "location": "Newcastle V",
@@ -39794,7 +39670,7 @@
     },
     {
       "ID": 841,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "VNM",
       "latitude": 20.667,
       "location": "Hondau",
@@ -39920,7 +39796,7 @@
     },
     {
       "ID": 910,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "ZAF",
       "latitude": -34.179,
       "location": "Mossel Bay",
@@ -40054,7 +39930,7 @@
     },
     {
       "ID": 913,
-      "continent": "Antarctica",
+      "continent": "antarctica",
       "country": "ATA",
       "latitude": -65.246,
       "location": "Argentine Islands",
@@ -40184,7 +40060,7 @@
     },
     {
       "ID": 917,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "RUS",
       "latitude": 71.867,
       "location": "Sopochnaia Karga",
@@ -40426,7 +40302,7 @@
     },
     {
       "ID": 933,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "CHN",
       "latitude": 21.583,
       "location": "Zhapo",
@@ -40560,7 +40436,7 @@
     },
     {
       "ID": 934,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "CHN",
       "latitude": 28.083,
       "location": "Kanmen",
@@ -40694,7 +40570,7 @@
     },
     {
       "ID": 936,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 54.032,
       "location": "Heysham",
@@ -40769,23 +40645,23 @@
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": -0.1666666667,
           "year": 2002
         },
         {
-          "tide": null,
+          "tide": 3.6666666667,
           "year": 2003
         },
         {
-          "tide": null,
+          "tide": 7.5,
           "year": 2004
         },
         {
-          "tide": null,
+          "tide": 11.3333333333,
           "year": 2005
         },
         {
-          "tide": null,
+          "tide": 15.1666666667,
           "year": 2006
         },
         {
@@ -40828,7 +40704,7 @@
     },
     {
       "ID": 953,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -16.917,
       "location": "Cairns",
@@ -40962,7 +40838,7 @@
     },
     {
       "ID": 954,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 34.78,
       "location": "Mokpo",
@@ -41096,7 +40972,7 @@
     },
     {
       "ID": 955,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 35.096,
       "location": "Busan",
@@ -41230,7 +41106,7 @@
     },
     {
       "ID": 956,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 37.452,
       "location": "Incheon",
@@ -41364,7 +41240,7 @@
     },
     {
       "ID": 979,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "CHN",
       "latitude": 32.133,
       "location": "Lusi",
@@ -41498,7 +41374,7 @@
     },
     {
       "ID": 982,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 50.368,
       "location": "Devonport",
@@ -41632,7 +41508,7 @@
     },
     {
       "ID": 984,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 52.167,
       "location": "Bella Bella",
@@ -41766,7 +41642,7 @@
     },
     {
       "ID": 985,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "ESP",
       "latitude": 36.54,
       "location": "Cadiz Iii",
@@ -41900,7 +41776,7 @@
     },
     {
       "ID": 996,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -39.056,
       "location": "Port Taranaki",
@@ -42034,7 +41910,7 @@
     },
     {
       "ID": 997,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 35.502,
       "location": "Ulsan",
@@ -42168,7 +42044,7 @@
     },
     {
       "ID": 999,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 47.0,
       "location": "St-Francois",
@@ -42302,7 +42178,7 @@
     },
     {
       "ID": 1001,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "PRI",
       "latitude": 18.458,
       "location": "San Juan",
@@ -42436,7 +42312,7 @@
     },
     {
       "ID": 1003,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "VNM",
       "latitude": 18.8,
       "location": "Honngu",
@@ -42562,7 +42438,7 @@
     },
     {
       "ID": 1026,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.904,
       "location": "Onisaki",
@@ -42696,7 +42572,7 @@
     },
     {
       "ID": 1027,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 43.209,
       "location": "Oshoro Ii",
@@ -42830,7 +42706,7 @@
     },
     {
       "ID": 1028,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.353,
       "location": "Hirosima",
@@ -42964,7 +42840,7 @@
     },
     {
       "ID": 1032,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "BRA",
       "latitude": -22.897,
       "location": "Ilha Fiscal",
@@ -43090,7 +42966,7 @@
     },
     {
       "ID": 1036,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DEU",
       "latitude": 54.617,
       "location": "Amrum (Wittduen)",
@@ -43204,7 +43080,7 @@
     },
     {
       "ID": 1037,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DEU",
       "latitude": 53.558,
       "location": "Borkum (Fischerbalje)",
@@ -43318,7 +43194,7 @@
     },
     {
       "ID": 1060,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.067,
       "location": "Miyake Sima",
@@ -43452,7 +43328,7 @@
     },
     {
       "ID": 1062,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.859,
       "location": "Matsuyama Ii",
@@ -43586,7 +43462,7 @@
     },
     {
       "ID": 1065,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -35.757,
       "location": "Whangarei Harbour (Marsden Point)",
@@ -43720,7 +43596,7 @@
     },
     {
       "ID": 1066,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 33.528,
       "location": "Jeju",
@@ -43854,7 +43730,7 @@
     },
     {
       "ID": 1067,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 61.238,
       "location": "Anchorage",
@@ -43988,7 +43864,7 @@
     },
     {
       "ID": 1068,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.173,
       "location": "Bridgeport",
@@ -44122,7 +43998,7 @@
     },
     {
       "ID": 1069,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -35.562,
       "location": "Victor Harbour",
@@ -44256,7 +44132,7 @@
     },
     {
       "ID": 1070,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 59.44,
       "location": "Seldovia",
@@ -44378,7 +44254,7 @@
     },
     {
       "ID": 1071,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 50.717,
       "location": "Port Hardy",
@@ -44512,7 +44388,7 @@
     },
     {
       "ID": 1089,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.682,
       "location": "Maisaka",
@@ -44646,7 +44522,7 @@
     },
     {
       "ID": 1090,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.558,
       "location": "Uragami",
@@ -44780,7 +44656,7 @@
     },
     {
       "ID": 1091,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.789,
       "location": "Okada",
@@ -44914,7 +44790,7 @@
     },
     {
       "ID": 1093,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 38.468,
       "location": "Awa Sima",
@@ -45048,7 +44924,7 @@
     },
     {
       "ID": 1094,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.619,
       "location": "Hakata",
@@ -45182,7 +45058,7 @@
     },
     {
       "ID": 1095,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 36.201,
       "location": "Saigo",
@@ -45316,7 +45192,7 @@
     },
     {
       "ID": 1096,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 30.735,
       "location": "Nisinoomote",
@@ -45450,7 +45326,7 @@
     },
     {
       "ID": 1097,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 31.024,
       "location": "Odomari",
@@ -45584,7 +45460,7 @@
     },
     {
       "ID": 1098,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.341,
       "location": "Sumoto",
@@ -45718,7 +45594,7 @@
     },
     {
       "ID": 1099,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.658,
       "location": "Osaka",
@@ -45852,7 +45728,7 @@
     },
     {
       "ID": 1100,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.735,
       "location": "Nagasaki",
@@ -45986,7 +45862,7 @@
     },
     {
       "ID": 1101,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.696,
       "location": "Fukue",
@@ -46120,7 +45996,7 @@
     },
     {
       "ID": 1102,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.977,
       "location": "Oura",
@@ -46254,7 +46130,7 @@
     },
     {
       "ID": 1103,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 45.408,
       "location": "Wakkanai",
@@ -46388,7 +46264,7 @@
     },
     {
       "ID": 1104,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 44.019,
       "location": "Abashiri",
@@ -46522,7 +46398,7 @@
     },
     {
       "ID": 1105,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 29.842,
       "location": "Nakano Sima",
@@ -46656,7 +46532,7 @@
     },
     {
       "ID": 1106,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 26.647,
       "location": "Fort Myers",
@@ -46790,7 +46666,7 @@
     },
     {
       "ID": 1107,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 26.132,
       "location": "Naples",
@@ -46924,7 +46800,7 @@
     },
     {
       "ID": 1108,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 37.55,
       "location": "Mukho",
@@ -47058,7 +46934,7 @@
     },
     {
       "ID": 1109,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 58.441,
       "location": "Wick",
@@ -47192,7 +47068,7 @@
     },
     {
       "ID": 1111,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 41.285,
       "location": "Nantucket Island",
@@ -47326,7 +47202,7 @@
     },
     {
       "ID": 1112,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 57.895,
       "location": "Ullapool",
@@ -47460,7 +47336,7 @@
     },
     {
       "ID": 1113,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 58.995,
       "location": "Helgeroa",
@@ -47594,7 +47470,7 @@
     },
     {
       "ID": 1115,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -24.899,
       "location": "Carnarvon",
@@ -47728,7 +47604,7 @@
     },
     {
       "ID": 1116,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -15.453,
       "location": "Wyndham",
@@ -47862,7 +47738,7 @@
     },
     {
       "ID": 1146,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.076,
       "location": "Owase",
@@ -47996,7 +47872,7 @@
     },
     {
       "ID": 1147,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.158,
       "location": "Sasebo Ii",
@@ -48130,7 +48006,7 @@
     },
     {
       "ID": 1148,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.594,
       "location": "Tajiri",
@@ -48264,7 +48140,7 @@
     },
     {
       "ID": 1149,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 39.643,
       "location": "Miyako Ii",
@@ -48398,7 +48274,7 @@
     },
     {
       "ID": 1150,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.684,
       "location": "Shirahama",
@@ -48532,7 +48408,7 @@
     },
     {
       "ID": 1151,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 26.213,
       "location": "Naha",
@@ -48666,7 +48542,7 @@
     },
     {
       "ID": 1152,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 48.65,
       "location": "Patricia Bay",
@@ -48800,7 +48676,7 @@
     },
     {
       "ID": 1153,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 38.968,
       "location": "Cape May",
@@ -48934,7 +48810,7 @@
     },
     {
       "ID": 1154,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -24.767,
       "location": "Bundaberg, Burnett Heads",
@@ -49068,7 +48944,7 @@
     },
     {
       "ID": 1155,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 34.747,
       "location": "Yeosu",
@@ -49202,7 +49078,7 @@
     },
     {
       "ID": 1156,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 30.25,
       "location": "Dauphin Island",
@@ -49336,7 +49212,7 @@
     },
     {
       "ID": 1157,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -12.667,
       "location": "Weipa",
@@ -49470,7 +49346,7 @@
     },
     {
       "ID": 1158,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 43.833,
       "location": "Yarmouth",
@@ -49604,7 +49480,7 @@
     },
     {
       "ID": 1161,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 20.267,
       "location": "Paradip",
@@ -49726,7 +49602,7 @@
     },
     {
       "ID": 1190,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 36.255,
       "location": "Mikuni",
@@ -49860,7 +49736,7 @@
     },
     {
       "ID": 1191,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.129,
       "location": "Katsuura",
@@ -49994,7 +49870,7 @@
     },
     {
       "ID": 1192,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "ZAF",
       "latitude": -33.027,
       "location": "East London",
@@ -50128,7 +50004,7 @@
     },
     {
       "ID": 1193,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 29.727,
       "location": "Apalachicola",
@@ -50262,7 +50138,7 @@
     },
     {
       "ID": 1195,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "ZAF",
       "latitude": -33.905,
       "location": "Cape Town (Granger Bay)",
@@ -50396,7 +50272,7 @@
     },
     {
       "ID": 1197,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DNK",
       "latitude": 54.995,
       "location": "Fynshav",
@@ -50518,7 +50394,7 @@
     },
     {
       "ID": 1209,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.241,
       "location": "Kure Iv",
@@ -50652,7 +50528,7 @@
     },
     {
       "ID": 1210,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.041,
       "location": "Tokuyama Ii",
@@ -50786,7 +50662,7 @@
     },
     {
       "ID": 1211,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 62.363,
       "location": "Spikarna",
@@ -50920,7 +50796,7 @@
     },
     {
       "ID": 1212,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.227,
       "location": "Uwajima Ii",
@@ -51054,7 +50930,7 @@
     },
     {
       "ID": 1213,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 49.0,
       "location": "Riviere-Au-Renard",
@@ -51188,7 +51064,7 @@
     },
     {
       "ID": 1215,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 54.843,
       "location": "Portpatrick",
@@ -51306,7 +51182,7 @@
     },
     {
       "ID": 1232,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 35.487,
       "location": "Soudhas",
@@ -51424,7 +51300,7 @@
     },
     {
       "ID": 1233,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 37.13,
       "location": "Leros",
@@ -51558,7 +51434,7 @@
     },
     {
       "ID": 1234,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 37.44,
       "location": "Siros",
@@ -51692,7 +51568,7 @@
     },
     {
       "ID": 1236,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 57.685,
       "location": "Goteborg - Torshamnen",
@@ -51826,7 +51702,7 @@
     },
     {
       "ID": 1237,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 38.472,
       "location": "Khalkis North",
@@ -51960,7 +51836,7 @@
     },
     {
       "ID": 1238,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 40.844,
       "location": "Alexandroupolis",
@@ -52094,7 +51970,7 @@
     },
     {
       "ID": 1239,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 38.835,
       "location": "Levkas",
@@ -52228,7 +52104,7 @@
     },
     {
       "ID": 1240,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 37.645,
       "location": "Katakolon",
@@ -52362,7 +52238,7 @@
     },
     {
       "ID": 1241,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "NOR",
       "latitude": 64.859,
       "location": "Rorvik",
@@ -52496,7 +52372,7 @@
     },
     {
       "ID": 1242,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 48.85,
       "location": "Bamfield",
@@ -52630,7 +52506,7 @@
     },
     {
       "ID": 1244,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 47.45,
       "location": "St-Joseph-De-La-Rive",
@@ -52764,7 +52640,7 @@
     },
     {
       "ID": 1245,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 49.2,
       "location": "New Westminster",
@@ -52898,7 +52774,7 @@
     },
     {
       "ID": 1246,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -21.283,
       "location": "Hay Point",
@@ -53032,7 +52908,7 @@
     },
     {
       "ID": 1247,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 47.644,
       "location": "Port Tudy",
@@ -53166,7 +53042,7 @@
     },
     {
       "ID": 1248,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "SGP",
       "latitude": 1.233,
       "location": "Sultan Shoal",
@@ -53300,7 +53176,7 @@
     },
     {
       "ID": 1252,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "PLW",
       "latitude": 7.333,
       "location": "Malakal-B",
@@ -53430,7 +53306,7 @@
     },
     {
       "ID": 1253,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "PYF",
       "latitude": -23.122,
       "location": "Rikitea",
@@ -53560,7 +53436,7 @@
     },
     {
       "ID": 1263,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.608,
       "location": "Omaezaki Ii",
@@ -53694,7 +53570,7 @@
     },
     {
       "ID": 1264,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 39.942,
       "location": "Oga",
@@ -53828,7 +53704,7 @@
     },
     {
       "ID": 1265,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.018,
       "location": "Akune",
@@ -53962,7 +53838,7 @@
     },
     {
       "ID": 1266,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 40.532,
       "location": "Hachinohe Ii",
@@ -54080,7 +53956,7 @@
     },
     {
       "ID": 1269,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 43.345,
       "location": "Charleston Ii",
@@ -54214,7 +54090,7 @@
     },
     {
       "ID": 1270,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 22.033,
       "location": "Haldia",
@@ -54336,7 +54212,7 @@
     },
     {
       "ID": 1272,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "CHL",
       "latitude": -27.155,
       "location": "Easter Island-E",
@@ -54466,7 +54342,7 @@
     },
     {
       "ID": 1274,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "PER",
       "latitude": -12.05,
       "location": "Callao 2",
@@ -54596,7 +54472,7 @@
     },
     {
       "ID": 1293,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.266,
       "location": "Oita Ii",
@@ -54730,7 +54606,7 @@
     },
     {
       "ID": 1294,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 48.359,
       "location": "Le Conquet",
@@ -54864,7 +54740,7 @@
     },
     {
       "ID": 1295,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 38.573,
       "location": "Cambridge Ii",
@@ -54998,7 +54874,7 @@
     },
     {
       "ID": 1297,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CUB",
       "latitude": 21.9,
       "location": "Cabo De San Antonio",
@@ -55085,7 +54961,7 @@
           "year": 2004
         },
         {
-          "tide": null,
+          "tide": 122.5,
           "year": 2005
         },
         {
@@ -55128,7 +55004,7 @@
     },
     {
       "ID": 1299,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 46.217,
       "location": "North Sydney",
@@ -55262,7 +55138,7 @@
     },
     {
       "ID": 1318,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.473,
       "location": "Kariya",
@@ -55396,7 +55272,7 @@
     },
     {
       "ID": 1320,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.334,
       "location": "Kure I",
@@ -55530,7 +55406,7 @@
     },
     {
       "ID": 1321,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 47.3,
       "location": "Argentia",
@@ -55664,7 +55540,7 @@
     },
     {
       "ID": 1322,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 50.2,
       "location": "Sept-Iles",
@@ -55798,7 +55674,7 @@
     },
     {
       "ID": 1323,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 50.017,
       "location": "Campbell River",
@@ -55932,7 +55808,7 @@
     },
     {
       "ID": 1324,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 36.047,
       "location": "Pohang",
@@ -56066,7 +55942,7 @@
     },
     {
       "ID": 1325,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 48.112,
       "location": "Port Townsend",
@@ -56200,7 +56076,7 @@
     },
     {
       "ID": 1327,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "FJI",
       "latitude": -18.136,
       "location": "Suva-A",
@@ -56334,7 +56210,7 @@
     },
     {
       "ID": 1328,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -20.588,
       "location": "Cape Lambert",
@@ -56468,7 +56344,7 @@
     },
     {
       "ID": 1329,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "KIR",
       "latitude": -2.817,
       "location": "Kanton Island-B",
@@ -56590,7 +56466,7 @@
     },
     {
       "ID": 1343,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.896,
       "location": "Ito Ii",
@@ -56724,7 +56600,7 @@
     },
     {
       "ID": 1344,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 37.815,
       "location": "Ogi",
@@ -56858,7 +56734,7 @@
     },
     {
       "ID": 1345,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 37.831,
       "location": "Soma",
@@ -56976,7 +56852,7 @@
     },
     {
       "ID": 1346,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 39.273,
       "location": "Kamaisi Ii",
@@ -57102,7 +56978,7 @@
     },
     {
       "ID": 1347,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 48.718,
       "location": "Roscoff",
@@ -57236,7 +57112,7 @@
     },
     {
       "ID": 1349,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 47.083,
       "location": "Lower Escuminac",
@@ -57370,7 +57246,7 @@
     },
     {
       "ID": 1351,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "SGP",
       "latitude": 1.167,
       "location": "Raffles Light House",
@@ -57504,7 +57380,7 @@
     },
     {
       "ID": 1352,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 36.605,
       "location": "Monterey",
@@ -57638,7 +57514,7 @@
     },
     {
       "ID": 1353,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 61.125,
       "location": "Valdez",
@@ -57772,7 +57648,7 @@
     },
     {
       "ID": 1354,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 46.707,
       "location": "Toke Point, Willipa Bay, Wa",
@@ -57906,7 +57782,7 @@
     },
     {
       "ID": 1364,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 39.02,
       "location": "Ofunato Ii",
@@ -58028,7 +57904,7 @@
     },
     {
       "ID": 1365,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 38.207,
       "location": "Sokcho",
@@ -58162,7 +58038,7 @@
     },
     {
       "ID": 1370,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "FSM",
       "latitude": 6.983,
       "location": "Pohnpei-B",
@@ -58292,7 +58168,7 @@
     },
     {
       "ID": 1371,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "KIR",
       "latitude": 1.983,
       "location": "Christmas Island Ii",
@@ -58422,7 +58298,7 @@
     },
     {
       "ID": 1386,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 32.605,
       "location": "Kuchinotsu",
@@ -58556,7 +58432,7 @@
     },
     {
       "ID": 1387,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.477,
       "location": "Maizuru Ii",
@@ -58690,7 +58566,7 @@
     },
     {
       "ID": 1388,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 26.179,
       "location": "Okinawa",
@@ -58824,7 +58700,7 @@
     },
     {
       "ID": 1389,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 36.762,
       "location": "Toyama",
@@ -58958,7 +58834,7 @@
     },
     {
       "ID": 1390,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.266,
       "location": "Murotomisaki",
@@ -59092,7 +58968,7 @@
     },
     {
       "ID": 1391,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 27.083,
       "location": "Chichijima",
@@ -59226,7 +59102,7 @@
     },
     {
       "ID": 1392,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 48.333,
       "location": "Port-Alfred",
@@ -59352,7 +59228,7 @@
     },
     {
       "ID": 1393,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "VIR",
       "latitude": 18.335,
       "location": "Charlotte Amalie",
@@ -59486,7 +59362,7 @@
     },
     {
       "ID": 1394,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 37.995,
       "location": "Point Reyes",
@@ -59620,7 +59496,7 @@
     },
     {
       "ID": 1395,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "IND",
       "latitude": 22.467,
       "location": "Okha",
@@ -59742,7 +59618,7 @@
     },
     {
       "ID": 1397,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "PYF",
       "latitude": -17.533,
       "location": "Papeete-B, Fare Ute Point, Soc.Is.",
@@ -59872,7 +59748,7 @@
     },
     {
       "ID": 1420,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -33.926,
       "location": "Wallaroo Ii",
@@ -60006,7 +59882,7 @@
     },
     {
       "ID": 1421,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SJM",
       "latitude": 78.929,
       "location": "Ny-Alesund",
@@ -60140,7 +60016,7 @@
     },
     {
       "ID": 1437,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.807,
       "location": "Tago",
@@ -60274,7 +60150,7 @@
     },
     {
       "ID": 1438,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.871,
       "location": "Yaizu",
@@ -60408,7 +60284,7 @@
     },
     {
       "ID": 1440,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.13,
       "location": "Kaminato Ii (Hatizyo Sima)",
@@ -60542,7 +60418,7 @@
     },
     {
       "ID": 1441,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GRC",
       "latitude": 38.461,
       "location": "Khalkis South",
@@ -60676,7 +60552,7 @@
     },
     {
       "ID": 1442,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 43.278,
       "location": "Hanasaki Ii",
@@ -60810,7 +60686,7 @@
     },
     {
       "ID": 1444,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 33.655,
       "location": "Springmaid Pier",
@@ -60944,7 +60820,7 @@
     },
     {
       "ID": 1445,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 35.025,
       "location": "Gadeokdo",
@@ -61078,7 +60954,7 @@
     },
     {
       "ID": 1446,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 34.828,
       "location": "Tongyeong",
@@ -61212,7 +61088,7 @@
     },
     {
       "ID": 1447,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "VIR",
       "latitude": 17.693,
       "location": "Lime Tree Bay, St Croix",
@@ -61346,7 +61222,7 @@
     },
     {
       "ID": 1448,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "DEU",
       "latitude": 54.06,
       "location": "Koserow",
@@ -61480,7 +61356,7 @@
     },
     {
       "ID": 1449,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "VNM",
       "latitude": 13.767,
       "location": "Quinhon",
@@ -61606,7 +61482,7 @@
     },
     {
       "ID": 1450,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "COK",
       "latitude": -9.017,
       "location": "Penrhyn",
@@ -61736,7 +61612,7 @@
     },
     {
       "ID": 1468,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 43.696,
       "location": "Nice",
@@ -61870,7 +61746,7 @@
     },
     {
       "ID": 1469,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 42.52,
       "location": "Port Vendres",
@@ -61945,11 +61821,11 @@
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": 53.0,
           "year": 2002
         },
         {
-          "tide": null,
+          "tide": 57.0,
           "year": 2003
         },
         {
@@ -62004,7 +61880,7 @@
     },
     {
       "ID": 1473,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "FSM",
       "latitude": 1.1,
       "location": "Kapingamarangi",
@@ -62134,7 +62010,7 @@
     },
     {
       "ID": 1474,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "MNP",
       "latitude": 15.233,
       "location": "Saipan",
@@ -62264,7 +62140,7 @@
     },
     {
       "ID": 1475,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "VNM",
       "latitude": 16.1,
       "location": "Danang",
@@ -62390,7 +62266,7 @@
     },
     {
       "ID": 1488,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.091,
       "location": "Nagoya Ii",
@@ -62524,7 +62400,7 @@
     },
     {
       "ID": 1489,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 34.684,
       "location": "Daeheuksando",
@@ -62646,7 +62522,7 @@
     },
     {
       "ID": 1490,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 37.491,
       "location": "Ulleung",
@@ -62780,7 +62656,7 @@
     },
     {
       "ID": 1495,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "VNM",
       "latitude": 10.333,
       "location": "Vungtau",
@@ -62906,7 +62782,7 @@
     },
     {
       "ID": 1501,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "REU",
       "latitude": -20.935,
       "location": "Pointe Des Galets",
@@ -62937,19 +62813,19 @@
           "year": 1990
         },
         {
-          "tide": null,
+          "tide": -10.0,
           "year": 1991
         },
         {
-          "tide": null,
+          "tide": -19.0,
           "year": 1992
         },
         {
-          "tide": null,
+          "tide": -28.0,
           "year": 1993
         },
         {
-          "tide": null,
+          "tide": -37.0,
           "year": 1994
         },
         {
@@ -63040,7 +62916,7 @@
     },
     {
       "ID": 1505,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "GBR",
       "latitude": 54.49,
       "location": "Whitby",
@@ -63174,7 +63050,7 @@
     },
     {
       "ID": 1522,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 28.5,
       "location": "Nase Iii",
@@ -63308,7 +63184,7 @@
     },
     {
       "ID": 1527,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 35.976,
       "location": "Gunsan (Outer Port)",
@@ -63442,7 +63318,7 @@
     },
     {
       "ID": 1544,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.744,
       "location": "Choshi-Gyoko",
@@ -63576,7 +63452,7 @@
     },
     {
       "ID": 1545,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 35.649,
       "location": "Tokyo Iii",
@@ -63710,7 +63586,7 @@
     },
     {
       "ID": 1546,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 34.028,
       "location": "Geomundo",
@@ -63844,7 +63720,7 @@
     },
     {
       "ID": 1549,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -20.624,
       "location": "King Bay",
@@ -63978,7 +63854,7 @@
     },
     {
       "ID": 1567,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 33.499,
       "location": "Kochi Iii",
@@ -64112,7 +63988,7 @@
     },
     {
       "ID": 1568,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 34.315,
       "location": "Wando",
@@ -64246,7 +64122,7 @@
     },
     {
       "ID": 1585,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.897,
       "location": "Hamada Ii",
@@ -64380,7 +64256,7 @@
     },
     {
       "ID": 1586,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 34.198,
       "location": "Izuhara Ii",
@@ -64514,7 +64390,7 @@
     },
     {
       "ID": 1587,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "JPN",
       "latitude": 41.243,
       "location": "Tappi",
@@ -64648,7 +64524,7 @@
     },
     {
       "ID": 1588,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 33.962,
       "location": "Chujado",
@@ -64782,7 +64658,7 @@
     },
     {
       "ID": 1589,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "MYS",
       "latitude": 3.975,
       "location": "Tanjung Gelang",
@@ -64916,7 +64792,7 @@
     },
     {
       "ID": 1590,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -37.641,
       "location": "Tauranga (Salisbury Wharf)",
@@ -65050,7 +64926,7 @@
     },
     {
       "ID": 1591,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "MYS",
       "latitude": 3.05,
       "location": "Pelabuhan Kelang",
@@ -65184,7 +65060,7 @@
     },
     {
       "ID": 1592,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "MYS",
       "latitude": 5.265,
       "location": "Cendering",
@@ -65318,7 +65194,7 @@
     },
     {
       "ID": 1593,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "MYS",
       "latitude": 2.215,
       "location": "Tanjung Keling",
@@ -65452,7 +65328,7 @@
     },
     {
       "ID": 1594,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "MYS",
       "latitude": 4.24,
       "location": "Lumut",
@@ -65586,7 +65462,7 @@
     },
     {
       "ID": 1595,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "MYS",
       "latitude": 5.422,
       "location": "Pulau Pinang",
@@ -65720,7 +65596,7 @@
     },
     {
       "ID": 1597,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CAN",
       "latitude": 48.483,
       "location": "Rimouski",
@@ -65854,7 +65730,7 @@
     },
     {
       "ID": 1600,
-      "continent": "Africa",
+      "continent": "africa",
       "country": "TZA",
       "latitude": -6.15,
       "location": "Zanzibar",
@@ -65984,7 +65860,7 @@
     },
     {
       "ID": 1627,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 33.24,
       "location": "Seogwipo",
@@ -66118,7 +65994,7 @@
     },
     {
       "ID": 1628,
-      "continent": "Asia",
+      "continent": "asia",
       "country": "KOR",
       "latitude": 35.618,
       "location": "Wido",
@@ -66201,15 +66077,15 @@
           "year": 2003
         },
         {
-          "tide": null,
+          "tide": 15.5,
           "year": 2004
         },
         {
-          "tide": null,
+          "tide": 18.0,
           "year": 2005
         },
         {
-          "tide": null,
+          "tide": 20.5,
           "year": 2006
         },
         {
@@ -66252,7 +66128,7 @@
     },
     {
       "ID": 1629,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -17.583,
       "location": "Mourilyan Harbour",
@@ -66386,7 +66262,7 @@
     },
     {
       "ID": 1630,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -18.517,
       "location": "Lucinda",
@@ -66520,7 +66396,7 @@
     },
     {
       "ID": 1631,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -21.65,
       "location": "Onslow",
@@ -66654,7 +66530,7 @@
     },
     {
       "ID": 1633,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 48.863,
       "location": "Cherry Point",
@@ -66788,7 +66664,7 @@
     },
     {
       "ID": 1634,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 55.337,
       "location": "Sand Point, Popof Is., Ak",
@@ -66922,7 +66798,7 @@
     },
     {
       "ID": 1635,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 36.967,
       "location": "Chesapeake Bay Br. Tun.",
@@ -67056,7 +66932,7 @@
     },
     {
       "ID": 1636,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 36.183,
       "location": "Duck Pier Outside",
@@ -67190,7 +67066,7 @@
     },
     {
       "ID": 1637,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 40.637,
       "location": "Bergen Point, Staten Is.",
@@ -67324,7 +67200,7 @@
     },
     {
       "ID": 1638,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 27.978,
       "location": "Clearwater Beach",
@@ -67371,7 +67247,7 @@
           "year": 1994
         },
         {
-          "tide": null,
+          "tide": -6.0,
           "year": 1995
         },
         {
@@ -67458,7 +67334,7 @@
     },
     {
       "ID": 1639,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 40.767,
       "location": "N. Spit, Humboldt Bay",
@@ -67592,7 +67468,7 @@
     },
     {
       "ID": 1640,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 42.738,
       "location": "Port Orford",
@@ -67726,7 +67602,7 @@
     },
     {
       "ID": 1641,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 30.152,
       "location": "Panama City, St.Andrews Bay, Fl",
@@ -67860,7 +67736,7 @@
     },
     {
       "ID": 1643,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "NZL",
       "latitude": -45.815,
       "location": "Port Chalmers",
@@ -67895,19 +67771,19 @@
           "year": 1991
         },
         {
-          "tide": null,
+          "tide": 84.0,
           "year": 1992
         },
         {
-          "tide": null,
+          "tide": 91.0,
           "year": 1993
         },
         {
-          "tide": null,
+          "tide": 98.0,
           "year": 1994
         },
         {
-          "tide": null,
+          "tide": 105.0,
           "year": 1995
         },
         {
@@ -67994,7 +67870,7 @@
     },
     {
       "ID": 1644,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "CHL",
       "latitude": -33.636,
       "location": "Juan Fernandez-C",
@@ -68128,7 +68004,7 @@
     },
     {
       "ID": 1645,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "ECU",
       "latitude": -0.433,
       "location": "Baltra-B",
@@ -68258,7 +68134,7 @@
     },
     {
       "ID": 1801,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "FRA",
       "latitude": 43.527,
       "location": "Boucau",
@@ -68392,7 +68268,7 @@
     },
     {
       "ID": 2021,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "CUB",
       "latitude": 21.753,
       "location": "Casilda Ii",
@@ -68463,23 +68339,23 @@
           "year": 2000
         },
         {
-          "tide": null,
+          "tide": -29.1666666667,
           "year": 2001
         },
         {
-          "tide": null,
+          "tide": -16.3333333333,
           "year": 2002
         },
         {
-          "tide": null,
+          "tide": -3.5,
           "year": 2003
         },
         {
-          "tide": null,
+          "tide": 9.3333333333,
           "year": 2004
         },
         {
-          "tide": null,
+          "tide": 22.1666666667,
           "year": 2005
         },
         {
@@ -68522,7 +68398,7 @@
     },
     {
       "ID": 2101,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 65.697,
       "location": "Kalix",
@@ -68656,7 +68532,7 @@
     },
     {
       "ID": 2103,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 60.409,
       "location": "Forsmark",
@@ -68790,7 +68666,7 @@
     },
     {
       "ID": 2104,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 58.554,
       "location": "Marviken",
@@ -68924,7 +68800,7 @@
     },
     {
       "ID": 2105,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 57.639,
       "location": "Visby",
@@ -69058,7 +68934,7 @@
     },
     {
       "ID": 2106,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 57.275,
       "location": "Oskarshamn",
@@ -69192,7 +69068,7 @@
     },
     {
       "ID": 2107,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 55.558,
       "location": "Simrishamn",
@@ -69326,7 +69202,7 @@
     },
     {
       "ID": 2110,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 56.142,
       "location": "Viken",
@@ -69460,7 +69336,7 @@
     },
     {
       "ID": 2111,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 57.25,
       "location": "Ringhals",
@@ -69594,7 +69470,7 @@
     },
     {
       "ID": 2112,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 58.093,
       "location": "Stenungsund",
@@ -69728,7 +69604,7 @@
     },
     {
       "ID": 2113,
-      "continent": "Europe",
+      "continent": "europe",
       "country": "SWE",
       "latitude": 58.997,
       "location": "Kungsvik",
@@ -69862,7 +69738,7 @@
     },
     {
       "ID": 2127,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 48.125,
       "location": "Port Angeles, Washington",
@@ -69996,7 +69872,7 @@
     },
     {
       "ID": 2261,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "CHL",
       "latitude": -20.204,
       "location": "Iquique Ii",
@@ -70130,7 +70006,7 @@
     },
     {
       "ID": 2262,
-      "continent": "South America",
+      "continent": "south-america",
       "country": "CHL",
       "latitude": -39.878,
       "location": "Corral Ii",
@@ -70264,7 +70140,7 @@
     },
     {
       "ID": 2295,
-      "continent": "North America",
+      "continent": "north-america",
       "country": "USA",
       "latitude": 34.72,
       "location": "Beaufort, North Carolina",
@@ -70398,7 +70274,7 @@
     },
     {
       "ID": 2316,
-      "continent": "Oceania",
+      "continent": "oceania",
       "country": "AUS",
       "latitude": -32.715,
       "location": "Port Stephens (Tomaree)",
