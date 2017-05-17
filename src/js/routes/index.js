@@ -1,10 +1,11 @@
 import route from 'riot-route'
 
-export const STEPS = {
-  EXPERIMENT_1: 'titel-1',
-  EXPERIMENT_2: 'titel-2',
-  EXPLORE: 'explore'
-}
+export const STEPS = [
+  'intro',
+  'world',
+  'manila',
+  'northern-europe'
+]
 
 export const intro = (locale) => `/${locale}/#start`
 export const article = (locale) => `/${locale}/#article`

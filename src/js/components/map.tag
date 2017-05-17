@@ -37,18 +37,20 @@
     const updateLayers = (activeStep) => {
       switch (activeStep) {
 
-        case STEPS.EXPERIMENT_1:
+        case STEPS[0]:
           clearLayers()
           addLayer(explorerLayer({
             stations: this.state.animation.items,
             clickCallback: selectStation,
             isAnimated: true
           }))
+          this.map.setView([10, 10], Math.floor(Math.random() * 11))
           break
 
-        case STEPS.EXPERIMENT_2:
+        case STEPS[1]:
           clearLayers()
           addLayer(tideOverTimeLayer(this.state.animation.items))
+          this.map.setView([10, 10], Math.floor(Math.random() * 11))
           break
 
         default:
@@ -58,6 +60,7 @@
             clickCallback: selectStation,
             isAnimated: true
           }))
+          this.map.setView([10, 10], Math.floor(Math.random() * 11))
       }
     }
 

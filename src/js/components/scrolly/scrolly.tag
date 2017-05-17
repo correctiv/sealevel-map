@@ -6,6 +6,7 @@
   />
 
   <article class="scrolly__article" id="article">
+
     <header class="scrolly__header">
       <h1 class="scrolly__title">
         { i18n.t('scrolly.title') }
@@ -15,13 +16,14 @@
       </p>
     </header>
 
-    <div ref="container"></div>
+    <sealevel-scrolly-content steps={ this.steps } />
+
   </article>
 
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
-      <li each={ steps }>
-        <a class="scrolly__nav__link" href="#{ id }">{ title }</a>
+      <li each={ step in steps }>
+        <a class="scrolly__nav__link" href="#{ step }">{ title }</a>
       </li>
     </ul>
   </nav>
@@ -31,20 +33,11 @@
     import _ from 'lodash'
     import gumshoe from 'gumshoe'
     import './scrolly-intro.tag'
+    import './scrolly-content.tag'
     import { setStep } from '../../actions/navigation'
-    import content from '../../../en.md'
+    import { STEPS } from '../../routes/'
 
-    const getSteps = (article) => {
-      return _.map(article.querySelectorAll('[id]'), element => ({
-        id: element.id,
-        title: element.textContent
-      }))
-    }
-
-    const initContent = (language) => {
-      this.refs.container.innerHTML = content
-      this.steps = getSteps(this.refs.container)
-
+    const initNavigation = (language) => {
       _.defer(gumshoe.init, {
         container: window,
         activeClass: 'scrolly__nav__link--active',
@@ -61,11 +54,11 @@
       activeStep: null
     }
 
+    this.steps = STEPS
+
     this.on('route', (language, anchor) => {
-      // if (language !== i18n.getLanguage()) {
       this.i18n.setLocale(language)
-      initContent(language)
-      // }
+      initNavigation(language)
 
       if (anchor !== this.state.activeStep) {
         this.store.dispatch(setStep(anchor))
