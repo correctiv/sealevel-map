@@ -3,15 +3,8 @@
   <div id="sealevel__map" class="sealevel__map"></div>
 
   <script type="text/babel">
-    import L from 'leaflet'
-    import 'leaflet_css'
-    import 'leaflet_marker'
-    import 'leaflet_marker_2x'
-    import 'leaflet_marker_shadow'
+    import mapboxgl from 'mapbox-gl'
     import { fetchAnimationDataIfNeeded } from '../actions/animation'
-    import tideOverTimeLayer from './layers/tide-over-time-layer.js'
-    import explorerLayer from './layers/explorer-layer.js'
-    import { STEPS, routeToStation } from '../routes/'
 
     this.activeLayers = []
     this.state = this.store.getState()
@@ -30,37 +23,37 @@
       this.dispatch(fetchAnimationDataIfNeeded())
     })
 
-    const selectStation = (id) => {
-      routeToStation(this.i18n.getLocale(), id)
-    }
-
     const updateLayers = (activeStep) => {
       switch (activeStep) {
 
-        case STEPS[0]:
-          clearLayers()
-          addLayer(explorerLayer({
-            stations: this.state.animation.items,
-            clickCallback: selectStation,
-            isAnimated: true
-          }))
-          this.map.setView([10, 10], Math.floor(Math.random() * 11))
+        case 'intro':
+          this.map.fitBounds([
+            [-167.6953125, -56.3652501369],
+            [-166.9921875, 77.3895040054]
+          ])
           break
 
-        case STEPS[1]:
-          clearLayers()
-          addLayer(tideOverTimeLayer(this.state.animation.items))
-          this.map.setView([10, 10], Math.floor(Math.random() * 11))
+        case 'manila':
+          this.map.flyTo({
+            center: [121, 14.65],
+            zoom: 10,
+            pitch: 45
+          })
+          break
+
+        case 'northern-europe':
+          this.map.fitBounds([
+            [-25.1806640625, 54.4700376128],
+            [32.8271484375, 71.2725947123]
+          ])
           break
 
         default:
-          clearLayers()
-          addLayer(explorerLayer({
-            stations: this.state.animation.items,
-            clickCallback: selectStation,
-            isAnimated: true
-          }))
-          this.map.setView([10, 10], Math.floor(Math.random() * 11))
+          this.map.fitBounds([
+            [-167.6953125, -56.3652501369],
+            [-166.9921875, 77.3895040054]
+          ])
+          break
       }
     }
 
@@ -71,26 +64,17 @@
     }
 
     const renderMap = ({ center, zoom, tiles, attribution }) => {
-      const map = L.map('sealevel__map', { center, zoom })
-      const tileLayer = L.tileLayer(tiles, { attribution })
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ'
 
-      map.addLayer(tileLayer)
-      map.zoomControl.setPosition('topleft')
-      map.scrollWheelZoom.disable()
+      const map = new mapboxgl.Map({
+        container: 'sealevel__map',
+        style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh',
+        center: [-103.59179687498357, 40.66995747013945],
+        zoom: 3
+      })
 
       return map
     }
 
-    const addLayer = (layer) => {
-      this.map.addLayer(layer)
-      this.activeLayers.push(layer)
-    }
-
-    const clearLayers = () => {
-      this.activeLayers.forEach(layer => {
-        this.map.removeLayer(layer)
-      })
-      this.activeLayers = []
-    }
   </script>
 </sealevel-map>
