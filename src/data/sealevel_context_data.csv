@@ -1,4 +1,4 @@
-,id,location,latitude,longitude,country,continent,country_name,c02_emissions,c02_rank,coastal_population2010_sum,total_population2010_sum,trend_1985_2015,start_year,trend_longest,risk_rank,risk_index,risk_description
+,id,location,latitude,longitude,country_code,continent,country_name,c02_emissions,c02_rank,coastal_population2010_sum,total_population2010_sum,trend_1985_2015,start_year,trend_longest,risk_rank,risk_index,risk_description
 0,1,Brest,48.383,-4.495,FRA,europe,France,5.050482994348349,92.0,2983590.0,63125894.0,2.385,1807.0,0.97,152.0,2.62,very low
 1,61,Marseille,43.279,5.354,FRA,europe,France,5.050482994348349,92.0,2983590.0,63125894.0,3.53,1885.0,1.32,152.0,2.62,very low
 2,453,Le Havre,49.482,0.106,FRA,europe,France,5.050482994348349,92.0,2983590.0,63125894.0,1.984,1959.0,2.66,152.0,2.62,very low
