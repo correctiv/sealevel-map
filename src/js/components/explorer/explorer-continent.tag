@@ -22,7 +22,6 @@
 
     this.on('update', () => {
       this.stationCount = _.countBy(this.opts.stations, 'country_code')
-      console.log('country_code', this.stationCount, this.opts.stations)
     })
 
     this.route = (id) => opts.pathToCountry(this.i18n.getLocale(), id)

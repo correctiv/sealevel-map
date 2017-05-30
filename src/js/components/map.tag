@@ -47,19 +47,16 @@
             [32.8271484375, 71.2725947123]
           ])
           break
-
-        default:
-          this.map.fitBounds([
-            [-167.6953125, -56.3652501369],
-            [-166.9921875, 77.3895040054]
-          ])
-          break
       }
     }
 
     const zoomToStation = (target) => {
       if (target) {
-        this.map.setView([target.latitude, target.longitude], 6)
+        this.map.flyTo({
+          center: [target.longitude, target.latitude],
+          zoom: 6,
+          pitch: 0
+        })
       }
     }
 
