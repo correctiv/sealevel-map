@@ -9,7 +9,6 @@
 
   <sealevel-explorer-overview
     if={ !state.station && !state.continent && !state.country }
-    continents={ continents }
     stations={ state.items }
     path-to-continent={ routes.continent }
   />
@@ -46,15 +45,6 @@
     import './explorer-country.tag'
     import './explorer-continent.tag'
     import './explorer-station.tag'
-
-    this.continents = {
-      'africa': 'Africa',
-      'north-america': 'North America',
-      'south-america': 'South America',
-      'asia': 'Asia',
-      'europe': 'Europe',
-      'oceania': 'Oceania'
-    }
 
     this.routes = routes
     this.state = this.store.getState().explorer
@@ -100,7 +90,7 @@
 
     this.getCountriesForContinent = id => (
       _(this.state.items)
-        .filter(station => station.continent === this.continents[id])
+        .filter(station => station.continent === id)
         .map('country_code')
         .uniq()
         .sort()
