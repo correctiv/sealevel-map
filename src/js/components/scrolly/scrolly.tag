@@ -1,5 +1,7 @@
 <sealevel-scrolly>
 
+  <sealevel-scrolly-map />
+
   <sealevel-scrolly-intro
     active={state.activeStep === 'start'}
     locale={locale}
@@ -34,6 +36,7 @@
     import gumshoe from 'gumshoe'
     import './scrolly-intro.tag'
     import './scrolly-content.tag'
+    import './scrolly-map.tag'
     import { setStep } from '../../actions/navigation'
     import { STEPS } from '../../routes/'
 

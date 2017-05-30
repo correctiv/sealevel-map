@@ -1,10 +1,10 @@
-<sealevel-map>
+<sealevel-scrolly-map>
 
-  <div id="sealevel__map" class="sealevel__map"></div>
+  <div id="scrolly__map" class="scrolly__map"></div>
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
-    import { fetchAnimationDataIfNeeded } from '../actions/animation'
+    import { fetchAnimationDataIfNeeded } from '../../actions/animation'
 
     this.activeLayers = []
     this.state = this.store.getState()
@@ -12,14 +12,11 @@
 
     this.on('updated', () => {
       const activeStep = this.state.navigation.activeStep
-      const activeStation = this.state.explorer.station
-
-      updateLayers(activeStep)
-      zoomToStation(activeStation)
+      this.map && updateLayers(activeStep)
     })
 
     this.on('mount', () => {
-      this.map = renderMap(opts.options)
+      this.map = renderMap()
       this.dispatch(fetchAnimationDataIfNeeded())
     })
 
@@ -50,21 +47,11 @@
       }
     }
 
-    const zoomToStation = (target) => {
-      if (target) {
-        this.map.flyTo({
-          center: [target.longitude, target.latitude],
-          zoom: 6,
-          pitch: 0
-        })
-      }
-    }
-
-    const renderMap = ({ center, zoom, tiles, attribution }) => {
+    const renderMap = () => {
       mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ'
 
       const map = new mapboxgl.Map({
-        container: 'sealevel__map',
+        container: 'scrolly__map',
         style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh',
         center: [-103.59179687498357, 40.66995747013945],
         zoom: 3
@@ -74,4 +61,4 @@
     }
 
   </script>
-</sealevel-map>
+</sealevel-scrolly-map>

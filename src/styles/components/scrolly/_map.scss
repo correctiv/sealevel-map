@@ -1,7 +1,7 @@
 $color-negative: #008080;
 $color-positive: #8b0000;
 
-.sealevel__map {
+.scrolly__map {
   top:0;
   left:0;
   height: 100%;
@@ -11,27 +11,23 @@ $color-positive: #8b0000;
   position: fixed;
 }
 
-.sealevel__map__bar {
+.scrolly__map__bar {
   cursor: pointer;
 }
 
-.sealevel__map__bar--negative {
+.scrolly__map__bar--negative {
   fill: blue;
   cursor: pointer;
 
 }
 
-.sealevel__map__bar--positive {
+.scrolly__map__bar--positive {
   fill: red;
   cursor: pointer;
 }
 
 .leaflet-popup-close-button {
   display: none;
-}
-
-#sealevel__map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-overlay-pane > svg {
-  pointer-events: all;
 }
 
 .negative {
@@ -44,7 +40,7 @@ $color-positive: #8b0000;
   fill-opacity: 0.5;
 }
 
-.sealevel__map__infobox {
+.scrolly__map__infobox {
   z-index: 5;
   position: absolute;
   background: white;
@@ -55,14 +51,3 @@ $color-positive: #8b0000;
   padding: 10px;
   font-size: 16px;
 }
-
-.sealevel__navigation {
-  z-index: 5;
-  position: absolute;
-  background: white;
-  top: 0;
-  right: 50%;
-  padding: 10px;
-  text-align: center;
-}
-

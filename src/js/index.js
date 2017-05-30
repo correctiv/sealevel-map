@@ -12,7 +12,6 @@ import i18n from './mixins/i18n'
 
 import '../styles/index.scss'
 import './components/app.tag'
-import './components/map.tag'
 import './components/navigation.tag'
 
 // Set base path for router
@@ -26,14 +25,4 @@ riot.mixin(riotReduxMixin(store))
 riot.mixin(i18n('de'))
 
 // Mount root tag
-riot.mount('sealevel-app', {
-  store: store,
-  center: [41.890251, 12.492373],
-  zoom: 2,
-  overlayOptions: {
-    barWidth: 2,
-    maxHeight: 300
-  },
-  tiles: 'https://api.mapbox.com/styles/v1/felixmichel/cj1550ogw002s2smkgbz60keh/tiles/512/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ',
-  attribution: 'CartoDB <a href="https://cartodb.com/attributions">attribution</a>'
-})
+riot.mount('sealevel-app')
