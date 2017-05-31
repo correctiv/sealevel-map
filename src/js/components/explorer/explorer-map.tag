@@ -27,6 +27,23 @@
       })
     }
 
+    const createGeojsonSource = (stations) => ({
+      type: 'geojson',
+      data: {
+        type: 'FeatureCollection',
+        features: stations.map(station => ({
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [station.longitude, station.latitude]
+          },
+          properties: {
+            title: station.location
+          }
+        }))
+      }
+    })
+
     const renderMap = () => {
       mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ'
 
@@ -35,6 +52,21 @@
         style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh',
         center: [-103.59179687498357, 40.66995747013945],
         zoom: 3
+      })
+
+      map.on('load', () => {
+        map.addLayer({
+          'id': 'stations',
+          'type': 'circle',
+          'source': createGeojsonSource(this.opts.stations),
+          'layout': {
+            'visibility': 'visible'
+          },
+          'paint': {
+            'circle-radius': 5,
+            'circle-color': 'rgba(55,148,179,1)'
+          }
+        })
       })
 
       return map

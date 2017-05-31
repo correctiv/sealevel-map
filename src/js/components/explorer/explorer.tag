@@ -1,6 +1,9 @@
 <sealevel-explorer>
 
-  <sealevel-explorer-map />
+  <sealevel-explorer-map
+    if={ state.items }
+    stations={ state.items }
+  />
 
   <div class="explorer-panel">
     <sealevel-explorer-breadcrumbs
