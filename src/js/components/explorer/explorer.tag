@@ -3,6 +3,7 @@
   <sealevel-explorer-map
     if={ state.items }
     stations={ state.items }
+    route-to-station={ routes.routeToStation }
   />
 
   <div class="explorer-panel">
