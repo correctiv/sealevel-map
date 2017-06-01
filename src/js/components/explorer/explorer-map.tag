@@ -5,6 +5,14 @@
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
 
+    const scale = [
+      [-4, '#008080'],
+      [-2, '#94d5ba'],
+      [0, '#ffffe0'],
+      [2, '#ef738b'],
+      [4, '#8b0000']
+    ]
+
     this.activeLayers = []
     this.state = this.store.getState()
     this.subscribe(state => this.update({ state }))
@@ -38,7 +46,8 @@
           },
           properties: {
             id: station.id,
-            title: station.location
+            title: station.location,
+            trend: parseFloat(station.trend_1985_2015, 10)
           }
         }))
       }
@@ -64,7 +73,10 @@
           },
           'paint': {
             'circle-radius': 5,
-            'circle-color': 'rgba(55,148,179,1)'
+            'circle-color': {
+              property: 'trend',
+              stops: scale
+            }
           }
         })
 
