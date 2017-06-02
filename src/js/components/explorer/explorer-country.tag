@@ -1,6 +1,6 @@
 <sealevel-explorer-country>
 
-  <h2 class="explorer__title">{ opts.country }</h2>
+  <h2 class="explorer__title">{ i18n.t('explorer.countries.' + opts.country) }</h2>
 
   <ul class="entries">
     <li each={ station in opts.stations }>
