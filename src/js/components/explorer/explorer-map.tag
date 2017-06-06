@@ -4,6 +4,7 @@
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
+    import bbox from '@turf/bbox'
 
     const scale = [
       [-4, '#008080'],
@@ -18,13 +19,42 @@
     this.subscribe(state => this.update({ state }))
 
     this.on('updated', () => {
-      const station = this.state.explorer.station
+      const stations = this.opts.stations
+      const continent = this.opts.continent
+      const station = this.opts.station
+
+      continent && zoomToContinent(continent, stations)
       station && zoomToStation([station.longitude, station.latitude])
     })
 
     this.on('mount', () => {
       this.map = renderMap(opts.options)
     })
+
+    const createFeatures = (stations) => ({
+      type: 'FeatureCollection',
+      features: stations.map(station => ({
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [
+            parseFloat(station.longitude),
+            parseFloat(station.latitude)
+          ]
+        },
+        properties: {
+          id: station.id,
+          title: station.location,
+          trend: parseFloat(station.trend_1985_2015, 10)
+        }
+      }))
+    })
+
+    const zoomToContinent = (id, stations) => {
+      const selectedStations = stations.filter(({ continent }) => id === continent)
+      const bounds = bbox(createFeatures(selectedStations))
+      this.map.fitBounds(bounds)
+    }
 
     const zoomToStation = (coordinates) => {
       this.map.flyTo({
@@ -33,25 +63,6 @@
         pitch: 0
       })
     }
-
-    const createGeojsonSource = (stations) => ({
-      type: 'geojson',
-      data: {
-        type: 'FeatureCollection',
-        features: stations.map(station => ({
-          type: 'Feature',
-          geometry: {
-            type: 'Point',
-            coordinates: [station.longitude, station.latitude]
-          },
-          properties: {
-            id: station.id,
-            title: station.location,
-            trend: parseFloat(station.trend_1985_2015, 10)
-          }
-        }))
-      }
-    })
 
     const renderMap = () => {
       mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ'
@@ -65,13 +76,16 @@
 
       map.on('load', () => {
         map.addLayer({
-          'id': 'stations',
-          'type': 'circle',
-          'source': createGeojsonSource(this.opts.stations),
-          'layout': {
-            'visibility': 'visible'
+          id: 'stations',
+          type: 'circle',
+          source: {
+            type: 'geojson',
+            data: createFeatures(this.opts.stations)
           },
-          'paint': {
+          layout: {
+            visibility: 'visible'
+          },
+          paint: {
             'circle-radius': 5,
             'circle-color': {
               property: 'trend',

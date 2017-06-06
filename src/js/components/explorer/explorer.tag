@@ -3,6 +3,9 @@
   <sealevel-explorer-map
     if={ state.items }
     stations={ state.items }
+    country={ state.country }
+    continent={ state.continent }
+    station={ state.station }
     route-to-station={ routes.routeToStation }
   />
 
