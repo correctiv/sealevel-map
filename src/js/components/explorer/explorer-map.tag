@@ -4,6 +4,7 @@
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
+    import _ from 'lodash'
     import bbox from '@turf/bbox'
 
     const scale = [
@@ -19,12 +20,7 @@
     this.subscribe(state => this.update({ state }))
 
     this.on('updated', () => {
-      const stations = this.opts.stations
-      const continent = this.opts.continent
-      const station = this.opts.station
-
-      continent && zoomToContinent(continent, stations)
-      station && zoomToStation([station.longitude, station.latitude])
+      flyToSelection(this.opts)
     })
 
     this.on('mount', () => {
@@ -50,18 +46,22 @@
       }))
     })
 
-    const zoomToContinent = (id, stations) => {
-      const selectedStations = stations.filter(({ continent }) => id === continent)
-      const bounds = bbox(createFeatures(selectedStations))
-      this.map.fitBounds(bounds)
+    const filterSelection = ({ stations, station, country, continent }) => {
+      if (continent) {
+        return _.filter(stations, { continent: continent })
+      } else if (country) {
+        return _.filter(stations, { country_code: country })
+      } else if (station) {
+        return [station]
+      } else {
+        return stations
+      }
     }
 
-    const zoomToStation = (coordinates) => {
-      this.map.flyTo({
-        center: coordinates,
-        zoom: 6,
-        pitch: 0
-      })
+    const flyToSelection = (options) => {
+      const selection = filterSelection(options)
+      const bounds = bbox(createFeatures(selection))
+      this.map.fitBounds(bounds)
     }
 
     const renderMap = () => {
