@@ -61,7 +61,10 @@
     const flyToSelection = (options) => {
       const selection = filterSelection(options)
       const bounds = bbox(createFeatures(selection))
-      this.map.fitBounds(bounds)
+      this.map.fitBounds(bounds, {
+        duration: 1000,
+        maxZoom: 7
+      })
     }
 
     const renderMap = () => {
