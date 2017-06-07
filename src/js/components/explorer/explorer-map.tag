@@ -103,10 +103,18 @@
 
           this.opts.routeToStation(locale, target.properties.id)
 
-          new mapboxgl.Popup()
-            .setLngLat(target.geometry.coordinates)
-            .setHTML(target.properties.title)
-            .addTo(map)
+          // remove existing popup:
+          this.popup && this.popup.remove()
+
+          // create new popup:
+          this.popup = new mapboxgl.Popup({
+            offset: [0, -10],
+            closeOnClick: false,
+            closeButton: false
+          })
+          .setLngLat(target.geometry.coordinates)
+          .setHTML(target.properties.title)
+          .addTo(map)
         })
 
         // Change the cursor to a pointer when the mouse is over the stations layer.
