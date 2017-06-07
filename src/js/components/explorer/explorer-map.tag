@@ -63,7 +63,8 @@
       const bounds = bbox(createFeatures(selection))
       this.map.fitBounds(bounds, {
         duration: 1000,
-        maxZoom: 7
+        maxZoom: 7,
+        offset: [-200, 0]
       })
     }
 
@@ -72,9 +73,7 @@
 
       const map = new mapboxgl.Map({
         container: 'explorer__map',
-        style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh',
-        center: [-103.59179687498357, 40.66995747013945],
-        zoom: 3
+        style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh'
       })
 
       map.on('load', () => {
