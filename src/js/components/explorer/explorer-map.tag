@@ -21,11 +21,23 @@
 
     this.on('updated', () => {
       flyToSelection(this.opts)
+      this.opts.station && highlightStation(this.opts.station)
     })
 
     this.on('mount', () => {
       this.map = renderMap(opts.options)
     })
+
+    const highlightStation = ({longitude, latitude}) => {
+      const markerEl = document.createElement('div')
+      markerEl.className = 'explorer__map__highlight'
+
+      this.marker && this.marker.remove()
+
+      this.marker = new mapboxgl.Marker(markerEl, { offset: [-10, -10] })
+        .setLngLat([longitude, latitude])
+        .addTo(this.map)
+    }
 
     const createFeatures = (stations) => ({
       type: 'FeatureCollection',
@@ -88,7 +100,7 @@
             visibility: 'visible'
           },
           paint: {
-            'circle-radius': 5,
+            'circle-radius': 6,
             'circle-color': {
               property: 'trend',
               stops: scale
@@ -108,7 +120,7 @@
 
           // create new popup:
           this.popup = new mapboxgl.Popup({
-            offset: [0, -10],
+            offset: [0, -15],
             closeOnClick: false,
             closeButton: false
           })
