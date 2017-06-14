@@ -1,7 +1,7 @@
 .explorer-panel {
   display: block;
   position: absolute;
-  width: 400px;
+  width: 100%;
   top: 0;
   right: 0;
   z-index: 100;
@@ -9,7 +9,7 @@
   padding: 1em;
   margin: 25px;
 
-  @include MQ(S) {
-    width:100%
+  @include mq($screen-s) {
+    width: 400px;
   }
 }

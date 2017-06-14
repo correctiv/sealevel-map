@@ -32,8 +32,10 @@
       const markerEl = document.createElement('div')
       markerEl.className = 'explorer__map__highlight'
 
+      // remove existing marker:
       this.marker && this.marker.remove()
 
+      // add new marker:
       this.marker = new mapboxgl.Marker(markerEl, { offset: [-10, -10] })
         .setLngLat([longitude, latitude])
         .addTo(this.map)

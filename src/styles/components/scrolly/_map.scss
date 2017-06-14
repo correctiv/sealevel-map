@@ -1,53 +1,15 @@
-$color-negative: #008080;
-$color-positive: #8b0000;
-
 .scrolly__map {
-  top:0;
-  left:0;
-  height: 100%;
-  width:100%;
-  display:block !important;
-  z-index:2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   position: fixed;
-}
 
-.scrolly__map__bar {
-  cursor: pointer;
-}
+  @include mq($screen-m) {
+    right: 50%;
+  }
 
-.scrolly__map__bar--negative {
-  fill: blue;
-  cursor: pointer;
-
-}
-
-.scrolly__map__bar--positive {
-  fill: red;
-  cursor: pointer;
-}
-
-.leaflet-popup-close-button {
-  display: none;
-}
-
-.negative {
-  fill: $color-negative;
-  fill-opacity: 0.5;
-}
-
-.positive {
-  fill: $color-positive;
-  fill-opacity: 0.5;
-}
-
-.scrolly__map__infobox {
-  z-index: 5;
-  position: absolute;
-  background: white;
-  width: 200px;
-  top: 50;
-  right: 20;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  padding: 10px;
-  font-size: 16px;
+  @include mq($screen-l) {
+    right: 500px;
+  }
 }
