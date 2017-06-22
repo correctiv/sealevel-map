@@ -1,6 +1,9 @@
 <sealevel-scrolly>
 
-  <sealevel-scrolly-map />
+  <sealevel-scrolly-map
+    if={state.animation.items.length > 0}
+    animation-items={ state.animation.items }
+  />
 
   <sealevel-scrolly-intro
     active={state.activeStep === 'start'}
@@ -38,6 +41,7 @@
     import './scrolly-content.tag'
     import './scrolly-map.tag'
     import { setStep } from '../../actions/navigation'
+    import { fetchAnimationDataIfNeeded } from '../../actions/animation'
     import { STEPS } from '../../routes/'
 
     const initNavigation = (language) => {
@@ -46,7 +50,7 @@
         activeClass: 'scrolly__nav__link--active',
         callback: (event) => {
           const active = event && event.target.id
-          if (active && active !== this.state.activeStep) {
+          if (active && active !== this.state.navigation.activeStep) {
             route(`${language}/#${active}`)
           }
         }
@@ -58,19 +62,23 @@
 
     // Set initial state:
     this.state = {
-      activeStep: null
+      navigation: { activeStep: null },
+      animation: null
     }
 
     // Subscribe to global redux state:
-    this.subscribe(({ navigation }) => {
-      this.update({ state: navigation })
+    this.subscribe(({ navigation, animation }) => {
+      this.update({
+        state: { navigation, animation }
+      })
     })
 
     this.on('route', (language, anchor) => {
       this.i18n.setLocale(language)
       initNavigation(language)
+      this.store.dispatch(fetchAnimationDataIfNeeded())
 
-      if (anchor !== this.state.activeStep) {
+      if (anchor !== this.state.navigation.activeStep) {
         this.store.dispatch(setStep(anchor))
       }
     })
