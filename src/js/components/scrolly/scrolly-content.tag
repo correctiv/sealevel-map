@@ -26,7 +26,6 @@
       this.locale = this.i18n.getLocale()
       updateContent()
     })
-
   </script>
 
 </sealevel-scrolly-content>

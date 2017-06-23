@@ -1,14 +1,8 @@
 <sealevel-scrolly>
 
-  <sealevel-scrolly-map
-    if={state.animation.items.length > 0}
-    animation-items={ state.animation.items }
-  />
+  <sealevel-scrolly-map />
 
-  <sealevel-scrolly-intro
-    active={state.activeStep === 'start'}
-    locale={locale}
-  />
+  <sealevel-scrolly-intro locale={locale} />
 
   <article class="scrolly__article" id="article">
 
@@ -41,7 +35,6 @@
     import './scrolly-content.tag'
     import './scrolly-map.tag'
     import { setStep } from '../../actions/navigation'
-    import { fetchAnimationDataIfNeeded } from '../../actions/animation'
     import { STEPS } from '../../routes/'
 
     const initNavigation = (language) => {
@@ -50,7 +43,7 @@
         activeClass: 'scrolly__nav__link--active',
         callback: (event) => {
           const active = event && event.target.id
-          if (active && active !== this.state.navigation.activeStep) {
+          if (active) {
             route(`${language}/#${active}`)
           }
         }
@@ -60,27 +53,10 @@
     // Make steps available in template:
     this.steps = STEPS
 
-    // Set initial state:
-    this.state = {
-      navigation: { activeStep: null },
-      animation: null
-    }
-
-    // Subscribe to global redux state:
-    this.subscribe(({ navigation, animation }) => {
-      this.update({
-        state: { navigation, animation }
-      })
-    })
-
     this.on('route', (language, anchor) => {
       this.i18n.setLocale(language)
+      this.store.dispatch(setStep(anchor))
       initNavigation(language)
-      this.store.dispatch(fetchAnimationDataIfNeeded())
-
-      if (anchor !== this.state.navigation.activeStep) {
-        this.store.dispatch(setStep(anchor))
-      }
     })
 
   </script>
