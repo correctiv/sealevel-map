@@ -5,47 +5,112 @@
   <script type="text/babel">
     import * as d3 from 'd3'
 
+    const MIN_YEAR = 1985
+    const MAX_YEAR = 2014
+    const ANIMATION_INTERVAL = 1000
+    const MAX_HEIGHT = 200
+
     this.on('update', () => {
-      renderVizLayer(this.opts.map)
+      initialize(this.opts.map)
     })
 
     this.shouldUpdate = (opts, nextOpts) => {
-      if (this.points === nextOpts.items) return false
+      if (this.stations === nextOpts.items) return false
       return true
     }
 
-    const renderVizLayer = (map) => {
+    const initialize = (map) => {
       // Setup our svg layer that we can manipulate with d3
       const container = map.getCanvasContainer()
       const svg = d3.select(container).append('svg')
 
-      this.points = this.opts.items
+      this.stations = this.opts.items
 
-      if (this.points.length > 0) {
-        this.dots = svg.selectAll('circle')
-          .data(this.points)
+      if (this.stations.length > 0) {
+        this.paths = svg.selectAll('path')
+          .data(this.stations)
           .enter()
-          .append('circle')
+          .append('path')
 
-        // re-render our visualization whenever the view changes
-        map.on('viewreset', render)
-        map.on('move', render)
+        const domain = getDomainValues(this.stations)
+        this.scale = d3.scaleLinear().rangeRound([MAX_HEIGHT, 0]).domain(domain)
 
         // initial rendering
-        render()
+        startAnimation()
+
+        // re-render our visualization whenever the view changes
+        map.on('viewreset', redraw)
+        map.on('move', redraw)
       }
     }
 
-    const render = () => {
+    const startAnimation = () => {
+      this.year = MIN_YEAR
+
+      this.animationLoop = setInterval(() => {
+        console.log(this.year)
+        this.year++
+        redraw()
+        if (this.year > MAX_YEAR) stopAnimation()
+      }, ANIMATION_INTERVAL)
+    }
+
+    const stopAnimation = () => {
+      clearInterval(this.animationLoop)
+    }
+
+    function findTide ({ tideData }, year) {
+      let tideItem = tideData.find(item => item.year === year)
+      return tideItem && tideItem.tide
+    }
+
+    function getDomainValues (items) {
+      let yMin = d3.min(items, (station) => {
+        return d3.min(station.tideData, (d) => d.tide)
+      })
+
+      let yMax = d3.max(items, (station) => {
+        return d3.max(station.tideData, (d) => d.tide)
+      })
+
+      return [yMin, yMax]
+    }
+
+    const redraw = () => {
       const d3Projection = getD3Projection(this.opts.map)
       const path = d3.geoPath()
       path.projection(d3Projection)
 
-      this.dots
-        .attr('r', 10)
-        .style('fill', 'green')
-        .attr('cx', d => d3Projection([d.longitude, d.latitude])[0])
-        .attr('cy', d => d3Projection([d.longitude, d.latitude])[1])
+      this.paths
+        .transition(ANIMATION_INTERVAL)
+        .attr('transform', (station) => {
+          const point = d3Projection([station.longitude, station.latitude])
+          const tide = findTide(station, this.year)
+          const triangleHeight = Math.abs(this.scale(tide) - this.scale(0))
+          const x = point[0] - 3
+          const y = tide <= 0 ? point[1] : point[1] - triangleHeight
+
+          return `translate(${x}, ${y})`
+        })
+        .attr('d', (station) => {
+          const tide = findTide(station, this.year)
+          const triangleHeight = Math.abs(this.scale(tide) - this.scale(0))
+
+          if (tide) {
+            if (tide >= 0) {
+              return 'M 3,0 6,' + triangleHeight + ' 0,' + triangleHeight + ' z'
+            } else {
+              return 'M 0 0 L 3 ' + triangleHeight + ' L 6 0 z'
+            }
+          } else {
+            return 'M 0 0 L 3 0 L 6 0 z'
+          }
+        })
+        .attr('class', (station) => {
+          return findTide(station, this.year) < 0
+            ? 'scrolly__map-animation__item--negative'
+            : 'scrolly__map-animation__item--positive'
+        })
     }
 
     // map projection between map and vis

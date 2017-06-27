@@ -14,12 +14,6 @@
     right: 500px;
   }
 
-  .scrolly__map__container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-
   svg {
     position: absolute;
     width: 100%;
@@ -27,4 +21,8 @@
   }
 }
 
-
+.scrolly__map__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
