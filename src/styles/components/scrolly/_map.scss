@@ -1,0 +1,28 @@
+.scrolly__map {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  overflow: hidden;
+
+  @include mq($screen-m) {
+    right: 50%;
+  }
+
+  @include mq($screen-l) {
+    right: 500px;
+  }
+
+  svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.scrolly__map__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

@@ -5,7 +5,7 @@ const Webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const ExtractSASS = new ExtractTextPlugin('styles/bundle.css')
+const ExtractSASS = new ExtractTextPlugin('/styles/bundle.css')
 
 module.exports = (options) => {
   const webpackConfig = {

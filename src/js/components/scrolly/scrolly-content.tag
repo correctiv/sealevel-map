@@ -3,8 +3,11 @@
   <script type="text/babel">
     const addContentSection = (stepName) => {
       const section = document.createElement('section')
+      const sectionWrapper = document.createElement('div')
+      sectionWrapper.className = 'scrolly__content'
       section.setAttribute('id', stepName)
-      section.innerHTML = require(`../../../locale/${this.locale}/${stepName}.md`)
+      section.appendChild(sectionWrapper)
+      sectionWrapper.innerHTML = require(`../../../locale/${this.locale}/${stepName}.md`)
       this.root.appendChild(section)
     }
 
@@ -23,7 +26,6 @@
       this.locale = this.i18n.getLocale()
       updateContent()
     })
-
   </script>
 
 </sealevel-scrolly-content>

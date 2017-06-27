@@ -12,8 +12,6 @@
     </route>
   </router>
 
-  <sealevel-map options={ opts } />
-
   <sealevel-navigation
     active={ store.getState().navigation.activeStep }
     steps={ store.getState().STEPS }

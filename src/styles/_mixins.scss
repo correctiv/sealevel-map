@@ -22,14 +22,6 @@
  * Media queries
  */
 
-@mixin MQ($canvas) {
-  @if $canvas == S {
-    @media only screen and (max-width: $S) { @content; }
-  }
-  @else if $canvas == M {
-    @media only screen and (max-width: $M) { @content; }
-  }
-  @else if $canvas == L {
-    @media only screen and (max-width: $L) { @content; }
-  }
+@mixin mq($canvas) {
+  @media only screen and (min-width: $canvas) { @content; }
 }

@@ -1,38 +1,49 @@
-<sealevel-explorer class="explorer">
+<sealevel-explorer>
 
-  <sealevel-explorer-breadcrumbs
-    continent={ state.continent || getContinentForCountry(state.country) }
-    country={ state.country }
-    station={ state.station }
-    routes={ routes }
-  />
-
-  <sealevel-explorer-overview
-    if={ !state.station && !state.continent && !state.country }
+  <sealevel-explorer-map
+    if={ state.items }
     stations={ state.items }
-    path-to-continent={ routes.continent }
-  />
-
-  <sealevel-explorer-continent
-    if={ state.continent }
+    country={ state.country }
     continent={ state.continent }
-    countries={ getCountriesForContinent(state.continent) }
-    stations={ state.items }
-    path-to-country={ routes.country }
+    station={ state.station }
+    route-to-station={ routes.routeToStation }
   />
 
-  <sealevel-explorer-country
-    if={ state.country }
-    country={ state.country }
-    stations={ getStationsForCountry(state.country) }
-    path-to-station={ routes.station }
-  />
+  <div class="explorer-panel">
+    <sealevel-explorer-breadcrumbs
+      continent={ state.continent || getContinentForCountry(state.country) }
+      country={ state.country }
+      station={ state.station }
+      routes={ routes }
+    />
 
-  <sealevel-explorer-station
-    if={ state.station }
-    station={ getStationContext(state.station.ID) }
-    tides={ state.station.tideData }
-  />
+    <sealevel-explorer-overview
+      if={ !state.station && !state.continent && !state.country }
+      stations={ state.items }
+      path-to-continent={ routes.continent }
+    />
+
+    <sealevel-explorer-continent
+      if={ state.continent }
+      continent={ state.continent }
+      countries={ getCountriesForContinent(state.continent) }
+      stations={ state.items }
+      path-to-country={ routes.country }
+    />
+
+    <sealevel-explorer-country
+      if={ state.country }
+      country={ state.country }
+      stations={ getStationsForCountry(state.country) }
+      path-to-station={ routes.station }
+    />
+
+    <sealevel-explorer-station
+      if={ state.station }
+      station={ getStationContext(state.station.ID) }
+      tides={ state.station.tideData }
+    />
+  </div>
 
   <script type="text/babel">
     import _ from 'lodash'
@@ -40,6 +51,7 @@
     import * as routes from '../../routes/'
     import { requestStationDetails, requestStationList } from '../../actions/explorer'
     import { setStep } from '../../actions/navigation'
+    import './explorer-map.tag'
     import './explorer-breadcrumbs.tag'
     import './explorer-overview.tag'
     import './explorer-country.tag'

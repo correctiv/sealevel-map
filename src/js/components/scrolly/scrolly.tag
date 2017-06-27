@@ -1,9 +1,8 @@
 <sealevel-scrolly>
 
-  <sealevel-scrolly-intro
-    active={state.activeStep === 'start'}
-    locale={locale}
-  />
+  <sealevel-scrolly-map />
+
+  <sealevel-scrolly-intro locale={locale} />
 
   <article class="scrolly__article" id="article">
 
@@ -34,6 +33,7 @@
     import gumshoe from 'gumshoe'
     import './scrolly-intro.tag'
     import './scrolly-content.tag'
+    import './scrolly-map.tag'
     import { setStep } from '../../actions/navigation'
     import { STEPS } from '../../routes/'
 
@@ -43,7 +43,7 @@
         activeClass: 'scrolly__nav__link--active',
         callback: (event) => {
           const active = event && event.target.id
-          if (active && active !== this.state.activeStep) {
+          if (active) {
             route(`${language}/#${active}`)
           }
         }
@@ -53,23 +53,10 @@
     // Make steps available in template:
     this.steps = STEPS
 
-    // Set initial state:
-    this.state = {
-      activeStep: null
-    }
-
-    // Subscribe to global redux state:
-    this.subscribe(({ navigation }) => {
-      this.update({ state: navigation })
-    })
-
     this.on('route', (language, anchor) => {
       this.i18n.setLocale(language)
+      this.store.dispatch(setStep(anchor))
       initNavigation(language)
-
-      if (anchor !== this.state.activeStep) {
-        this.store.dispatch(setStep(anchor))
-      }
     })
 
   </script>
