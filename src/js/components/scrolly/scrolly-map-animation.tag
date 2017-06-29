@@ -1,6 +1,6 @@
 <sealevel-scrolly-map-animation>
 
-  <svg id="scrolly__map__animation" />
+  <svg ref="vis" />
 
   <script type="text/babel">
     import * as d3 from 'd3'
@@ -10,19 +10,25 @@
     const ANIMATION_INTERVAL = 1000
     const MAX_HEIGHT = 200
 
-    this.on('update', () => {
+    this.on('mount', () => {
+      console.log('mount')
       initialize(this.opts.map)
     })
 
-    this.shouldUpdate = (opts, nextOpts) => {
-      if (this.stations === nextOpts.items) return false
-      return true
-    }
+    this.on('unmount', () => {
+      console.log('unmount')
+      stopAnimation()
+    })
+
+    // this.shouldUpdate = (opts, nextOpts) => {
+    //   if (nextOpts.items === this.stations) return false
+    //   return true
+    // }
 
     const initialize = (map) => {
       // Setup our svg layer that we can manipulate with d3
-      const container = map.getCanvasContainer()
-      const svg = d3.select(container).append('svg')
+      console.log('this.refs', this.refs)
+      const svg = d3.select(this.refs.vis)
 
       this.stations = this.opts.items
 

@@ -3,9 +3,8 @@
   <div id="scrolly__map" class="scrolly__map__container"></div>
 
   <sealevel-scrolly-map-animation
-    if={map}
-    items={state.animation.items}
-    map={map}
+    if={state.animation.items && activeStep === 'start'}
+    map={map} items={state.animation.items}
   />
 
   <script type="text/babel">
@@ -17,9 +16,12 @@
     this.state = this.store.getState()
     this.subscribe(state => this.update({ state }))
 
+    this.on('update', () => {
+      this.activeStep = this.state.navigation.activeStep
+    })
+
     this.on('updated', () => {
-      const activeStep = this.state.navigation.activeStep
-      this.map && updateLayers(activeStep)
+      this.map && updateLayers(this.activeStep)
     })
 
     this.on('mount', () => {
@@ -30,7 +32,7 @@
     const updateLayers = (activeStep) => {
       switch (activeStep) {
 
-        case 'intro':
+        case 'world':
           this.map.fitBounds([
             [-167.6953125, -56.3652501369],
             [-166.9921875, 77.3895040054]
