@@ -1,14 +1,14 @@
 import route from 'riot-route'
 
 export const STEPS = [
-  'intro',
+  'start',
   'world',
   'manila',
   'northern-europe'
 ]
 
-export const intro = (locale) => `/${locale}/#start`
-export const article = (locale) => `/${locale}/#article`
+export const intro = (locale) => `/${locale}/#intro`
+export const article = (locale) => `/${locale}/#main`
 export const explorer = (locale) => `/${locale}/explore`
 export const continent = (locale, id) => `/${locale}/explore/${id}`
 export const country = (locale, id) => `/${locale}/explore/countries/${id}`

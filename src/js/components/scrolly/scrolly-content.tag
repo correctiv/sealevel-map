@@ -6,6 +6,7 @@
       const sectionWrapper = document.createElement('div')
       sectionWrapper.className = 'scrolly__content'
       section.setAttribute('id', stepName)
+      section.setAttribute('class', `scrolly__section--${stepName}`)
       section.appendChild(sectionWrapper)
       sectionWrapper.innerHTML = require(`../../../locale/${this.locale}/${stepName}.md`)
       this.root.appendChild(section)

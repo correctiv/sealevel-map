@@ -2,7 +2,7 @@ $bullet-width: 20px;
 $bullet-height: 5px;
 
 .scrolly__nav {
-  z-index: 5;
+  z-index: 0;
   position: fixed;
   top: 50%;
   left: 10px;
@@ -12,6 +12,11 @@ $bullet-height: 5px;
     padding: 0;
     list-style: inline;
     display: block;
+  }
+
+  .scrolly--intro-active &,
+  .scrolly--main-active & {
+    opacity: 0;
   }
 }
 

@@ -2,16 +2,19 @@
 
   <sealevel-scrolly-map />
 
-  <sealevel-scrolly-intro locale={locale} />
+  <sealevel-scrolly-intro id="intro" locale={locale} />
 
-  <article class="scrolly__article" id="article">
+  <article class="scrolly__article">
 
-    <header class="scrolly__header">
+    <header class="scrolly__header" id="main">
       <h1 class="scrolly__title">
         { i18n.t('scrolly.title') }
       </h1>
       <p class="scrolly__lead">
         { i18n.t('scrolly.lead') }
+      </p>
+      <p>
+        { i18n.t('scrolly.introduction') }
       </p>
     </header>
 
@@ -21,6 +24,12 @@
 
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
+      <li>
+        <a class="scrolly__nav__link" href="#intro">Start</a>
+      </li>
+      <li>
+        <a class="scrolly__nav__link" href="#main">Introduction</a>
+      </li>
       <li each={ step in steps }>
         <a class="scrolly__nav__link" href="#{ step }">{ title }</a>
       </li>
@@ -56,6 +65,7 @@
     this.on('route', (language, anchor) => {
       this.i18n.setLocale(language)
       this.store.dispatch(setStep(anchor))
+      this.root.className = `scrolly--${anchor}-active`
       initNavigation(language)
     })
 
