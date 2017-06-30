@@ -1,0 +1,4 @@
+### Japan will seine Küste vergrößern
+
+Der Meeresanstieg verwischt auch die Grenzen von Staaten - Japan fürchtet, dass sein südlichstes Riff im Wasser versinkt. Und dem Land damit zugleich der exklusive Anspruch auf mehr als 400.000 Quadratkilometer strategisch wichtige und ertragreiche Gewässer verloren geht. Deshalb versuchen japanische Forscher nun, Baby-Korallen zu züchten und auf das Riff zu setzen, auf dass es größer werde und auch im steigenden Ozean noch eine gut sichtbare Insel bleibt. Japan hat schon 21 Millionen Euro in das Projekt gesteckt und auch andere Atolle auf der Erde, die überflutet werden könnten, interessieren sich für die wachsenden Riffe - zum Beispiel Tuvalu oder die Malediven. Aber die Natur lässt sich nur schwer kopieren: Nur ein Drittel der neuen Korallen überlebt. Und das Meer wächst bislang deutlich schneller als die Meerestiere.
+

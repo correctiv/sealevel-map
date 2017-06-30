@@ -1,10 +1,12 @@
 import route from 'riot-route'
 
 export const STEPS = [
-  'start',
   'world',
   'manila',
-  'northern-europe'
+  'scandinavia',
+  'france',
+  'japan',
+  'argentina'
 ]
 
 export const intro = (locale) => `/${locale}/#intro`

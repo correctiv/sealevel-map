@@ -3,7 +3,7 @@
   <div id="scrolly__map" class="scrolly__map__container"></div>
 
   <sealevel-scrolly-map-animation
-    if={state.animation.items && activeStep === 'start'}
+    if={state.animation.items && activeStep === 'world'}
     map={map} items={state.animation.items}
   />
 
@@ -32,13 +32,6 @@
     const updateLayers = (activeStep) => {
       switch (activeStep) {
 
-        case 'world':
-          this.map.fitBounds([
-            [-167.6953125, -56.3652501369],
-            [-166.9921875, 77.3895040054]
-          ])
-          break
-
         case 'manila':
           this.map.flyTo({
             center: [121, 14.65],
@@ -46,11 +39,32 @@
           })
           break
 
-        case 'northern-europe':
+        case 'scandinavia':
           this.map.fitBounds([
             [-25.1806640625, 54.4700376128],
             [32.8271484375, 71.2725947123]
           ])
+          break
+
+        case 'japan':
+          this.map.flyTo({
+            center: [139.683333, 35.683333],
+            zoom: 5
+          })
+          break
+
+        case 'france':
+          this.map.flyTo({
+            center: [3.930556, 43.529444],
+            zoom: 5
+          })
+          break
+
+        case 'argentina':
+          this.map.flyTo({
+            center: [-58.383333, -34.6],
+            zoom: 5
+          })
           break
       }
     }
