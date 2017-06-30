@@ -2,6 +2,10 @@
 
   <svg ref="vis" />
 
+  <span class="scrolly__map-animation__counter">
+    { year }
+  </span>
+
   <script type="text/babel">
     import * as d3 from 'd3'
 
@@ -11,19 +15,16 @@
     const MAX_HEIGHT = 200
 
     this.on('mount', () => {
-      console.log('mount')
       initialize(this.opts.map)
     })
 
     this.on('unmount', () => {
-      console.log('unmount')
       stopAnimation()
     })
 
-    // this.shouldUpdate = (opts, nextOpts) => {
-    //   if (nextOpts.items === this.stations) return false
-    //   return true
-    // }
+    this.on('updated', () => {
+      redraw()
+    })
 
     const initialize = (map) => {
       // Setup our svg layer that we can manipulate with d3
@@ -54,10 +55,8 @@
       this.year = MIN_YEAR
 
       this.animationLoop = setInterval(() => {
-        console.log(this.year)
-        this.year++
-        redraw()
         if (this.year > MAX_YEAR) stopAnimation()
+        this.update({ year: this.year + 1 })
       }, ANIMATION_INTERVAL)
     }
 
