@@ -32,6 +32,13 @@
     const updateLayers = (activeStep) => {
       switch (activeStep) {
 
+        case 'world':
+          this.map.fitBounds([
+            [-160, -55],
+            [185.1, 75]
+          ])
+          break
+
         case 'manila':
           this.map.flyTo({
             center: [121, 14.65],
