@@ -2,9 +2,11 @@
 
   <svg ref="vis" />
 
-  <span class="scrolly__map-animation__counter">
-    { year }
-  </span>
+  <div class="container">
+    <span class="scrolly__map-animation__counter">
+      { year }
+    </span>
+  </div>
 
   <script type="text/babel">
     import * as d3 from 'd3'
