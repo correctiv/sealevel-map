@@ -78,12 +78,21 @@
 
     const renderMap = () => {
       mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ'
-      return new mapboxgl.Map({
+      const map = new mapboxgl.Map({
         container: 'scrolly__map',
         style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh',
         center: [-103.59179687498357, 40.66995747013945],
         zoom: 3
       })
+
+      map.on('load', () => {
+        const locale = this.i18n.getLocale()
+        map.setLayoutProperty('place_label_city', 'text-field', `{name_${locale}}`)
+        map.setLayoutProperty('place_label_other', 'text-field', `{name_${locale}}`)
+        map.setLayoutProperty('country_label', 'text-field', `{name_${locale}}`)
+      })
+
+      return map
     }
 
   </script>
