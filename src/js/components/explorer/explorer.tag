@@ -96,14 +96,14 @@
     )
 
     this.getContinentForCountry = id => {
-      const sample = _.find(this.state.items, station => station.country_code === id)
+      const sample = _.find(this.state.items, station => station.country === id)
       return sample && _.findKey(this.continents, _.partial(_.isEqual, sample.continent))
     }
 
     this.getCountriesForContinent = id => (
       _(this.state.items)
         .filter(station => station.continent === id)
-        .map('country_code')
+        .map('country')
         .uniq()
         .sort()
         .value()
@@ -111,7 +111,7 @@
 
     this.getStationsForCountry = id => (
       _(this.state.items)
-        .filter(station => station.country_code === id)
+        .filter(station => station.country === id)
         .sortBy('location')
         .value()
     )

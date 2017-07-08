@@ -62,9 +62,9 @@
 
     const filterSelection = ({ stations, station, country, continent }) => {
       if (continent) {
-        return _.filter(stations, { continent: continent })
+        return _.filter(stations, { continent })
       } else if (country) {
-        return _.filter(stations, { country_code: country })
+        return _.filter(stations, { country })
       } else if (station) {
         return [station]
       } else {

@@ -2,7 +2,7 @@
 
   <h1 class="explorer__title">{ opts.station.location }</h1>
 
-  <p>{ i18n.t('explorer.countries.' + opts.station.country_code) }</p>
+  <p>{ i18n.t('explorer.countries.' + opts.station.country) }</p>
 
   <sealevel-linechart chartdata="{ this.opts.tides }"></sealevel-linechart>
 

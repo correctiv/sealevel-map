@@ -25,7 +25,7 @@
     import _ from 'lodash'
 
     this.on('update', () => {
-      this.stationCount = _.countBy(this.opts.stations, 'country_code')
+      this.stationCount = _.countBy(this.opts.stations, 'country')
     })
 
     this.route = (id) => opts.pathToCountry(this.i18n.getLocale(), id)
