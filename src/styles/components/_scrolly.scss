@@ -1,21 +1,2 @@
-.scrolly__nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10;
-}
 
-.scrolly__article {
-  position: relative;
-  z-index: 10;
 
-  section {
-    padding: 80vh 0 0 0;
-  }
-}
-
-.scrolly__header {
-  min-height: 100vh;
-  padding: 15px 30px;
-  background: $white;
-}

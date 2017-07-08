@@ -6,19 +6,7 @@
 
   <article class="scrolly__article">
 
-    <header class="scrolly__header" id="main">
-      <div class="container">
-        <h1 class="scrolly__title">
-          { i18n.t('scrolly.title') }
-        </h1>
-        <p class="scrolly__lead">
-          { i18n.t('scrolly.lead') }
-        </p>
-        <p>
-          { i18n.t('scrolly.introduction') }
-        </p>
-      </div>
-    </header>
+    <sealevel-scrolly-header />
 
     <div class="container">
       <sealevel-scrolly-content steps={ this.steps } />
@@ -44,11 +32,12 @@
     import route from 'riot-route'
     import _ from 'lodash'
     import gumshoe from 'gumshoe'
-    import './scrolly-intro.tag'
-    import './scrolly-content.tag'
-    import './scrolly-map.tag'
     import { setStep } from '../../actions/navigation'
     import { STEPS } from '../../routes/'
+    import './scrolly-intro.tag'
+    import './scrolly-header.tag'
+    import './scrolly-content.tag'
+    import './scrolly-map.tag'
 
     const initNavigation = (language) => {
       _.defer(gumshoe.init, {
