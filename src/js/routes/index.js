@@ -5,7 +5,7 @@ export const STEPS = [
   'manila',
   'scandinavia',
   'france',
-  'japan',
+  'usa',
   'argentina'
 ]
 
