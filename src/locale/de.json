@@ -94,9 +94,21 @@
       "antarctica": "Antarktika – Beschreibung fehlt!"
     },
     "num_stations": "%{smart_count} Station |||| %{smart_count} Stationen",
-    "station_desc_rising": "In %{location}, the sea level rose yearly around %{trend_1985_2015}mm between 1985 and 2015. Since the very beginning of measurements in %{start_year}, sea level rose yearly around %{trend_longest}mm.",
-    "station_desc_falling": "In %{location}, the sea level fell yearly around %{trend_1985_2015}mm between 1985 and 2015. Since the very beginning of measurements in %{start_year}, sea level fell yearly around %{trend_longest}mm.",
+
+    "station_desc_higher": "Am Pegel %{location} stieg das Meer in den vergangenen Jahrzehnten stark an: Zwischen 1985 und %{last_available_year} ist das Wasser um %{last_available_value}mm angeschwollen. Das bedeutet: Bereits jetzt leiden die Menschen dort besonders unter Überschwemmungen und Stürme. Und auch in Zukunft werden hier die ersten Opfer des Klimawandels leben.",
+
+    "station_desc_high": "Am Pegel %{location} stieg das Meer in den vergangenen Jahrzehnten leicht an: Zwischen 1985 und %{last_available_year} ist das Wasser um %{last_available_value}mm angeschwollen. Mit dem Klimawandel wird der Wasserstand von Jahr zu Jahr schneller zunehmen. Überschwemmungen und Stürme bedrohen die Menschen an der Küste.",
+
+    "station_desc_flat": "Am Pegel %{location} hat sich die Höhe des Meeresspiegels in den vergangenen Jahrzehnten nur wenig verändert. Damit gehört dieser Ort weltweit zu den Ausnahmen. Mit dem Klimawandel wird aber auch hier künftig das Wasser von Jahr zu Jahr zunehmen. Überschwemmungen und Stürme bedrohen die Menschen an der Küste.",
+
+    "station_desc_low": "Am Pegel %{location} ist das Meer an der Küste den vergangenen Jahrzehnten – für viele überraschend – leicht gesunken. %{last_available_year} ist das Wasser um  %{last_available_value}mm niedriger als 1985. Das liegt daran, dass sich das Land an der Küste schneller anhob als das Meer. Die früher von kilometerdicken Eispanzern zusammengepresste Erdkruste dehnt sich nach deren Schmelzen auch heute noch aus. Aber dieser Trend wird sich laut Forschern in den kommenden Jahren umdrehen – rund 95 Prozent aller Küsten werden laut dem UN-Klimarat höhere Meere verkraften müssen.",
+
+    "station_desc_lower": "Am Pegel %{location} ist das Meer an der Küste in den vergangenen Jahrzehnten – für viele überraschend – stark gesunken. %{last_available_year} ist das Wasser um  %{last_available_value}mm niedriger als 1985. Das liegt daran, dass sich das Land an der Küste schneller anhob als das Meer. Die früher von kilometerdicken Eispanzern zusammengepresste Erdkruste dehnt sich nach deren Schmelzen auch heute noch aus. Aber dieser Trend wird sich laut Forschern in den kommenden Jahrzehnten umdrehen – rund 95 Prozent aller  Küsten werden laut dem UN-Klimarat höhere Meere verkraften müssen.",
+
+    "station_desc_unclear": "Über die Meereshöhe am Pegel %{location} haben wir keine gesicherten Daten. Das kann zahlreiche Ursachen haben. Beispielsweise wurde die Messstation im Laufe der Jahre versetzt oder ein geänderter Zuschnitt des Hafens, etwa durch neue Wellenbrecher, verfälschte die Messungen – oder die Küste ist sehr stark abgesunken. Laut einhelliger Meinung des UN-Klimarats wird das Meer aber in den kommenden Jahrzehnten an nahezu jedem Ort der Welt ansteigen – also auch an diesem.",
+
     "risk_desc": "In %{country_name}, %{coastal_population2010_sum} people of the %{total_population} population live in coastal regions. According to World Risk Index, %{country_name} has a %{risk_description}  risk ( %{risk_index} ) to be affected by a natural disaster.",
+
     "emissions_desc": "According to calculations of the United Nations, each person is allowed to emit two tonnes of C02 per year in order to keep global warming below two degrees. %{country_name} emits %{c02_emissions} tonnes of C02 emissions per person. On the global rank of largest C02 emissions per person, %{country_name} is placed on rank %{c02_rank}."
   }
 }

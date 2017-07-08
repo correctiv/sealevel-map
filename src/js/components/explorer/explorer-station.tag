@@ -6,33 +6,44 @@
 
   <sealevel-linechart chartdata="{ this.opts.tides }"></sealevel-linechart>
 
-<!--   <h4>Additional Information on { opts.station.country_name }</h4>
-
-  <p>CO2 emissions: <b>{ opts.station.co2_emissions } tons per capita</b></p>
-
-  <p>Population: <b>{ (opts.station.total_population2010_sum).toLocaleString('en-US', { maximumSignificantDigits: 3 }) }</b></p>
-
-  <p>People living in coastal areas: <b>{ opts.station.coastal_population2010_sum }</b></p> -->
-
   <p>{ stationDesc }</p>
   <p>{ riskDesc }</p>
   <p>{ emissionsDesc }</p>
 
   <script type="text/babel">
+    import _ from 'lodash'
     import '../linechart.tag'
+
+    const getStationDesc = (trend) => {
+      console.log(trend)
+      if (!trend) {
+        return 'explorer.station_desc_unclear'
+      }
+      if (trend > 2) {
+        return 'explorer.station_desc_higher'
+      }
+      if (trend > 0.5) {
+        return 'explorer.station_desc_high'
+      }
+      if (trend > -0.5) {
+        return 'explorer.station_desc_flat'
+      }
+      if (trend > -2) {
+        return 'explorer.station_desc_low'
+      }
+      return 'explorer.station_desc_lower'
+    }
 
     this.on('update', () => {
       const station = this.opts.station
+      const { tide, year } = _.last(this.opts.tides)
 
       if (station) {
+        station.last_available_year = year
+        station.last_available_value = tide > 0 ? tide : -tide
+        this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)
         this.riskDesc = this.i18n.t('explorer.risk_desc', station)
         this.emissionsDesc = this.i18n.t('explorer.emissions_desc', station)
-
-        if (station.trend > 0) {
-          this.stationDesc = this.i18n.t('explorer.station_desc_rising', station)
-        } else {
-          this.stationDesc = this.i18n.t('explorer.station_desc_falling', station)
-        }
       }
     })
   </script>
