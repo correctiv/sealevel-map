@@ -7,8 +7,6 @@
   <sealevel-linechart chartdata="{ this.opts.tides }"></sealevel-linechart>
 
   <p>{ stationDesc }</p>
-  <p>{ riskDesc }</p>
-  <p>{ emissionsDesc }</p>
 
   <script type="text/babel">
     import _ from 'lodash'
@@ -42,8 +40,6 @@
         station.last_available_year = year
         station.last_available_value = tide > 0 ? tide : -tide
         this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)
-        this.riskDesc = this.i18n.t('explorer.risk_desc', station)
-        this.emissionsDesc = this.i18n.t('explorer.emissions_desc', station)
       }
     })
   </script>

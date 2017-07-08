@@ -107,8 +107,8 @@
 
     "station_desc_unclear": "Über die Meereshöhe am Pegel %{location} haben wir keine gesicherten Daten. Das kann zahlreiche Ursachen haben. Beispielsweise wurde die Messstation im Laufe der Jahre versetzt oder ein geänderter Zuschnitt des Hafens, etwa durch neue Wellenbrecher, verfälschte die Messungen – oder die Küste ist sehr stark abgesunken. Laut einhelliger Meinung des UN-Klimarats wird das Meer aber in den kommenden Jahrzehnten an nahezu jedem Ort der Welt ansteigen – also auch an diesem.",
 
-    "risk_desc": "In %{country_name}, %{coastal_population2010_sum} people of the %{total_population} population live in coastal regions. According to World Risk Index, %{country_name} has a %{risk_description}  risk ( %{risk_index} ) to be affected by a natural disaster.",
+    "risk_desc": "In %{country} leben %{coastal_population_percent} Prozent der Bevölkerung nahe an der Küste. Diese wird künftig mit dem Klimawandel noch häufiger von Überschwemmungen und Stürmen bedroht sein.",
 
-    "emissions_desc": "According to calculations of the United Nations, each person is allowed to emit two tonnes of C02 per year in order to keep global warming below two degrees. %{country_name} emits %{c02_emissions} tonnes of C02 emissions per person. On the global rank of largest C02 emissions per person, %{country_name} is placed on rank %{c02_rank}."
+    "emissions_desc": "Um steigende Meere aufzuhalten, sollte laut UNO jeder Mensch nur noch zwei Tonnen CO₂ pro Jahr produzieren. Das entspricht ungefähr 10 000 km Autofahren in einem Mittelklassewagen – mit einem Flug von Berlin nach New York und zurück (3,5 Tonnen) ist das Budget hingegen schon weit überschritten. Aktuell produziert jeder Bewohner von %{country} jährlich %{c02_emissions} Tonnen."
   }
 }
