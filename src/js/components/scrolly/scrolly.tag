@@ -14,6 +14,8 @@
 
   </article>
 
+  <sealevel-scrolly-outro />
+
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
       <li>
@@ -38,6 +40,7 @@
     import './scrolly-header.tag'
     import './scrolly-content.tag'
     import './scrolly-map.tag'
+    import './scrolly-outro.tag'
 
     const initNavigation = (language) => {
       _.defer(gumshoe.init, {
