@@ -15,7 +15,7 @@ const animationReducer = (state = {}, action) => {
       return {
         ...state,
         isFetching: false,
-        items: action.data.stations
+        items: action.data
       }
     default:
       return state

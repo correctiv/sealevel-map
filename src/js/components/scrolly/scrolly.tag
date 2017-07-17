@@ -9,12 +9,10 @@
     <sealevel-scrolly-header />
 
     <div class="container">
-      <sealevel-scrolly-content steps={ this.steps } />
+      <sealevel-scrolly-content steps={steps} />
     </div>
 
   </article>
-
-  <sealevel-scrolly-outro />
 
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
@@ -24,8 +22,8 @@
       <li>
         <a class="scrolly__nav__link" href="#main">Introduction</a>
       </li>
-      <li each={ step in steps }>
-        <a class="scrolly__nav__link" href="#{ step }">{ title }</a>
+      <li each={step in steps}>
+        <a class="scrolly__nav__link" href="#{step}">{title}</a>
       </li>
     </ul>
   </nav>
@@ -40,7 +38,6 @@
     import './scrolly-header.tag'
     import './scrolly-content.tag'
     import './scrolly-map.tag'
-    import './scrolly-outro.tag'
 
     const initNavigation = (language) => {
       _.defer(gumshoe.init, {

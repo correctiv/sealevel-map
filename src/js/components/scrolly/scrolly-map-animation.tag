@@ -11,9 +11,9 @@
   <script type="text/babel">
     import * as d3 from 'd3'
 
-    const MIN_YEAR = 1985
-    const MAX_YEAR = 2014
-    const ANIMATION_INTERVAL = 1000
+    const MIN_YEAR = 1880
+    const MAX_YEAR = 2015
+    const ANIMATION_INTERVAL = 300
     const MAX_HEIGHT = 200
 
     this.on('mount', () => {
@@ -57,8 +57,8 @@
       this.year = MIN_YEAR
 
       this.animationLoop = setInterval(() => {
-        if (this.year > MAX_YEAR) stopAnimation()
-        this.update({ year: this.year + 1 })
+        this.update({ year: ++this.year })
+        if (this.year >= MAX_YEAR) stopAnimation()
       }, ANIMATION_INTERVAL)
     }
 
@@ -66,18 +66,13 @@
       clearInterval(this.animationLoop)
     }
 
-    function findTide ({ tideData }, year) {
-      let tideItem = tideData.find(item => item.year === year)
-      return tideItem && tideItem.tide
-    }
-
     function getDomainValues (items) {
       let yMin = d3.min(items, (station) => {
-        return d3.min(station.tideData, (d) => d.tide)
+        return d3.min(station.timeseries)
       })
 
       let yMax = d3.max(items, (station) => {
-        return d3.max(station.tideData, (d) => d.tide)
+        return d3.max(station.timeseries)
       })
 
       return [yMin, yMax]
@@ -91,8 +86,9 @@
       this.paths
         .transition(ANIMATION_INTERVAL)
         .attr('transform', (station) => {
-          const point = d3Projection([station.longitude, station.latitude])
-          const tide = findTide(station, this.year)
+          const year = this.year
+          const point = d3Projection(station.lngLat)
+          const tide = station.timeseries[year] || 0
           const triangleHeight = Math.abs(this.scale(tide) - this.scale(0))
           const x = point[0] - 3
           const y = tide <= 0 ? point[1] : point[1] - triangleHeight
@@ -100,7 +96,7 @@
           return `translate(${x}, ${y})`
         })
         .attr('d', (station) => {
-          const tide = findTide(station, this.year)
+          const tide = station.timeseries[this.year]
           const triangleHeight = Math.abs(this.scale(tide) - this.scale(0))
 
           if (tide) {
@@ -114,7 +110,7 @@
           }
         })
         .attr('class', (station) => {
-          return findTide(station, this.year) < 0
+          return station.timeseries[this.year] < 0
             ? 'scrolly__map-animation__item--negative'
             : 'scrolly__map-animation__item--positive'
         })
