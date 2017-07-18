@@ -9,7 +9,7 @@ const animationReducer = (state = {}, action) => {
       return {
         ...state,
         isFetching: true,
-        items: []
+        items: null
       }
     case RECEIVE_ANIMATION_DATA:
       return {

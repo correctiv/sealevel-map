@@ -5,8 +5,8 @@ export const REQUEST_ANIMATION_DATA = 'REQUEST_ANIMATION_DATA'
 export const RECEIVE_ANIMATION_DATA = 'RECEIVE_ANIMATION_DATA'
 
 const CONTEXT_SRC = '/data/sealevel_context_data.csv'
-const TIMESERIES_SRC = '/data/sealevel_viz_whole_timeseries.csv'
-// const TIMESERIES_SRC = '/data/sealevel_viz_psmsl_1985_2015.csv'
+// const TIMESERIES_SRC = '/data/sealevel_viz_whole_timeseries.csv'
+const TIMESERIES_SRC = '/data/sealevel_viz_psmsl_1985_2015.csv'
 
 const shouldFetchData = dataset => (
   !dataset.isFetching || !dataset.items

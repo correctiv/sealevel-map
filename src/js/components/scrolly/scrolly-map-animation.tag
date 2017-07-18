@@ -11,9 +11,9 @@
   <script type="text/babel">
     import * as d3 from 'd3'
 
-    const MIN_YEAR = 1880
+    const MIN_YEAR = 1985
     const MAX_YEAR = 2015
-    const ANIMATION_INTERVAL = 300
+    const ANIMATION_INTERVAL = 500
     const MAX_HEIGHT = 200
 
     this.on('mount', () => {

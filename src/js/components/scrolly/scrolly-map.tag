@@ -81,7 +81,10 @@
       const map = new mapboxgl.Map({
         container: 'scrolly__map',
         style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh',
-        center: [-103.59179687498357, 40.66995747013945],
+        bounds: [
+          [-160, -55],
+          [185.1, 75]
+        ],
         zoom: 3
       })
 
