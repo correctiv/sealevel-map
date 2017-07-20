@@ -36,11 +36,11 @@
           this.map.fitBounds([
             [-160, -55],
             [185.1, 75]
-          ])
+          ], { duration: 0 })
           break
 
         case 'manila':
-          this.map.flyTo({
+          this.map.jumpTo({
             center: [121, 14.65],
             zoom: 10
           })
@@ -50,7 +50,7 @@
           this.map.fitBounds([
             [-25.1806640625, 54.4700376128],
             [32.8271484375, 71.2725947123]
-          ])
+          ], { duration: 300 })
           break
 
         case 'japan':
@@ -81,10 +81,6 @@
       const map = new mapboxgl.Map({
         container: 'scrolly__map',
         style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh',
-        bounds: [
-          [-160, -55],
-          [185.1, 75]
-        ],
         zoom: 3
       })
 
@@ -93,6 +89,8 @@
         map.setLayoutProperty('place_label_city', 'text-field', `{name_${locale}}`)
         map.setLayoutProperty('place_label_other', 'text-field', `{name_${locale}}`)
         map.setLayoutProperty('country_label', 'text-field', `{name_${locale}}`)
+
+        updateLayers('world')
       })
 
       return map

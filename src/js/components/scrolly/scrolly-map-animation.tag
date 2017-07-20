@@ -29,8 +29,6 @@
     })
 
     const initialize = (map) => {
-      // Setup our svg layer that we can manipulate with d3
-      console.log('this.refs', this.refs)
       const svg = d3.select(this.refs.vis)
 
       this.stations = this.opts.items
