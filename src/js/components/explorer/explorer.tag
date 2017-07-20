@@ -95,10 +95,11 @@
       _.find(this.state.items, ({ id }) => id === stationId.toString())
     )
 
-    this.getContinentForCountry = id => {
-      const sample = _.find(this.state.items, station => station.country === id)
-      return sample && _.findKey(this.continents, _.partial(_.isEqual, sample.continent))
-    }
+    this.getContinentForCountry = id => (
+      _(this.state.items)
+        .find(({ country }) => country === id)
+        .continent
+    )
 
     this.getCountriesForContinent = id => (
       _(this.state.items)

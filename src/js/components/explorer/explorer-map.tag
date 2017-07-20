@@ -131,6 +131,20 @@
           .addTo(map)
         })
 
+        map.on('load', () => {
+          // Set locale for map features
+          const locale = this.i18n.getLocale()
+          map.setLayoutProperty('place_label_city', 'text-field', `{name_${locale}}`)
+          map.setLayoutProperty('place_label_other', 'text-field', `{name_${locale}}`)
+          map.setLayoutProperty('country_label', 'text-field', `{name_${locale}}`)
+
+          // Disable map rotation using right click + drag
+          map.dragRotate.disable()
+
+          // Disable map rotation using touch rotation gesture
+          map.touchZoomRotate.disableRotation()
+        })
+
         // Change the cursor to a pointer when the mouse is over the stations layer.
         map.on('mouseenter', 'stations', () => {
           map.getCanvas().style.cursor = 'pointer'

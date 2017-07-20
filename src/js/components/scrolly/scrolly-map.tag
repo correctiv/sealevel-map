@@ -85,11 +85,19 @@
       })
 
       map.on('load', () => {
+        // set locale for map features
         const locale = this.i18n.getLocale()
         map.setLayoutProperty('place_label_city', 'text-field', `{name_${locale}}`)
         map.setLayoutProperty('place_label_other', 'text-field', `{name_${locale}}`)
         map.setLayoutProperty('country_label', 'text-field', `{name_${locale}}`)
 
+        // disable map rotation using right click + drag
+        map.dragRotate.disable()
+
+        // disable map rotation using touch rotation gesture
+        map.touchZoomRotate.disableRotation()
+
+        // initial state
         updateLayers('world')
       })
 
