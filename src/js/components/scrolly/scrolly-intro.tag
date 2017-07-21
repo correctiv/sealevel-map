@@ -1,17 +1,22 @@
 <sealevel-scrolly-intro class={ intro: true, intro--active: opts.active }>
 
-  <h1 class="intro__title">{ i18n.t('intro.title') }</h1>
+  <div class="intro__container">
 
-  <p class="intro__logo-correctiv">Ein Projekt von CORRECTIV</p>
+    <h1 class="intro__title">{ i18n.t('intro.title') }</h1>
 
-  <video autoplay muted loop poster="../{ video.jpg }">
-    <source src="../{ video.mp4 }" type="video/mp4">
-    <source src="../{ video.webm }" type="video/webm">
-  </video>
+    <p class="intro__logo-correctiv">Ein Projekt von CORRECTIV</p>
 
-  <div class="intro__lead">
-    <p>{ i18n.t('intro.lead') }</p>
+    <video autoplay muted loop poster="../{ video.jpg }">
+      <source src="../{ video.mp4 }" type="video/mp4">
+      <source src="../{ video.webm }" type="video/webm">
+    </video>
+
+    <div class="intro__lead">
+      <p>{ i18n.t('intro.lead') }</p>
+    </div>
+
     <a class="intro__more" href={ articlePath() }>{ i18n.t('intro.more') }</a>
+
   </div>
 
   <script type="text/babel">

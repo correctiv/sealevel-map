@@ -2,10 +2,6 @@
   display: block;
   position: relative;
   min-height: 100vh;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 1;
   transition: .5s ease-out opacity;
   opacity: 0;
@@ -30,9 +26,12 @@
   transition: opacity 500ms;
 }
 
+.intro__container {
+  padding: 60px 0;
+}
 
 .intro__title {
-  padding: 30vh 30px 0 30px;
+  padding: 20vh 30px 0 30px;
   margin: 0 auto;
   font-size: 70px;
   text-transform: none;
@@ -44,7 +43,7 @@
 }
 
 .intro__lead {
-  padding: 5vh 5vw;
+  padding: 3vh 5vw;
   margin: 0 auto;
   max-width: 960px;
   text-transform: none;
@@ -69,10 +68,16 @@
 }
 
 .intro__more {
-  color: $white;
-  display: inline-block;
-  font-family: $font-family-default;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 3vh;
+  display: none;
+  @include hide-text;
+  @include mq($screen-m) {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -22px;
+    background: url('../assets/images/arrow_start.svg') no-repeat;
+  }
 }
