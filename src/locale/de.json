@@ -14,6 +14,7 @@
     "title": "Explorer",
     "choose_continent": "Wähle einen Kontinent",
     "start": "Start",
+    "sealevel_change": "durchschnittliche Veränderung",
     "continents": {
       "africa": "Afrika",
       "north-america": "Nordamerika",
@@ -25,7 +26,7 @@
     },
     "countries": {
       "FRA": "Frankreich",
-      "GBR": "Vereinigtes Königreich Großbritannien und Nordirland",
+      "GBR": "Vereinigtes Königreich",
       "DEU": "Deutschland",
       "NLD": "Niederlande",
       "USA": "Vereinigte Staaten von Amerika",
@@ -85,30 +86,30 @@
       "ECU": "Ecuador"
     },
     "continent_descriptions": {
-      "africa": "Afrikas Küsten sind weltweit am wenigsten vorbereitet auf die Fluten. Deswegen werden die Menschen an den Küsten Sansibars, Tansanias oder Marokko viel weniger geschützt als in den industriellen Staaten. Denn dort, wo Schulen und Krankenhäuser fehlen, bleibt wenig Zeit und Geld für den Klimawandel. Dabei werden laut Prognosen in den kommenden Jahren rund 16 Millionen Menschen von den Küsten vertrieben werden. Allein Südafrika ist gerade dabei, Dämme zu errichten und sein Volk ins Inland umzusiedeln.",
-      "north-america": "Nordamerika – Beschreibung fehlt!",
-      "south-america": "Südamerika – Beschreibung fehlt!",
-      "asia": "Die zehn Orte mit den am schnellsten steigenden Meeren befinden sich alle in Asien: Der Kontinent wird unter dem Klimawandel leiden wie kein zweiter. Schon jetzt schwillt jedes Jahr das Wasser um einige Zentimeter an. Die philippinische Hauptstadt Manila beispielsweise misst schon jetzt 40 Zentimeter höhere Pegel als vor dreißig Jahren, einige Inseln werden ganz versinken.",
-      "europe": "200 Millionen Europäer leben in Küstennähe. Sie alle werden den Klimawandel unterschiedlich erleben: In Skandinavien steigt das Land schneller, als das Meer. Viele Häfen liegen auf dem Trockenen. Südlich von Dänemark aber steigt überall das Meer an. Und auch wenn die Europäische Union vorsorgt wie keine andere Region der Welt, können nicht alle Bewohner in Sicherheit gebracht werden – manche Städte am Wasser werden weichen müssen.",
-      "oceania": "Australien und Ozeanien – Beschreibung fehlt!",
-      "antarctica": "Antarktika – Beschreibung fehlt!"
+      "africa": "Afrikas Küsten sind am wenigsten vorbereitet auf die Fluten. Klar: Wo es am nötigsten fehlt, an Schulen und Krankenhäusern, an Brücken und Straßen, will kaum eine Regierung Geld ausgeben für Küstenschutz. Laut mancher Prognosen werden mehr als 16 Millionen Menschen in Afrika ihre Wohnorte an den Küsten aufgeben müssen. Einzig Südafrika reagiert derzeit aktiv auf das Steigen der Meere – und errichtet Dämme und siedelt Menschen um.",
+      "north-america": "Besonders die Ostküste der USA ist vom Klimawandel bedroht. Hier kommen zwei Dinge zusammen: Einerseits steigt unaufhaltsam das Meer, andererseits sinkt an vielen Stellen das Land, etwa weil Grundwasserspeicher leergepumpt wurden. Forscher haben gezeigt, dass in amerikanischen Großstädten all die kleinen Zwischenfälle, all die wegen Hochwasser gesperrten Straßen und vollgelaufenen Keller, inzwischen mehr Geld verschlingen als die Reparatur der Schäden nach extremen Wetterereignissen.",
+      "south-america": "In Lateinamerika verfügen wir leider nur über wenige gesicherte Pegelstände. Nur eines steht fest: Dass der Kontinent vom steigenden Wasser bedroht ist. Laut dem Weltklimarat waren die Länder Südamerikas zwischen 2000 und 2013 von mehr als 600 extremen klimatischen Ereignissen betroffen, von Stürmen und Überschwemmungen. In keinem anderen Kontinent ist die Bevölkerung so sehr an Küsten konzentriert wie in Lateinamerika – Millionen Menschen werden vom Klimawandel betroffen sein.",
+      "asia": "In unserer Auswahl liegen alle zehn Orte, an denen das Meer am stärksten steigt, in Asien. Der Kontinent wird unter dem Klimawandel besonders leiden. An manchen Orte schwillt das Wasser pro Jahr um mehr als einen Zentimeter an. Manila zum Beispiel, die Hauptstadt der Philippinen: Dort liegt der Pegel heute rund 40 Zentimeter höher als vor 30 Jahren. Etliche Inseln der Philippinen, so die Prognose, werden untergehen.  ",
+      "europe": "Rund 200 Millionen Europäer leben in Küstennähe. Sie sind höchst unterschiedlich vom Klimawandel betroffen. Skandinavier gar nicht, bei ihnen hebt sich das Land schneller als das Meer. Südlich von Dänemark aber steigen die Pegel. Die EU ist weltweit Vorreiter bei den Maßnahmen gegen den Klimawandel. Trotzdem werden langfristig einige Küstenstädte nicht gehalten werden können. An der Ostküste Großbritanniens etwa, wo die Pegel steigen und die Küsten bröckeln.",
+      "oceania": "Australien gehört mit seinen Kohlekraftwerken zu den schlimmsten Verschmutzern der Erde – und muss künftig um seine Großstädte an den Küsten fürchten. Nach unseren Daten steigen die Pegel an der Westküste besonders stark an, an vielen Stationen sind es mehr als zehn Zentimeter. Laut Prognosen des Weltklimarates sind unter anderem der Flughafen von Brisbane oder der Hafen von Melbourne gefährdet.",
+      "antarctica": ""
     },
     "num_stations": "%{smart_count} Station |||| %{smart_count} Stationen",
 
-    "station_desc_higher": "Am Pegel %{location} stieg das Meer in den vergangenen Jahrzehnten stark an: Zwischen 1985 und %{last_available_year} ist das Wasser um %{last_available_value}mm angeschwollen. Das bedeutet: Bereits jetzt leiden die Menschen dort besonders unter Überschwemmungen und Stürme. Und auch in Zukunft werden hier die ersten Opfer des Klimawandels leben.",
+    "station_desc_higher": "Am Pegel %{location} ist das Meer in den vergangenen Jahrzehnten stark gestiegen: Zwischen 1985 und %{last_available_year} veränderte sich der Pegel um %{last_available_value}Millimeter. Schon heute leider die Menschen hier unter mehr Überschwemmungen – und Stürmen, die größere Schäden verursachen. Diese Orte gehören zu den ersten Opfern des Klimawandels.",
 
-    "station_desc_high": "Am Pegel %{location} stieg das Meer in den vergangenen Jahrzehnten leicht an: Zwischen 1985 und %{last_available_year} ist das Wasser um %{last_available_value}mm angeschwollen. Mit dem Klimawandel wird der Wasserstand von Jahr zu Jahr schneller zunehmen. Überschwemmungen und Stürme bedrohen die Menschen an der Küste.",
+    "station_desc_high": "Am Pegel %{location} ist das Meer in den vergangenen Jahrzehnten leicht angestiegen: Zwischen 1985 und %{last_available_year} erhöhte sich der Pegel um %{last_available_value}Millimeter. Mit dem Klimawandel wird der Wasserstand hier weiter steigen. Mehr Überschwemmungen sind dann zu erwarten, Stürme werden dann größere Zerstörungskraft entfalten.",
 
-    "station_desc_flat": "Am Pegel %{location} hat sich die Höhe des Meeresspiegels in den vergangenen Jahrzehnten nur wenig verändert. Damit gehört dieser Ort weltweit zu den Ausnahmen. Mit dem Klimawandel wird aber auch hier künftig das Wasser von Jahr zu Jahr zunehmen. Überschwemmungen und Stürme bedrohen die Menschen an der Küste.",
+    "station_desc_flat": "Am Pegel %{location} hat sich die Höhe des Meeresspiegels in den vergangenen Jahrzehnten kaum verändert. Das ist nur an wenigen Orten der Welt der Fall. Mit dem Klimawandel wird aber auch hier künftig das Wasser von Jahr zu Jahr ansteigen. Mit den bekannten Folgen.",
 
-    "station_desc_low": "Am Pegel %{location} ist das Meer an der Küste den vergangenen Jahrzehnten – für viele überraschend – leicht gesunken. %{last_available_year} ist das Wasser um  %{last_available_value}mm niedriger als 1985. Das liegt daran, dass sich das Land an der Küste schneller anhob als das Meer. Die früher von kilometerdicken Eispanzern zusammengepresste Erdkruste dehnt sich nach deren Schmelzen auch heute noch aus. Aber dieser Trend wird sich laut Forschern in den kommenden Jahren umdrehen – rund 95 Prozent aller Küsten werden laut dem UN-Klimarat höhere Meere verkraften müssen.",
+    "station_desc_low": "Am Pegel %{location} ist das Meer an der Küste  den vergangenen Jahrzehnten leicht gesunken. %{last_available_year} war der Pegel um %{last_available_value}Millimeter niedriger als 1985. Die Erklärung: Das Land, das einst von kilometerdicken Eispanzern zusammengepresst wurde, dehnt sich bis heute aus. Dieser Trend wird eines Tages an sein Ende kommen: Rund 95 Prozent aller Küsten werden laut UN-Klimarat höhere Meerespegel verkraften müssen.",
 
-    "station_desc_lower": "Am Pegel %{location} ist das Meer an der Küste in den vergangenen Jahrzehnten – für viele überraschend – stark gesunken. %{last_available_year} ist das Wasser um  %{last_available_value}mm niedriger als 1985. Das liegt daran, dass sich das Land an der Küste schneller anhob als das Meer. Die früher von kilometerdicken Eispanzern zusammengepresste Erdkruste dehnt sich nach deren Schmelzen auch heute noch aus. Aber dieser Trend wird sich laut Forschern in den kommenden Jahrzehnten umdrehen – rund 95 Prozent aller  Küsten werden laut dem UN-Klimarat höhere Meere verkraften müssen.",
+    "station_desc_lower": "Am Pegel %{location} in {country} ist das Meer an der Küste in den vergangenen Jahrzehnten stark gesunken. %{last_available_year} war der Pegel um  %{last_available_value}Millimeter niedriger als 1985. Die Erdkruste, die hier einst von kilometerdicken Eispanzern zusammengepresst wurde, dehnt sich nach deren Schmelzen bis heute aus.",
 
-    "station_desc_unclear": "Über die Meereshöhe am Pegel %{location} haben wir keine gesicherten Daten. Das kann zahlreiche Ursachen haben. Beispielsweise wurde die Messstation im Laufe der Jahre versetzt oder ein geänderter Zuschnitt des Hafens, etwa durch neue Wellenbrecher, verfälschte die Messungen – oder die Küste ist sehr stark abgesunken. Laut einhelliger Meinung des UN-Klimarats wird das Meer aber in den kommenden Jahrzehnten an nahezu jedem Ort der Welt ansteigen – also auch an diesem.",
+    "station_desc_unclear": "Über die Meereshöhe am Pegel %{location} haben wir keine gesicherten Daten. Das kann mehrere Ursachen haben: Die Messstation wurde im Laufe der Jahre versetzt, der Hafen wurde umgebaut, Wellenbrecher wurden eingesetzt. All das verfälschte die Messungen. Laut einhelliger Meinung des UN-Klimarates wird das Meer in den kommenden Jahrzehnten an nahezu jedem Ort der Welt ansteigen – sehr wahrscheinlich auch an diesem.",
 
-    "risk_desc": "In %{country} leben %{coastal_population_percent} Prozent der Bevölkerung nahe an der Küste. Diese wird künftig mit dem Klimawandel noch häufiger von Überschwemmungen und Stürmen bedroht sein.",
+    "risk_desc": "In %{country} leben %{coastal_population_percent} Prozent der Bevölkerung nahe an der Küste. Diese wird mit dem Klimawandel häufiger von Überschwemmungen und Stürmen bedroht sein.",
 
-    "emissions_desc": "Um steigende Meere aufzuhalten, sollte laut UNO jeder Mensch nur noch zwei Tonnen CO₂ pro Jahr produzieren. Das entspricht ungefähr 10 000 km Autofahren in einem Mittelklassewagen – mit einem Flug von Berlin nach New York und zurück (3,5 Tonnen) ist das Budget hingegen schon weit überschritten. Aktuell produziert jeder Bewohner von %{country} jährlich %{c02_emissions} Tonnen."
+    "emissions_desc": "Aktuell produziert jeder Bewohner von %{country} jährlich %{c02_emissions} Tonnen. Um den Klimawandel abzuschwächen, sollte jeder Mensch laut UNO nicht mehr als zwei Tonnen CO₂ pro Jahr produzieren. Die entstehen etwa, wenn man rund 10.000 Kilometer mit einem Mittelklassewagen zurücklegt. Ein Flug von Berlin nach New York und zurück überschreitet das Budget bereits, denn dabei fallen pro Passagier rund 3,5 Tonnen CO₂ an."
   }
 }
