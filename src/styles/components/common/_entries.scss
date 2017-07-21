@@ -48,14 +48,16 @@
 
 .entries__title {
   margin: 0;
-  padding: 0;
-  font-size: $font-size-default;
-  line-height: $line-height-default;
+  padding: .5em 0 0 0;
+  font-family: $font-family-title;
   font-weight: bold;
   color: $black;
+  @include font-size($font-size-h4);
 }
 
 .entries__description {
   margin: 0;
   padding: 0;
+  font-family: $font-family-accent;
+  font-size: $font-size-accent;
 }
