@@ -1,3 +1,4 @@
-### In Asien steigt das Meer am schnellsten an
+### In Asien steigt das Meer am stärksten
 
-Unter den Top-Ten der am stärksten betroffenen Städte sind aber vor allem asiatische, die philippinische Hauptstadt Manila beispielsweise misst schon jetzt 80 Zentimeter höhere Pegel als vor fünfzig Jahren. Manila ist die Hauptstadt der Philippinen – ein Staat, der aus 7000 Inseln besteht und vom Meer umschlossen ist. Mit dem Klimawandel drohen die Metropole Manila mit ihren neun Millionen Einwohnern und viele Küstenorte unterzugehen.
+Alle zehn Städte aus unserer Auswahl, die am stärksten vom Anstieg des Wassers betroffen sind, liegen in Asien. In Manila, der Hauptstadt der Philippinen, liegt der Pegel heute rund 80 Zentimeter höher als vor 50 Jahren. Neun Millionen Menschen wohnen in der weitgehend flachen Metropolregion. Keine andere Megacity ist stärker bedroht vom Klimawandel als Manila.
+

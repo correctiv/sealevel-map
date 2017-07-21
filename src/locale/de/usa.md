@@ -1,3 +1,4 @@
-### Ölfirmen versinken an Amerikas Ostküste
+### USA, Ostküste: Viel Geld für mehr Schutz
 
-Fabriken liegen häufig am Wasser - damit sie ihre Waren gut verschiffen können. Die größten Ölfirmen an der amerikanischen Ostküste haben aber nach unseren Recherchen noch keinen Plan B, wie sie mit dem steigenden Meer vor den Fabriktoren umgehen werden. Sie wollen nicht einen Klimawandel vorsorgen, den sie noch immer nicht anerkennen. So werden wahrscheinlich die Bürger dafür zahlen müssen, wenn die Raffinerien nach einem Sturm unter Wasser stehen.
+Auch Nordamerika wird von dramatischen Veränderungen erfasst werden. Die Vorboten sind für jeden sichtbar: In Alaska taut der Permafrostboden auf und macht Dörfer unbewohnbar, an der Ostküste werden jedes Jahr höhere Pegelstände gemessen, allein Miami hat 100 Millionen Dollar bereitgestellt, um Straßen höherzulegen, Hochwasserpumpen zu installieren und Abwässerkanäle vor eindringendem Meerwasser zu schützen. Und das ist erst der Anfang.
+

@@ -1,3 +1,4 @@
 ### In Argentinien überschwemmen Flüsse Slums und Villen
 
-In Südamerika sind die größten Feuchtgebiete der Erde. Im Paraná-Delta, nahe dem argentinischen Buenos Aires, wohnen die Armen in Slums und die Reichen in bewachten und umzäunten Siedlungen mit so klingenden Namen wie “Venedig”, weil sie mit ihren Yachten bis vor die Haustür fahren können. Seitdem die Villen und ihre Golfplätze Wasser verdrängen, häufen sich die Überschwemmungen in den Slums. Mit dem Klimawandel aber werden alle umsiedeln müssen - das gesamte Delta droht im Wasser unterzugehen.
+In Südamerika liegen die größten Feuchtgebiete der Erde. Eines davon: Das Paraná-Delta, das in den Rio de la Plata mündet, zwischen Argentinien und Uruguay. Arme wohnen schon lange dort. Nun wird das Marschland bebaut mit Luxusapartments und Golfplätzen. Mit dem Klimawandel werden alle, Arm und Reich, umsiedeln müssen: Das Delta droht im Wasser unterzugehen.
+

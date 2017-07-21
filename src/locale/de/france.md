@@ -1,3 +1,4 @@
 ### Europas Strände versinken
 
-Palavas-les-Flots sollte einmal das „französische Florida" werden. In den 1960er Jahren rücksichtslos in eine ökologisch sensible Dünenlandschaft bebaut, wird es besonders unter dem Klimawandel leiden: Forscher prophezeien, dass küstennahe Grundwasser versalzen, die Strände mitsamt ihrer Bars, Restaurants und Boots-Verleihen verschwinden und der Boden weggeschwemmt wird. Der südfranzösische Ort wird wie viele Küstenstädte in Europa dem Wasser weichen müssen.
+Das südfranzösische Palavas-les-Flots sollte einmal das „französische Florida" werden. Nun prophezeien Experten dem Badeort, dass die Strände untergehen werden, mitsamt ihren Bars, Restaurants und Boots-Verleihen. Dass der Boden allmählich weggeschwemmt wird und das Grundwasser in der Nähe der Küste versalzt.
+
