@@ -38,6 +38,7 @@
   text-transform: none;
   text-align: center;
   color: white;
+  font-family: $font-family-title;
   font-weight: bold;
   text-shadow: 1px 1px 50px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +51,7 @@
   text-align: center;
   color: black;
   text-shadow: 1px 1px 50px rgba(255, 255, 255, 0.7);
-  font-family: $font-family-serif;
+  font-family: $font-family-default;
   font-size: 24px;
 }
 
