@@ -11,6 +11,7 @@
 
   <div class="explorer-panel">
     <sealevel-explorer-breadcrumbs
+      if={ state.station || state.continent || state.country }
       continent={ state.continent || getContinentForCountry(state.country) }
       country={ state.country }
       station={ state.station }

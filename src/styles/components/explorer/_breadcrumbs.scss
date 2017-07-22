@@ -1,7 +1,7 @@
 .breadcrumbs {
   background: $gray;
   color: $black;
-  margin: -1em;
+  margin: -25px;
   padding: 0;
   list-style: none;
 
@@ -13,7 +13,7 @@
 
   li:first-child > a {
     background: none;
-    padding-left: 20px;
+    padding-left: 25px;
   }
 
   a {
