@@ -4,55 +4,90 @@
   padding: 0;
   list-style: none;
 
-  li {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
+}
 
-  a {
-    display: block;
-    padding: 0.5em 0;
-    border-bottom: 1px solid $gray;
-    text-decoration: none;
+.entries__item {
+  display: block;
+  position: relative;
+  padding: 0.5em 0;
+  min-height: 45px;
+  text-decoration: none;
+  color: $gray-dark;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  font-weight: normal;
+  border-bottom: 1px solid $gray;
+
+  &:hover,
+  &:active,
+  &:focus {
+    margin: -1px -25px 0 -25px;
+    padding: 0.5em 25px;
+    background-color: $gray-light;
+    border-top: 1px solid $gray;
     color: $gray-dark;
-    font-size: $font-size-default;
-    line-height: $line-height-default;
-    font-weight: normal;
   }
 
-  a:hover,
-  a:active,
-  a:focus {
-    background: $gray-light;
-    margin: -1px -1em 0 -1em;
-    padding: 0.5em 1em;
-    border-top: 1px solid $gray
-  }
-
-  a:after {
+  &:after {
     content: '⟩';
     position: absolute;
-    bottom: 0.5em;
+    top: 1.5em;
     right: 0;
-    transition: bottom 0.3s;
   }
 
-  a:hover:after,
-  a:active:after,
-  a:focus:after {
-    bottom: 1.2em;
+  &:hover:after,
+  &:active:after,
+  &:focus:after {
+    right: 25px;
   }
+}
+
+.entries__item--change {
+  text-indent: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-position: 25px 1em;
+    display: block;
+  }
+}
+
+.entries__item--change-lower {
+  @extend .entries__item--change;
+  background-image: url('../assets/images/arrow_lower_bc.svg');
+}
+
+.entries__item--change-low {
+  @extend .entries__item--change;
+  background-image: url('../assets/images/arrow_low_bc.svg');
+}
+
+.entries__item--change-flat {
+  @extend .entries__item--change;
+  background-image: url('../assets/images/arrow_flat_bc.svg');
+}
+
+.entries__item--change-high {
+  @extend .entries__item--change;
+  background-image: url('../assets/images/arrow_high_bc.svg');
+}
+
+.entries__item--change-higher {
+  @extend .entries__item--change;
+  background-image: url('../assets/images/arrow_higher_bc.svg');
 }
 
 .entries__title {
   margin: 0;
-  padding: .5em 0 0 0;
-  font-family: $font-family-title;
+  padding-top: 0.5em;
   font-weight: bold;
   color: $black;
-  @include font-size($font-size-h4);
+  font-family: $font-family-title;
+  font-size: $font-size-h4;
+  line-height: 1.2;
 }
 
 .entries__description {

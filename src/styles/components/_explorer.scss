@@ -2,7 +2,7 @@
 
 .explorer__title {
   margin: 0;
-  padding: 3em 0 1em 0;
+  padding: 3em 0 25px 0;
   @include font-size($font-size-h3, false);
   line-height: 1.2;
   color: $gray-dark;
@@ -10,8 +10,8 @@
 
 .explorer__intro {
   background: $gray-light;
-  padding: 1em;
-  margin: -1em;
+  padding: 25px;
+  margin: -25px;
 }
 
 .explorer__intro__title {

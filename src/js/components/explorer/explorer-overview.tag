@@ -9,7 +9,7 @@
 
   <ul class="entries">
     <li each={ stations, slug in continents }>
-      <a href={ route(slug) }>
+      <a class="entries__item" href={ route(slug) }>
         <h3 class="entries__title">
           { i18n.t('explorer.continents.' + slug) }
         </h3>

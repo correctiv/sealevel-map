@@ -10,7 +10,7 @@
 
   <ul class="entries">
     <li each={ country in opts.countries } >
-      <a href={ route(country) }>
+      <a class="entries__item" href={ route(country) }>
         <h3 class="entries__title">
           { i18n.t('explorer.countries.' + country) }
         </h3>

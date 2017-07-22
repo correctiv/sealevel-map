@@ -7,7 +7,10 @@
 
   <ul class="entries">
     <li each={ station in opts.stations }>
-      <a href={ route(station.id) }>
+      <a
+        href={ route(station.id) }
+        class="entries__item entries__item--change-lower"
+      >
         <h4 class="entries__title">
           { station.location }
         </h4>
