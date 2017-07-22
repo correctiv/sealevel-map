@@ -11,10 +11,10 @@
 
   <div class="explorer-panel">
     <sealevel-explorer-breadcrumbs
-      if={ state.station || state.continent || state.country }
+      if={ (state.station || state.continent || state.country) }
       continent={ state.continent || getContinentForCountry(state.country) }
-      country={ state.country }
-      station={ state.station }
+      country={ state.country || getCountryForStation(state.station) }
+      station={ getStationContext(state.station) }
       routes={ routes }
     />
 
@@ -40,9 +40,9 @@
     />
 
     <sealevel-explorer-station
-      if={ state.station }
-      station={ getStationContext(state.station.ID) }
-      tides={ state.station.tideData }
+      if={ state.station && state.items }
+      station={ getStationContext(state.station) }
+      tides={ getTidesForStation(state.station) }
     />
   </div>
 
@@ -51,7 +51,6 @@
     import route from 'riot-route'
     import * as routes from '../../routes/'
     import { requestStationDetails, requestStationList } from '../../actions/explorer'
-    import { setStep } from '../../actions/navigation'
     import './explorer-map.tag'
     import './explorer-breadcrumbs.tag'
     import './explorer-overview.tag'
@@ -75,7 +74,6 @@
     route('*/explore/stations/*', (locale, id) => {
       this.dispatch(requestStationList())
       this.dispatch(requestStationDetails(id))
-      this.dispatch(setStep('explore'))
     })
 
     route('*/explore/countries/*', (locale, id) => {
@@ -86,7 +84,7 @@
       this.dispatch(requestStationList({ continent: id }))
     })
 
-    route('*/explore', (locale, id) => {
+    route('*/explore', (locale) => {
       this.dispatch(requestStationList())
     })
 
@@ -96,14 +94,13 @@
       _.find(this.state.items, ({ id }) => id === stationId.toString())
     )
 
-    this.getContinentForCountry = id => (
-      _(this.state.items)
-        .find(({ country }) => country === id)
-        .continent
-    )
+    this.getContinentForCountry = id => {
+      const item = _.find(this.state.items, ({ country }) => country === id)
+      return item && item.continent
+    }
 
     this.getCountriesForContinent = id => (
-      _(this.state.items)
+      this.state.items && _(this.state.items)
         .filter(station => station.continent === id)
         .map('country')
         .uniq()
@@ -112,10 +109,20 @@
     )
 
     this.getStationsForCountry = id => (
-      _(this.state.items)
+      this.state.items && _(this.state.items)
         .filter(station => station.country === id)
         .sortBy('location')
         .value()
+    )
+
+    this.getCountryForStation = id => {
+      const item = _.find(this.state.items, station => station.id === id)
+      return item && item.country
+    }
+
+
+    this.getTidesForStation = id => (
+      this.state.tides && this.state.tides[id]
     )
 
   </script>

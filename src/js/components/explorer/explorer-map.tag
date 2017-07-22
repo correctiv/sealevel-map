@@ -21,14 +21,14 @@
 
     this.on('updated', () => {
       flyToSelection(this.opts)
-      this.opts.station && highlightStation(this.opts.station)
+      this.opts.station && highlightStation(this.opts.stations[this.opts.station])
     })
 
     this.on('mount', () => {
       this.map = renderMap(opts.options)
     })
 
-    const highlightStation = ({longitude, latitude}) => {
+    const highlightStation = (station) => {
       const markerEl = document.createElement('div')
       markerEl.className = 'explorer__map__highlight'
 
@@ -37,28 +37,33 @@
 
       // add new marker:
       this.marker = new mapboxgl.Marker(markerEl, { offset: [-10, -10] })
-        .setLngLat([longitude, latitude])
+        .setLngLat([
+          parseFloat(station.longitude),
+          parseFloat(station.latitude)
+        ])
         .addTo(this.map)
     }
 
-    const createFeatures = (stations) => ({
-      type: 'FeatureCollection',
-      features: stations.map(station => ({
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [
-            parseFloat(station.longitude),
-            parseFloat(station.latitude)
-          ]
-        },
-        properties: {
-          id: station.id,
-          title: station.location,
-          trend: parseFloat(station.trend_1985_2015, 10)
-        }
-      }))
-    })
+    const createFeatures = (stations) => {
+      return {
+        type: 'FeatureCollection',
+        features: stations.map(station => ({
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [
+              parseFloat(station.longitude),
+              parseFloat(station.latitude)
+            ]
+          },
+          properties: {
+            id: station.id,
+            title: station.location,
+            trend: parseFloat(station.trend_1985_2015, 10)
+          }
+        }))
+      }
+    }
 
     const filterSelection = ({ stations, station, country, continent }) => {
       if (continent) {
@@ -66,7 +71,7 @@
       } else if (country) {
         return _.filter(stations, { country })
       } else if (station) {
-        return [station]
+        return [_.find(stations, ({ id }) => id === station)]
       } else {
         return stations
       }

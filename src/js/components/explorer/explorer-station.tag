@@ -4,7 +4,7 @@
 
   <p>{ i18n.t('explorer.countries.' + opts.station.country) }</p>
 
-  <sealevel-linechart chartdata="{ this.opts.tides }"></sealevel-linechart>
+  <sealevel-linechart chartdata={ opts.tides } />
 
   <p>{ stationDesc }</p>
 
@@ -34,9 +34,9 @@
 
     this.on('update', () => {
       const station = this.opts.station
-      const { tide, year } = _.last(this.opts.tides)
 
       if (station) {
+        const { tide, year } = _.last(this.opts.tides)
         station.last_available_year = year
         station.last_available_value = tide > 0 ? tide : -tide
         this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)
