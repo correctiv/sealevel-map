@@ -9,7 +9,7 @@
     <li each={ station in opts.stations }>
       <a
         href={ route(station.id) }
-        class="entries__item entries__item--change-lower"
+        class="entries__item {getChangeIndicator(station)}"
       >
         <h4 class="entries__title">
           { station.location }
@@ -22,6 +22,16 @@
   </ul>
 
   <script type="text/babel">
+    import _ from 'lodash'
+
+    const SCALE = [
+      { threshold: -45, className: 'entries__item--change-lower' },
+      { threshold: -15, className: 'entries__item--change-low' },
+      { threshold: +15, className: 'entries__item--change-flat' },
+      { threshold: +45, className: 'entries__item--change-high' },
+      { threshold: Infinity, className: 'entries__item--change-higher' }
+    ]
+
     this.route = (id) => opts.pathToStation(this.i18n.getLocale(), id)
 
     this.on('update', () => {
@@ -36,6 +46,12 @@
         c02_emissions: Number(station.c02_emissions).toLocaleString(locale)
       }
     })
+
+    this.getChangeIndicator = (station) => {
+      const amplitude = _.last(station.timeseries)
+      const scaleItem = _.find(SCALE, ({ threshold }) => amplitude < threshold)
+      return scaleItem.className
+    }
 
   </script>
 
