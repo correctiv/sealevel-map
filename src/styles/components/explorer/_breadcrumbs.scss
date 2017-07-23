@@ -1,9 +1,10 @@
 .breadcrumbs {
-  background: $gray;
-  color: $black;
+  height: 40px;
   margin: -25px;
   padding: 0;
   list-style: none;
+  background: $gray;
+  color: $black;
 
   li {
     display: inline;
@@ -18,15 +19,20 @@
 
   a {
     display: inline-block;
+    overflow: hidden;
     color: $black;
     height: 40px;
     padding: 0 10px 0 30px;
-    line-height: 40px;
-    font-weight: bold;
+    line-height: 45px;
     text-decoration: none;
     background-image: url(../assets/images/breadcrumb-chevron.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    font-family: $font-family-title;
+    font-size: $font-size-accent;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   a:hover,
@@ -34,4 +40,8 @@
   a:focus {
     text-decoration: underline;
   }
+}
+
+.breadcrumbs--condensed a {
+  max-width: 25%;
 }

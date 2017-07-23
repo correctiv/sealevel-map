@@ -1,6 +1,6 @@
 <sealevel-explorer-breadcrumbs>
 
-  <ul class="breadcrumbs">
+  <ul class={ breadcrumbs: true, breadcrumbs--condensed: station }>
     <li>
       <a href={ pathToExplorer() }>
         { i18n.t('explorer.start') }
@@ -17,7 +17,7 @@
       </a>
     </li>
     <li if={station}>
-      <a href={ pathToStation(station.ID) }>
+      <a href={ pathToStation(station.id) }>
         { station.location }
       </a>
     </li>
