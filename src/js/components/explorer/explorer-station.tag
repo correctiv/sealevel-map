@@ -33,10 +33,10 @@
     }
 
     this.on('update', () => {
-      const station = this.opts.station
+      const { station, tides } = this.opts
 
-      if (station) {
-        const { tide, year } = _.last(this.opts.tides)
+      if (station && tides) {
+        const { tide, year } = _.last(tides)
         station.last_available_year = year
         station.last_available_value = tide > 0 ? tide : -tide
         this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)

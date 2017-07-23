@@ -21,14 +21,15 @@
 
     this.on('updated', () => {
       flyToSelection(this.opts)
-      this.opts.station && highlightStation(this.opts.stations[this.opts.station])
+      this.opts.station && highlightStation(this.opts.station)
     })
 
     this.on('mount', () => {
       this.map = renderMap(opts.options)
     })
 
-    const highlightStation = (station) => {
+    const highlightStation = (id) => {
+      const station = _.find(this.opts.stations, { id })
       const markerEl = document.createElement('div')
       markerEl.className = 'explorer__map__highlight'
 

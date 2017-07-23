@@ -50,7 +50,7 @@
     import _ from 'lodash'
     import route from 'riot-route'
     import * as routes from '../../routes/'
-    import { requestStationDetails, requestStationList } from '../../actions/explorer'
+    import { requestStationList } from '../../actions/explorer'
     import './explorer-map.tag'
     import './explorer-breadcrumbs.tag'
     import './explorer-overview.tag'
@@ -72,8 +72,7 @@
     })
 
     route('*/explore/stations/*', (locale, id) => {
-      this.dispatch(requestStationList())
-      this.dispatch(requestStationDetails(id))
+      this.dispatch(requestStationList({ station: id }))
     })
 
     route('*/explore/countries/*', (locale, id) => {
@@ -91,7 +90,7 @@
     route.exec()
 
     this.getStationContext = stationId => (
-      _.find(this.state.items, ({ id }) => id === stationId.toString())
+      _.find(this.state.items, ({ id }) => id === stationId)
     )
 
     this.getContinentForCountry = id => {
@@ -119,7 +118,6 @@
       const item = _.find(this.state.items, station => station.id === id)
       return item && item.country
     }
-
 
     this.getTidesForStation = id => (
       this.state.tides && this.state.tides[id]

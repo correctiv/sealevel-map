@@ -43,7 +43,7 @@ const explorerReducer = (state = {}, action) => {
     case SHOW_STATION_LIST:
       return {
         ...state,
-        station: null,
+        station: action.station,
         country: action.country,
         continent: action.continent
       }
