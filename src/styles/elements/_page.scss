@@ -12,6 +12,7 @@
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Apply the more intuitve border-box-model to all elements
  */
 
 html {
@@ -19,6 +20,11 @@ html {
   line-height: $line-height-default / $font-size-default; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
+  box-sizing: border-box; /* [4] */
+
+  *, ::before, ::after {
+    box-sizing: inherit; /* [4] */
+  }
 }
 
 body {
