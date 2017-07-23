@@ -14,11 +14,11 @@ const FULL_TIMESERIES_SRC = '/data/sealevel_viz_whole_timeseries.csv'
 const TIMESERIES_SRC = '/data/sealevel_viz_psmsl_1985_2015.csv'
 
 const shouldFetchOverviewData = ({ isFetchingOverviewData, items }) => (
-  !isFetchingOverviewData || !items
+  !(isFetchingOverviewData || items)
 )
 
 const shouldFetchFullData = ({ isFetchingFullData, tides }) => (
-  !isFetchingFullData || !tides
+  !(isFetchingFullData || tides)
 )
 
 const prepareOverviewData = (context, timeseries) => {
@@ -75,7 +75,7 @@ const requestStationDetails = (id) => (dispatch, getState) => {
   if (shouldFetchFullData(getState().explorer)) {
     return dispatch(fetchStationDetailsData(id))
   } else {
-    return dispatch(receiveStationDetailsData(id))
+    return dispatch(showStationDetails(id))
   }
 }
 
@@ -113,7 +113,7 @@ export const requestStationList = (options = {}) => (dispatch, getState) => {
   if (shouldFetchOverviewData(getState().explorer)) {
     dispatch(fetchStationListData(options))
   } else {
-    dispatch(showStationList(getState().explorer.items, options))
+    dispatch(showStationList(options))
   }
 
   if (options.station) {

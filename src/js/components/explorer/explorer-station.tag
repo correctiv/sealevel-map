@@ -13,7 +13,6 @@
     import '../linechart.tag'
 
     const getStationDesc = (trend) => {
-      console.log(trend)
       if (!trend) {
         return 'explorer.station_desc_unclear'
       }
