@@ -102,22 +102,22 @@
       "antarctica": ""
     },
 
-    "num_stations": "%{smart_count} Station |||| %{smart_count} Stationen",
+    "num_stations": "%{smart_count} station |||| %{smart_count} stations",
 
-    "station_desc_higher": "Am Pegel %{location} ist das Meer in den vergangenen Jahrzehnten stark gestiegen: Zwischen 1985 und %{last_available_year} veränderte sich der Pegel um %{last_available_value}Millimeter. Schon heute leider die Menschen hier unter mehr Überschwemmungen – und Stürmen, die größere Schäden verursachen. Diese Orte gehören zu den ersten Opfern des Klimawandels.",
+    "station_desc_higher": "À la station %{location}, la mer est fortement montée au cours des dernières décennies : entre 1985 et %{last_available_year}, son niveau s’est élevé de %{last_available_value} millimètres. Aujourd’hui, la population est déjà sujette aux inondations et aux tempêtes, qui causent d’importants dégâts. Cet endroit est l’une des premières victimes du changement climatique.",
 
-    "station_desc_high": "Am Pegel %{location} ist das Meer in den vergangenen Jahrzehnten leicht angestiegen: Zwischen 1985 und %{last_available_year} erhöhte sich der Pegel um %{last_available_value}Millimeter. Mit dem Klimawandel wird der Wasserstand hier weiter steigen. Mehr Überschwemmungen sind dann zu erwarten, Stürme werden dann größere Zerstörungskraft entfalten.",
+    "station_desc_high": "À la station %{location}, la mer est légèrement montée au cours des dernières décennies : entre 1985 et %{last_available_year}, son niveau s’est élevé de %{last_available_value} millimètres. Avec le changement climatique, ce phénomène va se poursuivre. Des inondations plus fréquentes et des tempêtes plus dévastatrices sont donc à prévoir.",
 
-    "station_desc_flat": "Am Pegel %{location} hat sich die Höhe des Meeresspiegels in den vergangenen Jahrzehnten kaum verändert. Das ist nur an wenigen Orten der Welt der Fall. Mit dem Klimawandel wird aber auch hier künftig das Wasser von Jahr zu Jahr ansteigen. Mit den bekannten Folgen.",
+    "station_desc_flat": "À la station %{location}, le niveau de la mer a peu évolué au cours des dernières décennies. C’est le cas dans peu d’endroits du globe. Néanmoins, avec le changement climatique, l’eau y grimpera aussi lors des prochaines années. Avec les conséquences que l’on connaît.",
 
-    "station_desc_low": "Am Pegel %{location} ist das Meer an der Küste  den vergangenen Jahrzehnten leicht gesunken. %{last_available_year} war der Pegel um %{last_available_value}Millimeter niedriger als 1985. Die Erklärung: Das Land, das einst von kilometerdicken Eispanzern zusammengepresst wurde, dehnt sich bis heute aus. Dieser Trend wird eines Tages an sein Ende kommen: Rund 95 Prozent aller Küsten werden laut UN-Klimarat höhere Meerespegel verkraften müssen.",
+    "station_desc_low": "À la station %{location}, la mer a légèrement baissé au cours des dernières décennies. En %{last_available_year}, son niveau était de %{last_available_value} millimètres en-dessous de celui de 1985. Explication : les terres s’élèvent en raison de la fonte de glaciers et donc de la disparition du poids colossal de ces masses de glace. Un jour, cette tendance prendra fin : environ 95 % du littoral de la planète devra faire face à une hausse du niveau de la mer, selon le Groupe d'experts intergouvernemental sur l'évolution du climat.",
 
-    "station_desc_lower": "Am Pegel %{location} in {country} ist das Meer an der Küste in den vergangenen Jahrzehnten stark gesunken. %{last_available_year} war der Pegel um  %{last_available_value}Millimeter niedriger als 1985. Die Erdkruste, die hier einst von kilometerdicken Eispanzern zusammengepresst wurde, dehnt sich nach deren Schmelzen bis heute aus.",
+    "station_desc_lower": "À la station %{location}, la mer a fortement baissé au cours des dernières décennies. En %{last_available_year}, son niveau était de %{last_available_value} millimètres en-dessous de celui de 1985. La croûte terrestre se dilate en raison de la fonte de glaciers et donc de la disparition du poids colossal de ces masses de glace.",
 
-    "station_desc_unclear": "Über die Meereshöhe am Pegel %{location} haben wir keine gesicherten Daten. Das kann mehrere Ursachen haben: Die Messstation wurde im Laufe der Jahre versetzt, der Hafen wurde umgebaut, Wellenbrecher wurden eingesetzt. All das verfälschte die Messungen. Laut einhelliger Meinung des UN-Klimarates wird das Meer in den kommenden Jahrzehnten an nahezu jedem Ort der Welt ansteigen – sehr wahrscheinlich auch an diesem.",
+    "station_desc_unclear": "À la station %{location}, aucune donnée fiable n’est disponible. Il peut y avoir plusieurs raisons : les points de mesure ont été déplacés au cours des années, les ports ont été transformés, des digues ont été posées. Tout cela fausse les mesures. D’après le Groupe d'experts intergouvernemental sur l'évolution du climat, le niveau de la mer s’élèvera à peu près partout sur le globe lors des prochaines décennies – et vraisemblablement aussi en ces lieux.",
 
-    "risk_desc": "In %{country} leben %{coastal_population_percent} Prozent der Bevölkerung nahe an der Küste. Diese wird mit dem Klimawandel häufiger von Überschwemmungen und Stürmen bedroht sein.",
+    "risk_desc": "%{coastal_population_percent} % de la population de %{country} vit à proximité du littoral. Avec le changement climatique, ses habitants seront régulièrement menacés par les inondations et les tempêtes.",
 
-    "emissions_desc": "Aktuell produziert jeder Bewohner von %{country} jährlich %{c02_emissions} Tonnen. Um den Klimawandel abzuschwächen, sollte jeder Mensch laut UNO nicht mehr als zwei Tonnen CO₂ pro Jahr produzieren. Die entstehen etwa, wenn man rund 10.000 Kilometer mit einem Mittelklassewagen zurücklegt. Ein Flug von Berlin nach New York und zurück überschreitet das Budget bereits, denn dabei fallen pro Passagier rund 3,5 Tonnen CO₂ an."
+    "emissions_desc": "Actuellement, chaque habitant de %{country} produit %{c02_emissions} tonnes de CO₂ par an. Selon l’ONU, pour atténuer le changement climatique, chaque habitant de la planète ne devrait pas produire plus de 2 tonnes de CO₂ par an. Cela correspond à peu près à un trajet de 10 000 kilomètres en voiture. Un vol Paris-New York dépasse par contre largement ce « budget moyen » : il consomme environ 3,5 tonnes de CO₂ par passager."
   }
 }
