@@ -1,4 +1,4 @@
-### Europas Strände versinken
+### Les plages d'Europe sombrent
 
-Das südfranzösische Palavas-les-Flots sollte einmal das „französische Florida" werden. Nun prophezeien Experten dem Badeort, dass die Strände untergehen werden, mitsamt ihren Bars, Restaurants und Boots-Verleihen. Dass der Boden allmählich weggeschwemmt wird und das Grundwasser in der Nähe der Küste versalzt.
+Il fut un temps, Palavas-les-Flots était qualifiée de «Floride française». Mais dans les années 1960, le changement climatique lui a occasionné des dommages irréversibles. Les chercheurs ont prédit que la pénurie d’eaux souterraines provoquerait l’érosion des sols et la disparition des plages et de leurs bars et restaurants. Cette ville du sud de la France, comme de nombreuses autres villes côtières d’Europe, devra céder devant la mer.
 
