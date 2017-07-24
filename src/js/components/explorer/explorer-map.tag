@@ -8,11 +8,11 @@
     import bbox from '@turf/bbox'
 
     const scale = [
-      [-4, '#008080'],
-      [-2, '#94d5ba'],
-      [0, '#ffffe0'],
-      [2, '#ef738b'],
-      [4, '#8b0000']
+      [-Infinity, '#469e9f'],
+      [-45, '#7aa1a3'],
+      [-15, '#9fa4a6'],
+      [+15, '#9f7b7e'],
+      [+45, '#9d474b']
     ]
 
     this.activeLayers = []
@@ -60,7 +60,7 @@
           properties: {
             id: station.id,
             title: station.location,
-            trend: parseFloat(station.trend_1985_2015, 10)
+            amplitude: parseFloat(_.last(station.timeseries), 10)
           }
         }))
       }
@@ -128,7 +128,8 @@
           paint: {
             'circle-radius': 3,
             'circle-color': {
-              property: 'trend',
+              property: 'amplitude',
+              type: 'interval',
               stops: scale
             }
           }
@@ -145,7 +146,8 @@
           paint: {
             'circle-radius': 6,
             'circle-color': {
-              property: 'trend',
+              property: 'amplitude',
+              type: 'interval',
               stops: scale
             }
           }
