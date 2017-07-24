@@ -16,7 +16,7 @@
           { station.location }
         </h4>
         <p class="entries__description">
-          { station.trend_1985_2015 }
+          { this.i18n.t('explorer.sealevel_change', { change: getChangeValue(station) }) }
         </p>
       </a>
     </li>
@@ -48,8 +48,10 @@
       }
     })
 
+    this.getChangeValue = ({ timeseries }) => _.last(timeseries)
+
     this.getChangeIndicator = (station) => {
-      const amplitude = _.last(station.timeseries)
+      const amplitude = this.getChangeValue(station)
       const scaleItem = _.find(SCALE, ({ threshold }) => amplitude < threshold)
       return scaleItem.className
     }
