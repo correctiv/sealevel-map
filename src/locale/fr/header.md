@@ -1,4 +1,4 @@
-Neben dem steigenden oder sinkendem Meer zeigt die Visualisierung auch den weltweiten Ausstoß von Kohlendioxid. Der verstärkte Ausstoß dieses Gases seit der Industrialisierung hat dazu beigetragen, dass sich die Erde im vergangen Jahrhundert um ein Grad erwärmt hat. Die Ozeane haben diese zusätzliche Wärme zu 80 Prozent absorbiert. Wärmeres Wasser dehnt sich stärker aus, benötigt mehr Platz. Die Folge: Die Meere überfluten Küstenstriche.
+En plus de localiser les endroits où la mer monte et descend, cette visualisation montre aussi les émissions de CO₂ dans le monde. L'augmentation des émissions de ce gaz depuis l'industrialisation a participé au réchauffement d'un degré de la terre lors du siècle dernier. L'océan a absorbé 80 % de cette chaleur supplémentaire. Des eaux plus chaudes s'étendent plus fortement car elles ont besoin de plus d'espace. Conséquence : les mers inondent les bandes côtières.
 
-Bei einem wärmerem Klima wird das ewige Eis immer dünner. Die Pole sind massiv vom Klimawandel betroffen, die Gletscher schrumpfen und die Wassermasse der Ozeane wird entsprechend grösser.
+Avec un climat plus chaud, les glaces éternelles se réduisent en peau de chagrin. Les pôles nord et sud sont en première ligne face au réchauffement climatique, les glaciers fondent et la masse d'eau des océans s'agrandit en conséquence.
 
