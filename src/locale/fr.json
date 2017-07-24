@@ -1,28 +1,28 @@
 {
   "intro": {
-    "title": "Steigende Meere",
-    "lead": "Über 700.000 Pegeldaten weltweit belegen: Der Meeresspiegel steigt. Der Klimawandel ist an den Küsten angekommen. Er wird die Welt verändern. Das Meer wird Strände fortspülen, Inseln versenken, Ebenen überschwemmen. Mit möglicherweise dramatischen Folgen für hunderte Millionen Menschen.",
-    "more": "mehr erfahren",
-    "logo_alt": "ein Projekt von CORRECTIV"
+    "title": "Quand les mers montent",
+    "lead": "L’analyse de plus de 700 000 mesures marégraphiques réalisées dans le monde entier le prouve : emportant des plages de sable, rayant des îles de la carte et inondant des plaines, le changement climatique est depuis longtemps une réalité pour les littoraux de la planète. Avec des conséquences dramatiques pour des centaines de millions de personnes.",
+    "more": "En savoir plus",
+    "logo_alt": "Un projet de Correctiv"
   },
 
   "scrolly": {
-    "title": "Ein Datenschatz – erstmals gehoben",
-    "introduction": "Seit Jahrhunderten hat eine britische Behörde, der Permanent Service of Mean Sea Level (PSMSL), die Fluthöhen von Häfen in aller Welt gesammelt. Wir haben diesen Datensatz ausgewertet. Die Daten sind unbestechlich. Nur einen Nachteil haben sie: Die Messpunkte sind nicht gleichmäßig über den Globus verteilt. Afrika beispielsweise, das wenig Bedeutung für den Welthandel hat, ist ein weißer Fleck."
+    "title": "Une mine de données – pour la première fois révélée",
+    "introduction": "Depuis 1933, une organisation britannique, le Permanent Service of Mean Sea Level (PSMSL), recueille des données marégraphiques dans les ports du monde entier. Cette mine de données constitue la plus infaillible méthode d’évaluation du changement climatique. Seul inconvénient : les points de mesure sont inégalement répartis à la surface du globe. L’Afrique, par exemple, qui revêt peu d’importance pour le commerce mondial, est quasiment absente."
   },
 
   "explorer": {
     "title": "Explorer",
     "choose_continent": "Choisir un continent",
     "start": "Démarrer",
-    "sealevel_change": "durchschnittliche Veränderung",
+    "sealevel_change": "Changement moyen",
     "continents": {
       "africa": "Afrique",
       "north-america": "Amérique du Nord",
       "south-america": "Amérique du Sud",
       "asia": "Asie",
       "europe": "Europe",
-      "oceania": "Australie et Océanie",
+      "oceania": "Océanie",
       "antarctica": "Antarctique"
     },
     "countries": {
@@ -41,7 +41,7 @@
       "LTU": "Lituanie",
       "JPN": "Japon",
       "NZL": "Nouvelle-Zélande",
-      "PHL": "Philippine",
+      "PHL": "Philippines",
       "ITA": "Italie",
       "PAN": "Panama",
       "THA": "Thaïlande",
