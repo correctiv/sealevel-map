@@ -15,7 +15,13 @@
       <p>{ i18n.t('intro.lead') }</p>
     </div>
 
-    <a class="intro__more" href={ articlePath() }>{ i18n.t('intro.more') }</a>
+    <a
+      onclick={ opts.onMoreClick }
+      class="intro__more"
+      href={ articlePath()
+    }>
+      { i18n.t('intro.more') }
+    </a>
 
   </div>
 
@@ -29,6 +35,7 @@
     }
 
     this.articlePath = () => article(this.i18n.getLocale())
+
   </script>
 
 </sealevel-scrolly-intro>

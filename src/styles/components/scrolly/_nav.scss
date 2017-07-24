@@ -2,10 +2,10 @@ $bullet-width: 20px;
 $bullet-height: 5px;
 
 .scrolly__nav {
-  z-index: 0;
   position: fixed;
   top: 50%;
   left: 10px;
+  z-index: 10;
 
   ul, li {
     margin: 0;
