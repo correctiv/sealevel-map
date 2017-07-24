@@ -88,6 +88,26 @@
       })
     }
 
+    const showPopup = ({ features }) => {
+      const target = features[0]
+      const locale = this.i18n.getLocale()
+
+      this.opts.routeToStation(locale, target.properties.id)
+
+      // remove existing popup:
+      this.popup && this.popup.remove()
+
+      // create new popup:
+      this.popup = new mapboxgl.Popup({
+        offset: [0, -15],
+        closeOnClick: false,
+        closeButton: false
+      })
+      .setLngLat(target.geometry.coordinates)
+      .setHTML(target.properties.title)
+      .addTo(this.map)
+    }
+
     const renderMap = () => {
       mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ'
 
@@ -98,14 +118,29 @@
 
       map.on('load', () => {
         map.addLayer({
-          id: 'stations',
+          id: 'stations_small',
           type: 'circle',
+          maxzoom: 2,
           source: {
             type: 'geojson',
             data: createFeatures(this.opts.stations)
           },
-          layout: {
-            visibility: 'visible'
+          paint: {
+            'circle-radius': 3,
+            'circle-color': {
+              property: 'trend',
+              stops: scale
+            }
+          }
+        })
+
+        map.addLayer({
+          id: 'stations_large',
+          type: 'circle',
+          minzoom: 2,
+          source: {
+            type: 'geojson',
+            data: createFeatures(this.opts.stations)
           },
           paint: {
             'circle-radius': 6,
@@ -116,26 +151,8 @@
           }
         })
 
-        // location of the feature, with description HTML from its properties.
-        map.on('click', 'stations', ({ features }) => {
-          const target = features[0]
-          const locale = this.i18n.getLocale()
-
-          this.opts.routeToStation(locale, target.properties.id)
-
-          // remove existing popup:
-          this.popup && this.popup.remove()
-
-          // create new popup:
-          this.popup = new mapboxgl.Popup({
-            offset: [0, -15],
-            closeOnClick: false,
-            closeButton: false
-          })
-          .setLngLat(target.geometry.coordinates)
-          .setHTML(target.properties.title)
-          .addTo(map)
-        })
+        map.on('click', 'stations_small', showPopup)
+        map.on('click', 'stations_large', showPopup)
 
         map.on('load', () => {
           // Set locale for map features
@@ -152,12 +169,12 @@
         })
 
         // Change the cursor to a pointer when the mouse is over the stations layer.
-        map.on('mouseenter', 'stations', () => {
+        map.on('mouseenter', 'stations_large', () => {
           map.getCanvas().style.cursor = 'pointer'
         })
 
         // Change it back to a pointer when it leaves.
-        map.on('mouseleave', 'stations', () => {
+        map.on('mouseleave', 'stations_large', () => {
           map.getCanvas().style.cursor = ''
         })
       })
