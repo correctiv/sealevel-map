@@ -1,9 +1,10 @@
 <sealevel-explorer-country>
   <h2 class="explorer__title">{ i18n.t('explorer.countries.' + opts.country) }</h2>
 
-  <p>{ this.i18n.t('explorer.emissions_desc', descriptionData) }</p>
-
-  <p>{ this.i18n.t('explorer.risk_desc', descriptionData) }</p>
+  <div if={ opts.stations[0].c02_emissions }>
+    <p>{ this.i18n.t('explorer.emissions_desc', descriptionData) }</p>
+    <p>{ this.i18n.t('explorer.risk_desc', descriptionData) }</p>
+  </div>
 
   <ul class="entries">
     <li each={ station in opts.stations }>
