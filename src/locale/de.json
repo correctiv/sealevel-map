@@ -16,6 +16,7 @@
     "choose_continent": "Wähle einen Kontinent",
     "start": "Start",
     "sealevel_change": "Veränderung seit 1985: %{change}mm",
+    "back": "Zurück zur Übersicht:",
     "continents": {
       "africa": "Afrika",
       "north-america": "Nordamerika",

@@ -43,6 +43,7 @@
       if={ state.station && state.items }
       station={ getStationContext(state.station) }
       tides={ getTidesForStation(state.station) }
+      path-to-country={ routes.country }
     />
   </div>
 

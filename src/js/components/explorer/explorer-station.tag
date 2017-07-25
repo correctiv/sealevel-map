@@ -2,11 +2,14 @@
 
   <h1 class="explorer__title">{ opts.station.location }</h1>
 
-  <p>{ i18n.t('explorer.countries.' + opts.station.country) }</p>
-
   <sealevel-linechart chartdata={ opts.tides } />
 
   <p>{ stationDesc }</p>
+
+  <a href={ routeBack(opts.station.country) }>
+    { i18n.t('explorer.back') }
+    { i18n.t('explorer.countries.' + opts.station.country) }
+  </a>
 
   <script type="text/babel">
     import _ from 'lodash'
@@ -41,6 +44,8 @@
         this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)
       }
     })
+
+    this.routeBack = (id) => opts.pathToCountry(this.i18n.getLocale(), id)
   </script>
 
 </sealevel-explorer-station>
