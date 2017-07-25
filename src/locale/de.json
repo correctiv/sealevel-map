@@ -104,7 +104,7 @@
 
     "num_stations": "%{smart_count} Station |||| %{smart_count} Stationen",
 
-    "station_desc_higher": "Am Pegel %{location} ist das Meer in den vergangenen Jahrzehnten stark gestiegen: Zwischen 1985 und %{last_available_year} veränderte sich der Pegel um %{last_available_value} Millimeter. Schon heute leider die Menschen hier unter mehr Überschwemmungen – und Stürmen, die größere Schäden verursachen. Diese Orte gehören zu den ersten Opfern des Klimawandels.",
+    "station_desc_higher": "Am Pegel %{location} ist das Meer in den vergangenen Jahrzehnten stark gestiegen: Zwischen 1985 und %{last_available_year} veränderte sich der Pegel um %{last_available_value} Millimeter. Schon heute leiden die Menschen hier unter mehr Überschwemmungen – und Stürmen, die größere Schäden verursachen. Diese Orte gehören zu den ersten Opfern des Klimawandels.",
 
     "station_desc_high": "Am Pegel %{location} ist das Meer in den vergangenen Jahrzehnten leicht angestiegen: Zwischen 1985 und %{last_available_year} erhöhte sich der Pegel um %{last_available_value} Millimeter. Mit dem Klimawandel wird der Wasserstand hier weiter steigen. Mehr Überschwemmungen sind dann zu erwarten, Stürme werden dann größere Zerstörungskraft entfalten.",
 
@@ -118,6 +118,6 @@
 
     "risk_desc": "In %{country} leben %{coastal_population_percent} Prozent der Bevölkerung nahe an der Küste. Diese wird mit dem Klimawandel häufiger von Überschwemmungen und Stürmen bedroht sein.",
 
-    "emissions_desc": "Aktuell produziert jeder Bewohner von %{country} jährlich %{c02_emissions} Tonnen. Um den Klimawandel abzuschwächen, sollte jeder Mensch laut UNO nicht mehr als zwei Tonnen CO₂ pro Jahr produzieren. Die entstehen etwa, wenn man rund 10.000 Kilometer mit einem Mittelklassewagen zurücklegt. Ein Flug von Berlin nach New York und zurück überschreitet das Budget bereits, denn dabei fallen pro Passagier rund 3,5 Tonnen CO₂ an."
+    "emissions_desc": "Aktuell produziert jeder Bewohner von %{country} jährlich %{c02_emissions} Tonnen CO₂. Um den Klimawandel abzuschwächen, sollte jeder Mensch laut UNO nicht mehr als zwei Tonnen pro Jahr produzieren. Die entstehen etwa, wenn man rund 10.000 Kilometer mit einem Mittelklassewagen zurücklegt. Ein Flug von Berlin nach New York und zurück überschreitet das Budget bereits, denn dabei fallen pro Passagier rund 3,5 Tonnen CO₂ an."
   }
 }
