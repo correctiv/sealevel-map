@@ -43,6 +43,9 @@ module.exports = (options) => {
       new CopyWebpackPlugin([{
         from: './src/data',
         to: 'data'
+      }, {
+        from: './src/assets/content',
+        to: 'assets/content'
       }])
     ],
     module: {
@@ -68,6 +71,7 @@ module.exports = (options) => {
           test: /\.(png|jpg|gif|svg)$/,
           loader: 'url-loader'
         },
+
         {
           test: /\.css?$/,
           loader: 'style-loader!css-loader!'
