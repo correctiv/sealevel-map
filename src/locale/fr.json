@@ -15,8 +15,8 @@
     "title": "Explorer",
     "choose_continent": "Choisir un continent",
     "start": "Démarrer",
-    "sealevel_change": "Changement depuis 1985: %{change}mm",
-    "back": "Retour à vue d'ensemble:",
+    "sealevel_change": "Évolution depuis 1985 : %{change} mm",
+    "back": "Retour à la vue d'ensemble:",
     "continents": {
       "africa": "Afrique",
       "north-america": "Amérique du Nord",
