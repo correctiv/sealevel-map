@@ -42,7 +42,6 @@
 }
 
 .entries__item--change {
-  text-indent: 60px;
   background-repeat: no-repeat;
   background-position: 0 1em;
 
@@ -87,6 +86,10 @@
   font-family: $font-family-title;
   font-size: $font-size-h4;
   line-height: 1.2;
+
+  .entries__item--change & {
+    padding-left: 60px; // make space for the change indicator
+  }
 }
 
 .entries__description {
@@ -94,4 +97,9 @@
   padding: 0;
   font-family: $font-family-accent;
   font-size: $font-size-accent;
+
+  .entries__item--change & {
+    padding-left: 60px; // make space for the change indicator
+  }
+
 }

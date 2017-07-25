@@ -32,5 +32,9 @@ body {
   color: $color-text;
   font-family: $font-family-default;
   margin: 0;
-  background: #7f9ca5;
+  background: $white;
+
+  @include mq($screen-s) {
+    background: #7f9ca5;
+  }
 }

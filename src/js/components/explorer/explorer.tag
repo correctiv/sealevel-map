@@ -1,7 +1,7 @@
 <sealevel-explorer>
 
   <sealevel-explorer-map
-    if={ state.items }
+    if={ state.items && isLargeViewport() }
     stations={ state.items }
     country={ state.country }
     continent={ state.continent }
@@ -11,7 +11,7 @@
 
   <div class="explorer-panel">
     <sealevel-explorer-breadcrumbs
-      if={ (state.station || state.continent || state.country) }
+      if={ state.station || state.continent || state.country }
       continent={ state.continent || getContinentForCountry(state.country) }
       country={ state.country || getCountryForStation(state.station) }
       station={ getStationContext(state.station) }
@@ -58,6 +58,8 @@
     import './explorer-continent.tag'
     import './explorer-station.tag'
 
+    const MOBILE_BREAKPOINT = 480
+
     this.routes = routes
     this.state = this.store.getState().explorer
 
@@ -88,6 +90,10 @@
     })
 
     route.exec()
+
+    this.isLargeViewport = () => (
+      document.documentElement.clientWidth >= MOBILE_BREAKPOINT
+    )
 
     this.getStationContext = stationId => (
       _.find(this.state.items, ({ id }) => id === stationId)
@@ -122,6 +128,9 @@
     this.getTidesForStation = id => (
       this.state.tides && this.state.tides[id]
     )
+
+    window.addEventListener('deviceorientation', () => this.update())
+    window.addEventListener('resize', () => this.update())
 
   </script>
 
