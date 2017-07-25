@@ -26,10 +26,10 @@
     import _ from 'lodash'
 
     const SCALE = [
-      { threshold: -45, className: 'entries__item--change-lower' },
+      { threshold: -60, className: 'entries__item--change-lower' },
       { threshold: -15, className: 'entries__item--change-low' },
       { threshold: +15, className: 'entries__item--change-flat' },
-      { threshold: +45, className: 'entries__item--change-high' },
+      { threshold: +60, className: 'entries__item--change-high' },
       { threshold: Infinity, className: 'entries__item--change-higher' }
     ]
 

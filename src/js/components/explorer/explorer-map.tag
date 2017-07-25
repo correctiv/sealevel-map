@@ -9,10 +9,10 @@
 
     const scale = [
       [-Infinity, '#469e9f'],
-      [-45, '#7aa1a3'],
+      [-60, '#7aa1a3'],
       [-15, '#9fa4a6'],
       [+15, '#9f7b7e'],
-      [+45, '#9d474b']
+      [+60, '#9d474b']
     ]
 
     this.activeLayers = []
