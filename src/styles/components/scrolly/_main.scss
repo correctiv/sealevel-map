@@ -1,11 +1,19 @@
-.scrolly__header {
-  min-height: 80vh;
-  padding: 15px 30px;
-  background: $white;
+.scrolly__main {
   display: block;
 }
 
-.scrolly__header__body {
+.scrolly__main--world-info {
+  display: block;
+  padding-top: 100vh;
+}
+
+.scrolly__main__wrapper {
+  padding: 60px 30px;
+  background: $white;
+  min-height: 80vh;
+}
+
+.scrolly__main__body {
   font-size: $font-size-body;
   hyphens: auto;
 
@@ -18,7 +26,7 @@
   }
 }
 
-.scrolly__header__sidebar {
+.scrolly__main__sidebar {
   font-family: $font-family-title;
   font-weight: bold;
   margin: 30px 0;
@@ -35,7 +43,7 @@
   }
 }
 
-.scrolly__header__authors {
+.scrolly__main__authors {
   em {
     font-style: normal;
     color: $purple-dark;
@@ -48,7 +56,7 @@
   }
 }
 
-.scrolly__header__partners {
+.scrolly__main__partners {
   display: none;
   background: $gray-lighter;
   padding: 30px;

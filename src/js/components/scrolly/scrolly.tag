@@ -6,7 +6,9 @@
 
   <article class="scrolly__article">
 
-    <sealevel-scrolly-header />
+    <sealevel-scrolly-main id="main" />
+
+    <sealevel-scrolly-info id="world" />
 
     <div class="container">
       <sealevel-scrolly-content steps={steps} />
@@ -22,6 +24,9 @@
       <li>
         <a onclick={scrollTo} class="scrolly__nav__link" href="#main">Introduction</a>
       </li>
+      <li>
+        <a onclick={scrollTo} class="scrolly__nav__link" href="#world">World</a>
+      </li>
       <li each={step in steps}>
         <a onclick={scrollTo} class="scrolly__nav__link" href="#{step}">{title}</a>
       </li>
@@ -36,7 +41,8 @@
     import { setStep } from '../../actions/navigation'
     import { STEPS } from '../../routes/'
     import './scrolly-intro.tag'
-    import './scrolly-header.tag'
+    import './scrolly-main.tag'
+    import './scrolly-info.tag'
     import './scrolly-content.tag'
     import './scrolly-map.tag'
 
@@ -51,6 +57,7 @@
     const initNavigation = () => {
       gumshoe.init({
         container: window,
+        offset: 0,
         activeClass: 'scrolly__nav__link--active',
         callback: routeTo
       })

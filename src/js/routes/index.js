@@ -1,7 +1,6 @@
 import route from 'riot-route'
 
 export const STEPS = [
-  'world',
   'manila',
   'scandinavia',
   'france',
