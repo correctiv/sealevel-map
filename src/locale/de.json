@@ -8,7 +8,11 @@
 
   "scrolly": {
     "title": "Ein Datenschatz – erstmals gehoben",
-    "introduction": "Seit Jahrhunderten hat eine britische Behörde, der Permanent Service of Mean Sea Level (PSMSL), die Fluthöhen von Häfen in aller Welt gesammelt. Wir haben diesen Datensatz ausgewertet. Die Daten sind unbestechlich. Nur einen Nachteil haben sie: Die Messpunkte sind nicht gleichmäßig über den Globus verteilt. Afrika beispielsweise, das wenig Bedeutung für den Welthandel hat, ist ein weißer Fleck."
+    "authors": "von",
+    "introduction": "Seit Jahrhunderten hat eine britische Behörde, der Permanent Service of Mean Sea Level (PSMSL), die Fluthöhen von Häfen in aller Welt gesammelt. Wir haben diesen Datensatz ausgewertet. Die Daten sind unbestechlich. Nur einen Nachteil haben sie: Die Messpunkte sind nicht gleichmäßig über den Globus verteilt. Afrika beispielsweise, das wenig Bedeutung für den Welthandel hat, ist ein weißer Fleck.",
+    "partners": "In Kooperation mit:",
+    "tide_figcaption": "Moderner Pegel im Hafen von Genua",
+    "credits": "Foto:"
   },
 
   "explorer": {

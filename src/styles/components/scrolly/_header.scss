@@ -4,3 +4,63 @@
   background: $white;
   display: block;
 }
+
+.scrolly__header__body {
+  font-size: $font-size-body;
+  hyphens: auto;
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  @include mq($screen-l) {
+    margin: 0 24% 0 8%;
+  }
+}
+
+.scrolly__header__sidebar {
+  font-family: $font-family-title;
+  font-weight: bold;
+  margin: 30px 0;
+
+  @include mq($screen-m) {
+    width: 40%;
+    float: right;
+    margin: 0 0 30px 30px;
+    min-height: 200px;
+  }
+
+  @include mq($screen-l) {
+    width: 32%;
+  }
+}
+
+.scrolly__header__authors {
+  em {
+    font-style: normal;
+    color: $purple-dark;
+    display: inline-block;
+  }
+
+  @include mq($screen-m) {
+    background: $gray-light;
+    padding: 30px;
+  }
+}
+
+.scrolly__header__partners {
+  display: none;
+  background: $gray-lighter;
+  padding: 30px;
+
+  h4 {
+    margin: 0;
+    font-family: $font-family-title;
+    font-size: $font-size-accent;
+    text-transform: uppercase;
+  }
+
+  @include mq($screen-m) {
+    display: block;
+  }
+}
