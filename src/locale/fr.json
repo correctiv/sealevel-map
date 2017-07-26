@@ -125,6 +125,8 @@
 
     "risk_desc": "%{coastal_population_percent} % de la population de %{country} vit à proximité du littoral. Avec le changement climatique, ses habitants seront régulièrement menacés par les inondations et les tempêtes.",
 
-    "emissions_desc": "Actuellement, chaque habitant de %{country} produit %{c02_emissions} tonnes de CO₂ par an. Selon l’ONU, pour atténuer le changement climatique, chaque habitant de la planète ne devrait pas produire plus de 2 tonnes de CO₂ par an. Cela correspond à peu près à un trajet de 10 000 kilomètres en voiture. Un vol Paris-New York dépasse par contre largement ce « budget moyen » : il consomme environ 3,5 tonnes de CO₂ par passager."
+    "emissions_desc": "Actuellement, chaque habitant de %{country} produit %{c02_emissions} tonnes de CO₂ par an. Selon l’ONU, pour atténuer le changement climatique, chaque habitant de la planète ne devrait pas produire plus de 2 tonnes de CO₂ par an. Cela correspond à peu près à un trajet de 10 000 kilomètres en voiture. Un vol Paris-New York dépasse par contre largement ce « budget moyen » : il consomme environ 3,5 tonnes de CO₂ par passager.",
+
+    "manila": "Les données pour Manille sont incertaines. Pendant que la mer monte, les masses continentales sont en train de baisser. Les deux effets provoquent simultanément que la capitale des Philippines est l'un des lieux le plus touché par la montée des mers."
   }
 }
