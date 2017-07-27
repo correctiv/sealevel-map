@@ -5,12 +5,17 @@
 .scrolly__main--world-info {
   display: block;
   padding-top: 100vh;
+
+  // Adjust for spacing to following section:
+  .scrolly__main__wrapper {
+    margin-bottom: -80vh;
+  }
 }
 
 .scrolly__main__wrapper {
   padding: 60px 30px;
   background: $white;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .scrolly__main__body {

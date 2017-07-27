@@ -1,7 +1,11 @@
 .scrolly__content {
   padding: 15px 30px;
   background: $gray-lighter;
-  width: 50%;
+
+  @include mq($screen-l) {
+    padding: 60px;
+    width: 50%;
+  }
 }
 
 .scrolly__article {
@@ -9,11 +13,21 @@
   z-index: 10;
 
   section {
-    padding: 50vh 0 0 0;
+    padding: 75vh 0 0 0;
   }
 
+  // Adjust position in order to trigger gumshoe.js scrollspy event earlier, for smoother changes between steps within the scrolly
   .scrolly__section--manila {
+    padding-top: 150vh;
   }
+}
 
+.scrolly__section--manila,
+.scrolly__section--france,
+.scrolly__section--argentina {
+  @include mq($screen-l) {
+    position: relative;
+    left: 50%;
+  }
 }
 
