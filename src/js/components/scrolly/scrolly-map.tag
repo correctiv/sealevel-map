@@ -40,37 +40,43 @@
           break
 
         case 'manila':
-          this.map.jumpTo({
+          this.map.flyTo({
             center: [121, 14.65],
-            zoom: 10
+            zoom: 10,
+            offset: [-200, 0]
           })
           break
 
         case 'scandinavia':
           this.map.fitBounds([
-            [-25.1806640625, 54.4700376128],
-            [32.8271484375, 71.2725947123]
-          ], { duration: 300 })
-          break
-
-        case 'japan':
-          this.map.flyTo({
-            center: [139.683333, 35.683333],
-            zoom: 5
+            [-25.18, 54.47],
+            [32.82, 71.27]
+          ], {
+            offset: [200, 0]
           })
           break
 
         case 'france':
           this.map.flyTo({
-            center: [3.930556, 43.529444],
-            zoom: 5
+            center: [3.93, 43.52],
+            zoom: 5,
+            offset: [-200, 0]
+          })
+          break
+
+        case 'usa':
+          this.map.flyTo({
+            center: [-73.93, 40.52],
+            zoom: 5,
+            offset: [200, 0]
           })
           break
 
         case 'argentina':
           this.map.flyTo({
-            center: [-58.383333, -34.6],
-            zoom: 5
+            center: [-58.38, -34.6],
+            zoom: 5,
+            offset: [-200, 0]
           })
           break
       }
