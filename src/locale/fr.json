@@ -19,7 +19,7 @@
   "explorer": {
     "title": "Explorer",
     "choose_continent": "Choisir un continent",
-    "start": "Démarrer",
+    "start": "Accueil",
     "sealevel_change": "Évolution depuis 1985 : %{change} mm",
     "linechart_axis": "mm",
     "back": "Retour à la vue d'ensemble:",
