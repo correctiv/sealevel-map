@@ -13,13 +13,7 @@
           [INFOGRAFIK]
 
           <figcaption class="scrolly__figure__caption">
-            { i18n.t('scrolly.info_figcaption') }
-            <p></p>
-            <p>
-              { i18n.t('scrolly.credits') }
-              <a href="https://commons.wikimedia.org/w/index.php?curid=37402118">Motnbkl</a>,
-              <a href="http://creativecommons.org/licenses/by-sa/4.0">CC-BY-SA 4.0</a>
-            </p>
+            <p>{ i18n.t('scrolly.info_figcaption') }</p>
           </figcaption>
         </figure>
 

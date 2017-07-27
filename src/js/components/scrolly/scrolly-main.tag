@@ -31,8 +31,7 @@
         <figure class="scrolly__figure--marginal">
           <img src="/assets/content/pegel_genua.jpg" alt="" />
           <figcaption class="scrolly__figure__caption">
-            { i18n.t('scrolly.tide_figcaption') }
-            <p></p>
+            <p>{ i18n.t('scrolly.tide_figcaption') }</p>
             <p>
               { i18n.t('scrolly.credits') }
               <a href="https://commons.wikimedia.org/w/index.php?curid=37402118">Motnbkl</a>,
