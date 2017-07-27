@@ -6,7 +6,7 @@
     import * as d3 from 'd3'
 
     this.on('updated', () => {
-      this.opts.chartdata && createChart(this.opts.chartdata, 200, 400)
+      this.opts.chartdata && createChart(this.opts.chartdata)
     })
 
     const bisectDate = d3.bisector(d => d.year).left
@@ -94,12 +94,7 @@
         const mouse = d3.mouse(this)
         const mouseDate = xScale.invert(mouse[0])
         const i = bisectDate(data, mouseDate) // returns the index to the current data item
-
-        const d0 = data[i - 1]
-        const d1 = data[i]
-        // work out which date value is closest to the mouse
-        const d = mouseDate - d0[0] > d1[0] - mouseDate ? d1 : d0
-
+        const d = data[i]
         const x = xScale(d.year)
         const y = yScale(d.tide)
 
