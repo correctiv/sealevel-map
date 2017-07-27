@@ -48,7 +48,7 @@
         if (station.id === '145') {
           this.stationDesc = this.i18n.t('explorer.manila')
         } else {
-          this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)
+          this.stationDesc = this.i18n.t(getStationDesc(station.trend_longest), station)
         }
       }
     })
