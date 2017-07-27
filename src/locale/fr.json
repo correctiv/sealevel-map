@@ -17,8 +17,8 @@
   },
 
   "explorer": {
-    "title": "Steigende Meere",
-    "intro": "„Explorer“ hieß diese Karte bei uns, während wir an ihr arbeiteten. Denn hier kannst du dir ansehen, wie sich die Meeresspiegel verändert haben an 500 Messpunkten weltweit. Klicke dazu auf den Kontinent, dann auf das Land, dann auf die jeweilige Messstation.",
+    "title": "Quand les mers montent",
+    "intro": "Visualisez comment le niveau de la mer a évolué au fil des années dans 500 ports du globe. Vous pouvez sélectionner les continents, les pays puis accéder aux différentes localités mesurées.",
     "choose_continent": "Choisir un continent",
     "start": "Accueil",
     "sealevel_change": "Évolution depuis 1985 : %{change} mm",
@@ -112,15 +112,15 @@
 
     "num_stations": "%{smart_count} station |||| %{smart_count} stations",
 
-    "station_desc_higher": "À la station %{location}, la mer est fortement montée au cours des dernières décennies : entre 1985 et %{last_available_year}, son niveau s’est élevé de %{last_available_value} millimètres. Aujourd’hui, la population est déjà sujette aux inondations et aux tempêtes, qui causent d’importants dégâts. Cet endroit est l’une des premières victimes du changement climatique.",
+    "station_desc_higher": "À la station %{location}, la mer est sensiblement montée au cours des dernières décennies : entre 1985 et %{last_available_year}, son niveau s’est élevé de %{last_available_value} millimètres ; de %{last_available_value_since_beginning} millimètres depuis le début des mesures. Il est fort probable qu'à cet endroit, les inondations gagneront en intensité et les tempêtes causeront d’importants dégâts.",
 
-    "station_desc_high": "À la station %{location}, la mer est légèrement montée au cours des dernières décennies : entre 1985 et %{last_available_year}, son niveau s’est élevé de %{last_available_value} millimètres. Avec le changement climatique, ce phénomène va se poursuivre. Des inondations plus fréquentes et des tempêtes plus dévastatrices sont donc à prévoir.",
+    "station_desc_high": "À la station %{location}, la mer est légèrement montée au cours des dernières décennies : entre 1985 et %{last_available_year}, son niveau s’est élevé de %{last_available_value} millimètres ; de %{last_available_value_since_beginning} millimètres depuis le début des mesures. Avec le changement climatique, ce phénomène va s'accentuer.",
 
-    "station_desc_flat": "À la station %{location}, le niveau de la mer a peu évolué au cours des dernières décennies. C’est le cas dans peu d’endroits du globe. Néanmoins, avec le changement climatique, l’eau y grimpera aussi lors des prochaines années. Avec les conséquences que l’on connaît.",
+    "station_desc_flat": "À la station %{location}, le niveau de la mer a peu évolué au cours des dernières décennies. C’est le cas dans peu d’endroits du globe. Néanmoins, avec le changement climatique, l’eau y grimpera aussi lors des prochaines années.",
 
-    "station_desc_low": "À la station %{location}, la mer a légèrement baissé au cours des dernières décennies. En %{last_available_year}, son niveau était de %{last_available_value} millimètres en-dessous de celui de 1985. Explication : les terres s’élèvent en raison de la fonte de glaciers et donc de la disparition du poids colossal de ces masses de glace. Un jour, cette tendance prendra fin : environ 95 % du littoral de la planète devra faire face à une hausse du niveau de la mer, selon le Groupe d'experts intergouvernemental sur l'évolution du climat.",
+    "station_desc_low": "À la station %{location}, la mer a légèrement baissé au cours des dernières décennies. En %{last_available_year}, son niveau était de %{last_available_value} millimètres en-dessous de celui de 1985 ; de %{last_available_value_since_beginning} millimètres depuis le début des mesures. Explication : les terres s’élèvent en raison de la fonte de glaciers et donc de la disparition du poids colossal de ces masses de glace. Un jour, cette tendance prendra fin : environ 95 % du littoral de la planète devra faire face à une hausse du niveau de la mer, selon le Groupe d'experts intergouvernemental sur l'évolution du climat.",
 
-    "station_desc_lower": "À la station %{location}, la mer a fortement baissé au cours des dernières décennies. En %{last_available_year}, son niveau était de %{last_available_value} millimètres en-dessous de celui de 1985. La croûte terrestre se dilate en raison de la fonte de glaciers et donc de la disparition du poids colossal de ces masses de glace.",
+    "station_desc_lower": "À la station %{location}, la mer a sensiblement baissé au cours des dernières décennies. En %{last_available_year}, son niveau était de %{last_available_value} millimètres en-dessous de celui de 1985 ; de %{last_available_value_since_beginning} millimètres depuis le début des mesures. La croûte terrestre se dilate en raison de la fonte de glaciers et donc de la disparition du poids colossal de ces masses de glace.",
 
     "station_desc_unclear": "À la station %{location}, aucune donnée fiable n’est disponible. Il peut y avoir plusieurs raisons : les points de mesure ont été déplacés au cours des années, les ports ont été transformés, des digues ont été posées. Tout cela fausse les mesures. D’après le Groupe d'experts intergouvernemental sur l'évolution du climat, le niveau de la mer s’élèvera à peu près partout sur le globe lors des prochaines décennies – et vraisemblablement aussi en ces lieux.",
 
