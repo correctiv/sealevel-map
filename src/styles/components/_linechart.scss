@@ -1,6 +1,18 @@
 //styles for the line chart
 
-.sealevel__linechart__axis-x {
+.linechart {
+  display: block;
+  width: 100%;
+  height: 200px;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.linechart__axis-x {
   text {
     fill: grey;
   }
@@ -12,7 +24,7 @@
   }
 }
 
-.sealevel__linechart__axis-y {
+.linechart__axis-y {
   text {
     fill: grey;
   }
@@ -24,30 +36,30 @@
   }
 }
 
-.sealevel__linechart__line {
+.linechart__line {
   fill: none;
   stroke: steelblue;
   stroke-width: 1.5px;
 }
 
-.sealevel__linechart__overlay {
+.linechart__overlay {
   fill: none;
   pointer-events: all;
 }
 
-.sealevel__linechart__circle {
+.linechart__circle {
   fill: white;
   stroke: steelblue;
   stroke-width: 2px;
 }
 
-.sealevel__linechart__focusline {
+.linechart__focusline {
   fill: none;
   stroke: steelblue;
   stroke-width: 0.5px;
 }
 
-.sealevel__linechart__popup {
+.linechart__popup {
   fill: black;
 }
 
