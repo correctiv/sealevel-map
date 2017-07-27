@@ -22,6 +22,7 @@
     "choose_continent": "Wähle einen Kontinent",
     "start": "Start",
     "sealevel_change": "Veränderung seit 1985: %{change}mm",
+    "linechart_axis": "mm",
     "back": "Zurück zur Übersicht:",
     "continents": {
       "africa": "Afrika",

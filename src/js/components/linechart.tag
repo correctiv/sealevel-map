@@ -54,7 +54,7 @@
         .attr('x', 5)
         .attr('dy', '0.71em')
         .style('text-anchor', 'end')
-        .text('Sea Level')
+        .text(this.i18n.t('explorer.linechart_axis'))
 
       g.append('path')
         .datum(data)
