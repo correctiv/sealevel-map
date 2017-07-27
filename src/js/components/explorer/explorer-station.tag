@@ -37,19 +37,19 @@
     this.on('update', () => {
       const { station, tides } = this.opts
 
-
-
       if (station && tides) {
         const { tide, year } = _.last(tides)
+        const tideShort = _.last(station.timeseries)
         station.last_available_year = year
-        station.last_available_value = tide > 0 ? tide : -tide
+        station.last_available_value_since_beginning = tide > 0 ? tide : -tide
+        station.last_available_value = tideShort > 0 ? tideShort : -tideShort
 
-          // different description text for Manila
-          if (station.id === '145') {
-            this.stationDesc = this.i18n.t('explorer.manila')
-          } else {
-            this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)
-          }
+        // different description text for manila
+        if (station.id === '145') {
+          this.stationDesc = this.i18n.t('explorer.manila')
+        } else {
+          this.stationDesc = this.i18n.t(getStationDesc(station.trend_1985_2015), station)
+        }
       }
     })
 

@@ -2,7 +2,7 @@
 
   <div class="explorer__intro">
     <h2 class="explorer__intro__title">{ i18n.t('explorer.title') }</h2>
-    <p>{ i18n.t('explorer.title') }</p>
+    <p>{ i18n.t('explorer.intro') }</p>
   </div>
 
   <h2 class="explorer__title">{ i18n.t('explorer.choose_continent') }</h2>

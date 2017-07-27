@@ -1,17 +1,15 @@
-// styles for details page
-
-.explorer__title {
-  margin: 0;
-  padding: 3em 0 25px 0;
-  @include font-size($font-size-h3, false);
-  line-height: 1.2;
-  color: $gray-dark;
-}
-
 .explorer__intro__title {
   margin: 0;
-  padding: 1.5em 0 0.5em 0;
+  padding: 1em 0 0 0;
   @include font-size($font-size-h2, false);
   line-height: 1.2;
   color: $color-text;
+}
+
+.explorer__title {
+  margin: 0;
+  padding: 2em 0 0 0;
+  @include font-size($font-size-h3, false);
+  line-height: 1.2;
+  color: $gray-dark;
 }
