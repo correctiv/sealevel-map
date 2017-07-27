@@ -13,9 +13,11 @@
 
     const createChart = (data) => {
       const container = this.refs.linechart
-      const containerWidth = container.clientWidth
-      const containerHeight = container.clientHeight
+      const containerWidth = this.root.clientWidth
+      const containerHeight = this.root.clientHeight
       const svg = d3.select(container)
+
+      console.log(container, containerWidth, containerHeight)
 
       svg.selectAll('*').remove()
       svg.attr('width', containerWidth)
