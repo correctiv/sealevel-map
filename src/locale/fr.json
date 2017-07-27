@@ -1,19 +1,19 @@
 {
   "intro": {
     "title": "Quand les mers montent",
-    "lead": "L’analyse de plus de 700 000 mesures marégraphiques réalisées dans le monde entier le prouve : emportant des plages de sable, rayant des îles de la carte et inondant des plaines, le changement climatique est depuis longtemps une réalité pour les littoraux de la planète. Avec des conséquences dramatiques pour des centaines de millions de personnes.",
+    "lead": "L’analyse de plus de 700 000 mesures marégraphiques réalisées dans le monde entier l'atteste : le changement climatique est depuis longtemps une réalité pour les littoraux de la planète. Avec des conséquences dramatiques pour des centaines de millions de personnes.",
     "more": "En savoir plus",
     "logo_alt": "Un projet de Correctiv"
   },
 
   "scrolly": {
     "title": "Une mine de données – pour la première fois dévoilée",
-    "authors": "von",
-    "introduction": "Depuis 1933, une organisation britannique, le Permanent Service of Mean Sea Level (PSMSL), recueille des données marégraphiques dans les ports du monde entier. Cette mine de données constitue la plus infaillible méthode d’évaluation du changement climatique. Seul inconvénient : les points de mesure sont inégalement répartis à la surface du globe. L’Afrique, par exemple, qui revêt peu d’importance pour le commerce mondial, est quasiment absente.",
-    "partners": "In Kooperation mit:",
-    "tide_figcaption": "Moderner Pegel im Hafen von Genua",
-    "credits": "Foto:",
-    "info": "Nous avons compilé dans cette carte interactive les 500 points de mesure les mieux documentés. Si la mère monte, la station est colorée en rouge ; si, au contraire, la terre s'élève, elle apparaît en bleu. Quelques exemples : à Marseille, la Méditerranée est 20 centimètres plus haute qu'il y a trois décennies. Sur l'île allemande de Borkum, située dans la région de Frise orientale, l'eau est montée de 18 centimètres : en 1985, on pouvait encore y avoir les pieds au sec ; aujourd'hui, les bottes en caoutchouc sont recommandées. À Atlantic City, au sud de New York, la hausse atteint presque les 35 centimètres."
+    "authors": "de",
+    "introduction": "Depuis 1933, une organisation britannique, le Permanent Service of Mean Sea Level, recueille des données marégraphiques dans les ports du monde entier. Cette mine de données constitue la plus infaillible méthode d’évaluation du changement climatique. Seul inconvénient : les points de mesure sont inégalement répartis à la surface du globe. L’Afrique, par exemple, qui revêt peu d’importance pour le commerce mondial, est quasiment absente.",
+    "partners": "En coopération avec :",
+    "tide_figcaption": "Le port de Gênes, en Italie.",
+    "credits": "Photo :",
+    "info": "Nous avons sélectionné 500 lieux particulièrement bien documentés et les avons cartographiés, en répertoriant la hausse du niveau des mers depuis trois décennies. Les points correspondent aux stations marégraphiques : celles où la mer monte sont en rouge ; celles où elle recule sont en bleu. Les zones côtières teintées de vert sont les plus menacées, car situées à moins de dix mètres au-dessus du niveau de la mer."
   },
 
   "explorer": {
