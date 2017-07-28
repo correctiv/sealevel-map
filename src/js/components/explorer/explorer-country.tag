@@ -6,6 +6,10 @@
     <p>{ this.i18n.t('explorer.risk_desc', descriptionData) }</p>
   </div>
 
+  <p>
+    <sealevel-article-link for={opts.country} />
+  </p>
+
   <ul class="entries">
     <li each={ station in opts.stations }>
       <a
@@ -24,6 +28,7 @@
 
   <script type="text/babel">
     import _ from 'lodash'
+    import '../common/article-link.tag'
 
     const SCALE = [
       { threshold: -60, className: 'entries__item--change-lower' },

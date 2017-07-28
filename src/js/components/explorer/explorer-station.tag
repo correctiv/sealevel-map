@@ -6,6 +6,8 @@
 
   <p>{ stationDesc }</p>
 
+  <sealevel-article-link for={opts.station.id} />
+
   <a href={ routeBack(opts.station.country) }>
     { i18n.t('explorer.back') }
     { i18n.t('explorer.countries.' + opts.station.country) }
@@ -14,6 +16,7 @@
   <script type="text/babel">
     import _ from 'lodash'
     import '../linechart.tag'
+    import '../common/article-link.tag'
 
     const getStationDesc = (trend) => {
       if (!trend) {

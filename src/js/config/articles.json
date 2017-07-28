@@ -1,0 +1,56 @@
+{
+  "de": {
+    "europe": {
+      "title": "Unserere Recherche über Europa",
+      "url": "https://correctiv.org/a/1698"
+    },
+    "africa": {
+      "title": "Unserere Recherche über Afrika",
+      "url": "https://correctiv.org/a/1598"
+    },
+    "north-america": {
+      "title": "Unserere Recherche über Nordamerika",
+      "url": "https://correctiv.org/a/1877"
+    },
+    "south-america": {
+      "title": "Unserere Recherche über Südamerika",
+      "url": "https://correctiv.org/a/1866"
+    },
+    "FIN": {
+      "title": "Unserere Recherche über Finland",
+      "url": "https://correctiv.org/a/1694"
+    },
+    "FRA": {
+      "title": "Unserere Recherche über Frankreich",
+      "url": "https://correctiv.org/a/1692"
+    },
+    "ISL": {
+      "title": "Unserere Recherche über Island",
+      "url": "https://correctiv.org/a/1697"
+    },
+    "JPN": {
+      "title": "Unserere Recherche über Japan",
+      "url": "https://correctiv.org/a/1872"
+    },
+    "PHL": {
+      "title": "Unserere Recherche über die Philippinen",
+      "url": "https://correctiv.org/a/1738"
+    },
+    "RUS": {
+      "title": "Unserere Recherche über Russland",
+      "url": "https://correctiv.org/a/1847"
+    },
+    "SWE": {
+      "title": "Unserere Recherche über Schweden",
+      "url": "https://correctiv.org/a/1694"
+    },
+    "145": {
+      "title": "Unserere Recherche über Manila",
+      "url": "https://correctiv.org/a/1735"
+    }
+  },
+
+  "fr": {},
+
+  "en": {}
+}
