@@ -17,8 +17,6 @@
       const containerHeight = this.root.clientHeight
       const svg = d3.select(container)
 
-      console.log(container, containerWidth, containerHeight)
-
       svg.selectAll('*').remove()
       svg.attr('width', containerWidth)
       svg.attr('height', containerHeight)
