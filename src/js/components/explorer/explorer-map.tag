@@ -109,11 +109,11 @@
     }
 
     const renderMap = () => {
-      mapboxgl.accessToken = 'pk.eyJ1IjoiZmVsaXhtaWNoZWwiLCJhIjoiZWZrazRjOCJ9.62fkOEqGMxFxJZPJuo2iIQ'
+      mapboxgl.accessToken = 'pk.eyJ1IjoiY29ycmVjdGl2IiwiYSI6ImNpZXZoc2k3dzAwYjZ0cGtzZ3lzcWRxZ3oifQ.D7nZQDnSO4BMLssgleNSSg'
 
       const map = new mapboxgl.Map({
         container: 'explorer__map',
-        style: 'mapbox://styles/felixmichel/cj1550ogw002s2smkgbz60keh'
+        style: 'mapbox://styles/correctiv/cj5ck638406zq2rs1y0toq1ba'
       })
 
       map.on('load', () => {
