@@ -4,6 +4,7 @@
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
+    import MapboxglLanguage from '@mapbox/mapbox-gl-language'
     import _ from 'lodash'
     import bbox from '@turf/bbox'
 
@@ -156,19 +157,15 @@
         map.on('click', 'stations_small', showPopup)
         map.on('click', 'stations_large', showPopup)
 
-        map.on('load', () => {
-          // Set locale for map features
-          const locale = this.i18n.getLocale()
-          map.setLayoutProperty('place_label_city', 'text-field', `{name_${locale}}`)
-          map.setLayoutProperty('place_label_other', 'text-field', `{name_${locale}}`)
-          map.setLayoutProperty('country_label', 'text-field', `{name_${locale}}`)
+        map.addControl(new MapboxglLanguage({
+          defaultLanguage: this.i18n.getLocale()
+        }))
 
-          // Disable map rotation using right click + drag
-          map.dragRotate.disable()
+        // Disable map rotation using right click + drag
+        map.dragRotate.disable()
 
-          // Disable map rotation using touch rotation gesture
-          map.touchZoomRotate.disableRotation()
-        })
+        // Disable map rotation using touch rotation gesture
+        map.touchZoomRotate.disableRotation()
 
         // Change the cursor to a pointer when the mouse is over the stations layer.
         map.on('mouseenter', 'stations_large', () => {

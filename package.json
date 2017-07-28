@@ -42,6 +42,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "@mapbox/mapbox-gl-language": "^0.9.0",
     "@turf/bbox": "^4.4.0",
     "core-js": "2.4.1",
     "d3": "4.3.0",
