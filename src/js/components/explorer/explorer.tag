@@ -64,14 +64,9 @@
     this.routes = routes
     this.state = this.store.getState().explorer
 
-    this.on('route', (locale) => {
-      // Set locale
-      this.i18n.setLocale(locale)
-
-      // Subscribe to global redux state:
-      this.subscribe(({ explorer }) => {
-        this.update({ state: explorer })
-      })
+    // Subscribe to global redux state:
+    this.subscribe(({ explorer }) => {
+      this.update({ state: explorer })
     })
 
     route('*/explore/stations/*', (locale, id) => {
@@ -82,15 +77,23 @@
       this.dispatch(requestStationList({ country: id }))
     })
 
+    route('*/explore/start', (locale) => {
+      this.dispatch(requestStationList())
+    })
+
     route('*/explore/*', (locale, id) => {
       this.dispatch(requestStationList({ continent: id }))
     })
 
-    route('*/explore', (locale) => {
+    route('*/explore/', (locale) => {
       this.dispatch(requestStationList())
     })
 
     route.exec()
+
+    this.on('route', (locale) => {
+      this.i18n.setLocale(locale)
+    })
 
     this.isLargeViewport = () => (
       document.documentElement.clientWidth >= MOBILE_BREAKPOINT
