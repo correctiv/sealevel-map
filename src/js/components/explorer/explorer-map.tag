@@ -114,14 +114,15 @@
 
       const map = new mapboxgl.Map({
         container: 'explorer__map',
-        style: 'mapbox://styles/correctiv/cj5ck638406zq2rs1y0toq1ba'
+        style: 'mapbox://styles/correctiv/cj5ck638406zq2rs1y0toq1ba',
+        minZoom: 2,
+        maxZoom: 8
       })
 
       map.on('load', () => {
         map.addLayer({
           id: 'stations_small',
           type: 'circle',
-          maxzoom: 2,
           source: {
             type: 'geojson',
             data: createFeatures(this.opts.stations)
@@ -139,7 +140,6 @@
         map.addLayer({
           id: 'stations_large',
           type: 'circle',
-          minzoom: 2,
           source: {
             type: 'geojson',
             data: createFeatures(this.opts.stations)
@@ -157,6 +157,7 @@
         map.on('click', 'stations_small', showPopup)
         map.on('click', 'stations_large', showPopup)
 
+        // Localize map labels
         map.addControl(new MapboxglLanguage({
           defaultLanguage: this.i18n.getLocale()
         }))
