@@ -16,7 +16,7 @@ export const country = (locale, id) => `/${locale}/explore/countries/${id}`
 export const station = (locale, id) => `/${locale}/explore/stations/${id}`
 
 export const routeToIntro = (locale) => {
-  route(intro(locale))
+  route(explorer(locale))
 }
 
 export const routeToArticle = (locale) => {
