@@ -7,6 +7,30 @@
   position: fixed;
 }
 
+.explorer__map__legend {
+  position: fixed;
+  width: 40%;
+  max-width: 270px;
+  bottom: 35px;
+  left: 40px;
+  z-index: 3;
+  font-size: $font-size-accent;
+  font-family: $font-family-accent;
+  line-height: 1.1;
+  text-shadow: 0 0 5px white;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -32px;
+    top: 0;
+    background: #87a89e;
+  }
+}
+
 .explorer__map__highlight {
   width: 20px;
   height: 20px;

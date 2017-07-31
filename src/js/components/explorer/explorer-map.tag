@@ -2,6 +2,10 @@
 
   <div id="explorer__map" class="explorer__map"></div>
 
+  <div class="explorer__map__legend">
+    {i18n.t('explorer.legend')}
+  </div>
+
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
     import MapboxglLanguage from '@mapbox/mapbox-gl-language'

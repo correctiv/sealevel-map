@@ -25,6 +25,7 @@
     "sealevel_change": "Veränderung seit 1985: %{change}mm",
     "linechart_axis": "mm",
     "back": "Zurück zur Übersicht:",
+    "legend": "Bewohnte Gegenden unterhalb von zehn Metern über dem Meeresspiegel",
     "continents": {
       "africa": "Afrika",
       "north-america": "Nordamerika",
