@@ -125,6 +125,10 @@
 
     "station_desc_unclear": "Über die Entwicklung der Meereshöhe am Pegel %{location} haben wir keine gesicherten Daten. Das kann mehrere Ursachen haben: Die Messstation wurde im Laufe der Jahre versetzt, der Hafen umgebaut, Wellenbrecher wurden eingesetzt. All das verfälschte die Messungen. Laut einhelliger Meinung des UN-Klimarates wird das Meer in den kommenden Jahrzehnten an nahezu jedem Ort der Welt ansteigen – sehr wahrscheinlich auch an diesem.",
 
+    "station_desc_unclear_positive": "Am Pegel %{location} schwanken die Messwerte sehr stark. Der Trend weist auf einen Anstieg hin. Mit dem Klimawandel wird auch hier künftig das Wasser von Jahr zu Jahr ansteigen.",
+
+    "station_desc_unclear_negative": "Am Pegel %{location} schwanken die Messwerte sehr stark. Der Trend weist auf einen sinkenden Meeresspiegel hin. Dieser Trend wird eines Tages an sein Ende kommen: Rund 95 Prozent aller Küsten werden laut UN-Klimarat höhere Meeresstände verkraften müssen.",
+
     "risk_desc": "In %{country} leben %{coastal_population_percent} Prozent der Bevölkerung nahe an der Küste. Wahrscheinlich ist, dass die Menschen mit dem Klimawandel häufiger von Überschwemmungen und Stürmen heimgesucht werden.",
 
     "emissions_desc": "Aktuell produziert jeder Bewohner von %{country} jährlich %{c02_emissions} Tonnen CO₂. Um den Klimawandel abzuschwächen, sollte jeder Mensch laut UNO nicht mehr als zwei Tonnen CO₂ pro Jahr produzieren. Die entstehen, wenn man rund 10.000 Kilometer mit einem Mittelklassewagen fährt oder von Berlin nach Washington fliegt – oneway.",

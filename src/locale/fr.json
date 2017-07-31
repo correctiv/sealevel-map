@@ -124,6 +124,10 @@
 
     "station_desc_unclear": "À la station %{location}, aucune donnée fiable n’est disponible. Il peut y avoir plusieurs raisons : les points de mesure ont été déplacés au cours des années, les ports ont été transformés, des digues ont été posées. Tout cela fausse les mesures. D’après le Groupe d'experts intergouvernemental sur l'évolution du climat, le niveau de la mer s’élèvera à peu près partout sur le globe lors des prochaines décennies – et vraisemblablement aussi en ces lieux.",
 
+    "station_desc_unclear_positive": "A la station %{location}, les mesures fluctuent très fortement. La tendance indique que le niveau de la mer baisse. À cause du changement climatique, il est fort probable qu'à cet endroit la mer va monter de plus en plus.",
+
+    "station_desc_unclear_negative": "A la station %{location}, les mesures fluctuent très fortement. La tendance indique que le niveau de la mer baisse. Un jour, cette tendance va trouver sa fin: L’ONU prédit qu’environ 95 pourcent de tous les côtes du monde subiront des niveaux de la mer élevées.",
+
     "risk_desc": "%{coastal_population_percent} % de la population de %{country} vit à proximité du littoral. Avec le changement climatique, ses habitants seront régulièrement menacés par les inondations et les tempêtes.",
 
     "emissions_desc": "Actuellement, chaque habitant de %{country} produit %{c02_emissions} tonnes de CO₂ par an. Selon l’ONU, pour atténuer le changement climatique, chaque habitant de la planète ne devrait pas produire plus de 2 tonnes de CO₂ par an. Cela correspond à peu près à un trajet de 10 000 kilomètres en voiture. Un vol Paris-New York dépasse par contre largement ce « budget moyen » : il consomme environ 3,5 tonnes de CO₂ par passager.",

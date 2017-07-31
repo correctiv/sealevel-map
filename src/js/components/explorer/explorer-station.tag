@@ -18,9 +18,18 @@
     import '../linechart.tag'
     import '../common/article-link.tag'
 
-    const getStationDesc = (trend) => {
+    // Basic implementation of Math.sign, which is not widely supported in browsers
+    const sign = x => ((x > 0) - (x < 0)) || +x
+
+    const getStationDesc = (trend, tide) => {
       if (!trend) {
         return 'explorer.station_desc_unclear'
+      }
+      if ((sign(trend) !== sign(tide)) && (trend > 0)) {
+        return 'explorer.station_desc_unclear_positive'
+      }
+      if ((sign(trend) !== sign(tide)) && (trend < 0)) {
+        return 'explorer.station_desc_unclear_negative'
       }
       if (trend > 2) {
         return 'explorer.station_desc_higher'
@@ -51,7 +60,7 @@
         if (station.id === '145') {
           this.stationDesc = this.i18n.t('explorer.manila')
         } else {
-          this.stationDesc = this.i18n.t(getStationDesc(station.trend_longest), station)
+          this.stationDesc = this.i18n.t(getStationDesc(station.trend_longest, tide), station)
         }
       }
     })
