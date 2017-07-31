@@ -1,13 +1,14 @@
 import Polyglot from 'node-polyglot'
 import _ from 'lodash'
 
+import en from 'json!../../locale/en.json'
 import fr from 'json!../../locale/fr.json'
 import de from 'json!../../locale/de.json'
 
 export default function (language) {
   return {
     init: function () {
-      const dictionaries = _.mapValues({ fr, de }, (phrases, locale) => (
+      const dictionaries = _.mapValues({ en, fr, de }, (phrases, locale) => (
         new Polyglot({ phrases, locale })
       ))
 
