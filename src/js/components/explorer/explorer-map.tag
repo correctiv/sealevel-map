@@ -119,7 +119,6 @@
       const map = new mapboxgl.Map({
         container: 'explorer__map',
         style: 'mapbox://styles/correctiv/cj5ck638406zq2rs1y0toq1ba',
-        minZoom: 2,
         maxZoom: 8
       })
 
