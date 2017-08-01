@@ -11,7 +11,6 @@ export const RECEIVE_STATION_LIST_DATA = 'RECEIVE_STATION_LIST_DATA'
 
 const CONTEXT_SRC = '/data/sealevel_context_data.csv'
 const FULL_TIMESERIES_SRC = '/data/sealevel_viz_whole_timeseries.csv'
-const TIMESERIES_SRC = '/data/sealevel_viz_psmsl_1985_2015.csv'
 
 const shouldFetchOverviewData = ({ isFetchingOverviewData, items }) => (
   !(isFetchingOverviewData || items)
@@ -20,26 +19,6 @@ const shouldFetchOverviewData = ({ isFetchingOverviewData, items }) => (
 const shouldFetchFullData = ({ isFetchingFullData, tides }) => (
   !(isFetchingFullData || tides)
 )
-
-const prepareOverviewData = (context, timeseries) => {
-  return _.map(timeseries, (item, id) => {
-    const contextItem = _.find(context, { id })
-    contextItem.timeseries = item.reduce((total, { year, tide }) => {
-      total[year] = parseFloat(tide)
-      return total
-    }, [])
-    return contextItem
-  })
-}
-
-const prepareFullData = (timeseries) => {
-  return _.mapValues(timeseries, (item, id) => {
-    return _.map(item, ({ year, tide }) => ({
-      tide: parseFloat(tide),
-      year
-    }))
-  })
-}
 
 export const hideStationDetails = () => ({
   type: HIDE_STATION_DETAILS
@@ -59,13 +38,24 @@ const requestStationDetailsData = () => ({
   type: REQUEST_STATION_DETAILS_DATA
 })
 
+const prepareFullData = (timeseries) => {
+  return _.mapValues(timeseries, (tides) => {
+    return _(tides[0])
+      .pickBy((value, key) => !isNaN(key) && value)
+      .map((tide, year) => ({
+        tide: parseFloat(tide),
+        year
+      }))
+      .value()
+  })
+}
+
 const fetchStationDetailsData = (id) => dispatch => {
   dispatch(requestStationDetailsData())
 
   d3.csv(FULL_TIMESERIES_SRC, (timeseries) => {
-    const timeseriesById = _.groupBy(timeseries, 'id')
-    const tides = prepareFullData(timeseriesById)
-
+    const tidesById = _.groupBy(timeseries, 'id')
+    const tides = prepareFullData(tidesById)
     dispatch(receiveStationDetailsData(tides))
     dispatch(showStationDetails(id))
   })
@@ -95,17 +85,34 @@ const requestStationListData = () => ({
   type: REQUEST_STATION_LIST_DATA
 })
 
+const prepareOverviewData = (stations) => {
+  return _.map(stations, (station, id) => ({
+    c02_emissions: station.c02_emissions,
+    coastal_population2010_sum: station.coastal_population2010_sum,
+    continent: station.continent,
+    country: station.country,
+    id: station.id,
+    latitude: station.latitude,
+    location: station.location,
+    longitude: station.longitude,
+    total_population2010_sum: station.total_population2010_sum,
+    trend_1985_2015: station.trend_1985_2015,
+    timeseries: _(station)
+      .pickBy((value, key) => !isNaN(key) && value)
+      .reduce((result, tide, year) => {
+        result[year] = parseFloat(tide)
+        return result
+      }, [])
+  }))
+}
+
 const fetchStationListData = (options) => dispatch => {
   dispatch(requestStationListData())
 
   d3.csv(CONTEXT_SRC, (context) => {
-    d3.csv(TIMESERIES_SRC, (timeseries) => {
-      const timeseriesById = _.groupBy(timeseries, 'id')
-      const stations = prepareOverviewData(context, timeseriesById)
-
-      dispatch(receiveStationListData(stations))
-      dispatch(showStationList(options))
-    })
+    const stations = prepareOverviewData(context)
+    dispatch(receiveStationListData(stations))
+    dispatch(showStationList(options))
   })
 }
 
