@@ -97,6 +97,7 @@ const prepareOverviewData = (stations) => {
     longitude: station.longitude,
     total_population2010_sum: station.total_population2010_sum,
     trend_1985_2015: station.trend_1985_2015,
+    trend_longest: station.trend_longest,
     timeseries: _(station)
       .pickBy((value, key) => !isNaN(key) && value)
       .reduce((result, tide, year) => {
