@@ -8,8 +8,6 @@ import {
 } from '../actions/explorer'
 
 const explorerReducer = (state = {}, action) => {
-  console.log(action.type, action)
-
   switch (action.type) {
     case REQUEST_STATION_LIST_DATA:
       return {
