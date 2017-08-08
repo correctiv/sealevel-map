@@ -20,6 +20,8 @@
   "explorer": {
     "title": "Rising seas",
     "intro": "Use the Explorer button to see how the sea level has changed at 500 measuring points worldwide. Click on the continent, then the country, then on the respective measuring station.",
+    "download_text": "Click here to download our data",
+    "download_link": "/data/sealevel_viz_whole_timeseries.csv",
     "choose_continent": "Select a continent",
     "start": "Start",
     "sealevel_change": "Change since 1985: %{change} mm",
@@ -107,7 +109,7 @@
       "antarctica": ""
     },
 
-    "num_stations": "%{smart_count} Station |||| %{smart_count} Stationen",
+    "num_stations": "%{smart_count} station |||| %{smart_count} stations",
 
     "station_desc_higher": "At the level %{location}, the sea level has risen sharply in recent decades: between 1985 and %{last_available_year} the level changed by %{last_available_value} millimetres. Today, the citizens of these areas experience the most severe flooding and storms, which cause major damage. These places are the first victims of climate change.",
 
@@ -117,7 +119,7 @@
 
     "station_desc_low": "At the level %{location} the sea level has slightly declined in recent decades. In %{Last_available_year} the level was around %{last_available_value} millimetres lower than in 1985. This is because the land mass, once weighed down by ice caps several kilometres thick, is still rebounding after the melt at the end of the last ice age. This trend will eventually end and around 95 per cent of these areas will face sea level rise, according to the UN Climate Council.",
 
-    "station_desc_lower": "At the level %{location} in {country} the sea level has fallen sharply in recent decades. In %{Last_available_year} the level was around %{last_available_value} millimetres lower than in 1985. The land mass here, once compressed by ice caps several kilometres thick, is still expanding after the ice melted.",
+    "station_desc_lower": "At the level %{location} the sea level has fallen sharply in recent decades. In %{last_available_year} the level was around %{last_available_value} millimetres lower than in 1985. The land mass here, once compressed by ice caps several kilometres thick, is still expanding after the ice melted.",
 
     "station_desc_unclear": "We don’t have reliable data for the sea level at %{location} level. This could be because the measuring station moved over the years; or the port was rebuilt; or shaft breakers were used. This means the measurements aren’t consistent. However, according to the unanimous opinion of the UN climate team, the sea will rise almost everywhere globally in the coming decades - and probably in these areas too.",
 

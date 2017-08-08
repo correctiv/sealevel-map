@@ -3,6 +3,8 @@
   <div class="explorer__intro">
     <h2 class="explorer__intro__title">{ i18n.t('explorer.title') }</h2>
     <p>{ i18n.t('explorer.intro') }</p>
+      <p><a href="{ i18n.t('explorer.download_link') }">{ i18n.t('explorer.download_text') }</a></p>
+
     <sealevel-article-link for={'main'} />
   </div>
 

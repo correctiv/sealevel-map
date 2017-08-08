@@ -19,6 +19,8 @@
   "explorer": {
     "title": "Quand les mers montent",
     "intro": "Visualisez comment le niveau de la mer a évolué au fil des années dans 500 ports du globe. Vous pouvez sélectionner les continents, les pays puis accéder aux différentes localités mesurées.",
+    "download_text": "Pour télécharger les données de notre recherche, cliquez ici",
+    "download_link": "/data/sealevel_viz_whole_timeseries.csv",
     "choose_continent": "Choisir un continent",
     "start": "Accueil",
     "sealevel_change": "Évolution depuis 1985 : %{change} mm",
