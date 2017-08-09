@@ -21,7 +21,7 @@
     "title": "Steigende Meere",
     "intro": "„Explorer“ hieß diese Karte bei uns, während wir an ihr arbeiteten. Denn hier kannst du dir ansehen, wie sich die Meeresspiegel verändert haben an 500 Messpunkten weltweit. Klicke dazu auf den Kontinent, dann auf das Land, dann auf die jeweilige Messstation.",
     "download_text": "Lade die Daten unserer Recherche herunter",
-    "download_link": "/data/sealevel_viz_whole_timeseries.csv",
+    "download_link": "/data/sealevel_data_download.csv",
     "choose_continent": "Wähle einen Kontinent",
     "start": "Start",
     "sealevel_change": "Veränderung seit 1985: %{change}mm",

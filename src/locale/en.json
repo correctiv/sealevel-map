@@ -21,7 +21,7 @@
     "title": "Rising seas",
     "intro": "Use the Explorer button to see how the sea level has changed at 500 measuring points worldwide. Click on the continent, then the country, then on the respective measuring station.",
     "download_text": "Click here to download our data",
-    "download_link": "/data/sealevel_viz_whole_timeseries.csv",
+    "download_link": "/data/sealevel_data_download.csv",
     "choose_continent": "Select a continent",
     "start": "Start",
     "sealevel_change": "Change since 1985: %{change} mm",
