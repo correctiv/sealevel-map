@@ -2,7 +2,7 @@
 
   <sealevel-scrolly-map />
 
-  <sealevel-scrolly-intro id="intro" locale={locale} on-more-click={scrollTo} />
+  <sealevel-scrolly-intro id="intro" locale={locale} />
 
   <article class="scrolly__article">
 
@@ -19,16 +19,16 @@
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
       <li>
-        <a onclick={scrollTo} class="scrolly__nav__link" href="#intro">Start</a>
+        <a class="scrolly__nav__link" href="#intro">Start</a>
       </li>
       <li>
-        <a onclick={scrollTo} class="scrolly__nav__link" href="#main">Introduction</a>
+        <a class="scrolly__nav__link" href="#main">Introduction</a>
       </li>
       <li>
-        <a onclick={scrollTo} class="scrolly__nav__link" href="#world">World</a>
+        <a class="scrolly__nav__link" href="#world">World</a>
       </li>
       <li each={step in steps}>
-        <a onclick={scrollTo} class="scrolly__nav__link" href="#{step}">{title}</a>
+        <a class="scrolly__nav__link" href="#{step}">{title}</a>
       </li>
     </ul>
   </nav>
@@ -37,7 +37,7 @@
     import route from 'riot-route'
     import _ from 'lodash'
     import gumshoe from 'gumshoe'
-    import smoothScroll from 'smooth-scroll'
+    import SmoothScroll from 'smooth-scroll'
     import { setStep } from '../../actions/navigation'
     import { STEPS } from '../../routes/'
     import './scrolly-intro.tag'
@@ -55,6 +55,9 @@
     }
 
     const initNavigation = () => {
+      const smoothScroll = new SmoothScroll('a[href*="#main"]')
+      smoothScroll.init()
+
       gumshoe.init({
         container: window,
         offset: 0,
@@ -65,14 +68,6 @@
 
     // Make steps available in template:
     this.steps = STEPS
-
-    this.scrollTo = ({ target }) => {
-      var anchor = this.root.querySelector(target.hash)
-      smoothScroll.animateScroll(anchor, null, {
-        speed: 1000,
-        easing: 'easeOutCubic'
-      })
-    }
 
     this.on('route', (language, anchor) => {
       this.i18n.setLocale(language)
