@@ -16,7 +16,7 @@ export const country = (locale, id) => `/${locale}/explore/countries/${id}`
 export const station = (locale, id) => `/${locale}/explore/stations/${id}`
 
 export const routeToIntro = (locale) => {
-  document.location.href = `/${locale}/explore`
+  document.location.href = `/${locale}/#intro`
 }
 
 export const routeToArticle = (locale) => {
