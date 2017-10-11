@@ -16,6 +16,8 @@
 
   </article>
 
+  <sealevel-scrolly-outro id="outro" locale={locale} />
+
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
       <li>
@@ -44,6 +46,7 @@
     import './scrolly-main.tag'
     import './scrolly-info.tag'
     import './scrolly-content.tag'
+    import './scrolly-outro.tag'
     import './scrolly-map.tag'
 
     const routeTo = (event) => {

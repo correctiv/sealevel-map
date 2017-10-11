@@ -3,4 +3,50 @@
   position: relative;
   z-index: 10;
   background: $white;
+  padding: 30px ;
+  overflow: hidden;
+
+  @include mq($screen-s) {
+    margin-top: 60px;
+  }
+}
+
+.outro__article {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  overflow: hidden;
+  float: left;
+
+  @include mq($screen-m) {
+    width: 50%;
+    padding: 30px 15px;
+  }
+}
+
+.outro__article > a {
+  display: block;
+  padding: 30px;
+  overflow: hidden;
+  background: gray;
+  color: $white;
+  text-decoration: none;
+
+  @include mq($screen-m) {
+    height: 400px;
+  }
+}
+
+@include mq($screen-l) {
+  .outro__article a {
+    height: 600px;
+  }
+
+  .outro__article--main {
+    width: 60%;
+  }
+
+  .outro__article--aside {
+    width: 40%;
+  }
 }
