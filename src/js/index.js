@@ -12,7 +12,6 @@ import i18n from './mixins/i18n'
 
 import '../styles/index.scss'
 import './components/app.tag'
-import './components/navigation.tag'
 
 // Set base path for router
 route.base('/')

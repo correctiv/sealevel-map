@@ -12,11 +12,6 @@
     </route>
   </router>
 
-  <sealevel-navigation
-    active={ store.getState().navigation.activeStep }
-    steps={ store.getState().STEPS }
-  />
-
   <script type="text/babel">
     import 'riot-route/tag'
     import './scrolly/scrolly.tag'
