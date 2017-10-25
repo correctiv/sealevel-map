@@ -6,6 +6,20 @@
     "logo_alt": "ein Projekt von CORRECTIV"
   },
 
+  "outro": {
+    "more": "mehr erfahren",
+    "main": {
+      "title": "Lorem Ipsum",
+      "teaser": "Lorem Ipsum dolor sit amet",
+      "url": "https://correctiv.org"
+    },
+    "aside": {
+      "title": "Lorem Ipsum",
+      "teaser": "Lorem Ipsum dolor sit amet",
+      "url": "https://correctiv.org"
+    }
+  },
+
   "scrolly": {
     "title": "Ein Datenschatz – erstmals gehoben",
     "authors": "von",
