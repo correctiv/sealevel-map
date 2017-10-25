@@ -7,10 +7,16 @@
     map={map} items={state.animation.items}
   />
 
+  <sealevel-scrolly-map-visualization
+    if={state.animation.items && activeStep !== 'world'}
+    map={map} items={state.animation.items}
+  />
+
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
-    import './scrolly-map-animation.tag'
     import { fetchAnimationDataIfNeeded } from '../../actions/animation'
+    import './scrolly-map-animation.tag'
+    import './scrolly-map-visualization.tag'
 
     this.activeLayers = []
     this.state = this.store.getState()

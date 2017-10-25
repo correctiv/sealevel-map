@@ -1,9 +1,9 @@
-<sealevel-scrolly-map-animation>
+<sealevel-scrolly-map-visualization>
 
   <svg ref="vis" />
 
   <div class="container">
-    <span class="scrolly__map-animation__counter">
+    <span class="scrolly__map-visualization__counter">
       { year }
     </span>
   </div>
@@ -11,57 +11,33 @@
   <script type="text/babel">
     import * as d3 from 'd3'
 
-    const MIN_YEAR = 1985
-    const MAX_YEAR = 2015
-    const ANIMATION_INTERVAL = 500
-    const MAX_HEIGHT = 200
+    const YEAR = 2015
+    const HEIGHT = 400
+    const WIDTH = 12
 
     this.on('mount', () => {
-      initialize(this.opts.map)
+      initialize(this.opts.map, this.opts.items)
     })
 
-    this.on('unmount', () => {
-      stopAnimation()
-    })
-
-    this.on('updated', () => {
-      redraw()
-    })
-
-    const initialize = (map) => {
+    const initialize = (map, stations) => {
       const svg = d3.select(this.refs.vis)
 
-      this.stations = this.opts.items
-
-      if (this.stations.length > 0) {
+      if (stations.length > 0) {
         this.paths = svg.selectAll('path')
-          .data(this.stations)
+          .data(stations)
           .enter()
           .append('path')
 
-        const domain = getDomainValues(this.stations)
-        this.scale = d3.scaleLinear().rangeRound([MAX_HEIGHT, 0]).domain(domain)
+        const domain = getDomainValues(stations)
+        this.scale = d3.scaleLinear().rangeRound([HEIGHT, 0]).domain(domain)
 
         // initial rendering
-        startAnimation()
+        redraw()
 
         // re-render our visualization whenever the view changes
         map.on('viewreset', redraw)
         map.on('move', redraw)
       }
-    }
-
-    const startAnimation = () => {
-      this.year = MIN_YEAR
-
-      this.animationLoop = setInterval(() => {
-        this.update({ year: ++this.year })
-        if (this.year >= MAX_YEAR) stopAnimation()
-      }, ANIMATION_INTERVAL)
-    }
-
-    const stopAnimation = () => {
-      clearInterval(this.animationLoop)
     }
 
     function getDomainValues (items) {
@@ -82,33 +58,31 @@
       path.projection(d3Projection)
 
       this.paths
-        .transition(ANIMATION_INTERVAL)
         .attr('transform', (station) => {
-          const year = this.year
           const point = d3Projection(station.lngLat)
-          const tide = station.timeseries[year] || 0
-          const triangleHeight = Math.abs(this.scale(tide) - this.scale(0))
+          const tide = station.timeseries[YEAR] || 0
+          const height = Math.abs(this.scale(tide) - this.scale(0))
           const x = point[0] - 3
-          const y = tide <= 0 ? point[1] : point[1] - triangleHeight
+          const y = tide <= 0 ? point[1] : point[1] - height
 
           return `translate(${x}, ${y})`
         })
         .attr('d', (station) => {
-          const tide = station.timeseries[this.year]
-          const triangleHeight = Math.abs(this.scale(tide) - this.scale(0))
+          const tide = station.timeseries[YEAR]
+          const height = Math.abs(this.scale(tide) - this.scale(0))
 
           if (tide) {
             return tide >= 0
-              ? `M 3,0 6, ${triangleHeight} 0, ${triangleHeight} z`
-              : `M 0 0 L 3 ${triangleHeight} L 6 0 z`
+              ? `M ${WIDTH / 2},0 ${WIDTH}, ${height} 0, ${height} z`
+              : `M 0 0 L ${WIDTH / 2} ${height} L ${WIDTH} 0 z`
           } else {
-            return 'M 0 0 L 3 0 L 6 0 z'
+            return `M 0 0 L ${WIDTH / 2} 0 L ${WIDTH} 0 z`
           }
         })
         .attr('class', (station) => {
-          return station.timeseries[this.year] < 0
-            ? 'scrolly__map-animation__item--negative'
-            : 'scrolly__map-animation__item--positive'
+          return station.timeseries[YEAR] < 0
+            ? 'scrolly__map-visualization__item--negative'
+            : 'scrolly__map-visualization__item--positive'
         })
     }
 
@@ -131,4 +105,4 @@
     }
 
   </script>
-</sealevel-scrolly-map-animation>
+</sealevel-scrolly-map-visualization>
