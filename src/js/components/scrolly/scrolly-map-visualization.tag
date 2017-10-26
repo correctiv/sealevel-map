@@ -1,4 +1,6 @@
-<sealevel-scrolly-map-visualization>
+<sealevel-scrolly-map-visualization class="scrolly__map-visualization {
+  scrolly__map-visualization--hidden: isMoving
+}">
 
   <svg ref="vis" />
 
@@ -12,11 +14,29 @@
     import * as d3 from 'd3'
 
     const YEAR = 2015
-    const HEIGHT = 400
+    const HEIGHT = 500
     const WIDTH = 12
+
+    this.isMoving = false
 
     this.on('mount', () => {
       initialize(this.opts.map, this.opts.items)
+
+      // synchronize state with map movement (for hiding/showing)
+      this.opts.map.on('movestart', isMoving)
+      this.opts.map.on('moveend', isMoving)
+
+      // redraw visualization whenever the view changes
+      this.opts.map.on('viewreset', redraw)
+      this.opts.map.on('move', redraw)
+    })
+
+    this.on('unmount', () => {
+      // remove map event handlers before unmounting
+      this.opts.map.off('movestart', isMoving)
+      this.opts.map.off('moveend', isMoving)
+      this.opts.map.off('movestart', isMoving)
+      this.opts.map.off('moveend', isMoving)
     })
 
     const initialize = (map, stations) => {
@@ -33,11 +53,13 @@
 
         // initial rendering
         redraw()
-
-        // re-render our visualization whenever the view changes
-        map.on('viewreset', redraw)
-        map.on('move', redraw)
       }
+    }
+
+    const isMoving = () => {
+      this.update({
+        isMoving: opts.map.isMoving()
+      })
     }
 
     function getDomainValues (items) {

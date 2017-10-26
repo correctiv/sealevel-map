@@ -1,0 +1,28 @@
+.scrolly__map-visualization {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.scrolly__map-visualization--hidden {
+  opacity: 0;
+}
+
+.scrolly__map-visualization__item--positive {
+  fill: #8b0000;
+  opacity: 0.7;
+}
+
+.scrolly__map-visualization__item--negative {
+  fill: #008080;
+  opacity: 0.7;
+}
+
+.scrolly__map-visualization__counter {
+  position: absolute;
+  z-index: 10;
+  padding: 30px;
+  font-size: 50px;
+  line-height: 1;
+  font-weight: bold;
+  pointer-events: none;
+}
