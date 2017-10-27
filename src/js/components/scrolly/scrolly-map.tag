@@ -9,12 +9,13 @@
 
   <sealevel-scrolly-map-visualization
     if={state.animation.items && activeStep !== 'world'}
-    map={map} items={state.animation.items}
+    map={map} items={state.explorer.items}
   />
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
     import { fetchAnimationDataIfNeeded } from '../../actions/animation'
+    import { requestStationList } from '../../actions/explorer'
     import './scrolly-map-animation.tag'
     import './scrolly-map-visualization.tag'
 
@@ -33,6 +34,7 @@
     this.on('mount', () => {
       this.map = renderMap()
       this.store.dispatch(fetchAnimationDataIfNeeded())
+      this.store.dispatch(requestStationList())
     })
 
     const updateLayers = (activeStep) => {
@@ -104,8 +106,8 @@
         // disable map rotation using touch rotation gesture
         map.touchZoomRotate.disableRotation()
 
-        // initial state
-        updateLayers('world')
+        // // initial state
+        // updateLayers('world')
       })
 
       return map

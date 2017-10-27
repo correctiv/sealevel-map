@@ -4,9 +4,14 @@
 
   <svg ref="vis" />
 
-  <div class="container">
-    <span class="scrolly__map-visualization__counter">
-      { year }
+  <div class="scrolly__map-visualization__tooltip"
+    style="left: {tooltip.x || 0}px; top: {tooltip.y || 0}px"
+  >
+    <span class="scrolly__map-visualization__tooltip__location">
+      {tooltip.location}
+    </span>
+    <span class="scrolly__map-visualization__tooltip__location">
+      {tooltip.value}
     </span>
   </div>
 
@@ -17,7 +22,8 @@
     const HEIGHT = 500
     const WIDTH = 12
 
-    this.isMoving = false
+    this.isMoving = true
+    this.tooltip = {}
 
     this.on('mount', () => {
       initialize(this.opts.map, this.opts.items)
@@ -74,6 +80,16 @@
       return [yMin, yMax]
     }
 
+    const showTip = ({ location }, [x, y]) => {
+      this.update({
+        tooltip: { location, x, y }
+      })
+    }
+
+    const hideTip = () => {
+      this.update({ tooltip: {} })
+    }
+
     const redraw = () => {
       const d3Projection = getD3Projection(this.opts.map)
       const path = d3.geoPath()
@@ -81,31 +97,39 @@
 
       this.paths
         .attr('transform', (station) => {
-          const point = d3Projection(station.lngLat)
+          const point = d3Projection([station.longitude, station.latitude])
           const tide = station.timeseries[YEAR] || 0
           const height = Math.abs(this.scale(tide) - this.scale(0))
           const x = point[0] - 3
           const y = tide <= 0 ? point[1] : point[1] - height
-
           return `translate(${x}, ${y})`
         })
         .attr('d', (station) => {
           const tide = station.timeseries[YEAR]
           const height = Math.abs(this.scale(tide) - this.scale(0))
-
-          if (tide) {
-            return tide >= 0
-              ? `M ${WIDTH / 2},0 ${WIDTH}, ${height} 0, ${height} z`
-              : `M 0 0 L ${WIDTH / 2} ${height} L ${WIDTH} 0 z`
-          } else {
-            return `M 0 0 L ${WIDTH / 2} 0 L ${WIDTH} 0 z`
-          }
+          return renderSpark(WIDTH, height, tide)
         })
         .attr('class', (station) => {
           return station.timeseries[YEAR] < 0
             ? 'scrolly__map-visualization__item--negative'
             : 'scrolly__map-visualization__item--positive'
         })
+        .on('mouseover', (station, value) => {
+          showTip(station, d3Projection([station.longitude, station.latitude]))
+        })
+        .on('mouseout', () => {
+          hideTip()
+        })
+    }
+
+    const renderSpark = (width, height, tide) => {
+      if (!tide) {
+        return `M 0 0 L ${width / 2} 0 L ${width} 0 z`
+      } else if (tide > 0) {
+        return `M ${width / 2}, 0 ${width}, ${height} 0, ${height} z`
+      } else if (tide < 0) {
+        return `M 0 0 L ${width / 2} ${height} L ${width} 0 z`
+      }
     }
 
     // map projection between map and vis

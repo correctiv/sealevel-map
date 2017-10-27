@@ -1,6 +1,6 @@
 .scrolly__map-visualization {
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 600ms;
 }
 
 .scrolly__map-visualization--hidden {
@@ -17,12 +17,20 @@
   opacity: 0.7;
 }
 
-.scrolly__map-visualization__counter {
+.scrolly__map-visualization__tooltip {
   position: absolute;
+  display: inline-block;
+  padding: 5px;
+  margin: -1.5em 1.5em;
+  background: $white;
   z-index: 10;
-  padding: 30px;
-  font-size: 50px;
+  font-size: 12px;
   line-height: 1;
   font-weight: bold;
+  font-family: sans-serif;
   pointer-events: none;
+}
+
+.scrolly__map-visualization__tooltip {
+
 }

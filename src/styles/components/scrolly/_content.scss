@@ -1,6 +1,7 @@
 .scrolly__content {
   padding: 15px 30px;
   background: $gray-lighter;
+  pointer-events: none;
 
   @include mq($screen-l) {
     padding: 60px;
@@ -11,6 +12,7 @@
 .scrolly__article {
   position: relative;
   z-index: 10;
+  pointer-events: none;
 
   section {
     padding: 75vh 0 0 0;
