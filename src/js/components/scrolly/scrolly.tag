@@ -21,16 +21,24 @@
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
       <li>
-        <a class="scrolly__nav__link" href="#intro"><b>Start</b></a>
+        <a class="scrolly__nav__link" href="#intro">
+          <b>{i18n.t('scrolly.steps.intro')}</b>
+        </a>
       </li>
       <li>
-        <a class="scrolly__nav__link" href="#main"><b>Introduction</b></a>
+        <a class="scrolly__nav__link" href="#main">
+          <b>{i18n.t('scrolly.steps.main')}</b>
+        </a>
       </li>
       <li>
-        <a class="scrolly__nav__link" href="#world"><b>World</b></a>
+        <a class="scrolly__nav__link" href="#world">
+          <b>{i18n.t('scrolly.steps.world')}</b>
+        </a>
       </li>
       <li each={step in steps}>
-        <a class="scrolly__nav__link" href="#{step}"><b>{title}</b></a>
+        <a class="scrolly__nav__link" href="#{step}">
+          <b>{i18n.t('scrolly.steps.' + step)}</b>
+        </a>
       </li>
     </ul>
   </nav>
