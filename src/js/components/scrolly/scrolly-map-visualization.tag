@@ -4,26 +4,24 @@
 
   <svg ref="vis" />
 
-  <div class="scrolly__map-visualization__tooltip"
-    style="left: {tooltip.x || 0}px; top: {tooltip.y || 0}px"
-  >
-    <span class="scrolly__map-visualization__tooltip__location">
-      {tooltip.location}
-    </span>
-    <span class="scrolly__map-visualization__tooltip__location">
-      {tooltip.value}
-    </span>
-  </div>
+  <sealevel-scrolly-map-visualization-tooltip
+    if={tooltip}
+    value={tooltip.value}
+    location={tooltip.location}
+    position={tooltip.position}
+  />
 
   <script type="text/babel">
     import * as d3 from 'd3'
+    import './scrolly-map-visualization-tooltip.tag'
 
-    const YEAR = 2015
+    const MIN_YEAR = 1985
+    const MAX_YEAR = 2015
     const HEIGHT = 500
     const WIDTH = 12
 
     this.isMoving = true
-    this.tooltip = {}
+    this.tooltip = null
 
     this.on('mount', () => {
       initialize(this.opts.map, this.opts.items)
@@ -80,14 +78,31 @@
       return [yMin, yMax]
     }
 
-    const showTip = ({ location }, [x, y]) => {
+    const isDefined = (value) => typeof value !== 'undefined'
+
+    const getTide = (timeseries) => {
+      const minValue = timeseries[MIN_YEAR]
+      const maxValue = timeseries[MAX_YEAR]
+
+      if (isDefined(minValue) && isDefined(maxValue)) {
+        return maxValue - minValue
+      }
+
+      return 0
+    }
+
+    const showTip = ({ location, timeseries }, position) => {
       this.update({
-        tooltip: { location, x, y }
+        tooltip: {
+          location,
+          value: getTide(timeseries),
+          position
+        }
       })
     }
 
     const hideTip = () => {
-      this.update({ tooltip: {} })
+      this.update({ tooltip: null })
     }
 
     const redraw = () => {
@@ -98,19 +113,19 @@
       this.paths
         .attr('transform', (station) => {
           const point = d3Projection([station.longitude, station.latitude])
-          const tide = station.timeseries[YEAR] || 0
+          const tide = getTide(station.timeseries)
           const height = Math.abs(this.scale(tide) - this.scale(0))
           const x = point[0] - 3
           const y = tide <= 0 ? point[1] : point[1] - height
           return `translate(${x}, ${y})`
         })
         .attr('d', (station) => {
-          const tide = station.timeseries[YEAR]
+          const tide = getTide(station.timeseries)
           const height = Math.abs(this.scale(tide) - this.scale(0))
           return renderSpark(WIDTH, height, tide)
         })
         .attr('class', (station) => {
-          return station.timeseries[YEAR] < 0
+          return getTide(station.timeseries) < 0
             ? 'scrolly__map-visualization__item--negative'
             : 'scrolly__map-visualization__item--positive'
         })

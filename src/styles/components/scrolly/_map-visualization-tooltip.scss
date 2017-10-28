@@ -1,0 +1,26 @@
+.scrolly__map-visualization__tooltip {
+  position: absolute;
+  display: inline-block;
+  padding: 5px;
+  margin: -1.5em 1.5em;
+  z-index: 10;
+  background: $white;
+  pointer-events: none;
+}
+
+.scrolly__map-visualization__tooltip__location {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.scrolly__map-visualization__tooltip__value {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: sans-serif;
+}
