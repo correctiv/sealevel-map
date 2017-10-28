@@ -39,7 +39,7 @@
     import route from 'riot-route'
     import _ from 'lodash'
     import gumshoe from 'gumshoe'
-    import SmoothScroll from 'smooth-scroll'
+    import smoothScroll from 'smooth-scroll'
     import { setStep } from '../../actions/navigation'
     import { STEPS } from '../../routes/'
     import './scrolly-intro.tag'
@@ -58,8 +58,7 @@
     }
 
     const initNavigation = () => {
-      const smoothScroll = new SmoothScroll('a[href*="#main"]')
-      smoothScroll.init()
+      smoothScroll.init('a[href*="#main"]')
 
       gumshoe.init({
         container: window,
