@@ -21,16 +21,16 @@
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
       <li>
-        <a class="scrolly__nav__link" href="#intro">Start</a>
+        <a class="scrolly__nav__link" href="#intro"><b>Start</b></a>
       </li>
       <li>
-        <a class="scrolly__nav__link" href="#main">Introduction</a>
+        <a class="scrolly__nav__link" href="#main"><b>Introduction</b></a>
       </li>
       <li>
-        <a class="scrolly__nav__link" href="#world">World</a>
+        <a class="scrolly__nav__link" href="#world"><b>World</b></a>
       </li>
       <li each={step in steps}>
-        <a class="scrolly__nav__link" href="#{step}">{title}</a>
+        <a class="scrolly__nav__link" href="#{step}"><b>{title}</b></a>
       </li>
     </ul>
   </nav>

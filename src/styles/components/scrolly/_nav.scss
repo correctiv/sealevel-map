@@ -1,38 +1,71 @@
-$bullet-width: 20px;
-$bullet-height: 5px;
+$bullet-diameter: 12px;
 
 .scrolly__nav {
   position: fixed;
-  top: 50%;
-  left: 10px;
+  bottom: 40px;
+  left: 30px;
   z-index: 10;
 
   ul, li {
     margin: 0;
     padding: 0;
-    list-style: inline;
+    list-style: none;
     display: block;
   }
 
   .scrolly--intro-active &,
-  .scrolly--main-active & {
+  .scrolly--main-active &,
+  .scrolly--world-active &  {
     opacity: 0;
   }
 }
 
 .scrolly__nav__link {
   display: block;
-  overflow: hidden;
-  text-indent: 100%;
-  height: $bullet-height;
-  width: $bullet-width;
-  margin-bottom: $bullet-height;
-  background: $black;
+  position: relative;
+  height: $bullet-diameter;
+  margin: $bullet-diameter/2 0;
 }
 
-.scrolly__nav__link--active,
-.scrolly__nav__link:hover,
-.scrolly__nav__link:focus,
-.scrolly__nav__link:active {
-  background: $purple;
+.scrolly__nav__link b {
+  display: inline-block;
+  position: absolute;
+  padding: 5px;
+  top: -5px;
+  background: $blue;
+  color: $white;
+  line-height: 1;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity .3s .3s ease-in-out;
+  pointer-events: none;
+}
+
+.scrolly__nav__link:hover b,
+.scrolly__nav__link:focus b,
+.scrolly__nav__link:active b {
+  opacity: 1;
+}
+
+.scrolly__nav__link:before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  height: $bullet-diameter;
+  width: $bullet-diameter;
+  background: rgba($black, 0.5);
+  border-radius: 50%;
+}
+
+.scrolly__nav__link--active:before,
+.scrolly__nav__link:hover:before,
+.scrolly__nav__link:focus:before,
+.scrolly__nav__link:active:before {
+  background: $blue;
+  border-radius: 50%;
 }

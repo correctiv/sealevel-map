@@ -50,7 +50,7 @@
         case 'manila':
           this.map.flyTo({
             center: [121, 14.65],
-            zoom: 10,
+            zoom: 9.5,
             offset: [-100, 0]
           })
           break

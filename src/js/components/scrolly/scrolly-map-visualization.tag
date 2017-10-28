@@ -37,8 +37,8 @@
         title: 'Der Pegel Manila',
         label: 'ist in 30 Jahren um fast 40cm gestiegen.'
       },
-      dy: 40,
-      dx: -40,
+      dy: 30,
+      dx: -30,
       type: customAnnotation,
       color: 'black'
     },
@@ -50,8 +50,8 @@
         title: 'Besonders gefährdet',
         label: 'sind Gebiete unterhalb von 10 Meter über dem Meer.'
       },
-      dy: 40,
-      dx: -40,
+      dy: 30,
+      dx: -30,
       type: customAnnotation,
       color: 'black'
     }]
