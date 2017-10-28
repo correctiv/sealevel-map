@@ -2,7 +2,10 @@
   scrolly__map-visualization--hidden: isMoving
 }">
 
-  <svg ref="vis" />
+  <svg>
+    <g ref="vis" />
+    <g ref="annotations" />
+  </svg>
 
   <sealevel-scrolly-map-visualization-tooltip
     if={tooltip}
@@ -13,12 +16,45 @@
 
   <script type="text/babel">
     import * as d3 from 'd3'
+    import * as d3Annotation from 'd3-svg-annotation'
     import './scrolly-map-visualization-tooltip.tag'
 
     const MIN_YEAR = 1985
     const MAX_YEAR = 2015
     const HEIGHT = 500
     const WIDTH = 12
+
+    const customAnnotation = d3Annotation.annotationCustomType(
+      d3Annotation.annotationCallout, {
+        'className': 'custom',
+        'connector': { 'end': 'dot' },
+        'note': { 'lineType': 'horizontal' }
+      })
+
+    const labels = [{
+      data: { lonLat: ['120.968', '14.58'] },
+      note: {
+        title: 'Der Pegel Manila',
+        label: 'ist in 30 Jahren um fast 40cm gestiegen.'
+      },
+      dy: 40,
+      dx: -40,
+      type: customAnnotation,
+      color: 'black'
+    },
+    {
+      data: {
+        lonLat: ['120.91', '14.71']
+      },
+      note: {
+        title: 'Besonders gefährdet',
+        label: 'sind Gebiete unterhalb von 10 Meter über dem Meer.'
+      },
+      dy: 40,
+      dx: -40,
+      type: customAnnotation,
+      color: 'black'
+    }]
 
     this.isMoving = true
     this.tooltip = null
@@ -110,6 +146,17 @@
       const path = d3.geoPath()
       path.projection(d3Projection)
 
+      const makeAnnotations = d3Annotation.annotation()
+        .annotations(labels)
+        .textWrap(180)
+        .accessors({
+          x: ({ lonLat }) => d3Projection(lonLat)[0],
+          y: ({ lonLat }) => d3Projection(lonLat)[1]
+        })
+
+      d3.select(this.refs.annotations)
+        .call(makeAnnotations)
+
       this.paths
         .attr('transform', (station) => {
           const point = d3Projection([station.longitude, station.latitude])
@@ -129,7 +176,8 @@
             ? 'scrolly__map-visualization__item--negative'
             : 'scrolly__map-visualization__item--positive'
         })
-        .on('mouseover', (station, value) => {
+        .on('mouseover', (station) => {
+          console.log(station)
           showTip(station, d3Projection([station.longitude, station.latitude]))
         })
         .on('mouseout', () => {

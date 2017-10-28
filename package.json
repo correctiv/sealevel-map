@@ -46,6 +46,7 @@
     "@turf/bbox": "^4.4.0",
     "core-js": "2.4.1",
     "d3": "4.3.0",
+    "d3-svg-annotation": "^2.1.0",
     "gumshoe": "cferdinandi/gumshoe",
     "html-loader": "^0.4.5",
     "leaflet": "^1.0.0-rc.3",

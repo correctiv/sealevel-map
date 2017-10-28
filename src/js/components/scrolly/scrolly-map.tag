@@ -51,7 +51,7 @@
           this.map.flyTo({
             center: [121, 14.65],
             zoom: 10,
-            offset: [-200, 0]
+            offset: [-100, 0]
           })
           break
 
@@ -60,15 +60,15 @@
             [-25.18, 54.47],
             [32.82, 71.27]
           ], {
-            offset: [200, 0]
+            offset: [100, 0]
           })
           break
 
         case 'france':
           this.map.flyTo({
             center: [3.93, 43.52],
-            zoom: 5,
-            offset: [-200, 0]
+            zoom: 4,
+            offset: [-100, 0]
           })
           break
 
@@ -76,7 +76,7 @@
           this.map.flyTo({
             center: [-73.93, 40.52],
             zoom: 5,
-            offset: [200, 0]
+            offset: [150, 0]
           })
           break
 
@@ -84,7 +84,7 @@
           this.map.flyTo({
             center: [-58.38, -34.6],
             zoom: 5,
-            offset: [-200, 0]
+            offset: [-100, 0]
           })
           break
       }
