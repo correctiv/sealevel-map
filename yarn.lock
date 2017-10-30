@@ -1305,24 +1305,24 @@ d3-color@1, d3-color@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.0.1.tgz#73cc91f4ee3f12e00ca06b1596a7c83cf104723a"
 
-d3-dispatch@1, d3-dispatch@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/d3-dispatch/-/d3-dispatch-1.0.1.tgz#4bd65a43cecff4318deb9df24552aa8bf281a840"
-
-d3-dispatch@1.0.2:
+d3-dispatch@1, d3-dispatch@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/d3-dispatch/-/d3-dispatch-1.0.2.tgz#5b511e79a46a1f89492841c0a8f656687d5daa0a"
 
-d3-drag@1, d3-drag@1.0.1:
+d3-dispatch@1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/d3-drag/-/d3-drag-1.0.1.tgz#49ad9f5c91865593fb30c86b15f9322d43fec51f"
+  resolved "https://registry.yarnpkg.com/d3-dispatch/-/d3-dispatch-1.0.1.tgz#4bd65a43cecff4318deb9df24552aa8bf281a840"
+
+d3-drag@1, d3-drag@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/d3-drag/-/d3-drag-1.0.2.tgz#d634cc3f7689f99dd03fd7eb1af2945c0f4339ad"
   dependencies:
     d3-dispatch "1"
     d3-selection "1"
 
-d3-drag@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/d3-drag/-/d3-drag-1.0.2.tgz#d634cc3f7689f99dd03fd7eb1af2945c0f4339ad"
+d3-drag@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/d3-drag/-/d3-drag-1.0.1.tgz#49ad9f5c91865593fb30c86b15f9322d43fec51f"
   dependencies:
     d3-dispatch "1"
     d3-selection "1"
@@ -4530,8 +4530,8 @@ slice-ansi@0.0.4:
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
 smooth-scroll@cferdinandi/smooth-scroll:
-  version "12.1.0"
-  resolved "https://codeload.github.com/cferdinandi/smooth-scroll/tar.gz/c4d8c3bbeb597777ae5bcf96674c7a7424cedbc0"
+  version "12.1.5"
+  resolved "https://codeload.github.com/cferdinandi/smooth-scroll/tar.gz/f3c1810115cf8c44035278cb6368ccadf5f61e15"
 
 sntp@1.x.x:
   version "1.0.9"
