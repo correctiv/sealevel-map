@@ -64,6 +64,11 @@ export default function (opts) {
       : 'scrolly__map-visualization__item--positive'
   }
 
+  const getSparkHeight = (tide) => {
+    const height = Math.abs(scale(tide) - scale(0))
+    return height > width ? height : width
+  }
+
   return {
     init: function () {
       d3.select(opts.container)
@@ -99,14 +104,14 @@ export default function (opts) {
               const {latitude, longitude, timeseries} = station
               const point = projection([longitude, latitude])
               const tide = getTide(timeseries, year)
-              const height = Math.abs(scale(tide) - scale(0))
+              const height = getSparkHeight(tide)
               const x = point[0] - width / 2
               const y = tide <= 0 ? point[1] : point[1] - height
               return `translate(${x}, ${y})`
             })
             .attr('d', (station) => {
               const tide = getTide(station.timeseries, year)
-              const height = Math.abs(scale(tide) - scale(0))
+              const height = getSparkHeight(tide)
               return renderSpark(width, height, tide)
             })
 
