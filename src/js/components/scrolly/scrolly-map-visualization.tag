@@ -10,9 +10,9 @@
 
   <sealevel-scrolly-map-visualization-tooltip
     if={tooltip}
-    value={tooltip.value}
+    tide={tooltip.tide}
     location={tooltip.location}
-    position={tooltip.position}
+    point={tooltip.point}
   />
 
   <script type="text/babel">

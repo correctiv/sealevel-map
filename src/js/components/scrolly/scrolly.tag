@@ -66,7 +66,6 @@
     }
 
     const initNavigation = () => {
-      // debugger
       smoothScroll('a[href*="#main"]')
 
       gumshoe.init({

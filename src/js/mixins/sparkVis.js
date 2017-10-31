@@ -91,10 +91,10 @@ export default function (opts) {
           d3.select(opts.container)
             .selectAll('path')
             .on('mouseover', (station) => {
-              const {name, latitude, longitude} = station
+              const {location, latitude, longitude} = station
               const tide = getTide(station.timeseries, year)
               const point = projection([longitude, latitude])
-              tooltip.show(name, tide, point)
+              tooltip.show({ location, tide, point })
             })
             .on('mouseout', tooltip.hide)
             .attr('class', getClassName)

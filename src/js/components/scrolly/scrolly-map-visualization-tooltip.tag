@@ -1,12 +1,12 @@
 <sealevel-scrolly-map-visualization-tooltip
   class="scrolly__map-visualization__tooltip"
-  style={getStyle(opts.position)}
+  style={getStyle(opts.point)}
 >
   <h4 class="scrolly__map-visualization__tooltip__location">
     {opts.location}
   </h4>
   <p class="scrolly__map-visualization__tooltip__value">
-    <strong>{opts.value}mm</strong> {i18n.t('scrolly.period')}
+    <strong>{opts.tide}mm</strong> {i18n.t('scrolly.period')}
   </p>
 
   <script type="text/babel">
