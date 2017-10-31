@@ -3,18 +3,17 @@
   <div id="scrolly__map" class="scrolly__map__container"></div>
 
   <sealevel-scrolly-map-animation
-    if={state.animation.items && activeStep === 'world'}
-    map={map} items={state.animation.items}
+    if={state.explorer.items && activeStep === 'world'}
+    map={map} items={state.explorer.items}
   />
 
   <sealevel-scrolly-map-visualization
-    if={state.animation.items && activeStep !== 'world'}
+    if={state.explorer.items && activeStep !== 'world'}
     map={map} items={state.explorer.items}
   />
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
-    import { fetchAnimationDataIfNeeded } from '../../actions/animation'
     import { requestStationList } from '../../actions/explorer'
     import './scrolly-map-animation.tag'
     import './scrolly-map-visualization.tag'
@@ -33,7 +32,6 @@
 
     this.on('mount', () => {
       this.map = renderMap()
-      this.store.dispatch(fetchAnimationDataIfNeeded())
       this.store.dispatch(requestStationList())
     })
 
