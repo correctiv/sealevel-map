@@ -99,8 +99,7 @@
         container: this.refs.vis,
         map: this.opts.map,
         stations: this.opts.items,
-        minYear: MIN_YEAR,
-        maxYear: MAX_YEAR,
+        year: MAX_YEAR,
         width: WIDTH,
         height: HEIGHT,
         tooltip: { show: showTip, hide: hideTip }
@@ -111,16 +110,10 @@
       // synchronize state with map movement (for hiding/showing)
       this.opts.map.on('movestart', isMoving)
       this.opts.map.on('moveend', isMoving)
-
-      // redraw visualization whenever the view changes
-      this.opts.map.on('viewreset', this.sparkVis.redraw)
-      this.opts.map.on('move', this.sparkVis.redraw)
     })
 
     this.on('unmount', () => {
       // remove map event handlers before unmounting
-      this.opts.map.off('movestart', isMoving)
-      this.opts.map.off('moveend', isMoving)
       this.opts.map.off('movestart', isMoving)
       this.opts.map.off('moveend', isMoving)
     })

@@ -40,37 +40,37 @@ const getD3Projection = (map) => {
   return d3projection
 }
 
-const isDefined = (value) => typeof value !== 'undefined'
-
 export default function (opts) {
   const { width, height, stations, tooltip, map } = opts
+  let year = opts.year
+
   const scale = d3.scaleLinear()
     .rangeRound([height, 0])
     .domain(getDomain(stations))
 
-  const getTide = (timeseries) => {
-    const minValue = timeseries[opts.minYear]
-    const maxValue = timeseries[opts.maxYear]
-
-    if (isDefined(minValue) && isDefined(maxValue)) {
-      return maxValue - minValue
+  const getTide = (timeseries, year) => {
+    let tide = timeseries[year]
+    while (typeof tide === 'undefined') {
+      tide = timeseries[year -= 1]
     }
-
-    return 0
+    return tide
   }
 
   return {
     init: function () {
-      if (stations.length > 0) {
-        d3.select(opts.container)
-          .selectAll('path')
-          .data(stations)
-          .enter()
-          .append('path')
-      }
+      d3.select(opts.container)
+        .selectAll('path')
+        .data(stations)
+        .enter()
+        .append('path')
+
+      // redraw visualization whenever the view changes
+      map.on('viewreset', () => this.sparkVis.redraw())
+      map.on('move', () => this.sparkVis.redraw())
 
       this.sparkVis = {
-        redraw: () => {
+        redraw: (updatedYear) => {
+          year = updatedYear || year
           const d3Projection = getD3Projection(map)
           const path = d3.geoPath()
           path.projection(d3Projection)
@@ -78,20 +78,21 @@ export default function (opts) {
           d3.select(opts.container)
             .selectAll('path')
             .attr('transform', (station) => {
-              const point = d3Projection([station.longitude, station.latitude])
-              const tide = getTide(station.timeseries)
+              const {latitude, longitude, timeseries} = station
+              const point = d3Projection([longitude, latitude])
+              const tide = getTide(timeseries, year)
               const height = Math.abs(scale(tide) - scale(0))
               const x = point[0] - 3
               const y = tide <= 0 ? point[1] : point[1] - height
               return `translate(${x}, ${y})`
             })
             .attr('d', (station) => {
-              const tide = getTide(station.timeseries)
+              const tide = getTide(station.timeseries, year)
               const height = Math.abs(scale(tide) - scale(0))
               return renderSpark(width, height, tide)
             })
             .attr('class', (station) => {
-              return getTide(station.timeseries) < 0
+              return getTide(station.timeseries, year) < 0
                 ? 'scrolly__map-visualization__item--negative'
                 : 'scrolly__map-visualization__item--positive'
             })
