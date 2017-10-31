@@ -1,6 +1,7 @@
-<sealevel-scrolly-map-visualization class="scrolly__map-visualization {
+<sealevel-scrolly-map-visualization class={
+  scrolly__map-visualization: true,
   scrolly__map-visualization--hidden: isMoving
-}">
+}>
 
   <svg>
     <g ref="vis" />
@@ -20,16 +21,15 @@
     import sparkVis from '../../mixins/sparkVis'
     import './scrolly-map-visualization-tooltip.tag'
 
-    const MIN_YEAR = 1985
-    const MAX_YEAR = 2015
+    const YEAR = 2015
     const HEIGHT = 500
     const WIDTH = 12
 
     const customAnnotation = d3Annotation.annotationCustomType(
       d3Annotation.annotationCallout, {
-        'className': 'custom',
-        'connector': { 'end': 'dot' },
-        'note': { 'lineType': 'horizontal' }
+        className: 'custom',
+        connector: { 'end': 'dot' },
+        note: { 'lineType': 'horizontal' }
       })
 
     const labels = [{
@@ -63,27 +63,8 @@
       })
     }
 
-    const isDefined = (value) => typeof value !== 'undefined'
-
-    const getTide = (timeseries) => {
-      const minValue = timeseries[MIN_YEAR]
-      const maxValue = timeseries[MAX_YEAR]
-
-      if (isDefined(minValue) && isDefined(maxValue)) {
-        return maxValue - minValue
-      }
-
-      return 0
-    }
-
-    const showTip = ({ location, timeseries }, position) => {
-      this.update({
-        tooltip: {
-          location,
-          value: getTide(timeseries),
-          position
-        }
-      })
+    const showTip = (tooltip) => {
+      this.update({ tooltip })
     }
 
     const hideTip = () => {
@@ -99,7 +80,7 @@
         container: this.refs.vis,
         map: this.opts.map,
         stations: this.opts.items,
-        year: MAX_YEAR,
+        year: YEAR,
         width: WIDTH,
         height: HEIGHT,
         tooltip: { show: showTip, hide: hideTip }

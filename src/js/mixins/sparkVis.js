@@ -41,8 +41,8 @@ const getD3Projection = (map) => {
 }
 
 export default function (opts) {
+  let { year } = opts
   const { width, height, stations, tooltip, map } = opts
-  let year = opts.year
 
   const scale = d3.scaleLinear()
     .rangeRound([height, 0])
@@ -97,7 +97,10 @@ export default function (opts) {
                 : 'scrolly__map-visualization__item--positive'
             })
             .on('mouseover', (station) => {
-              tooltip.show(station, d3Projection([station.longitude, station.latitude]))
+              const {name, latitude, longitude} = station
+              const tide = getTide(station.timeseries, year)
+              const point = d3Projection([longitude, latitude])
+              tooltip.show(name, tide, point)
             })
             .on('mouseout', () => {
               tooltip.hide()
