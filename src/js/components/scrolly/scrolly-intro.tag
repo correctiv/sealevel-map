@@ -15,11 +15,7 @@
       <p>{ i18n.t('intro.lead') }</p>
     </div>
 
-    <a
-      onclick={ opts.onMoreClick }
-      class="intro__more"
-      href={ articlePath()
-    }>
+    <a class="intro__more" href={ articlePath() }>
       { i18n.t('intro.more') }
     </a>
 

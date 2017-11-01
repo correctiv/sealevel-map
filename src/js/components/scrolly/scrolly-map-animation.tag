@@ -8,26 +8,37 @@
     </span>
   </div>
 
+  <div class={
+    "scrolly__map-animation__end": true,
+    "scrolly__map-animation__end--active": !this.animationLoop
+  }>
+    <button class="scrolly__map-animation__restart" onclick={startAnimation}>
+      { i18n.t('scrolly.restart') }
+    </button>
+  </div>
+
   <script type="text/babel">
     import sparkVis from '../../mixins/sparkVis'
 
     const MIN_YEAR = 1985
     const MAX_YEAR = 2015
-    const ANIMATION_DURATION = 500
-    const HEIGHT = 200
+    const ANIMATION_DURATION = 1000
+    const HEIGHT = 300
     const WIDTH = 6
 
-    const startAnimation = () => {
+    this.startAnimation = () => {
+      this.stopAnimation()
       this.year = MIN_YEAR
 
       this.animationLoop = setInterval(() => {
         this.update({ year: ++this.year })
-        if (this.year >= MAX_YEAR) stopAnimation()
+        if (this.year >= MAX_YEAR) this.stopAnimation()
       }, ANIMATION_DURATION)
     }
 
-    const stopAnimation = () => {
+    this.stopAnimation = () => {
       clearInterval(this.animationLoop)
+      this.update({ animationLoop: null })
     }
 
     this.on('mount', () => {
@@ -42,11 +53,11 @@
         height: HEIGHT
       }))
 
-      startAnimation()
+      this.startAnimation()
     })
 
-    this.on('unmount', () => {
-      stopAnimation()
+    this.on('before-unmount', () => {
+      this.stopAnimation()
     })
 
     this.on('updated', () => {
