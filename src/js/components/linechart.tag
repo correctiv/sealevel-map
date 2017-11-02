@@ -9,8 +9,13 @@
     const MARGIN = 40
 
     this.on('updated', () => {
-      const data = this.opts.series.map(s => d3.entries(s.data))
-      const titles = this.opts.series.map(s => s.title)
+      const series = this.opts.series.sort((a, b) => {
+        return d3.max(a.data) < d3.max(b.data)
+      })
+
+      const data = series.map(s => d3.entries(s.data))
+      const titles = series.map(s => s.title)
+
       createChart(data, titles)
     })
 
