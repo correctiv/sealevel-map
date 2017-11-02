@@ -4,10 +4,14 @@
 
   <script type="text/babel">
     import * as d3 from 'd3'
+    import _ from 'lodash'
+
+    const MARGIN = 40
 
     this.on('updated', () => {
-      const series = this.opts.series.map(s => d3.entries(s.data))
-      createChart(series)
+      const data = this.opts.series.map(s => d3.entries(s.data))
+      const titles = this.opts.series.map(s => s.title)
+      createChart(data, titles)
     })
 
     const bisectDate = d3.bisector(d => d.key).left
@@ -24,7 +28,7 @@
       return [min, max]
     }
 
-    const createChart = (data) => {
+    const createChart = (data, titles) => {
       const container = this.refs.linechart
       const containerWidth = this.root.clientWidth
       const containerHeight = this.root.clientHeight
@@ -34,7 +38,12 @@
       svg.attr('width', containerWidth)
       svg.attr('height', containerHeight)
 
-      const margin = { top: 40, left: 40, right: 40, bottom: 40 }
+      const margin = {
+        top: MARGIN,
+        right: titles[0] ? MARGIN * 3 : MARGIN,
+        bottom: MARGIN,
+        left: MARGIN
+      }
 
       const height = containerHeight - margin.top - margin.bottom
       const width = containerWidth - margin.left - margin.right
@@ -51,7 +60,8 @@
         .y(d => yScale(d.value))
         .curve(d3.curveNatural)
 
-      const g = svg.append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
+      const g = svg.append('g')
+        .attr('transform', `translate(${margin.left}, ${margin.top})`)
 
       g.append('g')
         .attr('class', 'linechart__axis linechart__axis-x')
@@ -65,7 +75,7 @@
         .attr('fill', '#000')
         .attr('y', -15)
         .attr('x', 5)
-        .attr('dy', '0.71em')
+        .attr('dy', '0.5em')
         .style('text-anchor', 'end')
         .text(this.i18n.t('explorer.linechart_axis'))
 
@@ -74,10 +84,17 @@
           .datum(item)
           .attr('class', `linechart__line linechart__line--${index}`)
           .attr('d', line)
+
+        g.append('text')
+          .text(titles[index])
+          .attr('x', containerWidth - MARGIN * 4)
+          .attr('y', yScale(_.last(item).value))
+          .attr('dx', '0.3em')
+          .attr('dy', '0.3em')
+          .attr('class', `linechart__label linechart__label--${index}`)
       })
 
       // focus tracking
-
       const focus = g.append('g').style('display', 'none')
 
       focus.append('circle')

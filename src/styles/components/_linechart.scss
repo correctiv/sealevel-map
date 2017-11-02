@@ -29,7 +29,7 @@
   fill: none;
   stroke: steelblue;
   stroke-width: 1.5px;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .linechart__line--0 {
@@ -55,5 +55,19 @@
 
 .linechart__popup {
   fill: black;
+}
+
+
+.linechart__label {
+  display: block;
+  font-family: $font-family-title;
+  font-weight: bold;
+  font-size: 15px;
+  fill: steelblue;
+  opacity: 0.4;
+}
+
+.linechart__label--0 {
+  opacity: 1;
 }
 
