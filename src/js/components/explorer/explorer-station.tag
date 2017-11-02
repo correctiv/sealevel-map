@@ -2,11 +2,16 @@
 
   <h1 class="explorer__title">{ opts.station.location }</h1>
 
-  <sealevel-linechart chartdata={ opts.tides } />
+  <sealevel-linechart
+    if={ opts.tides }
+    series={ [{ data: opts.tides }] }
+  />
 
-  <p>{ stationDesc }</p>
+  <p if={ stationDesc }>
+    { stationDesc }
+  </p>
 
-  <sealevel-article-link for={opts.station.id} />
+  <sealevel-article-link for={ opts.station.id } />
 
   <a href={ routeBack(opts.station.country) }>
     { i18n.t('explorer.back') }
@@ -46,11 +51,15 @@
       return 'explorer.station_desc_lower'
     }
 
+    this.routeBack = (id) => opts.pathToCountry(this.i18n.getLocale(), id)
+
     this.on('update', () => {
-      const { station, tides } = this.opts
+      const station = this.opts.station
+      const tides = this.opts.tides
 
       if (station && tides) {
-        const { tide, year } = _.last(tides)
+        const tide = _.last(tides)
+        const year = _.lastIndexOf(tides, tide)
         const tideShort = _.last(station.timeseries)
         station.last_available_year = year
         station.last_available_value_since_beginning = tide > 0 ? tide : -tide
@@ -60,12 +69,12 @@
         if (station.id === '145') {
           this.stationDesc = this.i18n.t('explorer.manila')
         } else {
-          this.stationDesc = this.i18n.t(getStationDesc(station.trend_longest, tide), station)
+          const stationDesc = getStationDesc(station.trend_longest, tide)
+          this.stationDesc = this.i18n.t(stationDesc, station)
         }
       }
     })
 
-    this.routeBack = (id) => opts.pathToCountry(this.i18n.getLocale(), id)
   </script>
 
 </sealevel-explorer-station>

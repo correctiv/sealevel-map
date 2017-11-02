@@ -38,15 +38,18 @@ const requestStationDetailsData = () => ({
   type: REQUEST_STATION_DETAILS_DATA
 })
 
-const prepareFullData = (timeseries) => {
-  return _.mapValues(timeseries, (tides) => {
-    return _(tides[0])
-      .pickBy((value, key) => !isNaN(key) && value)
-      .map((tide, year) => ({
-        tide: parseFloat(tide),
-        year
-      }))
-      .value()
+const getTimeseriesForStation = (station) => {
+  return _(station)
+    .pickBy((value, key) => !isNaN(key) && value)
+    .reduce((result, tide, year) => {
+      result[year] = parseFloat(tide)
+      return result
+    }, [])
+}
+
+const prepareFullData = (seriesCollection) => {
+  return _.mapValues(seriesCollection, (series) => {
+    return getTimeseriesForStation(series[0])
   })
 }
 
@@ -98,12 +101,7 @@ const prepareOverviewData = (stations) => {
     total_population2010_sum: station.total_population2010_sum,
     trend_1985_2015: station.trend_1985_2015,
     trend_longest: station.trend_longest,
-    timeseries: _(station)
-      .pickBy((value, key) => !isNaN(key) && value)
-      .reduce((result, tide, year) => {
-        result[year] = parseFloat(tide)
-        return result
-      }, [])
+    timeseries: getTimeseriesForStation(station)
   }))
 }
 

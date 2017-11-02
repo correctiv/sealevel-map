@@ -6,10 +6,23 @@
     import * as d3 from 'd3'
 
     this.on('updated', () => {
-      this.opts.chartdata && createChart(this.opts.chartdata)
+      const series = this.opts.series.map(s => d3.entries(s.data))
+      createChart(series)
     })
 
-    const bisectDate = d3.bisector(d => d.year).left
+    const bisectDate = d3.bisector(d => d.key).left
+
+    const getDomain = (seriesCollection, key) => {
+      let min = d3.min(seriesCollection, (series) => {
+        return d3.min(series, item => item[key])
+      })
+
+      let max = d3.max(seriesCollection, (series) => {
+        return d3.max(series, item => item[key])
+      })
+
+      return [min, max]
+    }
 
     const createChart = (data) => {
       const container = this.refs.linechart
@@ -26,16 +39,16 @@
       const height = containerHeight - margin.top - margin.bottom
       const width = containerWidth - margin.left - margin.right
 
-      const xDomain = d3.extent(data, d => d.year)
-      const yDomain = d3.extent(data, d => d.tide)
+      const xDomain = getDomain(data, 'key')
+      const yDomain = getDomain(data, 'value')
 
       const xScale = d3.scaleLinear().rangeRound([0, width]).domain(xDomain)
       const yScale = d3.scaleLinear().rangeRound([height, 0]).domain(yDomain)
 
       const line = d3.line()
-        .defined(d => d.tide !== null)
-        .x(d => xScale(d.year))
-        .y(d => yScale(d.tide))
+        .defined(d => d.value !== null)
+        .x(d => xScale(d.key))
+        .y(d => yScale(d.value))
         .curve(d3.curveNatural)
 
       const g = svg.append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')')
@@ -56,10 +69,12 @@
         .style('text-anchor', 'end')
         .text(this.i18n.t('explorer.linechart_axis'))
 
-      g.append('path')
-        .datum(data)
-        .attr('class', 'linechart__line')
-        .attr('d', line)
+      data.forEach((item, index) => {
+        g.append('path')
+          .datum(item)
+          .attr('class', `linechart__line linechart__line--${index}`)
+          .attr('d', line)
+      })
 
       // focus tracking
 
@@ -93,22 +108,22 @@
       function mousemove () {
         const mouse = d3.mouse(this)
         const mouseDate = xScale.invert(mouse[0])
-        const i = bisectDate(data, mouseDate) // returns the index to the current data item
-        const d = data[i]
-        const x = xScale(d.year)
-        const y = yScale(d.tide)
+        const i = bisectDate(data[0], mouseDate) // returns the index to the current data item
+        const d = data[0][i]
+        const x = xScale(d.key)
+        const y = yScale(d.value)
 
         focus.select('text')
           .attr('transform', 'translate(' + x + ')')
-          .text(d.tide)
+          .text(d.value)
 
         focus.select('#linechart__focuscircle')
           .attr('cx', x)
           .attr('cy', y)
 
         focus.select('#linechart__focusLineX')
-          .attr('x1', xScale(d.year)).attr('y1', yScale(yDomain[0]))
-          .attr('x2', xScale(d.year)).attr('y2', yScale(yDomain[1]))
+          .attr('x1', xScale(d.key)).attr('y1', yScale(yDomain[0]))
+          .attr('x2', xScale(d.key)).attr('y2', yScale(yDomain[1]))
       }
     }
   </script>
