@@ -4,8 +4,7 @@
     <div class="container">
       <div class="scrolly__main__content">
 
-        <div class="scrolly__main__body">
-          { i18n.t('scrolly.info') }
+        <div class="scrolly__main__body" ref="body">
         </div>
 
         <figure class="scrolly__figure">
@@ -22,8 +21,26 @@
   </div>
 
   <script type="text/babel">
+    import _ from 'lodash'
     import { requestStationList } from '../../actions/explorer'
     import '../linechart.tag'
+
+    const stations = [{
+      id: '180',
+      title: 'Atlantic City'
+    },
+    {
+      id: '61',
+      title: 'Marseille'
+    },
+    {
+      id: '1037',
+      title: 'Borkum'
+    },
+    {
+      id: '145',
+      title: 'Manila'
+    }]
 
     this.activeLayers = []
     this.state = this.store.getState()
@@ -34,19 +51,16 @@
     })
 
     this.on('update', () => {
-      if (this.state.explorer.items) {
-        this.timeseries = [{
-          title: this.state.explorer.items[0].location,
-          data: this.state.explorer.items[0].timeseries
-        },
-        {
-          title: this.state.explorer.items[1].location,
-          data: this.state.explorer.items[1].timeseries
-        },
-        {
-          title: this.state.explorer.items[2].location,
-          data: this.state.explorer.items[2].timeseries
-        }]
+      const items = this.state.explorer.items
+      const lang = this.i18n.getLocale()
+      const body = require(`../../../locale/${lang}/info.md`)
+      this.refs.body.innerHTML = body
+
+      if (items) {
+        this.timeseries = stations.map(({id, title}) => ({
+          title,
+          data: _.find(items, {id}).timeseries
+        }))
       }
     })
   </script>
