@@ -1,7 +1,7 @@
 {
   "intro": {
     "title": "Steigende Meere",
-    "lead": "Über 700.000 Pegeldaten weltweit belegen: Der Meeresspiegel steigt. Der Klimawandel ist an den Küsten angekommen. Er wird die Welt verändern. Das Meer wird Strände fortspülen, Inseln versenken, Ebenen überschwemmen. Mit möglicherweise dramatischen Folgen für hunderte Millionen Menschen.",
+    "lead": "Über 700.000 Pegeldaten weltweit belegen: Der Meeresspiegel steigt. Der Klimawandel ist an den Küsten angekommen. Das Meer wird Strände fortspülen, Inseln versenken, Ebenen überschwemmen. Mit dramatischen Folgen für hunderte Millionen Menschen.",
     "more": "mehr erfahren",
     "logo_alt": "ein Projekt von CORRECTIV"
   },
@@ -23,13 +23,12 @@
   "scrolly": {
     "title": "Ein Datenschatz – erstmals gehoben",
     "authors": "von",
-    "introduction": "Seit Jahrhunderten hat eine britische Behörde, der Permanent Service of Mean Sea Level (PSMSL), die Fluthöhen von Häfen in aller Welt gesammelt. Wir haben diesen Datensatz ausgewertet. Die Daten sind unbestechlich. Nur einen Nachteil haben sie: Die Messpunkte sind nicht gleichmäßig über den Globus verteilt. Afrika beispielsweise, das wenig Bedeutung für den Welthandel hat, ist ein weißer Fleck.",
+    "introduction": "Auf der Suche nach Daten über die weltweite Meereshöhe wurden wir bei einer britischen Einrichtung, dem Permanent Service of Mean Sea Level (PSMSL), fündig: Die Wissenschaftler dieses Instituts aus Liverpool sammeln die Fluthöhen von Häfen in aller Welt. Seit Mitte des 19. Jahrhunderts zeichnen sie die Daten von Pegeln an Häfen und Küstenorten auf, von Argentinien bis Zanzibar. Und damit sehr viel länger als mit modernen Methoden wie den Satelliten möglich ist. Wir haben diese Informationen zum ersten Mal ausgewertet. Die Daten sind unbestechlich: Der Klimawandel lässt schon seit Jahrzehnten das Meer ansteigen.",
     "partners": "In Kooperation mit:",
     "tide_figcaption": "Moderner Pegel im Hafen von Genua",
     "info_figcaption": "",
     "credits": "Foto:",
     "restart": "nochmals abspielen",
-    "info": "Wir haben die 500 am besten dokumentierten Messpunkte in eine Weltkarte eingetragen. Steigt das Meer, ist der Pegel rot eingefärbt, steigt das Land, ist er blau dargestellt. Nur einige Beispiele: Das Mittelmeer in Marseille ist heute 20 Zentimeter höher als drei Jahrzehnte zuvor. Auf der ostfriesischen Insel Borkum sind es 18 Zentimeter: Wo man 1985 noch trockenen Fußes gehen konnte, muss man heute hohe Gummistiefel tragen. In Atlantic City, südlich von New York, betrug der Anstieg sogar knapp 35 Zentimeter.",
     "period": "1985 bis 2015",
     "steps": {
       "intro": "Start",

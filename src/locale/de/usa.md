@@ -1,4 +1,10 @@
 ### USA, Ostküste: Viel Geld für mehr Schutz
 
-Auch Nordamerika wird von dramatischen Veränderungen erfasst werden. Die Vorboten sind für jeden sichtbar: In Alaska taut der Permafrostboden auf und macht Dörfer unbewohnbar, an der Ostküste werden jedes Jahr höhere Pegelstände gemessen, allein Miami hat 100 Millionen Dollar bereitgestellt, um Straßen höherzulegen, Hochwasserpumpen zu installieren und Abwässerkanäle vor eindringendem Meerwasser zu schützen. Und das ist erst der Anfang.
+Auch [Nordamerika](https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-uebersicht-nordamerika/) ist vom Anstieg der Meeresspiegel betroffen: In Alaska taut der Permafrostboden auf und macht Dörfer unbewohnbar, an der Ostküste werden jedes Jahr höhere Pegelstände gemessen, allein Miami hat 100 Millionen Dollar bereitgestellt, um Straßen höher zu legen, Hochwasserpumpen zu installieren und Abwasserkanäle vor eindringendem Meerwasser zu schützen. Und das ist erst der Anfang: Die großen Stürme Harvey und Irma haben 2017 wieder alle Rekorde gebrochen
 
+<figure>
+  <img alt="Auswirkungen von Sturm Sandy: Überschwemmungen in New Jersey" src="https://correctiv.org/media/public/c2/c0/c2c06104-1851-49e9-a182-9f8b0c3628f1/hurricane_sandy_en.jpg" />
+  <figcaption>
+    Dutzende Stürme bedrohen die Ostküste: Hier der Sturm Sandy in New Jersey
+  </figcaption>
+</figure>
