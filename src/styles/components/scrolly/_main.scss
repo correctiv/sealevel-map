@@ -16,12 +16,12 @@
   padding: 60px 30px;
   background: $white;
   min-height: 100vh;
+  pointer-events: all;
 }
 
 .scrolly__main__body {
   font-size: $font-size-body;
   hyphens: auto;
-  pointer-events: all;
 
   p {
     margin-bottom: 1em;
@@ -72,6 +72,11 @@
     font-family: $font-family-title;
     font-size: $font-size-accent;
     text-transform: uppercase;
+  }
+
+  img {
+    height: 60px;
+    padding: 10px 0;
   }
 
   @include mq($screen-m) {

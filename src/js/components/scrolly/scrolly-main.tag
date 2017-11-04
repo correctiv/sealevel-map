@@ -19,7 +19,9 @@
 
           <div class="scrolly__main__partners">
             <h4>{ i18n.t('scrolly.partners') }</h4>
-            [Partner Logos]
+            <a each={ partners } href={ url }>
+              <img src={ logo } alt={ title } />
+            </a>
           </div>
 
         </div>
@@ -47,6 +49,17 @@
   </div>
 
   <script type="text/babel">
+    this.partners = [{
+      title: 'Mediapart',
+      url: 'https://mediapart.fr',
+      logo: require('../../../assets/images/logo-mediapart.svg')
+    },
+    {
+      title: 'TagesWoche',
+      url: 'https://tageswoche.ch',
+      logo: require('../../../assets/images/logo-tageswoche.svg')
+    }]
+
     this.on('update', () => {
       const lang = this.i18n.getLocale()
       const body = require(`../../../locale/${lang}/main.md`)
