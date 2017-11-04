@@ -5,6 +5,7 @@ Auch [Nordamerika](https://correctiv.org/recherchen/klima/artikel/2017/07/28/ste
 <figure>
   <img alt="Auswirkungen von Sturm Sandy: Überschwemmungen in New Jersey" src="https://correctiv.org/media/public/c2/c0/c2c06104-1851-49e9-a182-9f8b0c3628f1/hurricane_sandy_en.jpg" />
   <figcaption>
-    Dutzende Stürme bedrohen die Ostküste: Hier der Sturm Sandy in New Jersey
+    Stürme bedrohen die Ostküste: Hier der Sturm Sandy in New Jersey
+    (Bildnachweis:&nbsp;Doug&nbsp;Mills&nbsp;/&nbsp;Pool&nbsp;/&nbsp;AFP)
   </figcaption>
 </figure>

@@ -5,6 +5,6 @@ Auf den ersten Blick überraschend: In [Skandinavien](https://correctiv.org/rech
 <figure>
   <img alt="Luftaufnahme eines Strands in Island" src="https://correctiv.org/media/public/cf/dd/cfdd45d8-ec72-497b-acdc-a6a382685c2a/island_black.jpg" />
   <figcaption>
-    Die isländischen Strände werden größer – der Pegel sinkt
+    Die isländischen Strände werden größer – der Pegel sinkt (Bildnachweis:&nbsp;Tim&nbsp;Trad&nbsp;/&nbsp;unsplash.com)
   </figcaption>
 </figure>

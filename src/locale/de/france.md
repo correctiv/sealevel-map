@@ -5,6 +5,6 @@ Das südfranzösische [Palavas-les-Flots](https://correctiv.org/recherchen/klima
 <figure>
   <img alt="Überschwemmtes Ortsschild in Palavas-les-Flots" src="https://correctiv.org/media/thumbnails/filer_public_thumbnails/bc/67/bc676f98-e69f-4bcc-9af4-5f9bb8e2228d/palvais02.jpg__1280x700_q85_crop_subject_location-2548%2C1723_subsampling-2.jpg" />
   <figcaption>
-    Land unter am Mittelmeer (Bildnachweis: Pascal Guyot / AFP)
+    Land unter am Mittelmeer (Bildnachweis:&nbsp;Pascal&nbsp;Guyot&nbsp;/&nbsp;AFP)
   </figcaption>
 </figure>
