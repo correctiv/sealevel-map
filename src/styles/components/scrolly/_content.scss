@@ -15,9 +15,13 @@
   width: 100%;
   overflow: hidden;
   pointer-events: none;
+}
+
+.scrolly__section {
+  padding: 65vh 0 0 0;
 
   figure {
-    padding: 1em 0 0 0;
+    padding-top: 1em;
     margin: 0;
   }
 
@@ -33,15 +37,11 @@
     font-family: $font-family-accent;
     font-size: $font-size-accent;
   }
+}
 
-  section {
-    padding: 65vh 0 0 0;
-  }
-
-  // Adjust position in order to trigger gumshoe.js scrollspy event earlier, for smoother changes between steps within the scrolly
-  .scrolly__section--manila {
-    padding-top: 150vh;
-  }
+// Adjust position in order to trigger gumshoe.js scrollspy event earlier, for smoother changes between steps within the scrolly
+.scrolly__section--manila {
+  padding-top: 150vh;
 }
 
 .scrolly__section--manila,

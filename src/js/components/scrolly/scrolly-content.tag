@@ -4,9 +4,9 @@
     const addContentSection = (stepName) => {
       const section = document.createElement('section')
       const sectionWrapper = document.createElement('div')
-      sectionWrapper.className = 'scrolly__content'
+      sectionWrapper.setAttribute('class', 'scrolly__content')
+      section.setAttribute('class', `scrolly__section scrolly__section--${stepName}`)
       section.setAttribute('id', stepName)
-      section.setAttribute('class', `scrolly__section--${stepName}`)
       section.appendChild(sectionWrapper)
       sectionWrapper.innerHTML = require(`../../../locale/${this.locale}/${stepName}.md`)
       this.root.appendChild(section)

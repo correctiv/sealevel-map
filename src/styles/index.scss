@@ -11,9 +11,9 @@
 @import 'components/explorer/panel';
 @import 'components/explorer/breadcrumbs';
 @import 'components/intro';
+@import 'components/linechart';
 @import 'components/scrolly';
 @import 'components/scrolly/main';
-@import 'components/scrolly/figure';
 @import 'components/scrolly/content';
 @import 'components/scrolly/map';
 @import 'components/scrolly/map-animation';
@@ -21,6 +21,6 @@
 @import 'components/scrolly/map-visualization-tooltip';
 @import 'components/scrolly/nav';
 @import 'components/scrolly/outro';
-@import 'components/linechart';
+@import 'components/scrolly/figure';
 @import 'components/common/entries';
 @import 'components/common/container';
