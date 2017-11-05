@@ -2,8 +2,8 @@ $bullet-diameter: 12px;
 
 .scrolly__nav {
   position: fixed;
-  bottom: 40px;
-  left: 30px;
+  bottom: 48px;
+  left: 32px;
   z-index: 10;
   display: none;
 
@@ -37,7 +37,7 @@ $bullet-diameter: 12px;
   position: absolute;
   padding: 5px;
   top: -5px;
-  background: $blue;
+  background: $purple;
   color: $white;
   line-height: 1;
   font-family: sans-serif;
@@ -46,6 +46,7 @@ $bullet-diameter: 12px;
   opacity: 0;
   transition: opacity .3s .3s ease-in-out;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 .scrolly__nav__link:hover b,
@@ -71,6 +72,6 @@ $bullet-diameter: 12px;
 .scrolly__nav__link:hover:before,
 .scrolly__nav__link:focus:before,
 .scrolly__nav__link:active:before {
-  background: $blue;
+  background: $purple;
   border-radius: 50%;
 }
