@@ -20,6 +20,8 @@
       [+60, '#9d474b']
     ]
 
+    const zoomThreshold = 4
+
     this.activeLayers = []
     this.state = this.store.getState()
     this.subscribe(state => this.update({ state }))
@@ -126,6 +128,7 @@
         map.addLayer({
           id: 'stations_small',
           type: 'circle',
+          maxzoom: zoomThreshold,
           source: {
             type: 'geojson',
             data: createFeatures(this.opts.stations)
@@ -143,6 +146,7 @@
         map.addLayer({
           id: 'stations_large',
           type: 'circle',
+          minzoom: zoomThreshold,
           source: {
             type: 'geojson',
             data: createFeatures(this.opts.stations)
