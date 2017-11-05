@@ -5,7 +5,7 @@ In Südamerika liegen die größten Feuchtgebiete der Erde. Eines davon: Das [Pa
 <figure>
   <img alt="Kinder spielen in einem Slum im Prana-Delta" src="https://correctiv.org/media/public/c5/22/c52295ae-471a-4484-812c-96ceded6deb3/garrote1_en.jpg" />
   <figcaption>
-    Kinder im Slum von Prana-Delta: Arm und Reich versinken zusammen
+    Ein Slum im Paraná-Delta: Arm und Reich versinken zusammen
     (Bildnachweis:&nbsp;Gilda&nbsp;Di&nbsp;Carli)
   </figcaption>
 </figure>
