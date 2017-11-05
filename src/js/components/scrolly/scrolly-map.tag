@@ -35,6 +35,17 @@
       this.store.dispatch(requestStationList())
     })
 
+    const BREAKPOINT = 1100
+    const OFFSET = 220
+
+    const isLargeViewport = () => (
+      document.documentElement.clientWidth >= BREAKPOINT
+    )
+
+    const getOffset = (direction = 1) => (
+      isLargeViewport() ? [OFFSET * direction, 0] : [0, 0]
+    )
+
     const updateLayers = (activeStep) => {
       switch (activeStep) {
 
@@ -49,7 +60,7 @@
           this.map.flyTo({
             center: [121, 14.65],
             zoom: 9.5,
-            offset: [-220, 0]
+            offset: getOffset(-1)
           })
           break
 
@@ -58,7 +69,7 @@
             [-25.18, 54.47],
             [32.82, 71.27]
           ], {
-            offset: [220, 0]
+            offset: getOffset()
           })
           break
 
@@ -66,7 +77,7 @@
           this.map.flyTo({
             center: [3.93, 43.52],
             zoom: 4,
-            offset: [-220, 0]
+            offset: getOffset(-1)
           })
           break
 
@@ -74,7 +85,7 @@
           this.map.flyTo({
             center: [-74, 31],
             zoom: 4,
-            offset: [220, 0]
+            offset: getOffset()
           })
           break
 
@@ -82,7 +93,7 @@
           this.map.flyTo({
             center: [-58, -35],
             zoom: 5,
-            offset: [-220, 0]
+            offset: getOffset(-1)
           })
           break
       }
