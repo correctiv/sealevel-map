@@ -21,6 +21,8 @@ html {
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
   box-sizing: border-box; /* [4] */
+  background: #7f9ca5 url(../assets/images/spinner.svg) no-repeat center center;
+
 
   *, ::before, ::after {
     box-sizing: inherit; /* [4] */
