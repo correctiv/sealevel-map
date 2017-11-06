@@ -22,6 +22,10 @@
     this.state = this.store.getState()
     this.subscribe(state => this.update({ state }))
 
+    this.shouldUpdate = (updates) => {
+      return updates && updates.state.navigation.activeStep !== this.activeStep
+    }
+
     this.on('update', () => {
       this.activeStep = this.state.navigation.activeStep
     })
@@ -57,7 +61,7 @@
           break
 
         case 'manila':
-          this.map.flyTo({
+          this.map.jumpTo({
             center: [121, 14.65],
             zoom: 9.5,
             offset: getOffset(-1)
@@ -109,14 +113,14 @@
       })
 
       map.on('load', () => {
+        // disable map zoom when using scroll
+        map.scrollZoom.disable()
+
         // disable map rotation using right click + drag
         map.dragRotate.disable()
 
         // disable map rotation using touch rotation gesture
         map.touchZoomRotate.disableRotation()
-
-        // // initial state
-        // updateLayers('world')
       })
 
       return map

@@ -79,7 +79,7 @@ export default function (opts) {
 
       // redraw visualization whenever the view changes
       map.on('viewreset', () => this.sparkVis.redraw())
-      map.on('move', () => this.sparkVis.redraw())
+      map.on('moveend', () => this.sparkVis.redraw())
 
       this.sparkVis = {
         redraw: (updatedYear) => {

@@ -1,10 +1,11 @@
 .scrolly__map-visualization {
   opacity: 1;
-  transition: opacity 600ms;
+  transition: opacity 500ms 500ms;
 }
 
 .scrolly__map-visualization--hidden {
   opacity: 0;
+  transition: opacity 0ms;
 }
 
 .scrolly__map-visualization__item--positive {
