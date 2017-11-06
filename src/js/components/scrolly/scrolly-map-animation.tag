@@ -2,15 +2,15 @@
 
   <svg ref="vis" />
 
-  <div class="container">
-    <span class="scrolly__map-animation__counter">
-      { year }
-    </span>
-  </div>
+  <sealevel-scrolly-map-legend />
+
+  <span class="scrolly__map-animation__counter">
+    { year }
+  </span>
 
   <div class={
-    "scrolly__map-animation__end": true,
-    "scrolly__map-animation__end--active": !this.animationLoop
+    scrolly__map-animation__end: true,
+    scrolly__map-animation__end--active: !this.animationLoop
   }>
     <button class="scrolly__map-animation__restart" onclick={startAnimation}>
       { i18n.t('scrolly.restart') }
@@ -18,6 +18,7 @@
   </div>
 
   <script type="text/babel">
+    import './scrolly-map-legend.tag'
     import sparkVis from '../../mixins/sparkVis'
 
     const MIN_YEAR = 1985

@@ -8,6 +8,8 @@
     <g ref="annotations" />
   </svg>
 
+  <sealevel-scrolly-map-legend />
+
   <sealevel-scrolly-map-visualization-tooltip
     if={tooltip}
     tide={tooltip.tide}
@@ -20,6 +22,7 @@
     import * as d3Annotation from 'd3-svg-annotation'
     import sparkVis from '../../mixins/sparkVis'
     import './scrolly-map-visualization-tooltip.tag'
+    import './scrolly-map-legend.tag'
 
     const YEAR = 2015
     const HEIGHT = 500
