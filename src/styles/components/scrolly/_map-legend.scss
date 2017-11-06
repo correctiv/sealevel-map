@@ -1,13 +1,22 @@
 .scrolly__map__legend {
+  display: none;
   position: absolute;
   top: 12px;
   right: 12px;
   font-size: $font-size-accent;
   font-family: $font-family-accent;
-  width: 220px;
+  width: 240px;
   padding: 10px;
   margin: 0;
   background: rgba(white, 0.8);
+
+  @include mq($screen-m) {
+    display: block;
+  }
+
+  b {
+    display: block;
+  }
 
   ul {
     list-style: none;
