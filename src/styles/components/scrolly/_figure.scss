@@ -13,7 +13,7 @@
   display: block;
   float: left;
   width: 32%;
-  padding: 30px 30px 30px 0;
+  margin: 30px 30px 30px 0;
 
   @include mq($screen-l) {
     width: 16%;
