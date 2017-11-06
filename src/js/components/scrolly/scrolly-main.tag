@@ -12,7 +12,7 @@
 
           <div class="scrolly__main__authors">
             { i18n.t('scrolly.authors') }
-            <em>Annika Jöres,</em>
+            <em>Annika Joeres,</em>
             <em>Simon Jockers,</em>
             <em>Felix Michel</em>
           </div>
