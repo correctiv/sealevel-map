@@ -32,6 +32,15 @@
   }
 }
 
+.scrolly__main__figure {
+  margin: 0;
+
+  @include mq($screen-l) {
+    margin-left: 5%;
+    width: 80%;
+  }
+}
+
 .scrolly__main__sidebar {
   font-family: $font-family-title;
   font-weight: bold;

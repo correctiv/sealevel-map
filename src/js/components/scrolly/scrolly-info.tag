@@ -7,7 +7,7 @@
         <div class="scrolly__main__body" ref="body">
         </div>
 
-        <figure class="scrolly__figure">
+        <figure class="scrolly__figure scrolly__main__figure">
 
           <sealevel-linechart if={timeseries} series={ timeseries } />
 
