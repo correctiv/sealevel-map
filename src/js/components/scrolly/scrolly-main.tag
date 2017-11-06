@@ -30,7 +30,7 @@
           { i18n.t('scrolly.introduction') }
         </div>
 
-        <figure class="scrolly__figure--marginal">
+<!--         <figure class="scrolly__figure--marginal">
           <img src="/assets/content/pegel_genua.jpg" alt="" />
           <figcaption class="scrolly__figure__caption">
             <p>{ i18n.t('scrolly.tide_figcaption') }</p>
@@ -42,7 +42,7 @@
           </figcaption>
         </figure>
 
-        <div class="scrolly__main__body" ref="body"></div>
+        <div class="scrolly__main__body" ref="body"></div> -->
 
       </div>
     </div>
@@ -60,11 +60,11 @@
       logo: require('../../../assets/images/logo-tageswoche.svg')
     }]
 
-    this.on('update', () => {
-      const lang = this.i18n.getLocale()
-      const body = require(`../../../locale/${lang}/main.md`)
-      this.refs.body.innerHTML = body
-    })
+    // this.on('update', () => {
+    //   const lang = this.i18n.getLocale()
+    //   const body = require(`../../../locale/${lang}/main.md`)
+    //   this.refs.body.innerHTML = body
+    // })
   </script>
 
 </sealevel-scrolly-main>
