@@ -8,7 +8,7 @@ export const STEPS = [
   'argentina'
 ]
 
-export const intro = (locale) => `/${locale}/#intro`
+export const intro = (locale) => `/${locale}/`
 export const article = (locale) => `/${locale}/#main`
 export const explorer = (locale) => `/${locale}/explore`
 export const continent = (locale, id) => `/${locale}/explore/${id}`

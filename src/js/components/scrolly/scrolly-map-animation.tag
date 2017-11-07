@@ -10,7 +10,7 @@
 
   <div class={
     scrolly__map-animation__end: true,
-    scrolly__map-animation__end--active: !this.animationLoop
+    scrolly__map-animation__end--active: !isAnimating
   }>
     <button class="scrolly__map-animation__restart" onclick={startAnimation}>
       { i18n.t('scrolly.restart') }
@@ -29,6 +29,7 @@
 
     this.startAnimation = () => {
       this.stopAnimation()
+      this.update({ isAnimating: true })
       this.year = MIN_YEAR
 
       this.animationLoop = setInterval(() => {
@@ -39,7 +40,7 @@
 
     this.stopAnimation = () => {
       clearInterval(this.animationLoop)
-      this.update({ animationLoop: null })
+      this.update({ isAnimating: false })
     }
 
     this.on('mount', () => {

@@ -44,7 +44,6 @@
   </nav>
 
   <script type="text/babel">
-    import route from 'riot-route'
     import _ from 'lodash'
     import gumshoe from 'gumshoe'
     import smoothScroll from 'smooth-scroll'
@@ -61,7 +60,9 @@
       const active = event && event.target.id
       const language = this.i18n.getLocale()
       if (active) {
-        route(`${language}/#${active}`)
+        this.i18n.setLocale(language)
+        this.store.dispatch(setStep(active))
+        this.root.className = `scrolly--${active}-active`
       }
     }
 
@@ -78,12 +79,6 @@
 
     // Make steps available in template:
     this.steps = STEPS
-
-    this.on('route', (language, anchor) => {
-      this.i18n.setLocale(language)
-      this.store.dispatch(setStep(anchor))
-      this.root.className = `scrolly--${anchor}-active`
-    })
 
     this.on('mount', () => {
       // Defer because the navigation depends on the DOM being rendered
