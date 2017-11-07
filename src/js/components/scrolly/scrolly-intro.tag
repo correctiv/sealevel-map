@@ -1,10 +1,14 @@
 <sealevel-scrolly-intro class={ intro: true, intro--active: opts.active }>
 
-  <div class="intro__container">
+  <div class="intro__wrapper">
 
-    <h1 class="intro__title">{ i18n.t('intro.title') }</h1>
+    <div class="container">
+      <h1 class="intro__title">{ i18n.t('intro.title') }</h1>
 
-    <p class="intro__logo-correctiv">Ein Projekt von CORRECTIV</p>
+      <a href="https://correctiv.org/" class="intro__logo-correctiv">
+        CORRECTIV
+      </a>
+    </div>
 
     <video autoplay muted loop poster="../{ video.jpg }">
       <source src="../{ video.mp4 }" type="video/mp4">

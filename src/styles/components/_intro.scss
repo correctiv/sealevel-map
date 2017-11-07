@@ -26,10 +26,6 @@
   transition: opacity 500ms;
 }
 
-.intro__container {
-  padding: 60px 0;
-}
-
 .intro__title {
   padding: 20vh 30px 0 30px;
   margin: 0 auto;
@@ -59,7 +55,7 @@
   display: block;
   width: 220px;
   height: 80px;
-  top: 1vh;
+  top: 35px;
   left: 5vw;
   background: url('../assets/images/logo-correctiv.svg') no-repeat;
   text-indent: 100%;
