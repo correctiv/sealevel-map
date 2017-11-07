@@ -118,6 +118,8 @@ export default function (opts) {
           this.trigger('redraw', projection)
         }
       }
+
+      this.sparkVis.redraw()
     }
   }
 }

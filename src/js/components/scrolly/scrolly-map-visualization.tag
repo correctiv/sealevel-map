@@ -74,7 +74,7 @@
       this.update({ tooltip: null })
     }
 
-    this.isMoving = true
+    this.isMoving = false
     this.tooltip = null
 
     this.on('mount', () => {

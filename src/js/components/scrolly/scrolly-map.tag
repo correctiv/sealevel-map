@@ -3,17 +3,18 @@
   <div id="scrolly__map" class="scrolly__map__container"></div>
 
   <sealevel-scrolly-map-animation
-    if={state.explorer.items && activeStep === 'world'}
-    map={map} items={state.explorer.items}
+    if={stations && activeStep === 'world'}
+    map={map} items={stations}
   />
 
   <sealevel-scrolly-map-visualization
-    if={state.explorer.items && activeStep !== 'world'}
-    map={map} items={state.explorer.items}
+    if={stations && activeStep !== 'world'}
+    map={map} items={stations}
   />
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
+    import _ from 'lodash'
     import { requestStationList } from '../../actions/explorer'
     import './scrolly-map-animation.tag'
     import './scrolly-map-visualization.tag'
@@ -23,11 +24,18 @@
     this.subscribe(state => this.update({ state }))
 
     this.shouldUpdate = (updates) => {
-      return updates && updates.state.navigation.activeStep !== this.activeStep
+      if (updates) {
+        const {navigation, explorer} = updates.state
+        const stepChanged = navigation.activeStep !== this.activeStep
+        const dataUnchanged = _.isEqual(explorer.items, this.stations)
+        const dataAvailable = !dataUnchanged && _.isArray(explorer.items)
+        return stepChanged || dataAvailable
+      }
     }
 
     this.on('update', () => {
       this.activeStep = this.state.navigation.activeStep
+      this.stations = this.state.explorer.items
     })
 
     this.on('updated', () => {
