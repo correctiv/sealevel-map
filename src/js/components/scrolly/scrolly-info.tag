@@ -4,7 +4,9 @@
     <div class="container">
       <div class="scrolly__main__content">
 
-        <div class="scrolly__main__body" ref="body">
+        <div class="scrolly__main__body">
+          <p>{ i18n.t('scrolly.info_lead') }</p>
+          <p>{ i18n.t('scrolly.info_content') }</p>
         </div>
 
         <figure class="scrolly__figure scrolly__main__figure">
@@ -14,7 +16,10 @@
           <figcaption class="scrolly__figure__caption">
             <p>{ i18n.t('scrolly.info_figcaption') }</p>
           </figcaption>
+
         </figure>
+
+        <div class="scrolly__main__body" ref="body"></div>
 
       </div>
     </div>

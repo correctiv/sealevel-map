@@ -77,6 +77,7 @@
       smoothScroll('a[href*="#main"]')
 
       gumshoe.init({
+        offset: 0,
         container: window,
         activeClass: 'scrolly__nav__link--active',
         callback: routeTo,
