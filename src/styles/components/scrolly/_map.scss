@@ -16,7 +16,8 @@
   }
 
   .scrolly--intro-active &,
-  .scrolly--main-active & {
+  .scrolly--main-active &,
+  .scrolly--info-active &  {
     opacity: 0;
   }
 }

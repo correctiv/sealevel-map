@@ -8,7 +8,9 @@
 
     <sealevel-scrolly-main id="main" />
 
-    <sealevel-scrolly-info id="world" />
+    <div class="scrolly__main__world" id="world"></div>
+
+    <sealevel-scrolly-info id="info" />
 
     <div class="container">
       <sealevel-scrolly-content steps={steps} />
@@ -20,22 +22,27 @@
 
   <nav class="scrolly__nav" data-gumshoe-header>
     <ul data-gumshoe>
-      <li>
+      <li class="scrolly__nav__item">
         <a class="scrolly__nav__link" href="#intro">
           <b>{i18n.t('scrolly.steps.intro')}</b>
         </a>
       </li>
-      <li>
+      <li class="scrolly__nav__item scrolly__nav__item--hidden">
         <a class="scrolly__nav__link" href="#main">
           <b>{i18n.t('scrolly.steps.main')}</b>
         </a>
       </li>
-      <li>
+      <li class="scrolly__nav__item scrolly__nav__item--hidden">
         <a class="scrolly__nav__link" href="#world">
           <b>{i18n.t('scrolly.steps.world')}</b>
         </a>
       </li>
-      <li each={step in steps}>
+      <li class="scrolly__nav__item">
+        <a class="scrolly__nav__link" href="#info">
+          <b>{i18n.t('scrolly.steps.info')}</b>
+        </a>
+      </li>
+      <li class="scrolly__nav__item" each={step in steps}>
         <a class="scrolly__nav__link" href="#{step}">
           <b>{i18n.t('scrolly.steps.' + step)}</b>
         </a>
@@ -71,9 +78,9 @@
 
       gumshoe.init({
         container: window,
-        offset: 0,
         activeClass: 'scrolly__nav__link--active',
-        callback: routeTo
+        callback: routeTo,
+        scrollDelay: false
       })
     }
 

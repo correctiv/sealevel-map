@@ -2,13 +2,18 @@
   display: block;
 }
 
+.scrolly__main__world {
+  display: block;
+  height: 100vh;
+}
+
 .scrolly__main--world-info {
   display: block;
-  padding-top: 100vh;
+  margin: 20px 0;
 
-  // Adjust for spacing to following section:
   .scrolly__main__wrapper {
-    margin-bottom: -80vh;
+    min-height: 120vh;
+    padding: 10vh 0;
   }
 }
 

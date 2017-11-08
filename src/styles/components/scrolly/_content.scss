@@ -40,11 +40,6 @@
   }
 }
 
-// Adjust position in order to trigger gumshoe.js scrollspy event earlier, for smoother changes between steps within the scrolly
-.scrolly__section--manila {
-  padding-top: 150vh;
-}
-
 .scrolly__section--manila,
 .scrolly__section--france,
 .scrolly__section--argentina {
