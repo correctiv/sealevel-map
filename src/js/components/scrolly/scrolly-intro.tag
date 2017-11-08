@@ -10,7 +10,7 @@
       </a>
     </div>
 
-    <video autoplay muted loop poster="../{ video.jpg }">
+    <video autoplay muted loop poster="/assets/content/intro.jpg">
       <source src="../{ video.mp4 }" type="video/mp4">
       <source src="../{ video.webm }" type="video/webm">
     </video>
@@ -29,7 +29,6 @@
     import { article } from '../../routes/'
 
     this.video = {
-      jpg: require('file!../../../assets/images/intro.jpg'),
       mp4: require('file?&mimetype=video/mp4!../../../assets/videos/intro.mp4'),
       webm: require('file?&mimetype=video/webm!../../../assets/videos/intro.webm')
     }
