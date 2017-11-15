@@ -4,7 +4,7 @@
     <route path="*/explore..">
       <sealevel-explorer />
     </route>
-    <route path="*/#*">
+    <route path="*..">
       <sealevel-scrolly />
     </route>
     <route path="..">
