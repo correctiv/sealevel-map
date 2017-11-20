@@ -9,6 +9,7 @@ import { createStore, applyMiddleware } from 'redux'
 import riotReduxMixin from 'riot-redux-mixin'
 import reducer from './reducers'
 import i18n from './mixins/i18n'
+import tracking from './mixins/tracking'
 
 import '../styles/index.scss'
 import './components/app.tag'
@@ -22,6 +23,9 @@ riot.mixin(riotReduxMixin(store))
 
 // Initialize i18n mixin
 riot.mixin(i18n('de'))
+
+// Initialize the tracking mixin
+riot.mixin(tracking())
 
 // Mount root tag
 riot.mount('sealevel-app')
