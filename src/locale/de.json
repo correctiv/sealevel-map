@@ -9,13 +9,13 @@
   "outro": {
     "more": "mehr erfahren",
     "main": {
-      "title": "Der große Überblick",
-      "teaser": "Lies jetzt: Wie sich die Weltmeere vor Deiner Haustür verändern – und warum an einigen Orten sogar das Land steigt",
+      "title": "Wie der Meeresanstieg die Welt verändert",
+      "teaser": "Zum Hintergrund dieser Datenrecherche",
       "url": "https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-ueberblick-weltweit/"
     },
     "aside": {
       "title": "Interaktive Karte",
-      "teaser": "Entdecke jetzt: Klicke auf unseren Explorer, um die Veränderung des Meeres in Deinem Land und weltweit zu sehen",
+      "teaser": "Die Daten im Detail: Wie sich der Meeresspiegels verändert – in Deinem Land und weltweit.",
       "url": "https://searise.correctiv.org/de/explore"
     }
   },
@@ -45,7 +45,7 @@
 
   "explorer": {
     "title": "Steigende Meere",
-    "intro": "„Explorer“ hieß diese Karte bei uns, während wir an ihr arbeiteten. Denn hier kannst du dir ansehen, wie sich die Meeresspiegel verändert haben an 500 Messpunkten weltweit. Klicke dazu auf den Kontinent, dann auf das Land, dann auf die jeweilige Messstation.",
+    "intro": "Hier erfährst du, wie sich der Meeresspiegels verändert – an 500 Messpunkten weltweit. Wähle einen Kontinent aus der Liste um anzufangen.",
     "download_text": "Lade die Daten unserer Recherche herunter",
     "download_link": "/data/sealevel_data_download.csv",
     "choose_continent": "Wähle einen Kontinent",
@@ -134,7 +134,7 @@
 
       "asia": "In unserer Auswahl liegen alle zehn Orte, an denen das Meer am stärksten steigt, in Asien. Der Kontinent wird unter dem Klimawandel besonders leiden. An manchen Orte schwillt das Wasser pro Jahr um mehr als einen Zentimeter an. Manila zum Beispiel, die Hauptstadt der Philippinen: Dort liegt der Pegel heute rund 40 Zentimeter höher als vor 30 Jahren. Etliche Inseln der Philippinen, so die Prognose, werden untergehen.",
 
-      "europe": "Rund 200 Millionen Europäer leben in Küstennähe. Sie sind höchst unterschiedlich vom Klimawandel betroffen. Skandinavier gar nicht, bei ihnen hebt sich das Land schneller als das Meer. Südlich von Dänemark aber steigen die Pegel. Die EU ist weltweit Vorreiter bei den Maßnahmen gegen den Klimawandel. Trotzdem werden langfristig einige Küstenstädte nicht gehalten werden können. An der Ostküste Großbritanniens etwa, wo die Pegel steigen und die Küsten bröckeln.",
+      "europe": "Rund 200 Millionen Europäer leben in Küstennähe. Sie sind höchst unterschiedlich vom Klimawandel betroffen. Skandinavien kaum, denn dort hebt sich das Land schneller als das Meer. Südlich von Dänemark aber steigen die Pegel. Die EU ist weltweit Vorreiter bei den Maßnahmen gegen den Klimawandel. Trotzdem werden langfristig einige Küstenstädte nicht gehalten werden können. An der Ostküste Großbritanniens etwa, wo die Pegel steigen und die Küsten bröckeln.",
 
       "oceania": "Australien gehört mit seinen Kohlekraftwerken zu den schlimmsten Verschmutzern der Erde – und muss künftig um seine Großstädte an den Küsten fürchten. Nach unseren Daten steigen die Pegel an der Westküste besonders stark an, an vielen Stationen sind es mehr als zehn Zentimeter. Laut Prognosen des Weltklimarates sind unter anderem der Flughafen von Brisbane oder der Hafen von Melbourne gefährdet.",
       "antarctica": ""
