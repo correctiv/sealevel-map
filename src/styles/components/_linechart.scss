@@ -73,8 +73,25 @@
 
 .linechart__tooltip {
   position: absolute;
-  top: 0;
+  top: 30px;
+  margin-left: 10px;
+  padding: .3em;
   color: white;
   background: steelblue;
-}
+  font-family: $font-family-accent;
+  font-size: $font-size-accent;
+  line-height: 1em;
 
+  &:before {
+    content: '';
+    z-index: -1;
+    display: block;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: .3em;
+    left: -.2em;
+    transform: rotate(45deg);
+    background: steelblue;
+  }
+}

@@ -2,8 +2,8 @@
 
   <svg ref="linechart"></svg>
 
-  <span if={highlight} class="linechart__tooltip" style="left: {highlight.x}px">
-    {highlight.value}
+  <span if={highlight} class="linechart__tooltip" style={getTooltipStyle()}>
+    {highlight.value}mm
   </span>
 
   <script type="text/babel">
@@ -22,6 +22,8 @@
 
       createChart(data, titles)
     })
+
+    this.getTooltipStyle = () => `left: ${this.highlight.x + MARGIN}px`
 
     const bisectDate = d3.bisector(d => d.key).left
 
