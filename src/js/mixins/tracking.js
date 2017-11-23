@@ -1,7 +1,8 @@
 import PiwikTracker from 'piwik-tracker'
+import config from 'json!../config/main.json'
 
 export default function () {
-  const piwik = new PiwikTracker(11, 'https://tracking.correctiv.org/piwik.php')
+  const piwik = new PiwikTracker(config.piwik.id, config.piwik.url)
   let currentUrl
 
   return {

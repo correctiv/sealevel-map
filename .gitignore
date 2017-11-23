@@ -4,3 +4,4 @@ Concept_Dataviz.txt
 .idea
 .publish/
 /drehbuch
+/src/js/config/main.json

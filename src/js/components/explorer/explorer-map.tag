@@ -11,6 +11,7 @@
     import MapboxglLanguage from '@mapbox/mapbox-gl-language'
     import _ from 'lodash'
     import bbox from '@turf/bbox'
+    import config from 'json!../../config/main.json'
 
     const scale = [
       [-Infinity, '#469e9f'],
@@ -116,11 +117,11 @@
     }
 
     const renderMap = () => {
-      mapboxgl.accessToken = 'pk.eyJ1IjoiY29ycmVjdGl2IiwiYSI6ImNpZXZoc2k3dzAwYjZ0cGtzZ3lzcWRxZ3oifQ.D7nZQDnSO4BMLssgleNSSg'
+      mapboxgl.accessToken = config.mapbox.accessToken
 
       const map = new mapboxgl.Map({
         container: 'explorer__map',
-        style: 'mapbox://styles/correctiv/cj5ck638406zq2rs1y0toq1ba',
+        style: config.mapbox.style,
         maxZoom: 8
       })
 
