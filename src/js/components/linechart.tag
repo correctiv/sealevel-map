@@ -2,6 +2,10 @@
 
   <svg ref="linechart"></svg>
 
+  <span if={highlight} class="linechart__tooltip" style="left: {highlight.x}px">
+    {highlight.value}
+  </span>
+
   <script type="text/babel">
     import * as d3 from 'd3'
     import _ from 'lodash'
@@ -100,53 +104,41 @@
       })
 
       // focus tracking
-      const focus = g.append('g').style('display', 'none')
+      const focus = g.append('g')
 
-      focus.append('circle')
-        .attr('id', 'linechart__focuscircle')
-        .attr('r', 4.5)
-        .attr('class', 'linechart__circle')
-
-      focus.append('text')
-        .attr('x', 9)
-        .attr('dy', '.35em')
-
-      focus.append('line')
-        .attr('id', 'linechart__focusLineX')
-        .attr('class', 'linechart__focusline')
-
-      focus.append('line')
-        .attr('id', 'linechart__focusLineY')
-        .attr('class', 'linechart__focusline')
-
-      g.append('rect')
-        .attr('class', 'linechart__overlay')
-        .attr('width', width)
-        .attr('height', height)
-        .on('mouseover', () => focus.style('display', null))
-        .on('mouseout', () => focus.style('display', 'none'))
-        .on('mousemove', mousemove)
-
-      function mousemove () {
-        const mouse = d3.mouse(this)
+      const onMousemove = (dataItem, index, [overlay]) => {
+        const mouse = d3.mouse(overlay)
         const mouseDate = xScale.invert(mouse[0])
         const i = bisectDate(data[0], mouseDate) // returns the index to the current data item
         const d = data[0][i]
         const x = xScale(d.key)
         const y = yScale(d.value)
 
-        focus.select('text')
-          .attr('transform', 'translate(' + x + ')')
-          .text(d.value)
-
-        focus.select('#linechart__focuscircle')
-          .attr('cx', x)
-          .attr('cy', y)
-
-        focus.select('#linechart__focusLineX')
-          .attr('x1', xScale(d.key)).attr('y1', yScale(yDomain[0]))
-          .attr('x2', xScale(d.key)).attr('y2', yScale(yDomain[1]))
+        this.update({
+          highlight: { x, y, value: d.value }
+        })
       }
+
+      if (this.highlight) {
+        focus.append('circle')
+          .attr('id', 'linechart__focuscircle')
+          .attr('r', 4.5)
+          .attr('class', 'linechart__circle')
+          .attr('cx', this.highlight.x)
+          .attr('cy', this.highlight.y)
+
+        focus.append('line')
+          .attr('id', 'linechart__focusLineX')
+          .attr('class', 'linechart__focusline')
+          .attr('x1', this.highlight.x).attr('y1', 0)
+          .attr('x2', this.highlight.x).attr('y2', height)
+      }
+
+      g.append('rect')
+        .attr('class', 'linechart__overlay')
+        .attr('width', width)
+        .attr('height', height)
+        .on('mousemove', onMousemove)
     }
   </script>
 

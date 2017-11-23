@@ -4,6 +4,7 @@
   display: block;
   width: 100%;
   height: 250px;
+  position: relative;
 
   svg {
     display: block;
@@ -57,7 +58,6 @@
   fill: black;
 }
 
-
 .linechart__label {
   display: block;
   font-family: $font-family-title;
@@ -69,5 +69,12 @@
 
 .linechart__label--0 {
   opacity: 1;
+}
+
+.linechart__tooltip {
+  position: absolute;
+  top: 0;
+  color: white;
+  background: steelblue;
 }
 
