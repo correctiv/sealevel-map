@@ -1,9 +1,36 @@
 <sealevel-linechart class="linechart">
 
-  <svg ref="linechart"></svg>
+  <svg riot-width={root.clientWidth} riot-height={root.clientHeight}>
+
+    <g class="linechart__graphs" ref="linechart" />
+
+    <g class="linechart__overlay">
+
+      <rect onmousemove={onMousemove}
+        if={width && height}
+        riot-width={width}
+        riot-height={height}
+      />
+
+      <line class='linechart__focusline'
+        if={highlight}
+        riot-x1={highlight.x}
+        riot-x2={highlight.x}
+        riot-y1=0
+        riot-y2={height}
+      />
+
+      <circle class='linechart__circle'
+        if={highlight}
+        riot-cx={highlight.x}
+        riot-cy={highlight.y}
+      />
+    </g>
+
+  </svg>
 
   <span if={highlight} class="linechart__tooltip" style={getTooltipStyle()}>
-    {highlight.value}mm
+    {highlight.value}&nbsp;mm
   </span>
 
   <script type="text/babel">
@@ -12,18 +39,7 @@
 
     const MARGIN = 40
 
-    this.on('updated', () => {
-      const series = this.opts.series.sort((a, b) => {
-        return d3.max(a.data) < d3.max(b.data)
-      })
-
-      const data = series.map(s => d3.entries(s.data))
-      const titles = series.map(s => s.title)
-
-      createChart(data, titles)
-    })
-
-    this.getTooltipStyle = () => `left: ${this.highlight.x + MARGIN}px`
+    let data, titles, xScale, yScale
 
     const bisectDate = d3.bisector(d => d.key).left
 
@@ -39,31 +55,8 @@
       return [min, max]
     }
 
-    const createChart = (data, titles) => {
-      const container = this.refs.linechart
-      const containerWidth = this.root.clientWidth
-      const containerHeight = this.root.clientHeight
-      const svg = d3.select(container)
-
-      svg.selectAll('*').remove()
-      svg.attr('width', containerWidth)
-      svg.attr('height', containerHeight)
-
-      const margin = {
-        top: MARGIN,
-        right: titles[0] ? MARGIN * 3 : MARGIN,
-        bottom: MARGIN,
-        left: MARGIN
-      }
-
-      const height = containerHeight - margin.top - margin.bottom
-      const width = containerWidth - margin.left - margin.right
-
-      const xDomain = getDomain(data, 'key')
-      const yDomain = getDomain(data, 'value')
-
-      const xScale = d3.scaleLinear().rangeRound([0, width]).domain(xDomain)
-      const yScale = d3.scaleLinear().rangeRound([height, 0]).domain(yDomain)
+    const createChart = () => {
+      const container = d3.select(this.refs.linechart)
 
       const line = d3.line()
         .defined(d => d.value !== null)
@@ -71,15 +64,14 @@
         .y(d => yScale(d.value))
         .curve(d3.curveNatural)
 
-      const g = svg.append('g')
-        .attr('transform', `translate(${margin.left}, ${margin.top})`)
+      container.selectAll('g, path, text').remove()
 
-      g.append('g')
+      container.append('g')
         .attr('class', 'linechart__axis linechart__axis-x')
-        .attr('transform', 'translate(0,' + height + ')')
+        .attr('transform', 'translate(0,' + this.height + ')')
         .call(d3.axisBottom(xScale).ticks(5).tickFormat(d3.format('d')))
 
-      g.append('g')
+      container.append('g')
         .attr('class', 'linechart__axis linechart__axis-y')
         .call(d3.axisLeft(yScale).ticks(5))
         .append('text')
@@ -91,57 +83,60 @@
         .text(this.i18n.t('explorer.linechart_axis'))
 
       data.forEach((item, index) => {
-        g.append('path')
+        container.append('path')
           .datum(item)
           .attr('class', `linechart__line linechart__line--${index}`)
           .attr('d', line)
 
-        g.append('text')
+        container.append('text')
           .text(titles[index])
-          .attr('x', containerWidth - MARGIN * 4)
+          .attr('x', this.root.clientWidth - MARGIN * 4)
           .attr('y', yScale(_.last(item).value))
           .attr('dx', '0.3em')
           .attr('dy', '0.3em')
           .attr('class', `linechart__label linechart__label--${index}`)
       })
-
-      // focus tracking
-      const focus = g.append('g')
-
-      const onMousemove = (dataItem, index, [overlay]) => {
-        const mouse = d3.mouse(overlay)
-        const mouseDate = xScale.invert(mouse[0])
-        const i = bisectDate(data[0], mouseDate) // returns the index to the current data item
-        const d = data[0][i]
-        const x = xScale(d.key)
-        const y = yScale(d.value)
-
-        this.update({
-          highlight: { x, y, value: d.value }
-        })
-      }
-
-      if (this.highlight) {
-        focus.append('circle')
-          .attr('id', 'linechart__focuscircle')
-          .attr('r', 4.5)
-          .attr('class', 'linechart__circle')
-          .attr('cx', this.highlight.x)
-          .attr('cy', this.highlight.y)
-
-        focus.append('line')
-          .attr('id', 'linechart__focusLineX')
-          .attr('class', 'linechart__focusline')
-          .attr('x1', this.highlight.x).attr('y1', 0)
-          .attr('x2', this.highlight.x).attr('y2', height)
-      }
-
-      g.append('rect')
-        .attr('class', 'linechart__overlay')
-        .attr('width', width)
-        .attr('height', height)
-        .on('mousemove', onMousemove)
     }
+
+    this.on('update', () => {
+      const series = this.opts.series.sort((a, b) => {
+        return d3.max(a.data) < d3.max(b.data)
+      })
+
+      data = series.map(s => d3.entries(s.data))
+      titles = series.map(s => s.title)
+
+      const vMargin = MARGIN * 2
+      const hMargin = titles[0] ? MARGIN * 4 : vMargin
+
+      this.height = this.root.clientHeight - vMargin
+      this.width = this.root.clientWidth - hMargin
+
+      const xDomain = getDomain(data, 'key')
+      const yDomain = getDomain(data, 'value')
+
+      xScale = d3.scaleLinear().rangeRound([0, this.width]).domain(xDomain)
+      yScale = d3.scaleLinear().rangeRound([this.height, 0]).domain(yDomain)
+
+      createChart()
+    })
+
+    this.getTooltipStyle = () => `left: ${this.highlight.x + MARGIN}px`
+
+    this.onMousemove = ({offsetX}) => {
+      const mouseDate = xScale.invert(offsetX - MARGIN)
+      const i = bisectDate(data[0], mouseDate) // returns the index to the current data item
+      const { key, value } = data[0][i]
+
+      this.update({
+        highlight: {
+          x: xScale(key),
+          y: yScale(value),
+          value
+        }
+      })
+    }
+
   </script>
 
 
