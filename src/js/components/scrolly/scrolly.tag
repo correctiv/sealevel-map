@@ -88,6 +88,10 @@
     // Make steps available in template:
     this.steps = STEPS
 
+    this.on('route', (locale) => {
+      this.i18n.setLocale(locale)
+    })
+
     this.on('mount', () => {
       // Defer because the navigation depends on the DOM being rendered
       _.defer(initNavigation)
