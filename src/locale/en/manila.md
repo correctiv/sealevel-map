@@ -1,0 +1,5 @@
+### Asia will be most affected by rising sea levels
+
+Ten of the cities most vulnerable to rising sea levels are in Asia. Sea levels in the [Philippine](https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-philippinen/) capital [Manila](https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-manila/) are today 80 centimeters higher than they were 50 years ago. Nine million people are living in largely flat areas of land. Many of its inhabitants live in areas that are not more than 10 meters above sea level. No other big city is as threatened by climate change as is Manila.<figure> 
+
+![A boy is navigating a flooded slum](/assets/content/manila.jpg) <figcaption> A flooded slum in Manila (Credits:&nbsp;Mike&nbsp;Clarke&nbsp;/&nbsp;AFP) </figcaption> </figure>

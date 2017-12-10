@@ -1,33 +1,56 @@
 {
   "intro": {
-    "title": "Steigende Meere",
-    "lead": "Über 700.000 Pegeldaten weltweit belegen: Der Meeresspiegel steigt. Der Klimawandel ist an den Küsten angekommen. Er wird die Welt verändern. Das Meer wird Strände fortspülen, Inseln versenken, Ebenen überschwemmen. Mit möglicherweise dramatischen Folgen für hunderte Millionen Menschen.",
-    "more": "mehr erfahren",
-    "logo_alt": "ein Projekt von CORRECTIV"
+    "title": "Rising sea levels",
+    "lead": "More than 700,000 data points on global sea levels show that the sea is rising. Climate change has reached the coasts. The sea will wash away beaches, sink islands and flood coastal areas with dramatic consequences for hundreds of millions.",
+    "more": "Learn more",
+    "logo_alt": "A project by CORRECTIV"
   },
-
+  "outro": {
+    "more": "Learn more",
+    "main": {
+      "title": "How rising sea levels are impacting the world",
+      "teaser": "More about this project",
+      "url": "https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-ueberblick-weltweit/"
+    },
+    "aside": {
+      "title": "Interactive map",
+      "teaser": "Detailed data on how sea levels are changing in your country and worldwide",
+      "url": "https://searise.correctiv.org/de/explore"
+    }
+  },
   "scrolly": {
-    "title": "Ein Datenschatz – erstmals gehoben",
-    "authors": "von",
-    "introduction": "Seit Jahrhunderten hat eine britische Behörde, der Permanent Service of Mean Sea Level (PSMSL), die Fluthöhen von Häfen in aller Welt gesammelt. Wir haben diesen Datensatz ausgewertet. Die Daten sind unbestechlich. Nur einen Nachteil haben sie: Die Messpunkte sind nicht gleichmäßig über den Globus verteilt. Afrika beispielsweise, das wenig Bedeutung für den Welthandel hat, ist ein weißer Fleck.",
-    "partners": "In Kooperation mit:",
-    "tide_figcaption": "Moderner Pegel im Hafen von Genua",
+    "title": "A treasure of data available for the first time",
+    "authors": "by",
+    "introduction": "This publication highlights the impact the climate has on our lives. A rise in temperatures by one degree celsius has changed our coasts. Warmer air and melting glaciers are driving up sea levels. This data analysis by CORRECTIV shows how sea levels have been rising around the world for more than a hundred years. ",
+    "partners": "In cooperation with:",
+    "info_lead": "We have put the 500 most documented monitoring points on a map. Red points show rising sea levels and blue points show a rise of the land mass. In Northern Europe, glaciers are receding, thereby reducing pressure on the land mass, which is rising. In both cases, locals need to cope with changing sea levels.",
+    "info_content": "A key reason for the rise of global sea levels is carbon dioxide emissions. The emissions have contributed to a one degree rise in global temperatures over the last century. Oceans have absorbed 80 percent of additional temperatures. Warmer water is expanding, flooding coastal areas. At the same time, glaciers are melting, increasing the volume of the oceans. Despite this dramatic trend, the world is still not united on the questions of whether to limit the global rise in temperatures to two degree celsius.",
     "info_figcaption": "",
-    "credits": "Foto:",
-    "info": "Wir haben die 500 am besten dokumentierten Messpunkte in eine Weltkarte eingetragen. Steigt das Meer, ist der Pegel rot eingefärbt, steigt das Land, ist er blau dargestellt. Nur einige Beispiele: Das Mittelmeer in Marseille ist heute 20 Zentimeter höher als drei Jahrzehnte zuvor. Auf der ostfriesischen Insel Borkum sind es 18 Zentimeter: Wo man 1985 noch trockenen Fußes gehen konnte, muss man heute hohe Gummistiefel tragen. In Atlantic City, südlich von New York, betrug der Anstieg sogar knapp 35 Zentimeter."
+    "restart": "Play again",
+    "period": "1985 to 2015",
+    "steps": {
+      "intro": "Start",
+      "main": "Introduction",
+      "world": "Rising sea levels",
+      "info": "Background",
+      "manila": "The Philippines",
+      "scandinavia": "Scandinavia",
+      "france": "France",
+      "usa": "USA",
+      "argentina": "Argentine"
+    }
   },
-
   "explorer": {
-    "title": "Rising seas",
-    "intro": "Use the Explorer button to see how the sea level has changed at 500 measuring points worldwide. Click on the continent, then the country, then on the respective measuring station.",
-    "download_text": "Click here to download our data",
+    "title": "Rising sea levels",
+    "intro": "Here you can track the change in sea levels at 500 monitoring points worldwide. To start, chose a continent from the list.",
+    "download_text": "Download the data",
     "download_link": "/data/sealevel_data_download.csv",
-    "choose_continent": "Select a continent",
+    "choose_continent": "Chose a continent",
     "start": "Start",
-    "sealevel_change": "Change since 1985: %{change} mm",
+    "sealevel_change": "Change since 1985",
     "linechart_axis": "mm",
-    "back": "Back to overview:",
-    "legend": "Inhabited regions under 10 meters beyond sea level",
+    "back": "Back to overview",
+    "legend": "Inhabited areas below ten meters above sea.",
     "continents": {
       "africa": "Africa",
       "north-america": "North America",
@@ -35,43 +58,43 @@
       "asia": "Asia",
       "europe": "Europe",
       "oceania": "Australia and Oceania",
-      "antarctica": "Antarctica"
+      "antarctica": "Antartica"
     },
     "countries": {
       "FRA": "France",
       "GBR": "United Kingdom",
       "DEU": "Germany",
-      "NLD": "Netherlands",
-      "USA": "USA",
+      "NLD": "The Netherlands",
+      "USA": "United States of America",
       "FIN": "Finland",
       "NOR": "Norway",
       "GEO": "Georgia",
       "SWE": "Sweden",
       "DNK": "Denmark",
       "CAN": "Canada",
-      "AUS": "Austrialia",
+      "AUS": "Australia",
       "LTU": "Lithuania",
       "JPN": "Japan",
       "NZL": "New Zealand",
-      "PHL": "Philippines",
-      "ITA": "Intaly",
+      "PHL": "The Philippines",
+      "ITA": "Italy",
       "PAN": "Panama",
       "THA": "Thailand",
       "IND": "India",
       "RUS": "Russian Federation",
       "MYS": "Malaysia",
-      "ALA": "Åland Islands",
+      "ALA": "Åland",
       "PRT": "Portugal",
       "HRV": "Croatia",
-      "BMU": "Bermuda",
+      "BMU": "The Bermudas",
       "GRC": "Greece",
       "BEL": "Belgium",
       "URY": "Uruguay",
       "ESP": "Spain",
       "CHL": "Chile",
-      "MHL": "Marshall Islands",
+      "MHL": "Marshal Islands",
       "UMI": "United States Minor Outlying Islands",
-      "ASM": "American Samoa",
+      "ASM": "US Samoa",
       "GUM": "Guam",
       "SJM": "Svalbard and Jan Mayen",
       "CUB": "Cuba",
@@ -79,58 +102,45 @@
       "CHN": "China",
       "SGP": "Singapore",
       "PRI": "Puerto Rico",
-      "ARG": "Argentina",
+      "ARG": "Argentine",
       "ZAF": "South Africa",
       "VNM": "Vietnam",
-      "ATA": "Antarktica",
+      "ATA": "Antarctis",
       "KOR": "South Korea",
       "BRA": "Brazil",
       "PLW": "Palau",
       "PYF": "French Polynesia",
       "PER": "Peru",
-      "FJI": "Fiji",
+      "FJI": "Fiji Islands",
       "KIR": "Kiribati",
       "FSM": "Micronesia",
-      "VIR": "American Virgin Islands",
+      "VIR": "US Virgin Islands",
       "COK": "Cook Islands",
-      "MNP": "Northern Mariana Islands",
+      "MNP": "Northern Marianas",
       "REU": "Réunion",
       "TZA": "Tanzania",
       "ECU": "Ecuador"
     },
-
     "continent_descriptions": {
-      "africa": "",
-      "north-america": "",
-      "south-america": "",
-      "asia": "",
-      "europe": "",
-      "oceania": "",
+      "africa": "Africa's coasts are least prepared for flooding. According to some estimates, more than 16 million will have to give up their homes by the coast. Only South Africa has responded so far to the rise of sea levels by building dams and resettling the population.",
+      "north-america": "The US East Coast is particularly threatened by climate change. Sea levels are rising. At the same time, the land mass is sinking due to excessive use of groundwater.",
+      "south-america": "There is little data on sea levels in South America. It is obvious though that the continent is threatened by flooding. It was hit by more than 600 extreme climate events from 2000 to 2013, according to the world climate council. No other continent has a higher concentration of population in coastal areas. Millions of people will be impacted by climate change.",
+      "asia": "In our data, the ten most affected cities are in Asia. The continent will be particularly impacted by climate change. Sea levels are rising by one centimeter per year at some locations. The capital Manila is today facing sea levels about 40 centimeter higher than 30 years ago. Several islands will eventually submerge.",
+      "europe": "About 200 million Europeans are living in coastal areas. The impact of climate change vastly differs from country to country. Scandinavia is barely impacted as the land mass there is rising. Meanwhile, sea levels are rising south of Denmark. Europe is most advanced in its measures against rising sea levels. Nevertheless, some coastal cities will have to be abandoned. (For example: the English east coast.)",
+      "oceania": "Australia is one of the world's worst emissions offenders due to its many coal plants. Its own coastal cities are now at stake. The rise of sea levels is particularly strong along its west coast, according to our data, more than ten centimeter at several metering points. Brisbane airport and the port of Melbourne are most threatened, according to the world climate council.",
       "antarctica": ""
     },
-
-    "num_stations": "%{smart_count} station |||| %{smart_count} stations",
-
-    "station_desc_higher": "At the level %{location}, the sea level has risen sharply in recent decades: between 1985 and %{last_available_year} the level changed by %{last_available_value} millimetres. Today, the citizens of these areas experience the most severe flooding and storms, which cause major damage. These places are the first victims of climate change.",
-
-    "station_desc_high": "At the level% {location}, the sea level has increased slightly in recent decades: between 1985 and %{last_available_year}, the level increased by %{last_available_value} millimetres. As climate change continues the sea level will rise further. Storms will become more destructive and more flooding can be expected.",
-
-    "station_desc_flat": "At the level %{location} the sea level has hardly changed in recent decades. This is only the case for a few places globally. But with climate change the sea level will start to rise, with known consequences.",
-
-    "station_desc_low": "At the level %{location} the sea level has slightly declined in recent decades. In %{Last_available_year} the level was around %{last_available_value} millimetres lower than in 1985. This is because the land mass, once weighed down by ice caps several kilometres thick, is still rebounding after the melt at the end of the last ice age. This trend will eventually end and around 95 per cent of these areas will face sea level rise, according to the UN Climate Council.",
-
-    "station_desc_lower": "At the level %{location} the sea level has fallen sharply in recent decades. In %{last_available_year} the level was around %{last_available_value} millimetres lower than in 1985. The land mass here, once compressed by ice caps several kilometres thick, is still expanding after the ice melted.",
-
-    "station_desc_unclear": "We don’t have reliable data for the sea level at %{location} level. This could be because the measuring station moved over the years; or the port was rebuilt; or shaft breakers were used. This means the measurements aren’t consistent. However, according to the unanimous opinion of the UN climate team, the sea will rise almost everywhere globally in the coming decades - and probably in these areas too.",
-
-    "station_desc_unclear_positive": "At the level %{location}, the measured values ​​fluctuate very strongly. The trend indicates a slight increase in seal level. With climate change, the water will rise year by year.",
-
-    "station_desc_unclear_negative": "At the level %{location}, the measured values ​​fluctuate very strongly. The trend indicates a falling sea level. This trend will one day come to an end: around 95 per cent of all coasts will have to cope with higher seas, according to the UN Climate Change team.",
-
-    "risk_desc": "In %{country} %{coastal_population_percent} per cent of the population lives close to the coast. These people are threatened by floods and storms resulting from climate change most frequently.",
-
-    "emissions_desc": "Currently, every inhabitant of %{country} produces %{c02_emissions} tonnes. To mitigate climate change, every human being should not produce more than two tonnes of CO₂ per year, according to a UN estimate. That figure is the equivalent to around 10,000 kilometres driven in a medium sized car. A return flight between Berlin and New York produces around 3.5 tonnes of CO₂ per person, exceeding the yearly cap. ",
-
-    "manila": "Über den Meeresanstieg am Pegel Manila, S. Harbor haben wir keine gesicherten Daten. Während das Wasser ansteigt, senkt sich zugleich die Landmasse in der Bucht stark ab - beide Effekte zusammen führen dazu, dass in der philippinische Hauptstadt das Meer so schnell anwächst wie an kaum einem anderen Ort der Welt."
+    "num_stations": "%{smart_count} Station |||| %{smart_count} Stationen",
+    "station_desc_higher": "At the monitoring point %{location} the sea has risen significantly in recent decades: between 1985 and %{last_available_year} sea levels have changed by %{last_available_value} millimeter. Since the beginning of monitoring, the change has been %{last_available_value_since_beginning} millimeter. It is likely that flooding in this area will increase and storms will cause major damages.",
+    "station_desc_high": "At the monitoring point %{location} the sea has risen slightly in recent decades: between 1985 and %{last_available_year} sea levels have risen by %{last_available_value} millimeter. Since the beginning of recordings, the change has been %{last_available_value_since_beginning} millimeter. Sea levels will continue to rise in this area.",
+    "station_desc_flat": "At the monitoring point %{location} the sea has hardly changed in recent decades. This is an exception. Due to climate change, sea levels will rise here as well in the future.",
+    "station_desc_low": "At the monitoring point %{location} sea levels have slightly receded in recent decades: between 1985 and %{last_available_year} sea levels have fallen by %{last_available_value} millimeter. This is explained by the melting of ice layers that used to be several kilometers thick and are no longer weighing on the land mass. This trend is likely to come to an end. The United Nations' climate council estimates that about 95 percent of coasts will have to cope with rising sea levels.",
+    "station_desc_lower": "At the monitoring point %{location} the sea has fallen significantly in recent decades: between 1985 and %{last_available_year} sea levels have receded by %{last_available_value} millimeter. Since the beginning of monitoring, the change has been %{last_available_value_since_beginning} millimeter. This is explained by the melting of ice layers that used to be several kilometers thick and are no longer weighing on the land mass.",
+    "station_desc_unclear": "There is no reliable data for the monitoring point %{location}. This can be due to several reasons: the monitoring point was moved, the port reconstructed or breakwaters added. According to the UN climate council, sea levels will rise almost everywhere in coming decades. So most likely it will rise here as well.",
+    "station_desc_unclear_positive": "At the monitoring point %{location}, sea levels are fluctuating significantly. These point to a rise in sea levels, which are likely to continue due to climate change.",
+    "station_desc_unclear_negative": "At the monitoring point %{location}, sea levels are fluctuating significantly. This trend points to a fall in sea levels, which is likely to come to an end at some point due to climate change.",
+    "risk_desc": "In %{country}, %{coastal_population_percent} percent of population are living in coastal areas. It is likely that they will increasingly have to cope with flooding and storms due to climate change.",
+    "emissions_desc": "%{country} produces %{c02_emissions} annual tons of carbon dioxide emissions per capita. The UN recommends to limit this to two tons to reduce climate change.",
+    "manila": "There is no reliable data on sea levels at Manila, S. Harbour. Sea levels are rising while at the same time the bay's land mass is sinking. Both effects combined are resulting in the strongest increase in sea levels worldwide."
   }
 }
