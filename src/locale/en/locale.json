@@ -15,7 +15,7 @@
     "aside": {
       "title": "Interactive map",
       "teaser": "Detailed data on how sea levels are changing in your country and worldwide",
-      "url": "https://searise.correctiv.org/de/explore"
+      "url": "https://searise.correctiv.org/en/explore"
     }
   },
   "scrolly": {
@@ -130,7 +130,7 @@
       "oceania": "Australia is one of the world's worst emissions offenders due to its many coal plants. Its own coastal cities are now at stake. The rise of sea levels is particularly strong along its west coast, according to our data, more than ten centimeter at several metering points. Brisbane airport and the port of Melbourne are most threatened, according to the world climate council.",
       "antarctica": ""
     },
-    "num_stations": "%{smart_count} Station |||| %{smart_count} Stationen",
+    "num_stations": "%{smart_count} Station |||| %{smart_count} Stations",
     "station_desc_higher": "At the monitoring point %{location} the sea has risen significantly in recent decades: between 1985 and %{last_available_year} sea levels have changed by %{last_available_value} millimeter. Since the beginning of monitoring, the change has been %{last_available_value_since_beginning} millimeter. It is likely that flooding in this area will increase and storms will cause major damages.",
     "station_desc_high": "At the monitoring point %{location} the sea has risen slightly in recent decades: between 1985 and %{last_available_year} sea levels have risen by %{last_available_value} millimeter. Since the beginning of recordings, the change has been %{last_available_value_since_beginning} millimeter. Sea levels will continue to rise in this area.",
     "station_desc_flat": "At the monitoring point %{location} the sea has hardly changed in recent decades. This is an exception. Due to climate change, sea levels will rise here as well in the future.",

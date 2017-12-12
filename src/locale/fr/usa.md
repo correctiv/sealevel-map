@@ -1,4 +1,5 @@
-### Le naufrage des raffineries de la côte est des Etats-Unis
+### La Côte est des Etats-Unis : beaucoup d'argent pour plus de protection
 
-Les usines sont souvent implantées le long des côtes pour faciliter l’expédition de leur production. Toutefois, d’après nos recherches, les principales compagnies pétrolières de la côte est des Etats-Unis n’ont toujours pas prévu de plan B si leurs usines devaient être envahies par la mer. Elles n'ont pas la volonté d'empêcher un changement climatique qu’elles persistent à ne pas reconnaître. Il est très probable que ce seront les contribuables qui finiront pas payer en cas d'inondations des raffineries consécutives à une tempête.
+[L'Amérique du Nord](https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-uebersicht-nordamerika/) est également menacée par la montée du niveau de la mer. Le dégel du permafrost en Alaska rend les villages inhabitables. Chaque année sur la côte Est, le niveau de la mer continue de monter. À elle seule, la ville de Miami a consacré 100 millions de dollars américains à l'élévation du niveau des routes, à l'installation de pompes de crue et à la protection des réseaux d'égouts contre l'eau de mer. Et ce n'est que le début, les ouragans Harvey et Irma ont causé des dégâts record en 2017.<figure> 
 
+![Inondations dans le New Jersey causées par l'ouragan Sandy](/assets/content/usa.jpg) <figcaption> Les tempêtes menacent la Côte Est. Ici, le New Jersey frappé par l'ouragan Sandy. (Crédits:&nbsp;Doug&nbsp;Mills&nbsp;/&nbsp;Pool&nbsp;/&nbsp;AFP) </figcaption> </figure>

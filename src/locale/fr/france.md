@@ -1,4 +1,5 @@
-### Les plages d'Europe sombrent
+### Les plages d'Europe coulent
 
-Il fut un temps, Palavas-les-Flots était qualifiée de «Floride française». Mais dans les années 1960, le changement climatique lui a occasionné des dommages irréversibles. Les chercheurs ont prédit que la pénurie d’eaux souterraines provoquerait l’érosion des sols et la disparition des plages et de leurs bars et restaurants. Cette ville du sud de la France, comme de nombreuses autres villes côtières d’Europe, devra céder devant la mer.
+La ville du sud de la France [Palavas-les-Flots](https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-suedfrankreich-palavas/) devrait devenir la "Floride française". De nos jours, les experts prophétisent que les plages des stations balnéaires seront englouties, tout comme leurs bars, leurs restaurants et les bateaux, qu'on y loue. Et que les sols de la région seront emportés et l'eau douce près de la côte deviendra de l'eau salée. La Mer du Nord subit le même sort. La récente tempête "Herwart" a détruit environ 80% des plages de l'île de Wangerooge. La partie la plus méridionale de Sylt a dû être évacuée car elle est sur le point de se détacher.<figure> 
 
+![Un panneau de signalisation inondé à Palavas-les-Flots](/assets/content/france.jpg) <figcaption> Terres inondées par la mer Méditerranée (Crédits:&nbsp;Pascal&nbsp;Guyot&nbsp;/&nbsp;AFP) </figcaption> </figure>

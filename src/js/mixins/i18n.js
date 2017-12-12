@@ -1,9 +1,9 @@
 import Polyglot from 'node-polyglot'
 import _ from 'lodash'
 
-import en from 'json!../../locale/en.json'
-import fr from 'json!../../locale/fr.json'
-import de from 'json!../../locale/de.json'
+import en from 'json!../../locale/en/locale.json'
+import fr from 'json!../../locale/fr/locale.json'
+import de from 'json!../../locale/de/locale.json'
 
 export default function (language) {
   return {

@@ -1,4 +1,5 @@
-### C’est en Asie que le niveau de la mer monte le plus rapidement
+### L'Asie est le continent le plus affecté par la montée des eaux
 
-Les dix villes les plus touchées se trouvent en Asie. À Manille, capitale des Philippines – un État composé de 7000 îles entourées par la mer - le niveau de la mer est supérieur de 80 centimètres à celui d’il y a 50 ans. Le changement climatique est une réelle menace pour la métropole, ses 9 millions d’habitants et sa multitude de villes côtières.
+Les dix villes les plus menacées par la montée des eaux se trouvent en Asie. A [Manille](https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-manila/), la capitale des [Philippines](https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-philippinen/), le niveau de la mer est aujourd'hui 80 centimètres plus élevé qu'il y a 50 ans. Neuf millions de personnes en Asie vivent dans des zones essentiellement plates. Beaucoup d'habitants vivent dans des zones qui se trouvent à moins de 10 mètres au-dessus du niveau de la mer. Aucune autre métropole ne se trouve dans une situation aussi préocuppante que Manille.<figure> 
 
+![Un jeune garçon navigue dans un bidonville inondé](/assets/content/manila.jpg) <figcaption> Un bidonville inondé à Manille. (Crédits:&nbsp;Mike&nbsp;Clarke&nbsp;/&nbsp;AFP) </figcaption> </figure>
