@@ -2392,10 +2392,6 @@ grid-index@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/grid-index/-/grid-index-1.0.0.tgz#ad2c5d54ce5b35437faff1d70a9aeb3d1d261110"
 
-gumshoe@cferdinandi/gumshoe:
-  version "3.5.0"
-  resolved "https://codeload.github.com/cferdinandi/gumshoe/tar.gz/28cf9b73c7e2dbaac2c18c1a0d7661753a0a7878"
-
 har-schema@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"
@@ -2640,6 +2636,10 @@ interpret@^0.6.4:
 interpret@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.1.tgz#d579fb7f693b858004947af39fa0db49f795602c"
+
+intersection-observer@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.5.0.tgz#9fe8bee3953c755b1485c38efd9633d535775ea6"
 
 invariant@^2.2.0:
   version "2.2.2"
@@ -4434,6 +4434,12 @@ sax@~1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.2.tgz#fd8631a23bc7826bef5d871bdb87378c95647828"
 
+scrollama@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-1.0.0.tgz#a0f5783a2485d211143509496078d2f68a2bf616"
+  dependencies:
+    intersection-observer "^0.5.0"
+
 "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
@@ -4533,9 +4539,13 @@ slice-ansi@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
-smooth-scroll@cferdinandi/smooth-scroll:
+"smooth-scroll@github:cferdinandi/smooth-scroll":
   version "12.1.5"
   resolved "https://codeload.github.com/cferdinandi/smooth-scroll/tar.gz/f3c1810115cf8c44035278cb6368ccadf5f61e15"
+
+smoothscroll@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/smoothscroll/-/smoothscroll-0.4.0.tgz#40e507b46461408ba1b787d0081e1e883c4124a5"
 
 sntp@1.x.x:
   version "1.0.9"

@@ -8,7 +8,7 @@
 
     <sealevel-scrolly-main id="main" />
 
-    <div class="scrolly__main__world" id="world"></div>
+    <div class="scrolly__main__world step" id="world"></div>
 
     <sealevel-scrolly-info id="info" />
 
@@ -20,8 +20,8 @@
 
   <sealevel-scrolly-outro id="outro" locale={locale} />
 
-  <nav class="scrolly__nav" data-gumshoe-header>
-    <ul data-gumshoe>
+  <nav class="scrolly__nav">
+    <ul>
       <li class="scrolly__nav__item">
         <a class="scrolly__nav__link" href="#intro">
           <b>{i18n.t('scrolly.steps.intro')}</b>
@@ -52,7 +52,7 @@
 
   <script type="text/babel">
     import _ from 'lodash'
-    import gumshoe from 'gumshoe'
+    import scrollama from "scrollama"
     import smoothScroll from 'smooth-scroll'
     import { setStep } from '../../actions/navigation'
     import { STEPS } from '../../routes/'
@@ -63,8 +63,10 @@
     import './scrolly-outro.tag'
     import './scrolly-map.tag'
 
-    const routeTo = (event) => {
-      const active = event && event.target.id
+
+
+  const routeTo = (event) => {
+      const active = event && event.element.id
       const language = this.i18n.getLocale()
       if (active) {
         this.i18n.setLocale(language)
@@ -74,15 +76,11 @@
     }
 
     const initNavigation = () => {
-      smoothScroll('a[href*="#main"]')
+     smoothScroll('a[href*="#main"]')
+     const scroller = scrollama();
 
-      gumshoe.init({
-        offset: 0,
-        container: window,
-        activeClass: 'scrolly__nav__link--active',
-        callback: routeTo,
-        scrollDelay: false
-      })
+     scroller.setup({step: '.step', offset: 0.9})
+             .onStepEnter(routeTo)
     }
 
     // Make steps available in template:

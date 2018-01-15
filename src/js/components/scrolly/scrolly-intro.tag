@@ -1,4 +1,4 @@
-<sealevel-scrolly-intro class={ intro: true, intro--active: opts.active }>
+<sealevel-scrolly-intro class="intro step">
 
   <div class="intro__wrapper">
 
