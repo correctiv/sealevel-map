@@ -38,8 +38,8 @@
     const labels = [{
       data: { lonLat: ['120.968', '14.58'] },
       note: {
-        title: 'Der Pegel Manila',
-        label: 'ist in 30 Jahren um fast 40cm gestiegen.'
+        title: this.i18n.t('scrolly.annotations.manila.city.title'),
+        label: this.i18n.t('scrolly.annotations.manila.city.label')
       },
       dy: 30,
       dx: -30,
@@ -51,8 +51,8 @@
         lonLat: ['120.91', '14.71']
       },
       note: {
-        title: 'Besonders gefährdet',
-        label: 'sind Gebiete unterhalb von 10 Meter über dem Meer.'
+        title: this.i18n.t('scrolly.annotations.manila.region.title'),
+        label: this.i18n.t('scrolly.annotations.manila.region.label')
       },
       dy: 30,
       dx: -30,

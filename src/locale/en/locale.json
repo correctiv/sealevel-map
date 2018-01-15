@@ -38,6 +38,18 @@
       "france": "France",
       "usa": "USA",
       "argentina": "Argentine"
+    },
+    "annotations": {
+      "manila": {
+        "city": {
+          "title": "The sea level in manila",
+          "label": "is 80cm higher today than 50 years ago."
+        },
+        "region": {
+          "title": "Threatened most",
+          "label": "are areas below 10 meters above sea level"
+        }
+      }
     }
   },
   "explorer": {

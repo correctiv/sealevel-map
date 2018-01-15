@@ -40,6 +40,18 @@
       "france": "Frankreich",
       "usa": "USA",
       "argentina": "Argentinien"
+    },
+    "annotations": {
+      "manila": {
+        "city": {
+          "title": "Der Pegel Manila",
+          "label": "ist in 30 Jahren um fast 40cm gestiegen."
+        },
+        "region": {
+          "title": "Besonders gefährdet",
+          "label": "sind Gebiete unterhalb von 10 Meter über dem Meer."
+        }
+      }
     }
   },
 
