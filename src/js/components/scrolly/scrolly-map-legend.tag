@@ -1,13 +1,14 @@
 <sealevel-scrolly-map-legend class="scrolly__map__legend">
   <ul>
     <li class="scrolly__map__legend__item--up">
-      <b>Steigende Pegel</b>
+      <b>{ i18n.t('scrolly.legend.up') }</b>
     </li>
     <li class="scrolly__map__legend__item--down">
-      <b>Sinkende Pegel</b>
+      <b>{ i18n.t('scrolly.legend.down') }</b>
     </li>
     <li class="scrolly__map__legend__item--area">
-      <b>Gefährdete Bewohner</b> (unter 10m über dem Meer)
+      <b>{ i18n.t('scrolly.legend.area.title') }</b>
+      { i18n.t('scrolly.legend.area.body') }
     </li>
   </ul>
 </sealevel-scrolly-map-legend>

@@ -50,6 +50,14 @@
           "label": "are areas below 10 meters above sea level"
         }
       }
+    },
+    "legend": {
+      "up": "Rising sea levels",
+      "down": "Sinking sea levels",
+      "area": {
+        "title": "Threatened areas",
+        "body": "(below ten meters above sea)"
+      }
     }
   },
   "explorer": {

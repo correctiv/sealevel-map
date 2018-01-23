@@ -52,6 +52,14 @@
           "label": "sind Gebiete unterhalb von 10 Meter über dem Meer."
         }
       }
+    },
+    "legend": {
+      "up": "Steigende Pegel",
+      "down": "Sinkende Pegel",
+      "area": {
+        "title": "Gefährdete Bewohner",
+        "body": "(unter 10m über dem Meer)"
+      }
     }
   },
 
