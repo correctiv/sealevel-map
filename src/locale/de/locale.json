@@ -51,6 +51,12 @@
           "title": "Besonders gefährdet",
           "label": "sind Gebiete unterhalb von 10 Meter über dem Meer."
         }
+      },
+      "argentina": {
+        "parana": {
+          "title": "Das Paraná-Delta",
+          "label": "Hier werden Slums und Golfplätze untergehen."
+        }
       }
     },
     "legend": {

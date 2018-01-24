@@ -58,6 +58,19 @@
       dx: -30,
       type: customAnnotation,
       color: 'black'
+    },
+    {
+      data: {
+        lonLat: ['-60', '-33.33']
+      },
+      note: {
+        title: this.i18n.t('scrolly.annotations.argentina.parana.title'),
+        label: this.i18n.t('scrolly.annotations.argentina.parana.label')
+      },
+      dy: -40,
+      dx: -60,
+      type: customAnnotation,
+      color: 'black'
     }]
 
     const isMoving = () => {

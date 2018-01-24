@@ -49,6 +49,12 @@
           "title": "Threatened most",
           "label": "are areas below 10 meters above sea level"
         }
+      },
+      "argentina": {
+        "parana": {
+          "title": "In the Parana delta",
+          "label": "rich and poor alike will have to relocate"
+        }
       }
     },
     "legend": {
