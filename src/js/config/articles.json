@@ -54,7 +54,60 @@
     }
   },
 
-  "fr": {},
-
-  "en": {}
+  "en": {
+    "main": {
+      "title": "Read our overview about rising seas worldwide",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-overview-world/"
+    },
+    "europe": {
+      "title": "Read more about rising sea levels in Europe",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-riese-europe-overview/"
+    },
+    "africa": {
+      "title": "Read more about rising sea levels in Africa",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-africa-overview/"
+    },
+    "north-america": {
+      "title": "Read more about rising sea levels in North America",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-usa-overview/"
+    },
+    "ARG": {
+      "title": "Read more about rising sea levels in South America",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-argentina-delta-rio-parana/"
+    },
+    "FIN": {
+      "title": "Read more about rising sea levels in Finland",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-finnland-sweden/"
+    },   
+    "FRA": {
+      "title": "Read more about rising sea levels in France",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-france-palavas-les-flots/"
+    },
+    "ISL": {
+      "title": "Read more about rising sea levels in Iceland",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-iceland/"
+    },
+    "JPN": {
+      "title": "Read more about rising sea levels in Japan",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-japan-Okinotorishima/"
+    },
+    "PHL": {
+      "title": "Read more about rising sea levels in the Philipines",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-philippines/"
+    },
+    "RUS": {
+      "title": "Read more about rising sea levels in Russia",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-russia-st-petersburg/"
+    },
+    "SWE": {
+      "title": "Read more about rising sea levels in Sweden",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-finnland-sweden/"
+    },
+    "145": {
+      "title": "Read more about rising sea levels in Manila",
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-manila-capital-sinking/"
+    }    
+  },
+  
+  "fr": {}
 }
