@@ -6,9 +6,9 @@
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@mapbox/gl-matrix/-/gl-matrix-0.0.1.tgz#e5126aab4d64c36b81c7a97d0ae0dddde5773d2b"
 
-"@mapbox/mapbox-gl-language@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@mapbox/mapbox-gl-language/-/mapbox-gl-language-0.9.0.tgz#b6121a88f76a2dcb5fcb317fdd6b2dbefd8f13ca"
+"@mapbox/mapbox-gl-language@git+ssh://git@github.com:mapbox/mapbox-gl-language.git#9410fd13ce5ef47b90f91bb9af363557614b360b":
+  version "0.9.2"
+  resolved "git+ssh://git@github.com:mapbox/mapbox-gl-language.git#9410fd13ce5ef47b90f91bb9af363557614b360b"
 
 "@mapbox/shelf-pack@^3.0.0":
   version "3.0.0"
@@ -2392,9 +2392,9 @@ grid-index@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/grid-index/-/grid-index-1.0.0.tgz#ad2c5d54ce5b35437faff1d70a9aeb3d1d261110"
 
-gumshoe@cferdinandi/gumshoe:
-  version "3.5.0"
-  resolved "https://codeload.github.com/cferdinandi/gumshoe/tar.gz/28cf9b73c7e2dbaac2c18c1a0d7661753a0a7878"
+"gumshoe@github:cferdinandi/gumshoe":
+  version "3.5.1"
+  resolved "https://codeload.github.com/cferdinandi/gumshoe/tar.gz/2435337eaf6df585660cfbc96b74270b9d7fd644"
 
 har-schema@^1.0.5:
   version "1.0.5"
@@ -4533,9 +4533,13 @@ slice-ansi@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
-smooth-scroll@cferdinandi/smooth-scroll:
-  version "12.1.5"
-  resolved "https://codeload.github.com/cferdinandi/smooth-scroll/tar.gz/f3c1810115cf8c44035278cb6368ccadf5f61e15"
+"smooth-scroll@github:cferdinandi/smooth-scroll":
+  version "14.2.0"
+  resolved "https://codeload.github.com/cferdinandi/smooth-scroll/tar.gz/07fef210ee0df7be26dc287af972bd8f681d9cbf"
+
+smoothscroll@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/smoothscroll/-/smoothscroll-0.4.0.tgz#40e507b46461408ba1b787d0081e1e883c4124a5"
 
 sntp@1.x.x:
   version "1.0.9"

@@ -167,7 +167,8 @@
 
         // Localize map labels
         map.addControl(new MapboxglLanguage({
-          defaultLanguage: this.i18n.getLocale()
+          defaultLanguage: this.i18n.getLocale(),
+          excludedLayerIds: ['port-cities-west-lg', 'port-cities-east-lg', 'port-cities-west-sm', 'port-cities-east-sm']
         }))
 
         // Disable map rotation using right click + drag
