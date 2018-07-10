@@ -14,6 +14,7 @@
 
   <script type="text/babel">
     import mapboxgl from 'mapbox-gl'
+    import MapboxglLanguage from '@mapbox/mapbox-gl-language'
     import _ from 'lodash'
     import config from 'json!../../config/main.json'
     import { requestStationList } from '../../actions/explorer'
@@ -115,11 +116,18 @@
     const renderMap = () => {
       mapboxgl.accessToken = config.mapbox.accessToken
 
+      // Initialize map
       const map = new mapboxgl.Map({
         container: 'scrolly__map',
         style: config.mapbox.style,
         zoom: 3
       })
+
+      // Localize map labels
+      map.addControl(new MapboxglLanguage({
+        defaultLanguage: this.i18n.getLocale(),
+        excludedLayerIds: ['port-cities-west-lg', 'port-cities-east-lg', 'port-cities-west-sm', 'port-cities-east-sm']
+      }))
 
       map.on('load', () => {
         // disable map zoom when using scroll
