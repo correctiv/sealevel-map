@@ -23,3 +23,18 @@
   padding-bottom: 10px;
   border-bottom: 1px solid $gray;
 }
+
+.explorer__credits {
+  margin-top: 1em;
+
+  ul,
+  li,
+  h4 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: $font-family-accent;
+    font-size: $font-size-accent;
+    color: $gray-dark;
+  }
+}

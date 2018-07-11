@@ -54,6 +54,15 @@
         { i18n.t('explorer.download_meta') }
       </span>
     </a>
+
+    <div class="explorer__credits">
+      <h4>{ i18n.t('credits.title') }</h4>
+      <ul>
+        <li>{ i18n.t('credits.developer') }</li>
+        <li>{ i18n.t('credits.designer') }</li>
+        <li>{ i18n.t('credits.editor') }</li>
+      </ul>
+    </div>
   </div>
 
   <script type="text/babel">

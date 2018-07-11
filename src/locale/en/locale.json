@@ -169,5 +169,11 @@
     "risk_desc": "In %{country}, %{coastal_population_percent} percent of population are living in coastal areas. It is likely that they will increasingly have to cope with flooding and storms due to climate change.",
     "emissions_desc": "%{country} produces %{c02_emissions} annual tons of carbon dioxide emissions per capita. The UN recommends to limit this to two tons to reduce climate change.",
     "manila": "There is no reliable data on sea levels at Manila, S. Harbour. Sea levels are rising while at the same time the bay's land mass is sinking. Both effects combined are resulting in the strongest increase in sea levels worldwide."
+  },
+  "credits": {
+    "title": "Credits",
+    "designer": "Visual design: Nadine Stammen",
+    "developer": "Redaktion: Annika Joeres",
+    "editor": "Data analysis and web development: Felix Michel, Simon Jockers"
   }
 }
