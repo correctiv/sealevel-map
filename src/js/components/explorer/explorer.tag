@@ -45,6 +45,15 @@
       tides={ getTidesForStation(state.station) }
       path-to-country={ routes.country }
     />
+
+    <a class="explorer__download" href="{ i18n.t('explorer.download_link') }" target="_blank">
+      <h4 class="explorer__download__title">
+        { i18n.t('explorer.download_text') }
+      </h4>
+      <span class="explorer__download__meta">
+        { i18n.t('explorer.download_meta') }
+      </span>
+    </a>
   </div>
 
   <script type="text/babel">

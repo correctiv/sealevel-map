@@ -69,7 +69,8 @@
   "explorer": {
     "title": "Rising sea levels",
     "intro": "Here you can track the change in sea levels at 500 monitoring points worldwide. To start, chose a continent from the list.",
-    "download_text": "Download the data",
+    "download_text": "Download data set",
+    "download_meta": "CSV · 315KB · updated November 2017",
     "download_link": "/data/sealevel_data_download.csv",
     "choose_continent": "Chose a continent",
     "start": "Start",

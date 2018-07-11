@@ -4,7 +4,6 @@
     <h2 class="explorer__intro__title">{ i18n.t('explorer.title') }</h2>
     <p>{ i18n.t('explorer.intro') }</p>
     <sealevel-article-link for={'main'} />
-    <p><a href="{ i18n.t('explorer.download_link') }" target="_blank">{ i18n.t('explorer.download_text') }</a></p>
   </div>
 
   <h2 class="explorer__title">{ i18n.t('explorer.choose_continent') }</h2>
@@ -21,7 +20,7 @@
       </a>
     </li>
   </ul>
-
+  
   <script type="text/babel">
     import _ from 'lodash'
     import '../common/article-link.tag'

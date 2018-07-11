@@ -1,0 +1,41 @@
+.explorer__download {
+  display: block;
+  min-height: 60px;
+  margin-top: 1em;
+  padding: 15px 60px 15px 15px;
+  background-image: url("../assets/images/download.svg");
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-color: $gray-lighter;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $gray-light;
+  }
+}
+
+.explorer__download__title {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-title;
+  font-size: $font-size-h4;
+  color: $black;
+}
+
+.explorer__download__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-family: $font-family-title;
+  font-size: $font-size-h4;
+  color: $black;
+}
+
+.explorer__download__meta {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-family: $font-family-accent;
+  font-size: $font-size-accent;
+  color: $gray-dark;
+}

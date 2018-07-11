@@ -72,7 +72,8 @@
   "explorer": {
     "title": "Steigende Meere",
     "intro": "Hier erfährst du, wie sich der Meeresspiegels verändert – an 500 Messpunkten weltweit. Wähle einen Kontinent aus der Liste um anzufangen.",
-    "download_text": "Lade die Daten unserer Recherche herunter",
+    "download_text": "Datensatz herunterladen",
+    "download_meta": "CSV · 315KB · Stand: November 2017",
     "download_link": "/data/sealevel_data_download.csv",
     "choose_continent": "Wähle einen Kontinent",
     "start": "Start",

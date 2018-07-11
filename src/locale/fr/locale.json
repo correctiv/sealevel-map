@@ -70,6 +70,7 @@
     "title": "Quand les mers montent",
     "intro": "Ici vous pouvez suivre l'évolution des niveaux de la mer à partir de 500 points de contrôle dans le monde entier. Pour commencer, choisissez un continent dans la liste.",
     "download_text": "Télécharger les données",
+    "download_meta": "CSV · 315KB · updated November 2017",
     "download_link": "/data/sealevel_data_download.csv",
     "choose_continent": "Choisissez un continent",
     "start": "Commencer",

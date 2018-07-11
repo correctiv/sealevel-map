@@ -20,15 +20,15 @@
   &:hover,
   &:active,
   &:focus {
-    margin: -1px -25px +1px -25px;
+    margin: -1px -25px 0 -25px;
     padding: 0.5em 25px;
-    background-color: $gray-light;
+    background-color: $gray-lighter;
     border-top: 1px solid $gray;
     color: $gray-dark;
   }
 
   &:after {
-    content: '⟩';
+    content: "⟩";
     position: absolute;
     top: 1.5em;
     right: 0;
@@ -55,27 +55,27 @@
 
 .entries__item--change-lower {
   @extend .entries__item--change;
-  background-image: url('../assets/images/arrow_lower_bc.svg');
+  background-image: url("../assets/images/arrow_lower_bc.svg");
 }
 
 .entries__item--change-low {
   @extend .entries__item--change;
-  background-image: url('../assets/images/arrow_low_bc.svg');
+  background-image: url("../assets/images/arrow_low_bc.svg");
 }
 
 .entries__item--change-flat {
   @extend .entries__item--change;
-  background-image: url('../assets/images/arrow_flat_bc.svg');
+  background-image: url("../assets/images/arrow_flat_bc.svg");
 }
 
 .entries__item--change-high {
   @extend .entries__item--change;
-  background-image: url('../assets/images/arrow_high_bc.svg');
+  background-image: url("../assets/images/arrow_high_bc.svg");
 }
 
 .entries__item--change-higher {
   @extend .entries__item--change;
-  background-image: url('../assets/images/arrow_higher_bc.svg');
+  background-image: url("../assets/images/arrow_higher_bc.svg");
 }
 
 .entries__title {
@@ -101,5 +101,4 @@
   .entries__item--change & {
     padding-left: 60px; // make space for the change indicator
   }
-
 }
