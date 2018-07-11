@@ -13,7 +13,7 @@
 
   <sealevel-article-link for={ opts.station.id } />
 
-  <a href={ routeBack(opts.station.country) }>
+  <a class="explorer__back-link" href={ routeBack(opts.station.country) }>
     { i18n.t('explorer.back') }
     { i18n.t('explorer.countries.' + opts.station.country) }
   </a>

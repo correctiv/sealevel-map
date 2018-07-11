@@ -13,3 +13,13 @@
   line-height: 1.2;
   color: $gray-dark;
 }
+
+.explorer__back-link {
+  &:before {
+    content: "⤎";
+  }
+
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $gray;
+}
