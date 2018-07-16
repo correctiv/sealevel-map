@@ -1,4 +1,5 @@
 <sealevel-explorer-overview>
+  <sealevel-language-switch route={languageSwitcherRoute} />
 
   <div class="explorer__intro">
     <h2 class="explorer__intro__title">{ i18n.t('explorer.title') }</h2>
@@ -23,7 +24,11 @@
   
   <script type="text/babel">
     import _ from 'lodash'
+    import * as routes from '../../routes/'
     import '../common/article-link.tag'
+    import '../common/language-switch.tag'
+
+    this.languageSwitcherRoute = routes.routeToExplorer
 
     this.on('update', () => {
       this.continents = _.groupBy(this.opts.stations, 'continent')
