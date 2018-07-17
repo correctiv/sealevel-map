@@ -1,6 +1,10 @@
-<sealevel-language-switch>
+<sealevel-language-switch class="language-switch">
 
-  <select onchange={selectLanguage} value={currentLanguage}>
+  <select 
+    class="language-switch__select" 
+    onchange={selectLanguage} 
+    value={currentLanguage}
+  >
     <option each={locales} value={locale}>{title}</option>
   </select>
 
