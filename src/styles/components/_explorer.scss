@@ -1,3 +1,17 @@
+.explorer__header {
+  display: block;
+  position: relative;
+}
+
+.explorer__header__logo {
+  display: block;
+  height: 36px;
+  background: url("../assets/images/logo-correctiv-small.svg") no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .explorer__intro__title {
   margin: 0;
   padding: 1em 0 0 0;

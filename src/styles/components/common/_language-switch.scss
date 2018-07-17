@@ -1,8 +1,10 @@
 .language-switch {
   display: block;
   line-height: 1.5em;
-  position: relative;
-  width: 10em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7em;
   color: $gray-dark;
 
   &:after {

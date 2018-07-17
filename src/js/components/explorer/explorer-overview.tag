@@ -1,8 +1,14 @@
 <sealevel-explorer-overview>
-  <sealevel-language-switch route={languageSwitcherRoute} />
+
+  <header class="explorer__header">
+    <a class="explorer__header__logo" href="https://correctiv.org">
+      CORRECTIV
+    </a>
+    <sealevel-language-switch route={languageSwitcherRoute} />
+  </header>
 
   <div class="explorer__intro">
-    <h2 class="explorer__intro__title">{ i18n.t('explorer.title') }</h2>
+    <h1 class="explorer__intro__title">{ i18n.t('explorer.title') }</h1>
     <p>{ i18n.t('explorer.intro') }</p>
     <sealevel-article-link for={'main'} />
   </div>
@@ -27,6 +33,8 @@
     import * as routes from '../../routes/'
     import '../common/article-link.tag'
     import '../common/language-switch.tag'
+
+    require('../../../assets/images/logo-tageswoche.svg')
 
     this.languageSwitcherRoute = routes.routeToExplorer
 
