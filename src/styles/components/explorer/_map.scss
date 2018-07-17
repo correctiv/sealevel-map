@@ -1,18 +1,25 @@
 .explorer__map {
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   z-index: 2;
   position: fixed;
+
+  .mapboxgl-ctrl-bottom-left {
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+    left: auto;
+  }
 }
 
 .explorer__map__legend {
   position: fixed;
   width: 40%;
   max-width: 270px;
-  bottom: 35px;
-  left: 40px;
+  top: 15px;
+  right: 15px;
   z-index: 3;
   font-size: $font-size-accent;
   font-family: $font-family-accent;
@@ -20,7 +27,7 @@
   text-shadow: 0 0 5px white;
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     width: 25px;
     height: 25px;
@@ -42,9 +49,9 @@
 
 @keyframes highlight-fade {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }

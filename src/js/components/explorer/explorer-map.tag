@@ -92,7 +92,7 @@
       this.map.fitBounds(bounds, {
         duration: 1000,
         maxZoom: 7,
-        offset: [-200, 0]
+        offset: [200, 0]
       })
     }
 

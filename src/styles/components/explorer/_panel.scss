@@ -2,18 +2,20 @@
   display: block;
   padding: 25px;
   background: $white;
+  min-height: 100vh;
 
   @include mq($screen-s) {
     position: absolute;
-    width: 100%;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 100;
     width: 50%;
   }
 
   @include mq($screen-m) {
-    margin: 25px;
+    margin: 15px;
     width: 450px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: auto;
   }
 }
