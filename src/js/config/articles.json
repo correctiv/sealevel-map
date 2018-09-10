@@ -78,7 +78,7 @@
     "FIN": {
       "title": "Read more about rising sea levels in Finland",
       "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-finnland-sweden/"
-    },   
+    },
     "FRA": {
       "title": "Read more about rising sea levels in France",
       "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-france-palavas-les-flots/"
@@ -106,8 +106,9 @@
     "145": {
       "title": "Read more about rising sea levels in Manila",
       "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-manila-capital-sinking/"
-    }    
+    }
   },
-  
-  "fr": {}
+
+  "fr": {},
+  "ko": {}
 }

@@ -1,8 +1,8 @@
 <sealevel-language-switch class="language-switch">
 
-  <select 
-    class="language-switch__select" 
-    onchange={selectLanguage} 
+  <select
+    class="language-switch__select"
+    onchange={selectLanguage}
     value={currentLanguage}
   >
     <option each={locales} value={locale}>{title}</option>
@@ -13,7 +13,8 @@
 
     this.locales = [
       {title: 'Deutsch', locale: 'de'},
-      {title: 'English', locale: 'en'}
+      {title: 'English', locale: 'en'},
+      {title: 'Korean', locale: 'ko'}
     ]
 
     this.selectLanguage = ({ target }) => {
