@@ -27,7 +27,7 @@
       </a>
     </li>
   </ul>
-  
+
   <script type="text/babel">
     import _ from 'lodash'
     import * as routes from '../../routes/'

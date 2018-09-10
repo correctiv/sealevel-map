@@ -124,8 +124,10 @@
       })
 
       // Localize map labels
+      let lang = this.i18n.getLocale()
+      lang = lang !== 'ko' ? lang : 'en'
       map.addControl(new MapboxglLanguage({
-        defaultLanguage: this.i18n.getLocale(),
+        defaultLanguage: lang,
         excludedLayerIds: ['port-cities-west-lg', 'port-cities-east-lg', 'port-cities-west-sm', 'port-cities-east-sm']
       }))
 
