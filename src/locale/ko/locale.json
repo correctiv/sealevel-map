@@ -1,83 +1,83 @@
 {
   "intro": {
     "title": "해수면 상승",
-    "lead": "전 세계 70 여 만 곳의 해수면 높이(sea level) 관측소에서 해수면 상승이 관측되고 있다.  기후변화는 해안 지대에 영향을 미쳐왔다. 해수면 상승은 해안선 유실, 섬의 수몰, 해안 지역 침수를 야기해 수억 명의 삶에 엄청난 영향을 미칠 것이다.",
-    "more": "Learn more",
-    "logo_alt": "A project by CORRECTIV"
+    "lead": "전 세계 70여 만 곳의 해수면 높이(sea level) 관측소에서 해수면 상승이 관측되고 있다. 기후변화는 해안 지대에 영향을 미쳐왔다. 해수면 상승은 해안선 유실, 섬의 수몰, 해안 지역 침수를 야기해 수억 명의 삶에 엄청난 영향을 미칠 것이다.",
+    "more": "더 알아보기",
+    "logo_alt": "코렉티브(CORRECTIV) 프로젝트"
   },
   "outro": {
-    "more": "Learn more",
+    "more": "자세히 알아보기",
     "main": {
       "title": "해수면 상승이 전 세계에 미치는 영향",
-      "teaser": "More about this project",
+      "teaser": "이 프로젝트에 대해 더 알아보기",
       "url": "https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-ueberblick-weltweit/"
     },
     "aside": {
-      "title": "Interactive map",
+      "title": "인터렉티브 지도",
       "teaser": "국가별 & 전지구적 해수면 변동 상세 자료",
       "url": "https://searise.correctiv.org/ko/explore"
     }
   },
   "scrolly": {
-    "title": "A treasure of data available for the first time",
-    "authors": "by",
-    "introduction": "This publication highlights the impact the climate has on our lives. A rise in temperatures by one degree celsius has changed our coasts. Warmer air and melting glaciers are driving up sea levels. This data analysis by CORRECTIV shows how sea levels have been rising around the world for more than a hundred years. ",
-    "partners": "In cooperation with:",
-    "info_lead": "We have put the 500 most documented monitoring points on a map. Red points show rising sea levels and blue points show a rise of the land mass. In Northern Europe, glaciers are receding, thereby reducing pressure on the land mass, which is rising. In both cases, locals need to cope with changing sea levels.",
-    "info_content": "A key reason for the rise of global sea levels is carbon dioxide emissions. The emissions have contributed to a one degree rise in global temperatures over the last century. Oceans have absorbed 80 percent of additional temperatures. Warmer water is expanding, flooding coastal areas. At the same time, glaciers are melting, increasing the volume of the oceans. Despite this dramatic trend, the world is still not united on the questions of whether to limit the global rise in temperatures to two degree celsius.",
+    "title": "최초로 공개되는 데이터의 보고(寶庫)",
+    "authors": "취재:",
+    "introduction": "이 보도는 기후가 우리 삶에 미치는 영향을 보여주고 있다. 지구 온도가 1℃ 상승할 때마다 해안에 변화가 일어났다. 기온 상승과 해빙으로 해수면이 급격하게 상승하고 있다. 코렉티브가 분석한 데이터는 지난 백여 년 간에 걸친 전 세계 해수면의 변화 추세를 보여준다. ",
+    "partners": "협업:",
+    "info_lead": "코렉티브는 관측 자료를 가장 많이 보유한 관측소 500곳을 지도에 표시했다. 빨간색 점은 해수면 상승, 파란색 점은 지반 융기가 일어난 지점을 나타낸다. 북유럽에서는 빙하가 녹으면서 지표를 누르던 압력이 감소해 지반이 융기하고 있다. 해수면 상승이나 지반 융기가 발생하는 경우, 해당 지역 주민들은 해수면 변화에 대처해야 한다.",
+    "info_content": "전세계 해수면 상승의 주요 원인은 이산화탄소 배출이다. 이산화탄소 배출로 인해 지구 온도는 지난 백 년 사이에 1℃가 상승했다. 기온 상승분의 80퍼센트는 바다가 흡수했다. 수온 상승으로 바닷물이 팽창하면서 해안 침수가 발생하고 있다. 동시에 빙하의 해빙으로 바다의 부피가 늘어나고 있다. 이러한 극적인 추세에도 불구하고, 세계는 여전히 지구 온도 상승을 2℃ 이내로 제한하는 문제에 대해 합의하지 못하고 있다.",
     "info_figcaption": "",
-    "restart": "Play again",
-    "period": "1985 to 2015",
+    "restart": "다시 재생하기",
+    "period": "1985년에서 2015년 사이",
     "steps": {
-      "intro": "Start",
-      "main": "Introduction",
-      "world": "Rising sea levels",
-      "info": "Background",
-      "manila": "The Philippines",
-      "scandinavia": "Scandinavia",
-      "france": "France",
-      "usa": "USA",
-      "argentina": "Argentine"
+      "intro": "시작",
+      "main": "소개",
+      "world": "해수면 상승",
+      "info": "배경",
+      "manila": "필리핀",
+      "scandinavia": "스칸디나비아",
+      "france": "프랑스",
+      "usa": "미국",
+      "argentina": "아르헨티나"
     },
     "annotations": {
       "manila": {
         "city": {
-          "title": "The sea level in manila",
-          "label": "is 80cm higher today than 50 years ago."
+          "title": "필리핀 수도 마닐라의 해수면은",
+          "label": "50년 전보다 80㎝나 상승했다."
         },
         "region": {
-          "title": "Threatened most",
-          "label": "are areas below 10 meters above sea level"
+          "title": "가장 위협받고 있는",
+          "label": "해수면보다 10미터 정도 높은 지역이다."
         }
       },
       "argentina": {
         "parana": {
-          "title": "In the Parana delta",
-          "label": "rich and poor alike will have to relocate"
+          "title": "파라나 삼각주에서는",
+          "label": "기후변화로 인한 이주는 빈부에 상관없이 일어날 것이다."
         }
       }
     },
     "legend": {
-      "up": "Rising sea levels",
-      "down": "Sinking sea levels",
+      "up": "해수면 상승",
+      "down": "해수면 하강",
       "area": {
-        "title": "Threatened areas",
-        "body": "(below ten meters above sea)"
+        "title": "위협받는 지역들",
+        "body": "해발 10미터 미만"
       }
     }
   },
   "explorer": {
     "title": "해수면 상승",
     "intro": "인터랙티브를 통해 전 세계 500개 관측소의 해수면 변화를 추적해 보십시오(이 인터랙티브를 이용해 전 세계 관측소 5백 곳의 해수면 변화를 추적할 수 있습니다). 먼저, 목록에서 대륙을 선택하십시오.",
-    "download_text": "Download data set",
-    "download_meta": "CSV · 315KB · updated November 2017",
+    "download_text": "데이터 다운로드받기",
+    "download_meta": "CSV · 315KB · 2017년 11월 업데이트함",
     "download_link": "/data/sealevel_data_download.csv",
-    "choose_continent": "Choose a continent",
-    "start": "Start",
-    "sealevel_change": "Change since 1985",
+    "choose_continent": "대륙을 선택하세요",
+    "start": "시작",
+    "sealevel_change": "1985년 이후 변화 (mm 단위)",
     "linechart_axis": "mm",
-    "back": "Back to overview",
-    "legend": "Inhabited areas below ten meters above the sea level",
+    "back": "처음으로 돌아가기",
+    "legend": "해발 10미터 미만 거주지역",
     "continents": {
       "africa": "아프리카(AFRICA)",
       "north-america": "북미(NORTH AMERICA)",
@@ -149,7 +149,7 @@
       "ECU": "에콰도르"
     },
     "continent_descriptions": {
-      "africa": "아프리카 해안은 홍수 대비가 가장 뒤쳐져 있다. 기후변화로 인한 해안 지대 강제 이주 인구는 1천 6백만명 이상이 될 것으로 추정된다. 아프리카 국가 중 남아프리카 공화국이 유일하게 댐 건설과 주민 이주를 통해 해수면 상승에 대비하고 있다.",
+      "africa": "아프리카 해안은 홍수 대비가 가장 뒤쳐져 있다. 기후변화로 인한 해안 지대 강제 이주 인구는 1천 6백만명 이상이 될 것으로 추정된다. 아프리카 국가 중 남아프리카 공화국이 현재까지 유일하게 댐 건설과 주민 이주를 통해 해수면 상승에 대비하고 있다.",
       "north-america": "미국 동부 해안은 기후변화의 위협을 크게 받고 있다. 해수면 상승과 더불어 지하수 남용에 따른 지반 침하 현상이 발생하고 있다.",
       "south-america": "남미의 경우 해수면 관련 자료가 거의 존재하지 않는다. 하지만 남미 역시 홍수 위협에서 자유롭지 않은 것은 분명하다.  Climate Council에 따르면, 2000년에서 2013년 사이 남미 지역에서 6백여 건의 이상 기후현상이 발생했다. 남미는 해안에 거주하는 인구 비중이 세계에서 가장 높다. 수 백만명에 달하는 해안 거주 인구가 기후변화에 의한 영향을 받게 될 것이다.",
       "asia": "코렉티브 자료에 따르면, 가장 취약한 도시 10곳이 아시아에 위치해 있다. 아시아는 기후변화에 특히 많은 영향을 받을 것으로 예상된다. 일부 지역에서는 해수면이 매년 1㎝씩 높아지고 있다. 마닐라의 해수면은 30년 전에 비해 40㎝가 높아졌다. 결국 몇몇 섬은 바다에 잠기게 될 것이다.",
@@ -172,8 +172,8 @@
   },
   "credits": {
     "title": "출처",
-    "designer": "Visual design: Nadine Stammen",
-    "editor": "Data analysis and web development: Felix Michel, Simon Jockers",
-    "developer": "Redaktion: Annika Joeres"
+    "designer": "시각화 디자인: Nadine Stammen",
+    "editor": "편집: Annika Joeres",
+    "developer": "데이터 시각화와 웹 개발: Felix Michel, Simon Jockers"
   }
 }
