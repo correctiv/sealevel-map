@@ -10,6 +10,7 @@ export const REQUEST_STATION_LIST_DATA = 'REQUEST_STATION_LIST_DATA'
 export const RECEIVE_STATION_LIST_DATA = 'RECEIVE_STATION_LIST_DATA'
 
 const CONTEXT_SRC = '/data/sealevel_context_data.csv'
+const CONTEXT_SRC_KO = '/data/sealevel_context_data_korean.csv'
 const FULL_TIMESERIES_SRC = '/data/sealevel_viz_whole_timeseries.csv'
 
 const shouldFetchOverviewData = ({ isFetchingOverviewData, items }) => (
@@ -108,7 +109,8 @@ const prepareOverviewData = (stations) => {
 const fetchStationListData = (options) => dispatch => {
   dispatch(requestStationListData())
 
-  d3.csv(CONTEXT_SRC, (context) => {
+  const DATA_SRC = options.locale === 'ko' ? CONTEXT_SRC_KO : CONTEXT_SRC
+  d3.csv(DATA_SRC, (context) => {
     const stations = prepareOverviewData(context)
     dispatch(receiveStationListData(stations))
     dispatch(showStationList(options))

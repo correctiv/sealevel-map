@@ -88,23 +88,23 @@
     })
 
     route('*/explore/stations/*', (locale, id) => {
-      this.dispatch(requestStationList({ station: id }))
+      this.dispatch(requestStationList({ station: id, locale}))
     })
 
     route('*/explore/countries/*', (locale, id) => {
-      this.dispatch(requestStationList({ country: id }))
+      this.dispatch(requestStationList({ country: id, locale }))
     })
 
     route('*/explore/start', (locale) => {
-      this.dispatch(requestStationList())
+      this.dispatch(requestStationList({ locale }))
     })
 
     route('*/explore/*', (locale, id) => {
-      this.dispatch(requestStationList({ continent: id }))
+      this.dispatch(requestStationList({ continent: id, locale }))
     })
 
     route('*/explore/', (locale) => {
-      this.dispatch(requestStationList())
+      this.dispatch(requestStationList({ locale }))
     })
 
     route.exec()

@@ -46,7 +46,7 @@
 
     this.on('mount', () => {
       this.map = renderMap()
-      this.store.dispatch(requestStationList())
+      this.store.dispatch(requestStationList({ locale: this.i18n.getLocale() }))
     })
 
     const BREAKPOINT = 1100
