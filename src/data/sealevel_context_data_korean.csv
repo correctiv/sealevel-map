@@ -1,0 +1,519 @@
+id,location,Korean,country,continent
+1,Brest,브레스트,FRA,europe
+61,Marseille,마르세유,FRA,europe
+453,Le Havre,르 아브르,FRA,europe
+467,Cherbourg,셰르부르,FRA,europe
+468,Dunkerque,됭케르크,FRA,europe
+469,St Jean De Luz (Socoa),생 장 드 뤼즈,FRA,europe
+471,Boulogne,블로뉴,FRA,europe
+474,Dieppe,디에프,FRA,europe
+1247,Port Tudy,뽀흐 뚜디,FRA,europe
+1294,Le Conquet,르 꽁께,FRA,europe
+1347,Roscoff,호스꼬프,FRA,europe
+1468,Nice,니스,FRA,europe
+1469,Port Vendres,뽀흐 벙드흐,FRA,europe
+1801,Boucau,부꼬,FRA,europe
+3,Sheerness,쉬어니스,GBR,europe
+5,Holyhead,홀리헤드,GBR,europe
+95,North Shields,노스 쉴즈,GBR,europe
+202,Newlyn,뉴린,GBR,europe
+255,Dover,도버,GBR,europe
+286,Immingham,이밍햄,GBR,europe
+314,Stornoway,스토너웨이,GBR,europe
+350,Portsmouth,포츠머스,GBR,europe
+361,Aberdeen I,애버딘 1,GBR,europe
+754,Lowestoft,로웨스터프,GBR,europe
+755,Millport,밀포트,GBR,europe
+830,Lerwick,러윅,GBR,europe
+936,Heysham,헤이샴,GBR,europe
+982,Devonport,데본포트,GBR,europe
+1109,Wick,윅,GBR,europe
+1112,Ullapool,울라풀,GBR,europe
+1215,Portpatrick,포트패트릭,GBR,europe
+1505,Whitby,휘트비,GBR,europe
+7,Cuxhaven 2,쿡스하펜 2,DEU,europe
+8,Wismar 2,비스마르 2,DEU,europe
+11,Warnemunde 2,바르네뮌데 2,DEU,europe
+397,Sassnitz,자스니츠,DEU,europe
+1036,Amrum (Wittduen),암룸(비트뒨),DEU,europe
+1037,Borkum (Fischerbalje),보르쿰섬(피셔발제),DEU,europe
+1448,Koserow,코제로브,DEU,europe
+9,Maassluis,마슬루이스,NLD,europe
+20,Vlissingen,블리싱언,NLD,europe
+22,Hoek Van Holland,훅 반 홀란드,NLD,europe
+23,Den Helder,덴 헬데르,NLD,europe
+24,Delfzijl,델프제일,NLD,europe
+25,Harlingen,하를링언,NLD,europe
+32,Ijmuiden,에이마위던,NLD,europe
+236,West-Terschelling,베스트-테르스헬링,NLD,europe
+10,San Francisco,샌프란시스코,USA,north-america
+12,New York (The Battery),뉴욕(배터리 시티),USA,north-america
+112,Fernandina Beach,퍼난디나 비치,USA,north-america
+127,Seattle,시애틀,USA,north-america
+135,Philadelphia (Pier 9N),필라델피아(피어 9N),USA,north-america
+148,Baltimore,볼티모어,USA,north-america
+155,Honolulu,호놀루루,USA,north-america
+158,San Diego (Quarantine Station),샌디에이고(검역소),USA,north-america
+161,"Galveston Ii, Pier 21, Tx",갤버스턴 2,USA,north-america
+180,Atlantic City,아틀란틱 시티,USA,north-america
+183,Portland (Maine),포틀랜드(메인 주),USA,north-america
+188,Key West,키 웨스트,USA,north-america
+224,Lewes (Breakwater Harbor),루이스(브레이크워터 항),USA,north-america
+225,Ketchikan,케치칸,USA,north-america
+234,Charleston I,찰스턴 1,USA,north-america
+235,Boston,보스턴,USA,north-america
+245,Los Angeles,로스 엔젤레스,USA,north-america
+246,Pensacola,펜사콜라,USA,north-america
+256,La Jolla (Scripps Pier),라 호이야(스크립스 피어),USA,north-america
+265,Astoria (Tongue Point),아스토리아(텅 포인트),USA,north-america
+266,Seward,슈어드,USA,north-america
+299,"Sewells Point, Hampton Roads",스웰스 포인트(햄프턴 로드),USA,north-america
+300,"Hilo, Hawaii Island",힐로(하와이 섬),USA,north-america
+311,Annapolis (Naval Academy),아나폴리스(해군사관학교),USA,north-america
+332,Eastport,이스트포트,USA,north-america
+351,Newport,뉴포트,USA,north-america
+360,Washington Dc,워싱턴 DC,USA,north-america
+366,Sandy Hook,샌디 훅,USA,north-america
+367,Woods Hole (Ocean. Inst.),우즈 홀,USA,north-america
+377,Santa Monica (Municipal Pier),산타 모니카(뮤니시펄 피어),USA,north-america
+378,Crescent City,크레센트 시티,USA,north-america
+384,Friday Harbor (Ocean. Labs.),프라이데이 하버(해양연구소),USA,north-america
+385,Neah Bay,네아 베이,USA,north-america
+395,Fort Pulaski,포트 풀라스키,USA,north-america
+396,Wilmington,윌밍턴,USA,north-america
+405,Juneau,주노,USA,north-america
+412,Solomon'S Island (Biol. Lab.),솔로몬 섬(생물학 연구소),USA,north-america
+426,Sitka,싯카,USA,north-america
+428,Cedar Key Ii,시더 키 2,USA,north-america
+429,New London,뉴 런던,USA,north-america
+430,Providence (State Pier),프로비던스(스테이트 피어),USA,north-america
+437,Alameda (Naval Air Station),앨러미다 해군기지,USA,north-america
+445,Yakutat,야쿠탓,USA,north-america
+487,Adak Sweeper Cove,스위퍼 후미,USA,north-america
+495,Skagway,스캐그웨이,USA,north-america
+497,Port Isabel,포트 이사벨,USA,north-america
+508,Port San Luis,포트 산 루이스,USA,north-america
+519,Montauk,몬타우크,USA,north-america
+520,St. Petersburg,세인트 피터즈버그,USA,north-america
+521,"Kahului Harbor, Maui Island",카홀루이 하버(마우이 섬),USA,north-america
+525,"Bar Harbor, Frenchman Bay, Me",바 하버(프렌치 만),USA,north-america
+526,Grand Isle,그랜드 아일,USA,north-america
+538,Rockport,록포트,USA,north-america
+566,Cordova,코도바,USA,north-america
+567,"Kodiak Island, Womens Bay",코디악 섬,USA,north-america
+636,Kiptopeke Beach,킵토피크 비치,USA,north-america
+756,"Nawiliwili Bay, Kauai Island",나윌리윌리 베이(카우아이 섬),USA,north-america
+757,Unalaska,어널래스카,USA,north-america
+786,Reedy Point,리디 포인트,USA,north-america
+823,Mokuoloe Island,모쿠오로에 섬,USA,north-america
+828,"Galveston I, Pleasure Pier, Tx",갤버스턴 1,USA,north-america
+1067,Anchorage,앵커리지,USA,north-america
+1068,Bridgeport,브리지포트,USA,north-america
+1070,Seldovia,셀도비아,USA,north-america
+1106,Fort Myers,포트 마이어스,USA,north-america
+1107,Naples,네이플스,USA,north-america
+1111,Nantucket Island,난터켓 섬,USA,north-america
+1153,Cape May,케이프 메이,USA,north-america
+1156,Dauphin Island,도핀 아일랜드,USA,north-america
+1193,Apalachicola,아팔라치코라,USA,north-america
+1196,South Beach,사우스 비치,USA,north-america
+1269,Charleston Ii,찰스턴 2,USA,north-america
+1295,Cambridge Ii,캠브리지 2,USA,north-america
+1325,Port Townsend,포트 타운센드,USA,north-america
+1352,Monterey,몬터레이,USA,north-america
+1353,Valdez,발데즈,USA,north-america
+1354,"Toke Point, Willipa Bay, Wa",토크 포인트(윌리파 베이),USA,north-america
+1394,Point Reyes,포인트 레예스,USA,north-america
+1444,Springmaid Pier,스프링메이드 피어,USA,north-america
+1633,Cherry Point,체리 포인트,USA,north-america
+1634,"Sand Point, Popof Is., Ak",샌드 포인트(포포스 섬),USA,north-america
+1635,Chesapeake Bay Br. Tun.,체서피크 베이 브릿지,USA,north-america
+1636,Duck Pier Outside,덕 피어,USA,north-america
+1637,"Bergen Point, Staten Is.",베르겐 포인트(스태튼 아일랜드),USA,north-america
+1638,Clearwater Beach,클리어워터 비치,USA,north-america
+1639,"N. Spit, Humboldt Bay",노스 스피트(훔볼트 만),USA,north-america
+1640,Port Orford,포트 오르포드,USA,north-america
+1641,"Panama City, St.Andrews Bay, Fl",파나마시티(세인트 앤드류 만),USA,north-america
+2127,"Port Angeles, Washington",포트 엔젤레스(워싱턴 주),USA,north-america
+2295,"Beaufort, North Carolina",보퍼트(노스캐롤라이나 주),USA,north-america
+2324,"Lewisetta, Virginia",루이세타(버지니아 주),USA,north-america
+2330,"Port Chicago, California",포트 시카고(캘리포니아 주),USA,north-america
+14,Helsinki,헬싱키,FIN,europe
+57,Vaasa / Vasa,바사,FIN,europe
+71,Hanko / Hango,항코,FIN,europe
+79,Oulu / Uleaborg,오울루,FIN,europe
+172,Mantyluoto,맨투르토,FIN,europe
+194,Pietarsaari / Jakobstad,피에타사리,FIN,europe
+229,Kemi,케미,FIN,europe
+239,Turku / Abo,투르쿠,FIN,europe
+240,Raahe / Brahestad,라헤,FIN,europe
+285,Kaskinen / Kasko,카스키넨,FIN,europe
+315,Hamina,하미나,FIN,europe
+376,Rauma / Raumo,라우마,FIN,europe
+33,Oscarsborg,오스카보리,NOR,europe
+45,Kabelvag,카벨보그,NOR,europe
+47,Stavanger,스타방에르,NOR,europe
+58,Bergen,베르겐,NOR,europe
+62,Oslo,오슬로,NOR,europe
+302,Tregde,트레그데,NOR,europe
+312,Narvik,나르비크,NOR,europe
+313,Heimsjo,하임스조,NOR,europe
+425,Andenes,안데스,NOR,europe
+486,Maloy,말로이,NOR,europe
+509,Alesund,알레순트,NOR,europe
+524,Vardo,바르되,NOR,europe
+562,Bodo,보되,NOR,europe
+680,Tromso,트롬쇠,NOR,europe
+681,Harstad,하르스타,NOR,europe
+682,Kristiansund,크리스티안순,NOR,europe
+758,Hammerfest,함메르페스트,NOR,europe
+1113,Helgeroa,헬게루아,NOR,europe
+1241,Rorvik,로르비크,NOR,europe
+41,Poti,포티,GEO,asia
+51,Batumi,바투미,GEO,asia
+69,Olands Norra Udde,올랑드 북곶,SWE,europe
+70,Kungsholmsfort,쿵스홀름스포트,SWE,europe
+78,Stockholm,스톡홀름,SWE,europe
+88,Ratan,라탄,SWE,europe
+179,Smogen,스모겐,SWE,europe
+203,Furuogrund,푸루오그란드,SWE,europe
+330,Klagshamn,클락스함,SWE,europe
+1211,Spikarna,스피까나,SWE,europe
+1236,Goteborg - Torshamnen,예테보리,SWE,europe
+2101,Kalix,칼릭스,SWE,europe
+2103,Forsmark,포스마크,SWE,europe
+2104,Marviken,마르비켄,SWE,europe
+2105,Visby,비스뷔,SWE,europe
+2106,Oskarshamn,오스카르스함,SWE,europe
+2107,Simrishamn,심리스함,SWE,europe
+2110,Viken,비켄,SWE,europe
+2111,Ringhals,링할스,SWE,europe
+2112,Stenungsund,스텐웅순드,SWE,europe
+2113,Kungsvik,쿵스비크,SWE,europe
+76,Aarhus,오르후스,DNK,europe
+80,Esbjerg,에스비에르,DNK,europe
+81,Fredericia,프레데리시아,DNK,europe
+82,Kobenhavn,쾨벤하운,DNK,europe
+89,Hirtshals,히르트샬,DNK,europe
+91,Frederikshavn,프레데릭스하운,DNK,europe
+98,Slipshavn,슬립스하운,DNK,europe
+113,Korsor,코르소르,DNK,europe
+119,Hornbaek,혼백,DNK,europe
+120,Gedser,게세르,DNK,europe
+703,Hanstholm,한스홀름,DNK,europe
+762,Rodbyhavn,뢰드비하운,DNK,europe
+1197,Fynshav,퓐샤브,DNK,europe
+96,Halifax,핼리팩스,CAN,north-america
+126,Trois-Rivieres,트루아-리비에르,CAN,north-america
+137,Port-Saint-Francois,포트-생-프헝쑤와,CAN,north-america
+144,Batiscan,바티스껑,CAN,north-america
+165,Tofino,토피노,CAN,north-america
+166,Victoria,빅토리아,CAN,north-america
+167,Prince Rupert,프린스 루퍼트,CAN,north-america
+173,Quebec (Lauzon),퀘벡(로종),CAN,north-america
+175,Vancouver,밴쿠버,CAN,north-america
+192,Neuville,뇌빌르,CAN,north-america
+193,Point Atkinson,포인트 앳킨슨,CAN,north-america
+195,"Saint John, N.B.",세인트 존,CAN,north-america
+201,Deschaillons,데샤이용,CAN,north-america
+392,Port Aux Basques,포르 오 바스크,CAN,north-america
+393,"St. John'S, Nfld.",세인트 존스,CAN,north-america
+427,Charlottetown,샬럿타운,CAN,north-america
+447,Churchill,처칠,CAN,north-america
+829,Queen Charlotte City,퀸 샬로트 시티,CAN,north-america
+984,Bella Bella,벨라 벨라,CAN,north-america
+999,St-Francois,셍-프헝쑤와,CAN,north-america
+1071,Port Hardy,포트 하디,CAN,north-america
+1152,Patricia Bay,페트리시아 베이,CAN,north-america
+1158,Yarmouth,야머스,CAN,north-america
+1213,Riviere-Au-Renard,히비에흐-오-흐노,CAN,north-america
+1242,Bamfield,뱀필드,CAN,north-america
+1244,St-Joseph-De-La-Rive,셍-조세프-드-라-히브,CAN,north-america
+1245,New Westminster,뉴 웨스트민스터,CAN,north-america
+1299,North Sydney,노스 시드니,CAN,north-america
+1321,Argentia,아르겐샤,CAN,north-america
+1322,Sept-Iles,세뜨-일르,CAN,north-america
+1323,Campbell River,캠벨리버,CAN,north-america
+1349,Lower Escuminac,로우어 에스쿠미낙,CAN,north-america
+1392,Port-Alfred,포트 알프레드,CAN,north-america
+1597,Rimouski,히무스끼,CAN,north-america
+111,Fremantle,프리맨틀,AUS,oceania
+189,Port Hedland,포트 헤들랜드,AUS,oceania
+196,"Sydney, Fort Denison 2",시드니(포트 데니슨 2),AUS,oceania
+216,Port Pirie,포트 피리,AUS,oceania
+230,Port Lincoln,포트 링컨,AUS,oceania
+448,Port Adelaide (Outer Harbor),포트 애들레이드(외항),AUS,oceania
+564,Mackay,매카이,AUS,oceania
+637,Townsville I,타운스빌 1,AUS,oceania
+822,Brisbane (West Inner Bar),브리즈번(웨스트 이너 바),AUS,oceania
+825,Gladstone,글래드스톤,AUS,oceania
+834,Bunbury,번버리,AUS,oceania
+835,Karumba,카룸바,AUS,oceania
+837,Newcastle V,뉴캐슬 5,AUS,oceania
+953,Cairns,케언스,AUS,oceania
+1069,Victor Harbour,빅터 하버,AUS,oceania
+1115,Carnarvon,카나본,AUS,oceania
+1116,Wyndham,윈덤,AUS,oceania
+1154,"Bundaberg, Burnett Heads",번다버그(버넷 헤드),AUS,oceania
+1157,Weipa,웨이파,AUS,oceania
+1246,Hay Point,헤이 포인트,AUS,oceania
+1328,Cape Lambert,케이브 램버트,AUS,oceania
+1420,Wallaroo Ii,왈라우 2,AUS,oceania
+1549,King Bay,킹 만,AUS,oceania
+1629,Mourilyan Harbour,모릴얀 하버,AUS,oceania
+1630,Lucinda,루신다,AUS,oceania
+1631,Onslow,온슬로,AUS,oceania
+2316,Port Stephens (Tomaree),포트 스테판스(토마리),AUS,oceania
+118,Klaipeda,클라이페다,LTU,europe
+130,Aburatsubo,아부라쓰,JPN,asia
+131,Ayukawa,아유카와,JPN,asia
+132,Wajima,와지마,JPN,asia
+133,Hosojima,호소지마,JPN,asia
+134,Kushimoto,구시모토,JPN,asia
+359,Mera,메라,JPN,asia
+407,Uchiura,우치우라,JPN,asia
+518,Kushiro,구시로,JPN,asia
+635,Onahama,오나하마,JPN,asia
+701,Kainan,가이난,JPN,asia
+721,Asamushi,아사무시,JPN,asia
+722,Yokosuka,요코스카,JPN,asia
+752,Nezugaseki,네즈가세키,JPN,asia
+753,Kashiwazaki,가시와자키,JPN,asia
+808,Shimizu-Minato,시미즈-미나토,JPN,asia
+809,Komatsushima,고마쓰시마,JPN,asia
+810,Misumi,미스미,JPN,asia
+811,Sakai,사카이,JPN,asia
+812,Uno,우노,JPN,asia
+813,Hakodate I,하코다테 1,JPN,asia
+814,Aburatsu,아부라쓰보,JPN,asia
+815,Tosa Shimizu,도사 시미즈,JPN,asia
+816,Wakayama,와카야마,JPN,asia
+817,Tan-Nowa,단노와,JPN,asia
+1026,Onisaki,오니사키,JPN,asia
+1027,Oshoro Ii,오쇼로 2,JPN,asia
+1028,Hirosima,히로시마,JPN,asia
+1060,Miyake Sima,미야케 시마,JPN,asia
+1062,Matsuyama Ii,마쓰야마 2,JPN,asia
+1089,Maisaka,마이사카,JPN,asia
+1090,Uragami,우라가미,JPN,asia
+1091,Okada,오카다,JPN,asia
+1093,Awa Sima,아와시마 섬,JPN,asia
+1094,Hakata,하카타,JPN,asia
+1095,Saigo,사이고,JPN,asia
+1096,Nisinoomote,니시노오모테,JPN,asia
+1097,Odomari,오도마리,JPN,asia
+1098,Sumoto,스모토,JPN,asia
+1099,Osaka,오사카,JPN,asia
+1100,Nagasaki,나가사키,JPN,asia
+1101,Fukue,후쿠에,JPN,asia
+1102,Oura,오우라,JPN,asia
+1103,Wakkanai,와카나이,JPN,asia
+1104,Abashiri,아바시리,JPN,asia
+1105,Nakano Sima,나카노시마,JPN,asia
+1146,Owase,오와세,JPN,asia
+1147,Sasebo Ii,사세보 2,JPN,asia
+1148,Tajiri,다지리,JPN,asia
+1149,Miyako Ii,미야코 2,JPN,asia
+1150,Shirahama,시라하마,JPN,asia
+1151,Naha,나하,JPN,asia
+1190,Mikuni,미쿠니,JPN,asia
+1191,Katsuura,가쓰우라,JPN,asia
+1209,Kure Iv,구레 4,JPN,asia
+1210,Tokuyama Ii,도큐야마 2,JPN,asia
+1212,Uwajima Ii,우와지마 2,JPN,asia
+1263,Omaezaki Ii,오마에지카 2,JPN,asia
+1264,Oga,오가,JPN,asia
+1265,Akune,아쿠네,JPN,asia
+1266,Hachinohe Ii,하치노헤 2,JPN,asia
+1293,Oita Ii,오이타 2,JPN,asia
+1318,Kariya,가리야,JPN,asia
+1320,Kure I,구레 1,JPN,asia
+1343,Ito Ii,이토 2,JPN,asia
+1344,Ogi,오기,JPN,asia
+1345,Soma,소마,JPN,asia
+1346,Kamaisi Ii,가마이시 2,JPN,asia
+1364,Ofunato Ii,오후나토 2,JPN,asia
+1386,Kuchinotsu,구치노쓰,JPN,asia
+1387,Maizuru Ii,마이즈루 2,JPN,asia
+1388,Okinawa,오키나와,JPN,asia
+1389,Toyama,도야마,JPN,asia
+1390,Murotomisaki,무로토미사키,JPN,asia
+1391,Chichijima,지치지마,JPN,asia
+1437,Tago,다고,JPN,asia
+1438,Yaizu,야이즈,JPN,asia
+1440,Kaminato Ii (Hatizyo Sima),가미나토 2(하치조섬),JPN,asia
+1442,Hanasaki Ii,하나사키 2,JPN,asia
+1488,Nagoya Ii,나고야2,JPN,asia
+1522,Nase Iii,나세 3,JPN,asia
+1544,Choshi-Gyoko,조시-쿄코,JPN,asia
+1545,Tokyo Iii,도쿄 3,JPN,asia
+1567,Kochi Iii,고치 3,JPN,asia
+1585,Hamada Ii,하마다 2,JPN,asia
+1586,Izuhara Ii,이즈하라 2,JPN,asia
+1587,Tappi,타피,JPN,asia
+136,Dunedin Ii,더니든 2,NZL,oceania
+213,Bluff (Southland Harbour),블러프,NZL,oceania
+221,Wellington Harbour,웰링턴 하버,NZL,oceania
+787,Nelson,넬슨,NZL,oceania
+996,Port Taranaki,포트 타라나키,NZL,oceania
+1065,Whangarei Harbour (Marsden Point),황가레이 하버(마스든 포인트),NZL,oceania
+1590,Tauranga (Salisbury Wharf),타우랑가(솔즈베리 워프),NZL,oceania
+1643,Port Chalmers,포트 찰머스,NZL,oceania
+145,"Manila, S. Harbor",마닐라(사우스 하버),PHL,asia
+394,Cebu,세부,PHL,asia
+522,"Legaspi, Albay",레가스피,PHL,asia
+537,"Davao, Davao Gulf",다바오 만,PHL,asia
+154,Trieste,트리에스테,ITA,europe
+163,Balboa,발보아,PAN,north-america
+174,Ko Lak,카오락,THA,asia
+444,Fort Phrachula Chomklao (Pom Phrachun),포트 쁘라출라 촘크라오(뽐 뿌라춘),THA,asia
+446,Ko Taphao Noi,코 타파오 노이,THA,asia
+205,Chennai,첸나이,IND,asia
+369,Garden Reach,가든 리치,IND,asia
+414,Visakhapatnam,비샤카파트남,IND,asia
+438,Cochin (Willingdon Is.),코친(윌링던 섬),IND,asia
+543,Diamond Harbour,디아먼드 하버,IND,asia
+1161,Paradip,파라딥,IND,asia
+1270,Haldia,할디아,IND,asia
+1395,Okha,오카다,IND,asia
+1423,Mangalore (Panamburu),망갈로르,IND,asia
+215,Tuapse,투압세,RUS,europe
+569,Tiksi (Tiksi Bukhta),틱시 만,RUS,europe
+599,Amderma,암데르마,RUS,europe
+600,Ust Kara,우스트 카라,RUS,europe
+601,Fedorova (Cheluskin Mys),페토로바(첼류스킨곶),RUS,europe
+602,Sannikova (Sannikova Proliv),산나코바 해협,RUS,europe
+604,Ambarchik,암바르치크,RUS,europe
+605,Rau-Chua,라우-추아,RUS,europe
+606,Pevek,페베크,RUS,europe
+612,Sterlegova (Sterlegova Mys),스띨리그바 곶,RUS,europe
+640,Dunai (Dunai Ostrov),두나이 섬,RUS,europe
+641,Kotelnyi (Kotelnyi Ostrov),코텔니 섬,RUS,europe
+642,Kigiliah,기길라얘,RUS,europe
+684,Murmansk,무르만스크,RUS,europe
+704,Vise (Vise Ostrov),비스 섬,RUS,europe
+728,Izvestia Tsik (Izvestia Tsik Ostrova),크라스노야르스크크레이 섬,RUS,europe
+729,Golomianyi (Golomianyi Ostrov),글로미얀네 섬,RUS,europe
+824,Petropavlovsk-Kamchatsky,페트로파블로프스크-캄차츠키,RUS,europe
+827,Nagaevo,나가예프 만,RUS,europe
+917,Sopochnaia Karga,소포시네 까르가,RUS,europe
+248,Johor Bahru,조호르바루,MYS,asia
+1589,Tanjung Gelang,탄중 겔랑,MYS,asia
+1591,Pelabuhan Kelang,포트 클랑,MYS,asia
+1592,Cendering,센더링,MYS,asia
+1593,Tanjung Keling,탄중 켈링,MYS,asia
+1594,Lumut,루무트,MYS,asia
+1595,Pulau Pinang,풀라우 피낭,MYS,asia
+249,Foglo / Degerby,포글로,ALA,europe
+258,Ponta Delgada,폰타 델가다,PRT,europe
+352,Split - Gradska Luka,스플리트 -그라드스카 루카,HRV,europe
+353,Bakar,바카르,HRV,europe
+685,Split Rt Marjana,스플리트 르트 마흐야나,HRV,europe
+760,Dubrovnik,두브로브니크,HRV,europe
+761,Rovinj,로빈,HRV,europe
+368,St. Georges / Esso Pier (Bermuda),세인트 조지스(에소 피어),BMU,north-america
+373,Thessaloniki,테살로니키,GRC,europe
+374,Piraievs,피레아스,GRC,europe
+375,Kavalla,카발라,GRC,europe
+408,Khios,키오스,GRC,europe
+409,Posidhonia,포시도니아,GRC,europe
+410,Preveza,프레베자,GRC,europe
+411,Kalamai,칼라마타,GRC,europe
+634,Iraklion,헤라클리온,GRC,europe
+1232,Soudhas,수다,GRC,europe
+1233,Leros,레로스,GRC,europe
+1234,Siros,시로스,GRC,europe
+1237,Khalkis North,할키다 노스,GRC,europe
+1238,Alexandroupolis,알렉산드로폴리스,GRC,europe
+1239,Levkas,레프카다,GRC,europe
+1240,Katakolon,카타콜론,GRC,europe
+1441,Khalkis South,할키다 사우스,GRC,europe
+413,Oostende,오스텐트,BEL,europe
+470,Zeebrugge,브뤼허,BEL,europe
+489,Nieuwpoort,니우포르트,BEL,europe
+431,Montevideo (Punta Lobos),몬테비데오,URY,south-america
+764,La Paloma,라 팔로마,URY,south-america
+483,Vigo,비고,ESP,europe
+484,La Coruna I,라 코루냐 1,ESP,europe
+485,Santander I,산탄데르 1,ESP,europe
+488,Tarifa,타리파,ESP,europe
+496,Malaga,말라가,ESP,europe
+498,Ceuta,세우타,ESP,europe
+593,Arrecife,아레시페,ESP,europe
+985,Cadiz Iii,카디스 3,ESP,europe
+499,Valparaiso,발파라조,CHL,south-america
+510,Antofagasta 2,안토파가스타 2,CHL,south-america
+1272,Easter Island-E,이스터 섬-E,CHL,south-america
+1644,Juan Fernandez-C,후안 페르난데스-C,CHL,south-america
+2261,Iquique Ii,이키케 2,CHL,south-america
+2262,Corral Ii,코랄 2,CHL,south-america
+513,Kwajalein,콰잘레인,MHL,oceania
+595,Wake Island,웨이크 섬,MHL,oceania
+523,Midway Island,미드웨이 섬,UMI,north-america
+539,Pago Pago,파고파고,ASM,oceania
+540,"Apra Harbour, Guam",아프라 하버,GUM,oceania
+541,Barentsburg,바렌츠부르크,SJM,europe
+1421,Ny-Alesund,뉘-올레순,SJM,europe
+563,Gibara,히바라,CUB,north-america
+1297,Cabo De San Antonio,카보 데 산 안토니오,CUB,north-america
+2021,Casilda Ii,까실다 2,CUB,north-america
+638,Reykjavik,레이캬비크,ISL,europe
+723,Dalian,다롄,CHN,asia
+933,Zhapo,자포,CHN,asia
+934,Kanmen,칸먼,CHN,asia
+979,Lusi,루쓰,CHN,asia
+724,Sembawang,셈바왕,SGP,asia
+1248,Sultan Shoal,술탄 쇼얼,SGP,asia
+1351,Raffles Light House,래플스 등대,SGP,asia
+759,Magueyes Island,메구예스 아일랜드,PRI,north-america
+1001,San Juan,산 후안,PRI,north-america
+819,Mar Del Plata (Naval Base),마르 델 플라타(해군기지),ARG,south-america
+832,Palermo,팔레르모,ARG,south-america
+820,Port Elizabeth,포트 엘리자베스,ZAF,africa
+826,Simons Bay,시몬스 베이,ZAF,africa
+836,Port Nolloth,포트 놀로스,ZAF,africa
+910,Mossel Bay,모셀 베이,ZAF,africa
+1192,East London,이스트 런던,ZAF,africa
+1195,Cape Town (Granger Bay),케이프타운,ZAF,africa
+841,Hondau,혼자우,VNM,asia
+1003,Honngu,헌누,VNM,asia
+1449,Quinhon,꾸이년,VNM,asia
+1475,Danang,다낭,VNM,asia
+1495,Vungtau,붕따우,VNM,asia
+913,Argentine Islands,아르헨티나 군도,ATA,antarctica
+954,Mokpo,목포,KOR,asia
+955,Busan,부산,KOR,asia
+956,Incheon,인천,KOR,asia
+997,Ulsan,울산,KOR,asia
+1066,Jeju,제주,KOR,asia
+1108,Mukho,묵호,KOR,asia
+1155,Yeosu,여수,KOR,asia
+1324,Pohang,포항,KOR,asia
+1365,Sokcho,속초,KOR,asia
+1445,Gadeokdo,가덕도,KOR,asia
+1446,Tongyeong,통영,KOR,asia
+1489,Heuksando,흑산도,KOR,asia
+1490,Ulleung,울릉,KOR,asia
+1527,Gunsan (Outer Port),군산(외항),KOR,asia
+1546,Geomundo,거문도,KOR,asia
+1568,Wando,완도,KOR,asia
+1588,Chujado,추자도,KOR,asia
+1627,Seogwipo,서귀포,KOR,asia
+1628,Wido,위도,KOR,asia
+1032,Ilha Fiscal,일하 피스칼,BRA,south-america
+1252,Malakal-B,말라칼-B,PLW,oceania
+1253,Rikitea,리키테아,PYF,oceania
+1397,"Papeete-B, Fare Ute Point, Soc.Is.",파파에테-B(파레 우테 포인트),PYF,oceania
+1274,Callao 2,카야오 2,PER,south-america
+1327,Suva-A,수바-A,FJI,oceania
+1329,Kanton Island-B,칸톤 섬-B,KIR,oceania
+1371,Christmas Island Ii,크리스마스 섬 2,KIR,oceania
+1370,Pohnpei-B,폰페이-B,FSM,oceania
+1473,Kapingamarangi,카핑가마랑지(미크로네시아 환초),FSM,oceania
+1393,Charlotte Amalie,샬롯 아말리에,VIR,north-america
+1447,"Lime Tree Bay, St Croix",라임 트리 베이(세인트 크루아),VIR,north-america
+1450,Penrhyn,펜린,COK,oceania
+1474,Saipan,사이판,MNP,oceania
+1501,Pointe Des Galets,뿌앙뜨 데 걀레,REU,africa
+1600,Zanzibar,잔지바르,TZA,africa
+1645,Baltra-B,발트라-B,ECU,south-america
