@@ -10,7 +10,7 @@
     "main": {
       "title": "Comment la montée du niveau de la mer change le monde",
       "teaser": "En savoir plus sur ce projet",
-      "url": "https://correctiv.org/recherchen/klima/artikel/2017/07/28/steigende-meere-ueberblick-weltweit/"
+      "url": "https://correctiv.org/en/investigations/climate/article/2017/07/28/sea-rise-overview-world/"
     },
     "aside": {
       "title": "Carte interactive",
@@ -175,5 +175,5 @@
     "designer": "Visual design: Nadine Stammen",
     "developer": "Redaktion: Annika Joeres",
     "editor": "Data analysis and web development: Felix Michel, Simon Jockers"
-  }  
+  }
 }
