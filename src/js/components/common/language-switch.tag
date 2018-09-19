@@ -14,6 +14,7 @@
     this.locales = [
       {title: 'Deutsch', locale: 'de'},
       {title: 'English', locale: 'en'},
+      {title: 'French', locale: 'fr'},
       {title: 'Korean', locale: 'ko'}
     ]
 
