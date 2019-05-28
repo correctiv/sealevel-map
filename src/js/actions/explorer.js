@@ -100,8 +100,8 @@ const prepareOverviewData = (stations) => {
     location: station.location,
     longitude: station.longitude,
     total_population2010_sum: station.total_population2010_sum,
-    trend_1985_2015: station.trend_1985_2015,
-    trend_longest: station.trend_longest,
+    trend: Number(station.trend),
+    trend_str: `${Number(station.trend) > 0 ? '+' : ''}${Number(station.trend).toFixed(1)}`,
     timeseries: getTimeseriesForStation(station)
   }))
 }

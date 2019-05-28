@@ -20,7 +20,7 @@
           { station.location }
         </h4>
         <p class="entries__description">
-          { this.i18n.t('explorer.sealevel_change', { change: getChangeValue(station) }) }
+          { this.i18n.t('explorer.sealevel_change', { trend_str: station.trend_str }) }
         </p>
       </a>
     </li>
@@ -31,10 +31,10 @@
     import '../common/article-link.tag'
 
     const SCALE = [
-      { threshold: -60, className: 'entries__item--change-lower' },
-      { threshold: -15, className: 'entries__item--change-low' },
-      { threshold: +15, className: 'entries__item--change-flat' },
-      { threshold: +60, className: 'entries__item--change-high' },
+      { threshold: -2, className: 'entries__item--change-lower' },
+      { threshold: -0.5, className: 'entries__item--change-low' },
+      { threshold: +0.5, className: 'entries__item--change-flat' },
+      { threshold: +2, className: 'entries__item--change-high' },
       { threshold: Infinity, className: 'entries__item--change-higher' }
     ]
 
@@ -53,11 +53,9 @@
       }
     })
 
-    this.getChangeValue = ({ timeseries }) => _.last(timeseries)
-
     this.getChangeIndicator = (station) => {
-      const amplitude = this.getChangeValue(station)
-      const scaleItem = _.find(SCALE, ({ threshold }) => amplitude < threshold)
+      // use the recent trend (last 30 years) to indicate change
+      const scaleItem = _.find(SCALE, ({ threshold }) => station.trend < threshold)
       return scaleItem.className
     }
 

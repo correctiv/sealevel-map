@@ -30,7 +30,7 @@
   </svg>
 
   <span if={highlight} class="linechart__tooltip" style={getTooltipStyle()}>
-    {highlight.value}&nbsp;mm
+    {highlight.key} <strong>{highlight.value}&nbsp;mm</strong>
   </span>
 
   <script type="text/babel">
@@ -62,7 +62,7 @@
         .defined(d => d.value !== null)
         .x(d => xScale(d.key))
         .y(d => yScale(d.value))
-        .curve(d3.curveNatural)
+        .curve(d3.curveMonotoneX)
 
       container.selectAll('g, path, text').remove()
 
@@ -132,7 +132,8 @@
         highlight: {
           x: xScale(key),
           y: yScale(value),
-          value
+          value,
+          key
         }
       })
     }

@@ -15,10 +15,10 @@
 
     const scale = [
       [-Infinity, '#469e9f'],
-      [-60, '#7aa1a3'],
-      [-15, '#9fa4a6'],
-      [+15, '#9f7b7e'],
-      [+60, '#9d474b']
+      [-2, '#7aa1a3'],
+      [-0.5, '#9fa4a6'],
+      [+0.5, '#9f7b7e'],
+      [+2, '#9d474b']
     ]
 
     const zoomThreshold = 4
@@ -68,7 +68,7 @@
           properties: {
             id: station.id,
             title: station.location,
-            amplitude: parseFloat(_.last(station.timeseries), 10)
+            trend: Number(station.trend)
           }
         }))
       }
@@ -137,7 +137,7 @@
           paint: {
             'circle-radius': 3,
             'circle-color': {
-              property: 'amplitude',
+              property: 'trend',
               type: 'interval',
               stops: scale
             }
@@ -155,7 +155,7 @@
           paint: {
             'circle-radius': 6,
             'circle-color': {
-              property: 'amplitude',
+              property: 'trend',
               type: 'interval',
               stops: scale
             }

@@ -27,6 +27,7 @@
     const sign = x => ((x > 0) - (x < 0)) || +x
 
     const getStationDesc = (trend, tide) => {
+      trend = Number(trend)  // FIXME
       if (!trend) {
         return 'explorer.station_desc_unclear'
       }
@@ -69,7 +70,7 @@
         if (station.id === '145') {
           this.stationDesc = this.i18n.t('explorer.manila')
         } else {
-          const stationDesc = getStationDesc(station.trend_longest, tide)
+          const stationDesc = getStationDesc(station.trend, tide)
           this.stationDesc = this.i18n.t(stationDesc, station)
         }
       }
