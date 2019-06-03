@@ -30,7 +30,7 @@
   </svg>
 
   <span if={highlight} class="linechart__tooltip" style={getTooltipStyle()}>
-    {highlight.value}&nbsp;mm
+    {highlight.key} <strong>{highlight.value}&nbsp;mm</strong>
   </span>
 
   <script type="text/babel">
@@ -44,11 +44,11 @@
     const bisectDate = d3.bisector(d => d.key).left
 
     const getDomain = (seriesCollection, key) => {
-      let min = d3.min(seriesCollection, (series) => {
+      const min = d3.min(seriesCollection, (series) => {
         return d3.min(series, item => item[key])
       })
 
-      let max = d3.max(seriesCollection, (series) => {
+      const max = d3.max(seriesCollection, (series) => {
         return d3.max(series, item => item[key])
       })
 
@@ -62,7 +62,7 @@
         .defined(d => d.value !== null)
         .x(d => xScale(d.key))
         .y(d => yScale(d.value))
-        .curve(d3.curveNatural)
+        .curve(d3.curveMonotoneX)
 
       container.selectAll('g, path, text').remove()
 
@@ -113,7 +113,8 @@
       this.width = this.root.clientWidth - hMargin
 
       const xDomain = getDomain(data, 'key')
-      const yDomain = getDomain(data, 'value')
+      const [yMin, yMax] = getDomain(data, 'value')
+      const yDomain = [Math.min(-200, yMin), Math.max(300, yMax)]
 
       xScale = d3.scaleLinear().rangeRound([0, this.width]).domain(xDomain)
       yScale = d3.scaleLinear().rangeRound([this.height, 0]).domain(yDomain)
@@ -132,10 +133,13 @@
         highlight: {
           x: xScale(key),
           y: yScale(value),
-          value
+          value,
+          key
         }
       })
     }
+
+    // this.onMouseout = () => this.update({highlight: null})
 
   </script>
 
