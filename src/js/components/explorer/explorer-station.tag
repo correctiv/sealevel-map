@@ -27,7 +27,6 @@
     const sign = x => ((x > 0) - (x < 0)) || +x
 
     const getStationDesc = (trend, tide) => {
-      trend = Number(trend)  // FIXME
       if (!trend) {
         return 'explorer.station_desc_unclear'
       }

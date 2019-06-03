@@ -68,7 +68,7 @@
           properties: {
             id: station.id,
             title: station.location,
-            trend: Number(station.trend)
+            trend: station.trend
           }
         }))
       }
