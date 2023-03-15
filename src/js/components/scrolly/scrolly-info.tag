@@ -62,10 +62,16 @@
       this.refs.body.innerHTML = body
 
       if (items) {
-        this.timeseries = stations.map(({id, title}) => ({
-          title,
-          data: _.find(items, {id}).timeseries
-        }))
+        this.timeseries = stations
+          .map(({id, title}) => {
+            const stationData = _.find(items, {id})
+            return {
+              title,
+              data: stationData && stationData.timeseries
+            }
+          })
+          .filter(s => s.data)
+
       }
     })
   </script>
