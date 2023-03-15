@@ -7,6 +7,10 @@
     "build": "webpack --config webpack-prod.config.js --colors",
     "dev": "webpack-dev-server --config webpack-dev.config.js --watch --colors"
   },
+  "engines": {
+    "npm": "5",
+    "node": "8"
+  },
   "author": "Felix Michel",
   "license": "MIT",
   "repository": {
