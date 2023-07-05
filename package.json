@@ -51,7 +51,6 @@
     "core-js": "2.4.1",
     "d3": "4.3.0",
     "d3-svg-annotation": "^2.1.0",
-    "gumshoe": "github:cferdinandi/gumshoe",
     "html-loader": "^0.4.5",
     "leaflet": "^1.0.0-rc.3",
     "lodash": "^4.17.4",
@@ -65,8 +64,8 @@
     "riot": "^3.4.0",
     "riot-redux-mixin": "^1.0.0",
     "riot-route": "^3.1.1",
+    "scrollama": "^3.2.0",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
-    "smoothscroll": "0.4.0",
     "superagent": "^3.4.1"
   }
 }
