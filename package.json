@@ -41,6 +41,7 @@
     "sass-loader": "^3.2.0",
     "sass-mq": "^3.3.1",
     "style-loader": "^0.13.1",
+    "uglifyjs-webpack-plugin": "1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
