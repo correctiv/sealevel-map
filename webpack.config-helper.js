@@ -20,7 +20,7 @@ module.exports = (options) => {
       './src/js/index'
     ],
     resolve: {
-      extensions: ['', '.html', '.js', '.json', '.scss', '.css'],
+      extensions: ['', '.html', '.js', '.json', '.scss', '.css', '.woff', '.woff2']
     },
     output: {
       path: path.join(__dirname, 'dist'),
@@ -44,6 +44,12 @@ module.exports = (options) => {
       }, {
         from: './src/assets/content',
         to: 'assets/content'
+      }, {
+        from: './node_modules/@fontsource/source-sans-pro/files',
+        to: 'assets/fonts/source-sans-pro/files'
+      }, {
+        from: './node_modules/@fontsource/source-sans-pro/LICENSE',
+        to: 'assets/fonts/source-sans-pro/LICENSE'
       }])
     ],
     module: {

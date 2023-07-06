@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@fontsource/source-sans-pro@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-pro/-/source-sans-pro-5.0.4.tgz#aa440bbe1b4a2f180d4364921950d41887495893"
+  integrity sha512-WwIQwLec18sMXck+aAyisQAEsTVRmhAh9nH0PbFBMrIBQK7dIB/TVE3DTR6v9xHjAiC5Fk266UDcrfzMk11WrQ==
+
 "@mapbox/gl-matrix@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@mapbox/gl-matrix/-/gl-matrix-0.0.1.tgz#e5126aab4d64c36b81c7a97d0ae0dddde5773d2b"
