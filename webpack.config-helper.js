@@ -1,31 +1,29 @@
 'use strict'
 
-const Path = require('path')
+const path = require('path')
 const Webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const ExtractSASS = new ExtractTextPlugin('/styles/bundle.css')
 
 module.exports = (options) => {
   const webpackConfig = {
     devtool: options.devtool,
+    externals: {
+      'mapbox-gl': 'mapboxgl'
+    },
     entry: [
       `webpack-dev-server/client?http://localhost:${options.port}`,
       'webpack/hot/dev-server',
       './src/js/index'
     ],
     resolve: {
-      extensions: ['', '.html', '.js', '.json', '.scss', '.css'],
-      alias: {
-        leaflet_css: Path.join(__dirname, '/node_modules/leaflet/dist/leaflet.css'),
-        leaflet_marker: Path.join(__dirname, '/node_modules/leaflet/dist/images/marker-icon.png'),
-        leaflet_marker_2x: Path.join(__dirname, '/node_modules/leaflet/dist/images/marker-icon-2x.png'),
-        leaflet_marker_shadow: Path.join(__dirname, '/node_modules/leaflet/dist/images/marker-shadow.png')
-      }
+      extensions: ['', '.html', '.js', '.json', '.scss', '.css', '.woff', '.woff2']
     },
     output: {
-      path: Path.join(__dirname, 'dist'),
+      path: path.join(__dirname, 'dist'),
       filename: '/bundle.js'
     },
     plugins: [
@@ -46,6 +44,12 @@ module.exports = (options) => {
       }, {
         from: './src/assets/content',
         to: 'assets/content'
+      }, {
+        from: './node_modules/@fontsource/source-sans-pro/files',
+        to: 'assets/fonts/source-sans-pro/files'
+      }, {
+        from: './node_modules/@fontsource/source-sans-pro/LICENSE',
+        to: 'assets/fonts/source-sans-pro/LICENSE'
       }])
     ],
     module: {
@@ -89,11 +93,7 @@ module.exports = (options) => {
 
     webpackConfig.plugins.push(
       new Webpack.optimize.OccurenceOrderPlugin(),
-      new Webpack.optimize.UglifyJsPlugin({
-        compressor: {
-          warnings: false
-        }
-      }),
+      new UglifyJSPlugin(),
       ExtractSASS
     )
 

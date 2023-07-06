@@ -7,6 +7,7 @@
       sectionWrapper.setAttribute('class', 'scrolly__content')
       section.setAttribute('class', `scrolly__section scrolly__section--${stepName}`)
       section.setAttribute('id', stepName)
+      section.setAttribute('data-step', '')
       section.appendChild(sectionWrapper)
       sectionWrapper.innerHTML = require(`../../../locale/${this.locale}/${stepName}.md`)
       this.root.appendChild(section)

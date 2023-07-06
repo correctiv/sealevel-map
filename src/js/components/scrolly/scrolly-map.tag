@@ -8,7 +8,7 @@
   />
 
   <sealevel-scrolly-map-visualization
-    if={stations && activeStep !== 'world'}
+    if={stations && !['intro', 'main', 'world', 'info'].includes(activeStep)}
     map={map} items={stations}
   />
 

@@ -11,13 +11,14 @@
     "npm": "5",
     "node": "8"
   },
-  "author": "Felix Michel",
+  "author": "Felix Michel, Simon Jockers",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/correctiv/sealevel-map/"
   },
   "devDependencies": {
+    "@fontsource/source-sans-pro": "^5.0.4",
     "babel-core": "^6.9.0",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.4",
@@ -41,6 +42,7 @@
     "sass-loader": "^3.2.0",
     "sass-mq": "^3.3.1",
     "style-loader": "^0.13.1",
+    "uglifyjs-webpack-plugin": "1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
@@ -51,7 +53,6 @@
     "core-js": "2.4.1",
     "d3": "4.3.0",
     "d3-svg-annotation": "^2.1.0",
-    "gumshoe": "github:cferdinandi/gumshoe",
     "html-loader": "^0.4.5",
     "leaflet": "^1.0.0-rc.3",
     "lodash": "^4.17.4",
@@ -65,8 +66,8 @@
     "riot": "^3.4.0",
     "riot-redux-mixin": "^1.0.0",
     "riot-route": "^3.1.1",
+    "scrollama": "^3.2.0",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
-    "smoothscroll": "0.4.0",
     "superagent": "^3.4.1"
   }
 }
