@@ -2,9 +2,5 @@
   "mapbox": {
     "style": "",
     "accessToken": ""
-  },
-  "piwik": {
-    "id": "",
-    "url": ""
   }
 }
